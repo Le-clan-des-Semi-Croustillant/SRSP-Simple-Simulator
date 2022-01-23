@@ -8,7 +8,7 @@ namespace Race{
     public class Race {
 
         public Race() {
-            this.myAquisition = null;
+            this.myAquisition = new AquitisionCommunication.Aquisition();
         }
 
         public DateTime DeltaT;

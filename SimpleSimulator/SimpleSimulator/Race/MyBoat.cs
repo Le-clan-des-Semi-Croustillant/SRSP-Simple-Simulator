@@ -7,8 +7,10 @@ using System.Text;
 namespace Race{
     public class MyBoat {
 
-        public MyBoat() {
-            this.currentPolaire = new Polaire(0,0,0);
+        public MyBoat()
+        {
+            var dic = new Dictionary<float, Dictionary<float, float>>();
+            this.currentPolaire = new Polaire(dic);
         }
 
         public int id;
@@ -75,7 +77,8 @@ namespace Race{
         }
 
         public Polaire getPolaire() {
-            return new Polaire(0,0,0);
+            var dic = new Dictionary<float,Dictionary<float,float>>();
+            return new Polaire(dic);
             // TODO implement here
         }
 
