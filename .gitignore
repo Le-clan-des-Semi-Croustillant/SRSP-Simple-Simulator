@@ -1,1 +1,8 @@
-test/testPerso
+test/
+.vs
+.sln
+TestResult/
+obj/
+bin/
+.csproj
+.csproj.user
