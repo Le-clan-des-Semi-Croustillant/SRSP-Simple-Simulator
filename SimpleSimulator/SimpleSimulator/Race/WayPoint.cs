@@ -7,23 +7,48 @@ using System.Text;
 namespace Race{
     public class WayPoint {
 
-        public WayPoint() {
+        public WayPoint(int id, string nom, Position position) {
+            this.nom = nom;
+            this.id = id;
+            this.position = position;
         }
 
-        public int id;
+        public WayPoint(int id, string nom, float longitude, float latitude)
+        {
+            this.nom = nom;
+            this.id=id;
+            this.position = new Position(longitude, latitude);
+        }
 
-        public string nom;
+        private int id;
 
+        private string nom;
+        
+        private Position position;
 
+        public int GetId()
+        {
+            return id;
+        }
 
-        /// <summary>
-        /// @param int id 
-        /// @param string nom 
-        /// @param int latitude 
-        /// @param int longitude
-        /// </summary>
-        public void Way_Point(int id, string nom, int latitude, int longitude) {
-            // TODO implement here
+        public string Getnom()
+        {
+            return nom;
+        }
+
+        public Position GetPosition()
+        {
+            return this.position;
+        }
+
+        public void SetPosition(Position pos)
+        {
+            this.position=pos;
+        }
+
+        public void SetPosition(float latitude, float longitude)
+        {
+            this.position = new Position(latitude, longitude);
         }
 
     }
