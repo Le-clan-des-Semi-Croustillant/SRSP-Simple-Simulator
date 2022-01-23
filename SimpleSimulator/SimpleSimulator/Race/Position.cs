@@ -7,15 +7,15 @@ using System.Text;
 namespace Race{
     public class Position {
 
-        public Position() {
-            this.competitor = null;
+        public Position(float longitude, float latitude) {
+            this.latitude = latitude;
+            this.longitude = longitude;
         }
 
-        public float latitude;
+        private float latitude;
 
-        public float longitude;
+        private float longitude;
 
-        public Competitor competitor;
 
 
 
@@ -23,8 +23,19 @@ namespace Race{
         /// @param float latitude 
         /// @param float longitude
         /// </summary>
-        public void Update(float latitude, float longitude) {
-            // TODO implement here
+        public void Update(float longitude, float latitude) {
+            this.longitude=longitude;
+            this.latitude=latitude;
+        }
+
+        public float GetLongitude()
+        {
+            return this.longitude;
+        }
+
+        public float GetLatitude()
+        {
+            return this.latitude;
         }
 
     }

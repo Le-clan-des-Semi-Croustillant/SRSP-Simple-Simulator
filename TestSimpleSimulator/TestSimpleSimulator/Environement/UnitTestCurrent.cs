@@ -3,7 +3,7 @@ using Environement;
 namespace TestEnvironement
 {
     [TestClass]
-    public class UnitTestCurrent
+    public class UnitTestPosition
     {
         [TestMethod]
 

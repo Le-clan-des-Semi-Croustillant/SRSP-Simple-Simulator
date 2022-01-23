@@ -10,9 +10,9 @@ namespace Environement{
         public Wind() {
         }
 
-        public float windSpeed;
+        private float windSpeed;
 
-        public float directionWind;
+        private float directionWind;
 
         /// <summary>
         /// @param windSpeed 

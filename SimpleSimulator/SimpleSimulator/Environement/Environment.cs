@@ -13,9 +13,9 @@ namespace Environement{
             this.wind = new Wind();
         }
 
-        public Wave wave;
-        public Current waterCurrent;
-        public Wind wind;
+        private Wave wave;
+        private Current waterCurrent;
+        private Wind wind;
 
 
 
