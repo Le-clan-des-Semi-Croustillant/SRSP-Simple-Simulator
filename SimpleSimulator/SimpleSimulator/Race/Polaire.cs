@@ -7,13 +7,16 @@ using System.Text;
 namespace Race{
     public class Polaire {
 
-        public Polaire( Dictionary<float, Dictionary<float, float>> pol) {
+        public Polaire( string name, Dictionary<float, Dictionary<float, float>> pol) {
+            this.name = name;
             this.pol = pol;
         }
 
 
 
-        public Dictionary<float, Dictionary<float,float>> pol;
+        private Dictionary<float, Dictionary<float,float>> pol;
+
+        private String name;
 
 
         public float GetNearest(float[] tab, float val) {
@@ -72,6 +75,15 @@ namespace Race{
 
         }
 
+        public void setName(string name)
+        {
+            this.name = name;
+        }
+
+        public string getName()
+        {
+            return this.name;
+        }
 
 
 

@@ -27,7 +27,8 @@ namespace TestRace
             test2.Add(50, 67);
             test.Add(100, test1);
             test.Add(200, test2);
-            Polaire pol = new Polaire(test);
+            Polaire pol = new Polaire("", test);
+
             Assert.AreEqual(pol.getSpeed(0, 0), 28);
             Assert.AreEqual(pol.getSpeed(-1, 17), 47);
             Assert.AreEqual(pol.getSpeed(101, 60), 51);

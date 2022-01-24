@@ -7,62 +7,88 @@ using System.Text;
 namespace Race{
     public class MyBoat {
 
-        public MyBoat()
+        public MyBoat(int id, List<Polaire> polaires, Position pos)
         {
-            var dic = new Dictionary<float, Dictionary<float, float>>();
-            this.currentPolaire = new Polaire(dic);
+            this.id = id;
+            this.allPolaire = polaires;
+            this.currentPolaire = null;
+            this.pos = pos;
+            this.simPhy = new physicSimulator.physics_simulator();
+            this.regulateurAmure = new RegulateurAmure();
+
+
         }
 
-        public int id;
+        private int id;
 
-        public float HDG;
+        private float cap;
 
-        public float HDGVent;
+        private ModeCommande mode;
 
-        public float cap;
+        private RegulateurAmure regulateurAmure;
 
-        public Polaire currentPolaire;
+        private Polaire currentPolaire;
+
+        private List<Polaire> allPolaire;
+
+        private Position pos;
+
+        private physicSimulator.physics_simulator simPhy;
 
 
+
+        public int GetId()
+        {
+            return id;
+        }
 
         /// <summary>
         /// @param int cap
         /// </summary>
         public void setCap(int cap) {
-            // TODO implement here
+            this.cap = cap;
         }
 
-        /// <summary>
-        /// @param int cap
-        /// </summary>
-        public void setRegulateur(int cap) {
-            // TODO implement here
+        public float getCap()
+        {
+            return this.cap;
         }
 
-        public void DisplayPolaire() {
-            // TODO implement here
+        public float GetCapRegulateurAmure()
+        {
+            return this.regulateurAmure.Get_cap();
+        }
+
+
+        public void DisplayPolaire(Polaire pol) {
+            this.currentPolaire = pol;
         }
 
         /// <summary>
         /// @param ModeCommande mode
         /// </summary>
         public void switchMode(ModeCommande mode) {
-            // TODO implement here
+            this.mode = mode;
         }
 
         /// <summary>
         /// @param ModeCommande modeCommande 
         /// @param DegreeIncrement D
         /// </summary>
-        public void IncrementerCap(ModeCommande modeCommande, DegreeIncrement D) {
-            // TODO implement here
+        public void IncrementerCap(ModeCommande modeCommande, DegreeIncrement DI) {
+            if (modeCommande == ModeCommande.RegulateurAmure)
+            {
+                this.regulateurAmure.SetCap(regulateurAmure.Get_cap() + (float)DI);
+            }
+            else
+            {
+                cap = cap + (float)DI;
+            }
         }
 
-        /// <summary>
-        /// @param Wind wind
-        /// </summary>
-        public void setHDGWind(Environement.Wind wind) {
-            // TODO implement here
+        public void setPosition(Position pos)
+        {
+            this.pos = pos;
         }
 
         /// <summary>
@@ -73,17 +99,28 @@ namespace Race{
         }
 
         public void nextPosition() {
-            // TODO implement here
+            this.simPhy.ComputePhysique();
         }
 
-        public Polaire getPolaire() {
-            var dic = new Dictionary<float,Dictionary<float,float>>();
-            return new Polaire(dic);
-            // TODO implement here
+        public Polaire getcurrentPolaire() {
+            return this.currentPolaire;
         }
 
-        public void SetPolaire() {
-            // TODO implement here
+        public List<Polaire> getAvailablePolaire()
+        {
+            return this.allPolaire;
+        }
+
+        public void SetPolaire(string name) {
+            bool change = false; 
+            for (int i = 0; i < this.allPolaire.Count(); i++)
+            {
+                if (this.allPolaire[i].getName() == name)
+                {
+                    change = true;
+                    this.currentPolaire = this.allPolaire[i];
+                }
+            }
         }
 
     }
