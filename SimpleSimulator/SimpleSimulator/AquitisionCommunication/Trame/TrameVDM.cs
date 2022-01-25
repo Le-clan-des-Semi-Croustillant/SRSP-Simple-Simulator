@@ -35,6 +35,7 @@ namespace SimpleSimulator.AquitisionCommunication.Trame
         public char Sens { get; set; }
         public char Mode { get; set; }
         public string Controle { get; set; }
+
         public string NormalizeHeure(DateTime date)
         {
             return date.Hour.ToString() + date.Minute.ToString() + date.Second.ToString() + "." + date.Millisecond.ToString();

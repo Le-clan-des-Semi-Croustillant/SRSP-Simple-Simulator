@@ -14,12 +14,15 @@ namespace SimpleSimulator.AquitisionCommunication.Trame
         TrameVHW vhw = new TrameVHW();
         TrameXDR xdr = new TrameXDR();
         TrameRSA rsa = new TrameRSA();  
+        //TrameAIVDM à ajouter
+        //TrameVDM vdm = new TrameVDM();
 
         public override string? ToString()
         {
             return rmc.ToString() + "\n" + mwv.ToString() + "\n" +
-                vhw.ToString() + "\n" + xdr.ToString() + "\n" + rsa.ToString() + "\n";
+                vhw.ToString() + "\n" + xdr.ToString() + "\n" + rsa.ToString() + "\n"; //+ vdm.ToString() + "\n";
         }
+
         
 
     }
