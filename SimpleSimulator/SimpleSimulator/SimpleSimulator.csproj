@@ -10,4 +10,11 @@
     <Folder Include="AquitisionCommunication\Communication\" />
   </ItemGroup>
 
+  <ItemGroup>
+    <PackageReference Include="docfx.console" Version="2.59.0">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+  </ItemGroup>
+
 </Project>
