@@ -8,25 +8,53 @@ namespace Race{
     public class Race {
 
         public Race() {
-            this.myAquisition = new AquitisionCommunication.Aquisition();
+            this.myAquisition = new AquitisionCommunication.Aquisition(this);
+            this.clock = new Clock();
+            this.wayPoints = new List<WayPoint> ();
+            List<Polaire> pol = new List<Polaire>();
+            Position pos = new Position(0,0);
+            this.boat = new MyBoat(50, pol, pos);
+
         }
 
-        public DateTime DeltaT;
+        private int id = 0;
 
-        public DateTime InstantT;
+        private DateTime DeltaT;
 
-        public float acceleratorFactor;
+        private float acceleratorFactor;
+
+        private MyBoat boat;
+
+        private List<WayPoint> wayPoints;
+
+        private AquitisionCommunication.Aquisition myAquisition;
+
+        private Clock clock;
 
 
+        public int GetId()
+        {
+            return id;
+        }
 
+        public DateTime GetCurrentInstant()
+        {
+            return this.clock.GetCurrentMoment();
+        }
 
+        public List<WayPoint> GetWayPoint()
+        {
+            return wayPoints;
+        }
 
-
-
-
-
-
-        public AquitisionCommunication.Aquisition myAquisition;
+        public int GetBoatId()
+        {
+            return boat.GetId();
+        }
+        public float GetBoatCap()
+        {
+            return boat.getCap();
+        }
 
         public void initialisation() {
             // TODO implement here

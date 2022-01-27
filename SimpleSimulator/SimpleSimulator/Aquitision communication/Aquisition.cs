@@ -7,8 +7,8 @@ using System.Text;
 namespace AquitisionCommunication{
     public class Aquisition {
 
-        public Aquisition() {
-            this.my_race = new Race.Race();
+        public Aquisition(Race.Race race) {
+            this.my_race = race;
         }
 
 

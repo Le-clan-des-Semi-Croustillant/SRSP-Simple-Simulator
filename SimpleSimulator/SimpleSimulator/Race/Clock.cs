@@ -10,11 +10,14 @@ namespace Race{
         public Clock() {
         }
 
-        public DateTime deltaT;
+        private DateTime deltaT;
 
-        public DateTime moment;
+        private DateTime moment;
 
-
+        public DateTime GetCurrentMoment()
+        {
+            return moment;
+        }
         public void nextIteration() {
             // TODO implement here
         }
