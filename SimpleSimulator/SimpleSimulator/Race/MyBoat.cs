@@ -59,6 +59,10 @@ namespace Race{
             return this.regulateurAmure.Get_cap();
         }
 
+        public Position GetPosition()
+        {
+            return this.pos;
+        }
 
         public void DisplayPolaire(Polaire pol) {
             this.currentPolaire = pol;

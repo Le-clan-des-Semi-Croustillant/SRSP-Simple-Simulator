@@ -18,6 +18,8 @@ namespace physicSimulator{
 
         public float vitesseSOG;
 
+        private float accFactor;
+
 
 
         public void Physics_simulator() {
@@ -28,5 +30,9 @@ namespace physicSimulator{
             // TODO implement here
         }
 
+        public void SetAccelerationFactor(float acc)
+        {
+            this.accFactor = acc;
+        }
     }
 }

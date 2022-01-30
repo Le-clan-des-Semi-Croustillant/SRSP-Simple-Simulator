@@ -31,6 +31,21 @@ namespace Environement{
             this.waveLength = waveLength;
         }
 
+        public void SetWaveDirection(float wd)
+        {
+            this.direction=wd;
+        }
+
+        public void SetWaveAmplitude(float amplitude)
+        {
+            this.amplitude = amplitude;
+        }
+
+        public void SetWaveLength(float length)
+        {
+            this.waveLength=length;
+        }
+
         public float GetDirection() {
             return this.direction;
         }

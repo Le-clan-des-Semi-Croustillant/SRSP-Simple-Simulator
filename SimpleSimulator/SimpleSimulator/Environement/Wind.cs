@@ -23,6 +23,16 @@ namespace Environement{
             this.windSpeed = windSpeed;
         }
 
+        public void SetWindSpeed(float windSpeed)
+        {
+            this.windSpeed = windSpeed;
+        }
+
+        public void SetWindDirection(float windDirection)
+        {
+            this.directionWind= windDirection;
+        }
+
         public float GetWindSpeed()
         {
             return this.windSpeed;

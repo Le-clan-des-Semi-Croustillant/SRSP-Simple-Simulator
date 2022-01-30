@@ -35,7 +35,7 @@ namespace AquitisionCommunication{
         /// @param float latitude 
         /// @param float longitude
         /// </summary>
-        public void change_competitors(float id, float latitude, float longitude) {
+        public void change_competitors(float id, float longitude, float latitude) {
             // TODO implement here
         }
 

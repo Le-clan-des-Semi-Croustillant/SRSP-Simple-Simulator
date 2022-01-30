@@ -24,7 +24,6 @@ namespace AquitisionCommunicationTest
             string expect = "{\"IdRace\":0,\"RaceTime\":\"0001-01-01T00:00:00\",\"wayPoints\":[],\"BoatId\":50,\"BoatCap\":0.0}";
             string value = Newtonsoft.Json.JsonConvert.SerializeObject(acq.GetJsonRace());
             Assert.IsTrue((expect==value));
-
-    }
+        }
     }
 }
