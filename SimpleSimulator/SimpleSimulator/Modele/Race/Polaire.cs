@@ -4,7 +4,8 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 
-namespace Race{
+namespace Model.Race
+{
     public class Polaire {
 
         public Polaire( string name, Dictionary<float, Dictionary<float, float>> pol) {

@@ -4,7 +4,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 
-namespace Race{
+namespace Model.Race{
     public class Competitor {
 
         public Competitor(int id) {

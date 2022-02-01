@@ -1,5 +1,6 @@
 
-namespace Race{
+namespace Model.Race
+{
     public enum Mode {
         Entrainement,
         Asynchrone,

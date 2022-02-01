@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using Newtonsoft.Json;
+using Model.Race;
 
 namespace AquitisionCommunication
 {
@@ -49,7 +50,7 @@ namespace AquitisionCommunication
             return jrace;
         }
 
-        public void Update(Race.Race race)
+        public void Update(Model.Race.Race race)
         {
             jrace.RaceId = race.GetId();
             jrace.RaceTime = race.GetCurrentInstant();

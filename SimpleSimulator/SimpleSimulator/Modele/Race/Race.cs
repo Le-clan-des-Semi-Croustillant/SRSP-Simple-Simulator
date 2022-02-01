@@ -4,7 +4,8 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 
-namespace Race{
+namespace Model.Race
+{
     public class Race {
 
         public Race(Mode mode, AquitisionCommunication.RaceSave.JsonRace jrace = null) {

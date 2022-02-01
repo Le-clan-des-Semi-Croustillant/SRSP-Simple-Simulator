@@ -3,26 +3,27 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using Model;
 
 namespace AquitisionCommunication{
     public class Aquisition {
 
-        public Aquisition(Race.Race race) {
+        public Aquisition(Model.Race.Race race) {
             this.my_race = race;
         }
 
 
 
 
-        private Race.Race my_race;
+        private Model.Race.Race my_race;
 
         /// <summary>
         /// @param Mode mode
         /// </summary>
-        public void SetUp( Race.Mode mode) {
+        public void SetUp(Model.Race.Mode mode) {
             switch (mode)
             {
-                case Race.Mode.Entrainement:
+                case Model.Race.Mode.Entrainement:
                     break;
                 default:
                     break;

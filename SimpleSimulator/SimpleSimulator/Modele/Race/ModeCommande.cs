@@ -1,4 +1,5 @@
-namespace Race{
+namespace Model.Race
+{
     public enum ModeCommande {
         cap,
         RegulateurAmure

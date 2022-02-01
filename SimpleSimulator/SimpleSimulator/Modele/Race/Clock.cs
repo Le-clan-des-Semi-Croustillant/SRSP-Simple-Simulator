@@ -5,7 +5,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Race{
+namespace Model.Race
+{
     public class Clock {
 
         public Clock(Race race) {

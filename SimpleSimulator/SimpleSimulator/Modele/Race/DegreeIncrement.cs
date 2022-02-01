@@ -1,5 +1,6 @@
 
-namespace Race{
+namespace Model.Race
+{
     public enum DegreeIncrement {
         One = 1,
         Ten = 10,
