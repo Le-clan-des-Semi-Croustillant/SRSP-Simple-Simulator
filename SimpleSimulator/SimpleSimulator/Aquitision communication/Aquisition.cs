@@ -14,13 +14,19 @@ namespace AquitisionCommunication{
 
 
 
-        public Race.Race my_race;
+        private Race.Race my_race;
 
         /// <summary>
         /// @param Mode mode
         /// </summary>
         public void SetUp( Race.Mode mode) {
-            // TODO implement here
+            switch (mode)
+            {
+                case Race.Mode.Entrainement:
+                    break;
+                default:
+                    break;
+            }
         }
 
         /// <summary>

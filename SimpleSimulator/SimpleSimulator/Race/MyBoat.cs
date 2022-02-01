@@ -35,8 +35,6 @@ namespace Race{
 
         private physicSimulator.physics_simulator simPhy;
 
-
-
         public int GetId()
         {
             return id;
@@ -52,6 +50,11 @@ namespace Race{
         public float getCap()
         {
             return this.cap;
+        }
+
+        public void setCap(float cap)
+        {
+            this.cap = cap;
         }
 
         public float GetCapRegulateurAmure()

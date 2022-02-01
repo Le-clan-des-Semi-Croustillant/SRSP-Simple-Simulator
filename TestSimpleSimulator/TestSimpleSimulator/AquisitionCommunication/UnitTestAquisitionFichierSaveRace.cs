@@ -3,7 +3,7 @@ using AquitisionCommunication;
 namespace AquitisionCommunicationTest
 {
     [TestClass]
-    public class UnitTestPosition
+    public class UnitTestAquisitionFichierSaveRace
     {
         
         [TestMethod]
@@ -18,7 +18,7 @@ namespace AquitisionCommunicationTest
         [TestMethod]
         public void TestUpdate()
         {
-            Race.Race race = new Race.Race();
+            Race.Race race = new Race.Race(Race.Mode.Entrainement);
             AquisitionFichierSaveRace acq = new AquisitionFichierSaveRace("./test");
             acq.Update(race);
             string expect = "{\"IdRace\":0,\"RaceTime\":\"0001-01-01T00:00:00\",\"wayPoints\":[],\"BoatId\":50,\"BoatCap\":0.0}";

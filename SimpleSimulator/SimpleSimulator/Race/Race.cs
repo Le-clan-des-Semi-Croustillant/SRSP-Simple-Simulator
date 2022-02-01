@@ -7,24 +7,49 @@ using System.Text;
 namespace Race{
     public class Race {
 
-        public Race() {
-            this.myAquisition = new AquitisionCommunication.Aquisition(this);
+        public Race(Mode mode, AquitisionCommunication.RaceSave.JsonRace jrace = null) {
             this.env = new Environement.Environment();
-            this.competitors = new List<Competitor>();
-            this.clock = new Clock();
             this.physics = new physicSimulator.physics_simulator();
-            this.wayPoints = new List<WayPoint> ();
-            List<Polaire> pol = new List<Polaire>();
-            Position pos = new Position(0,0);
-            this.boat = new MyBoat(50, pol, pos);
+            this.clock = new Clock(this);
+            switch (mode)
+            {
+                case Mode.Entrainement:
+                    EntrainementSetUp(jrace);
+                    break;
+                default:
+                    break;
+            }
+        }
+
+        private void EntrainementSetUp(AquitisionCommunication.RaceSave.JsonRace jrace)
+        {
+            if (jrace != null)
+            {
+                this.id = jrace.RaceId;
+                this.wayPoints = new List<WayPoint>();
+                Position pos = new Position(jrace.longitude, jrace.latitude);
+                List<Polaire> pols = new List<Polaire>();
+                this.boat = new MyBoat(jrace.BoatId, pols, pos);
+                this.boat.setCap(jrace.BoatCap);
+                this.physics.SetAccelerationFactor(jrace.accelerationFactor);
+                this.clock.SetCurrentMoment(jrace.RaceTime);
+            }
+            else
+            {
+                this.id = 1;
+                this.wayPoints = new List<WayPoint>();
+                Position pos = new Position(0, 0);
+                List<Polaire> pols = new List<Polaire>();
+                this.boat = new MyBoat(1, pols, pos);
+                this.boat.setCap(0);
+                this.physics.SetAccelerationFactor(0);
+                this.clock.SetCurrentMoment(new DateTime());
+
+            }
 
         }
 
         private int id = 0;
-
-        private DateTime DeltaT;
-
-        private float acceleratorFactor;
 
         private Mode mode;
 
@@ -72,8 +97,27 @@ namespace Race{
             return this.competitors;
         }
 
-        public void initialisation() {
-            // TODO implement here
+        public void SetCompetitors(List<int> id, List<float> latitude, List<float> longitude)
+        {
+            competitors = new List<Competitor>();
+            for (int i = 0; i < id.Count; i++)
+            {
+                Competitor comp = new Competitor(id.ElementAt(i));
+                Position pos = new Position(latitude.ElementAt(i), longitude.ElementAt(i));
+                comp.SetPosition(pos);
+                competitors.Add(comp);
+            }
+        }
+
+        public MyBoat GetBoat()
+        {
+            return this.boat;
+        }
+
+        public (float,float) GetPosition()
+        {
+            Position pos = this.boat.GetPosition();
+            return (pos.GetLongitude(), pos.GetLatitude());
         }
 
         /// <summary>
@@ -81,23 +125,6 @@ namespace Race{
         /// </summary>
         public void SetWayPoint( List<WayPoint> wayPoints) {
             this.wayPoints=wayPoints;
-        }
-
-        /// <summary>
-        /// @param float id 
-        /// @param float latitude 
-        /// @param float longitude
-        /// </summary>
-        public void SetCompetitors(List<int> id, List<float> latitude, List<float> longitude) 
-        {
-            competitors = new List<Competitor>();
-            for(int i = 0; i<id.Count; i++)
-            {
-                Competitor comp = new Competitor(id.ElementAt(i));
-                Position pos = new Position(latitude.ElementAt(i), longitude.ElementAt(i));
-                comp.SetPosition(pos);
-                competitors.Add(comp);
-            }    
         }
 
         /// <summary>
@@ -123,8 +150,24 @@ namespace Race{
             this.physics.SetAccelerationFactor(AccFac);
         }
 
+
+        public void Pause()
+        {
+            clock.pause();
+        }
+
+        public void Run()
+        {
+            var tIteration = Task.Run(() => clock.Run());
+        }
+
         public void nextIteration() {
             // TODO implement here
+        }
+
+        public bool GetisPause()
+        {
+            return clock.GetIsPause();
         }
 
     }
