@@ -29,6 +29,7 @@ namespace AquitisionCommunication
             public int RaceId = 0;
             public DateTime RaceTime = new DateTime();
             public string wayPointFile = "";
+            public string currentPol = "";
             public List<string> polFiles = new List<string>(); 
             public int BoatId = 1;
             public float BoatCap = 0F;
@@ -56,6 +57,11 @@ namespace AquitisionCommunication
             jrace.RaceTime = race.GetCurrentInstant();
             jrace.BoatId = race.GetBoatId();
             jrace.BoatCap = race.GetBoatCap();
+            foreach( Polaire pol in race.GetAllPolaire())
+            {
+                jrace.polFiles.Add(pol.getName());
+            }
+            jrace.currentPol = race.GetCurrentPolaire().getName();
             (jrace.longitude, jrace.latitude) = race.GetPosition();
         }
 

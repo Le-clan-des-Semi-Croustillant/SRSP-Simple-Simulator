@@ -9,7 +9,7 @@
       "output": {
         ".html": {
           "relative_path": "api/AquitisionCommunication.Aquisition.html",
-          "hash": "a3yRt2aiGuYHNcF+jYTK+cM3gPlKuy+aZloazKKVp9A="
+          "hash": "HlMFoK30EpYP6ICM3jS2ptqLA5InNxNjpkTw0UMbwYU="
         }
       },
       "is_incremental": false,
@@ -21,10 +21,22 @@
       "output": {
         ".html": {
           "relative_path": "api/AquitisionCommunication.AquisitionFichierSaveRace.html",
-          "hash": "PrwksblXrafzwUa/eRZcMQM+RO4Jhjpg6ghgi7W0ZEY="
+          "hash": "RCA/SMaAndtbkFEpoy8xFzYpdO3Xbv5uznyzBKttUWQ="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AquitisionCommunication.AquisitionPolaire.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AquitisionCommunication.AquisitionPolaire.html",
+          "hash": "CEWLqBKDyW9E5VXbNVHlD4Owd/cys93JlczanTNtC8g="
+        }
+      },
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -33,10 +45,10 @@
       "output": {
         ".html": {
           "relative_path": "api/AquitisionCommunication.RaceSave.JsonRace.html",
-          "hash": "cJk8etgmWBXbi5xCx/YvXzwywr0/OD1nVilHYlOqO0I="
+          "hash": "fqq94yrexvCJjEs8FKDMvhMUrzrCzKqZY+n+Pu1gBVU="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -45,7 +57,7 @@
       "output": {
         ".html": {
           "relative_path": "api/AquitisionCommunication.RaceSave.html",
-          "hash": "I2CcKNCflypo1+tqAiomKN0zernLt4y26ZMYdxOAyb0="
+          "hash": "FnH2gqQd2SKSicgGqk8qlBx1KagdceMIYmvn6ZrRZ34="
         }
       },
       "is_incremental": false,
@@ -57,10 +69,10 @@
       "output": {
         ".html": {
           "relative_path": "api/AquitisionCommunication.Sauvegarde.html",
-          "hash": "PCwJIV7n9AJCubUyOfEMRuPaAjswbGBqBpZN6pxBezA="
+          "hash": "D7yIQNlg7ts1WPZ1QjjId2Wxm5rs6ZZctCx9b7KmPmU="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -69,7 +81,7 @@
       "output": {
         ".html": {
           "relative_path": "api/AquitisionCommunication.html",
-          "hash": "pAT9onR9qwlTJko2XS70VPuiFA1QWjL8MZe8r+mXEbo="
+          "hash": "5R45tu0/cr1zjv5sq0MYjjIbhae7+BeYMSULJgp+vSw="
         }
       },
       "is_incremental": false,
@@ -81,10 +93,10 @@
       "output": {
         ".html": {
           "relative_path": "api/Environement.Conditions.html",
-          "hash": "3207a/Cah/WqnTSr0hK4sWRoCkytchEQR8XnBOMTmxw="
+          "hash": "fPu0lfjyOuHzuFyL51zj45rTExSCA2JM0/fW3o5Xpuc="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -93,10 +105,10 @@
       "output": {
         ".html": {
           "relative_path": "api/Environement.Current.html",
-          "hash": "0Vtn0rwXZhkRzXog+lgk3jFAypc0pDC8QNnQU8j8HWA="
+          "hash": "rT8gPbhvPLzfLjdlP475LPT2+iD5TcoB7zsndpBZq9U="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -105,10 +117,10 @@
       "output": {
         ".html": {
           "relative_path": "api/Environement.Environment.html",
-          "hash": "dOHWhBN0LeS3wp75TdBoQ7jbXKt4+N9JuzzLL60Uz6o="
+          "hash": "eAg28RQhuO2Xyqe3dBc/7mlXBF1bAr1Q44cWLcgDt58="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -117,10 +129,10 @@
       "output": {
         ".html": {
           "relative_path": "api/Environement.Wave.html",
-          "hash": "9swXZL55veyl0ACqEcxs8RQjrf0BlEk23+Bd8PWkOt0="
+          "hash": "EFpZe4ivMw0nZbGwaMUkfMszp3AeTGQpFAgZQbctK/w="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -129,10 +141,10 @@
       "output": {
         ".html": {
           "relative_path": "api/Environement.Wind.html",
-          "hash": "KXc31ppPUQbF452px4Zx1cL1OukykrwBFhjaPK+fWgw="
+          "hash": "1vOzSuzUPFPJ8+cAGZE7a6/1gI2AtsQyjAz3WiFQxCs="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -144,6 +156,150 @@
           "hash": "zLl+Y/ttJFnrclKQIW2giBKmMNqo1LSFxgXuYSssktw="
         }
       },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Model.Race.Clock.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Model.Race.Clock.html",
+          "hash": "zUL5W1MFFQxWuFHNI7SqTMDGm17AR9XB9KSdqlCN2xQ="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Model.Race.Competitor.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Model.Race.Competitor.html",
+          "hash": "ZyesiWHT5HYP1b1G6YlCYKSlhDgJE9ntIrjSsbDKPWw="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Model.Race.DegreeIncrement.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Model.Race.DegreeIncrement.html",
+          "hash": "DW1SG42Tc9i14An+r1h53RDoWMmrDn3u/TiYSAZ1+bM="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Model.Race.Mode.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Model.Race.Mode.html",
+          "hash": "8M2OIyU8QDnqgacPAO0sPXwjjxVYQCpE7///0CmcG9s="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Model.Race.ModeCommande.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Model.Race.ModeCommande.html",
+          "hash": "PkUzcsI/xtbMMGqT4FL+Yc2KztyxlG3NwnpIVi8pdsk="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Model.Race.MyBoat.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Model.Race.MyBoat.html",
+          "hash": "0YLFuv9L/lCVmp/HxZ0TPFy00eeEGUBlkcqB5e1g5yY="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Model.Race.Polaire.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Model.Race.Polaire.html",
+          "hash": "4F9TgbrNlQkbILVJbbwSBYl2MLI+SsjA7WoaOAmxrpg="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Model.Race.Position.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Model.Race.Position.html",
+          "hash": "uCNHrr2JXE9FhfMskJ737GMqSzQPbEWqzlX58AU+GGg="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Model.Race.Race.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Model.Race.Race.html",
+          "hash": "677cTxkVJlqxUDu/tiDGwG/+CFhQvLYdJWw1l75Q6Wk="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Model.Race.RegulateurAmure.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Model.Race.RegulateurAmure.html",
+          "hash": "RMLwFjX8P1su/wh5DbkTRwnptrASCGV17uJLe1V6Icg="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Model.Race.WayPoint.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Model.Race.WayPoint.html",
+          "hash": "ou0J+WoUgqtjYks1U+4pF88qHDc4xlzqVFjygyXy0pY="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Model.Race.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Model.Race.html",
+          "hash": "NA6ErfhmJRN9b8PJvEyb43gFIbaDJleamtYY0h7voqg="
+        }
+      },
       "is_incremental": false,
       "version": ""
     },
@@ -153,7 +309,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Model.RaceModel.html",
-          "hash": "Dl3gsxn5YvH2PJM+oXDIaqt5rb6Bs8sHCw4Bjd8ISec="
+          "hash": "lnjh9sRi/X3OP+oP3LmoVswC5EB8Q9mKAaGa13bxKB4="
         }
       },
       "is_incremental": false,
@@ -173,158 +329,14 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/Race.Clock.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Race.Clock.html",
-          "hash": "6RkjbPjhzAhWjUzS6uhRgaGloVrz5pgAcHcRvWCtqic="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/Race.Competitor.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Race.Competitor.html",
-          "hash": "/Hc2TfePZZ/Yjl6CE0W/qUG4XcUxMK+jdqjI6Lulids="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/Race.DegreeIncrement.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Race.DegreeIncrement.html",
-          "hash": "fXdUUMqmrNhlsQxle+qdBtK4vR2x17RHlYor77YoZgo="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/Race.Mode.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Race.Mode.html",
-          "hash": "dejN+VBj6CTK279XxqE/l5Se/WI2YEt82S4RtryRMqw="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/Race.ModeCommande.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Race.ModeCommande.html",
-          "hash": "q96WkSv3Ve6gi7ajz84f3To22meDTcFYZ5IRdENqjzc="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/Race.MyBoat.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Race.MyBoat.html",
-          "hash": "lyptB5a+RpWGVaEqK3poPgpU5fRwIWUTXRwfaXTcg0Q="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/Race.Polaire.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Race.Polaire.html",
-          "hash": "iYMObc2XeKuZRwpbIfW0qSJFxEvOF8srEOe4F6pEGxk="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/Race.Position.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Race.Position.html",
-          "hash": "dDkRVGhAIeop1Dvu67NS1FohGqeKP2jn4VN3+mht8h8="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/Race.Race.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Race.Race.html",
-          "hash": "3GLQLvlr3fgqvFYJJsKOqBk0nhgvwjjIAkLePV/+YtE="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/Race.RegulateurAmure.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Race.RegulateurAmure.html",
-          "hash": "fzrEd66GrlAl3F4oHleKeYqvu1ZcjVbgv2jtZ6SfC9o="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/Race.WayPoint.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Race.WayPoint.html",
-          "hash": "5Jokl/eoMIYTBFnfMCR2s8bpo8YiWitGM8/s3e1XEH4="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/Race.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Race.html",
-          "hash": "4zFvhRYF3ZvBCVdYW8qcvDjG17G5hY7diL/Vy1WKZog="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
       "source_relative_path": "api/SimpleSimulator.AquitisionCommunication.Trame.Sender.yml",
       "output": {
         ".html": {
           "relative_path": "api/SimpleSimulator.AquitisionCommunication.Trame.Sender.html",
-          "hash": "KFUpY1xtjWmRhO38SQ7oKi05jJKWb42rsXtR/9zSuKY="
+          "hash": "zaa+NHkpRykoYN59/JYBpy3Cv5vuHUp86CQEw5Tm6ko="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -333,10 +345,10 @@
       "output": {
         ".html": {
           "relative_path": "api/SimpleSimulator.AquitisionCommunication.Trame.TrameMWV.html",
-          "hash": "iSwdhkqWxSn+Wgs5hPrm/fEP2HgBa+R6m423/l9mL54="
+          "hash": "2seqky0Rq24Vb9h9hKuN3A9iLBqpoxZQVZPwRAoBVoA="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -345,10 +357,10 @@
       "output": {
         ".html": {
           "relative_path": "api/SimpleSimulator.AquitisionCommunication.Trame.TrameNMEA.html",
-          "hash": "brczdwFD7OSE1jDRQmZX0BjXDTZF8jYBjsPAq3eKvxQ="
+          "hash": "vHOvQg2uGgJ+rfxmym7pwcbVgLUc+VOw0QqIWrQiuGg="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -357,10 +369,10 @@
       "output": {
         ".html": {
           "relative_path": "api/SimpleSimulator.AquitisionCommunication.Trame.TrameRMC.html",
-          "hash": "JMD2CYCRLEFcZk+eYADhUZxyH4upyQzSN/9HXGJX1Ac="
+          "hash": "rxqCAz3UB3m3cxGynaCuBkfx+AsEhqmbYUqitZfKw1E="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -369,10 +381,10 @@
       "output": {
         ".html": {
           "relative_path": "api/SimpleSimulator.AquitisionCommunication.Trame.TrameRSA.html",
-          "hash": "nsoIzu+hqQZWEQJatf7R6oKFcs+V9SBmN7tavk3VPIs="
+          "hash": "tBmL1UTvIogRCVes+9BeHFMULSwK/Rml8L2j1ZCmYkg="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -381,10 +393,10 @@
       "output": {
         ".html": {
           "relative_path": "api/SimpleSimulator.AquitisionCommunication.Trame.TrameVDM.html",
-          "hash": "R0HZEvzcvXVLCVWa8AiO0ZGzmq3/sxT4sUDktjiU1jw="
+          "hash": "gG6KRVuCusjOtMEVfJHHfigYLhBXKRJ4udlx5uFTbRo="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -393,10 +405,10 @@
       "output": {
         ".html": {
           "relative_path": "api/SimpleSimulator.AquitisionCommunication.Trame.TrameVHW.html",
-          "hash": "uCykqKSqx49JDJWM+3PN3Yvfe6mi6MeUqjbXirhYmwo="
+          "hash": "uMkPZjh0GYyGCbKpEhGBZ58NdxPiuqw4YRWUywkm+tE="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -405,10 +417,10 @@
       "output": {
         ".html": {
           "relative_path": "api/SimpleSimulator.AquitisionCommunication.Trame.TrameXDR.html",
-          "hash": "p2bfYwR7Xh7meSaYlEweYtHuUrDaNfycJTrcEz2tCWg="
+          "hash": "oTOT+CIWdFwVqbIyVbyXitEiyZuFXjECkjWTP6M30Fg="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -417,10 +429,10 @@
       "output": {
         ".html": {
           "relative_path": "api/SimpleSimulator.AquitisionCommunication.Trame.XDRSub.html",
-          "hash": "an87Roa3cYKfLaeQz7pBg47VkisJHu/G3rgyPgYt5rQ="
+          "hash": "2HKUx7xIc0dN2rFnt4tvV4D9VueOfASdTVeq5NVMCgs="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -432,7 +444,7 @@
           "hash": "wXU0wbIYBwkEDtXKYHHD44qdKeQWKBQ4KFBSv/7rqKA="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -453,10 +465,10 @@
       "output": {
         ".html": {
           "relative_path": "api/physicSimulator.physics_simulator.html",
-          "hash": "DYJsSNc+jFPz30Jg8R2klvPbCjIFT2UmQQAm2Eiyg5s="
+          "hash": "5ZHZ79vQ5hUouIIrD7Woi0iZhI0ptOpgK7h3YMOJ6f0="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -468,7 +480,7 @@
           "hash": "osd89kMVoO1/WSstGkpWufJD3y9HETWogFXo19iYz00="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -477,7 +489,7 @@
       "output": {
         ".html": {
           "relative_path": "api/toc.html",
-          "hash": "oldx6oWhFJ04om+tqoiJkQh4RiudhEOaMAm5k4hM04g="
+          "hash": "wwO/6mL7fF3Ii0IkjaSvvbmIxvY+OUn2KDroNaB+uBE="
         }
       },
       "is_incremental": false,
@@ -550,8 +562,8 @@
         "ManagedReferenceDocumentProcessor": {
           "can_incremental": true,
           "incrementalPhase": "build",
-          "total_file_count": 38,
-          "skipped_file_count": 6
+          "total_file_count": 39,
+          "skipped_file_count": 36
         },
         "TocDocumentProcessor": {
           "can_incremental": false,

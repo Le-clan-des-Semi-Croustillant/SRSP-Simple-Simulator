@@ -68,10 +68,6 @@ namespace Model.Race
             return this.pos;
         }
 
-        public void DisplayPolaire(Polaire pol) {
-            this.currentPolaire = pol;
-        }
-
         /// <summary>
         /// @param ModeCommande mode
         /// </summary>
@@ -119,7 +115,7 @@ namespace Model.Race
             return this.allPolaire;
         }
 
-        public void SetPolaire(string name) {
+        public void SetCurrentPolaire(string name) {
             bool change = false; 
             for (int i = 0; i < this.allPolaire.Count(); i++)
             {
@@ -129,6 +125,16 @@ namespace Model.Race
                     this.currentPolaire = this.allPolaire[i];
                 }
             }
+        }
+
+        public Polaire GetCurrentPolaire()
+        {
+            return this.currentPolaire;
+        }
+
+        public List<Polaire> GetAllPolaire()
+        {
+            return allPolaire;
         }
 
     }

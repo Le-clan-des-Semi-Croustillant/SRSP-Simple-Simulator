@@ -29,8 +29,9 @@ namespace Model.Race
                 this.id = jrace.RaceId;
                 this.wayPoints = new List<WayPoint>();
                 Position pos = new Position(jrace.longitude, jrace.latitude);
-                List<Polaire> pols = new List<Polaire>();
+                List<Polaire> pols = MultiplePolaireAssimilation(jrace.polFiles);
                 this.boat = new MyBoat(jrace.BoatId, pols, pos);
+                this.boat.SetCurrentPolaire(jrace.currentPol);
                 this.boat.setCap(jrace.BoatCap);
                 this.physics.SetAccelerationFactor(jrace.accelerationFactor);
                 this.clock.SetCurrentMoment(jrace.RaceTime);
@@ -68,7 +69,24 @@ namespace Model.Race
         
         private List<Competitor> competitors;
 
+        private Polaire PolaireAssimilation(string path, AquitisionCommunication.AquisitionPolaire acq)
+        {
+            string name = path;
+            Dictionary<float,Dictionary<float, float>> polaire = acq.ReadPolaire(path);
+            Polaire pol = new Polaire(name, polaire);
+            return pol;
+        }
 
+        private List<Polaire> MultiplePolaireAssimilation(List<string> path)
+        {
+            AquitisionCommunication.AquisitionPolaire acq = new AquitisionCommunication.AquisitionPolaire();
+            List<Polaire> allPol = new List<Polaire>();
+            foreach(string file in path)
+            {
+                allPol.Add(PolaireAssimilation(file, acq));
+            }
+            return allPol;
+        }
         public int GetId()
         {
             return id;
@@ -82,6 +100,16 @@ namespace Model.Race
         public List<WayPoint> GetWayPoint()
         {
             return wayPoints;
+        }
+
+        public Polaire GetCurrentPolaire()
+        {
+            return boat.GetCurrentPolaire();
+        }
+
+        public List<Polaire> GetAllPolaire() 
+        {
+            return boat.GetAllPolaire();
         }
 
         public int GetBoatId()
