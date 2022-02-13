@@ -23,7 +23,7 @@ namespace Environement{
         /// @param float windSpeed 
         /// @param float direction
         /// </summary>
-        public void UpdateWind( float direction, float windSpeed) {
+        public void UpdateWind(float windSpeed, float direction) {
             this.wind.Update(windSpeed, direction);
         }
 
@@ -32,7 +32,7 @@ namespace Environement{
         /// @param float amplitude 
         /// @param float wave length
         /// </summary>
-        public void UpdateWave(float direction, float amplitude, float waveLength) {
+        public void UpdateWave(float amplitude, float waveLength, float direction) {
             this.wave.Update(direction, amplitude, waveLength);
         }
 

@@ -8,22 +8,22 @@ using Model;
 namespace AquitisionCommunication{
     public class Aquisition {
 
-        public Aquisition(Model.Race.Race race) {
+        public Aquisition(PRace.Race race) {
             this.my_race = race;
         }
 
 
 
 
-        private Model.Race.Race my_race;
+        private PRace.Race my_race;
 
         /// <summary>
         /// @param Mode mode
         /// </summary>
-        public void SetUp(Model.Race.Mode mode) {
+        public void SetUp(PRace.Mode mode) {
             switch (mode)
             {
-                case Model.Race.Mode.Entrainement:
+                case PRace.Mode.Entrainement:
                     break;
                 default:
                     break;

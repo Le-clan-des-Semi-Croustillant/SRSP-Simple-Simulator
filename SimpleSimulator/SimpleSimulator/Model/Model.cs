@@ -13,11 +13,11 @@ namespace Model
             if (savePath != null)
             {
                 AquitisionCommunication.RaceSave acq = new AquitisionCommunication.RaceSave(savePath);
-                race = new Race.Race(this.mode, acq.loadfile());
+                race = new PRace.Race(this.mode, acq.loadfile());
             }
             else
             {
-                race = new Race.Race(this.mode);// to change to be chosen by the user
+                race = new PRace.Race(this.mode);// to change to be chosen by the user
             }
             race.Run();
         }
@@ -28,29 +28,29 @@ namespace Model
             if (savePath != null)
             {
                 AquitisionCommunication.RaceSave acq = new AquitisionCommunication.RaceSave(savePath);
-                race = new Race.Race(this.mode, acq.loadfile());
+                race = new PRace.Race(this.mode, acq.loadfile());
             }
             else
             {
-                race = new Race.Race(this.mode);
+                race = new PRace.Race(this.mode);
             }
             race.Run();
         }
 
         private string savePath = null;
 
-        private Race.Race race;
+        private PRace.Race race;
 
-        private Race.Mode mode;
+        private PRace.Mode mode;
 
-        public Race.Race GetRace()
+        public PRace.Race GetRace()
         {
             return race;
         }
 
         public void AskMode()
         {
-            this.mode = Race.Mode.Entrainement;// to change to be chosen by the user
+            this.mode = PRace.Mode.Entrainement;// to change to be chosen by the user
         }
         public void AskForSavePath()
         {

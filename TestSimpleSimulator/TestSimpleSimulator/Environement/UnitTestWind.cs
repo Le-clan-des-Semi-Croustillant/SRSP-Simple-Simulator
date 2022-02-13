@@ -18,9 +18,9 @@ namespace TestEnvironement
         public void TestUpdate()
         {
             var wind = new Wind();
-            wind.Update(1, 1);
+            wind.Update(1, 5);
             Assert.AreEqual(wind.GetWindSpeed(), 1);
-            Assert.AreEqual(wind.GetWindDirection(), 1);
+            Assert.AreEqual(wind.GetWindDirection(), 5);
         }
 
     }

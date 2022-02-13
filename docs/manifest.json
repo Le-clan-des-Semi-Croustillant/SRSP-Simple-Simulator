@@ -9,10 +9,10 @@
       "output": {
         ".html": {
           "relative_path": "api/AquitisionCommunication.Aquisition.html",
-          "hash": "HlMFoK30EpYP6ICM3jS2ptqLA5InNxNjpkTw0UMbwYU="
+          "hash": "kcC8QfVm/5KlBRqxrEcIU6cPiprjntIYfaW4JszeHV0="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -21,7 +21,7 @@
       "output": {
         ".html": {
           "relative_path": "api/AquitisionCommunication.AquisitionFichierSaveRace.html",
-          "hash": "RCA/SMaAndtbkFEpoy8xFzYpdO3Xbv5uznyzBKttUWQ="
+          "hash": "oMQDIb7VOK6ULsw3GWBZoBZwXOVg8UvjGOZPb1kMRZ0="
         }
       },
       "is_incremental": true,
@@ -33,7 +33,7 @@
       "output": {
         ".html": {
           "relative_path": "api/AquitisionCommunication.AquisitionPolaire.html",
-          "hash": "CEWLqBKDyW9E5VXbNVHlD4Owd/cys93JlczanTNtC8g="
+          "hash": "W7JOAlMndae7wL0dMsZZaOWKsDibOU3JjqEGXeySV+g="
         }
       },
       "is_incremental": true,
@@ -45,7 +45,7 @@
       "output": {
         ".html": {
           "relative_path": "api/AquitisionCommunication.RaceSave.JsonRace.html",
-          "hash": "fqq94yrexvCJjEs8FKDMvhMUrzrCzKqZY+n+Pu1gBVU="
+          "hash": "7Q57nCnL/KzMs63a2njVE0W8kU2ff0Au46yAjFeeUU8="
         }
       },
       "is_incremental": true,
@@ -57,10 +57,10 @@
       "output": {
         ".html": {
           "relative_path": "api/AquitisionCommunication.RaceSave.html",
-          "hash": "FnH2gqQd2SKSicgGqk8qlBx1KagdceMIYmvn6ZrRZ34="
+          "hash": "D86CXsaZ/i0wohAlIABh6R/1Wcq6cWVgH/kbUX4Rijo="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -69,7 +69,7 @@
       "output": {
         ".html": {
           "relative_path": "api/AquitisionCommunication.Sauvegarde.html",
-          "hash": "D7yIQNlg7ts1WPZ1QjjId2Wxm5rs6ZZctCx9b7KmPmU="
+          "hash": "0Pho2If2eAm+xfqz3zPzPC8OJDw2Ai1YaCHcJcUCQvw="
         }
       },
       "is_incremental": true,
@@ -84,7 +84,7 @@
           "hash": "5R45tu0/cr1zjv5sq0MYjjIbhae7+BeYMSULJgp+vSw="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -93,7 +93,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Environement.Conditions.html",
-          "hash": "fPu0lfjyOuHzuFyL51zj45rTExSCA2JM0/fW3o5Xpuc="
+          "hash": "F3J5F//lseeXgAz1zDlgfNl7k7HncqQl2l1YYmXM4Ts="
         }
       },
       "is_incremental": true,
@@ -105,7 +105,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Environement.Current.html",
-          "hash": "rT8gPbhvPLzfLjdlP475LPT2+iD5TcoB7zsndpBZq9U="
+          "hash": "Md3fcj8f7jUzbO4PE8g66/QhGw+QSo9Uk+JNFD47tt0="
         }
       },
       "is_incremental": true,
@@ -117,7 +117,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Environement.Environment.html",
-          "hash": "eAg28RQhuO2Xyqe3dBc/7mlXBF1bAr1Q44cWLcgDt58="
+          "hash": "WLRxjJDGtiSUMUYXr3JwLXYRcWxAaKfRtqKWWfDPzII="
         }
       },
       "is_incremental": true,
@@ -129,7 +129,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Environement.Wave.html",
-          "hash": "EFpZe4ivMw0nZbGwaMUkfMszp3AeTGQpFAgZQbctK/w="
+          "hash": "5fUMOwhdQmZ85G7zosgnQNGCycKNzqq0p/VylPPJZHY="
         }
       },
       "is_incremental": true,
@@ -141,7 +141,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Environement.Wind.html",
-          "hash": "1vOzSuzUPFPJ8+cAGZE7a6/1gI2AtsQyjAz3WiFQxCs="
+          "hash": "WbMn5h5e4wGCsSTrBHN9yEsNfYHPNWNkS/6WxDNAnCI="
         }
       },
       "is_incremental": true,
@@ -161,158 +161,14 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/Model.Race.Clock.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Model.Race.Clock.html",
-          "hash": "zUL5W1MFFQxWuFHNI7SqTMDGm17AR9XB9KSdqlCN2xQ="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/Model.Race.Competitor.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Model.Race.Competitor.html",
-          "hash": "ZyesiWHT5HYP1b1G6YlCYKSlhDgJE9ntIrjSsbDKPWw="
-        }
-      },
-      "is_incremental": true,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/Model.Race.DegreeIncrement.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Model.Race.DegreeIncrement.html",
-          "hash": "DW1SG42Tc9i14An+r1h53RDoWMmrDn3u/TiYSAZ1+bM="
-        }
-      },
-      "is_incremental": true,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/Model.Race.Mode.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Model.Race.Mode.html",
-          "hash": "8M2OIyU8QDnqgacPAO0sPXwjjxVYQCpE7///0CmcG9s="
-        }
-      },
-      "is_incremental": true,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/Model.Race.ModeCommande.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Model.Race.ModeCommande.html",
-          "hash": "PkUzcsI/xtbMMGqT4FL+Yc2KztyxlG3NwnpIVi8pdsk="
-        }
-      },
-      "is_incremental": true,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/Model.Race.MyBoat.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Model.Race.MyBoat.html",
-          "hash": "0YLFuv9L/lCVmp/HxZ0TPFy00eeEGUBlkcqB5e1g5yY="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/Model.Race.Polaire.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Model.Race.Polaire.html",
-          "hash": "4F9TgbrNlQkbILVJbbwSBYl2MLI+SsjA7WoaOAmxrpg="
-        }
-      },
-      "is_incremental": true,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/Model.Race.Position.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Model.Race.Position.html",
-          "hash": "uCNHrr2JXE9FhfMskJ737GMqSzQPbEWqzlX58AU+GGg="
-        }
-      },
-      "is_incremental": true,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/Model.Race.Race.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Model.Race.Race.html",
-          "hash": "677cTxkVJlqxUDu/tiDGwG/+CFhQvLYdJWw1l75Q6Wk="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/Model.Race.RegulateurAmure.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Model.Race.RegulateurAmure.html",
-          "hash": "RMLwFjX8P1su/wh5DbkTRwnptrASCGV17uJLe1V6Icg="
-        }
-      },
-      "is_incremental": true,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/Model.Race.WayPoint.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Model.Race.WayPoint.html",
-          "hash": "ou0J+WoUgqtjYks1U+4pF88qHDc4xlzqVFjygyXy0pY="
-        }
-      },
-      "is_incremental": true,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/Model.Race.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Model.Race.html",
-          "hash": "NA6ErfhmJRN9b8PJvEyb43gFIbaDJleamtYY0h7voqg="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
       "source_relative_path": "api/Model.RaceModel.yml",
       "output": {
         ".html": {
           "relative_path": "api/Model.RaceModel.html",
-          "hash": "lnjh9sRi/X3OP+oP3LmoVswC5EB8Q9mKAaGa13bxKB4="
+          "hash": "9PSXmZ2T2p8fW83mIPC4YMik2nSc1YO9cAMl5GkpGNw="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -324,7 +180,151 @@
           "hash": "x1zYvtQja0bqJqEKQvzlZJeAR+rVMWgc7IFKix38Fu4="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PRace.Boat.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PRace.Boat.html",
+          "hash": "lnf7i7I2CRtHDSD41A+C2BP9LjI4O/shl+IAi9R1CI8="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PRace.Clock.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PRace.Clock.html",
+          "hash": "iXxHA9wjodExxR2/P6bUv7lhJYUy1arcUofCbvdR/A8="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PRace.Competitor.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PRace.Competitor.html",
+          "hash": "BkfRtNi9owDn6hcD7nLcm7tWfIdwSAcIXbY1D87UTlc="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PRace.DegreeIncrement.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PRace.DegreeIncrement.html",
+          "hash": "pdEGE4ZM319DZ83pay7MP2EjoeVO1KRRtTJL+TtROmE="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PRace.Mode.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PRace.Mode.html",
+          "hash": "gvK9ANxDiiVrlZ2hXd760cibTdOp5pBqx0GnVq//JL0="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PRace.ModeCommande.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PRace.ModeCommande.html",
+          "hash": "MhLkOugFuKRWafkhRvUEFZGN8CGt5OJ9ySshZfotH+w="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PRace.Polaire.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PRace.Polaire.html",
+          "hash": "vq4hr1E8Z3NWLfc7JbPLExiDPz1pqchUTWsJc7Uij9I="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PRace.Position.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PRace.Position.html",
+          "hash": "wxbt/y1e8/yvjUmY7tVBJiDrbaqwMUH4EUFvpNE2/ug="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PRace.Race.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PRace.Race.html",
+          "hash": "GV3E2ARtNV7uQnmUcOas/WIw4vOu0im0tIl0MgqpCzY="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PRace.RegulateurAmure.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PRace.RegulateurAmure.html",
+          "hash": "s/mSBLJ9UekM2n2HFnkCZpvMaYB6h9utlVhdylB64cM="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PRace.WayPoint.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PRace.WayPoint.html",
+          "hash": "hR64zCZHl7ukoVBLFNmUY/Ni8pAXwfW57qdgyj6CvdY="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PRace.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PRace.html",
+          "hash": "sM0vS95VbzkiUMHmMlzWRq4WlV4EzC1L0veqRKlMtA8="
+        }
+      },
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -333,7 +333,7 @@
       "output": {
         ".html": {
           "relative_path": "api/SimpleSimulator.AquitisionCommunication.Trame.Sender.html",
-          "hash": "zaa+NHkpRykoYN59/JYBpy3Cv5vuHUp86CQEw5Tm6ko="
+          "hash": "ZPoW4Th3c05fJnI63DnOKGlEO1bgSFj3yVoXoWJbCJM="
         }
       },
       "is_incremental": true,
@@ -345,7 +345,7 @@
       "output": {
         ".html": {
           "relative_path": "api/SimpleSimulator.AquitisionCommunication.Trame.TrameMWV.html",
-          "hash": "2seqky0Rq24Vb9h9hKuN3A9iLBqpoxZQVZPwRAoBVoA="
+          "hash": "Dfg9fYrHHgSCwqi5Dfjt80zeWnx3r5ei64QAS+Xgb7I="
         }
       },
       "is_incremental": true,
@@ -357,7 +357,7 @@
       "output": {
         ".html": {
           "relative_path": "api/SimpleSimulator.AquitisionCommunication.Trame.TrameNMEA.html",
-          "hash": "vHOvQg2uGgJ+rfxmym7pwcbVgLUc+VOw0QqIWrQiuGg="
+          "hash": "fVd6RcSoI1lZxBmWyQ6mAAgPWfUBWBGmwlpSZ4hazAU="
         }
       },
       "is_incremental": true,
@@ -369,7 +369,7 @@
       "output": {
         ".html": {
           "relative_path": "api/SimpleSimulator.AquitisionCommunication.Trame.TrameRMC.html",
-          "hash": "rxqCAz3UB3m3cxGynaCuBkfx+AsEhqmbYUqitZfKw1E="
+          "hash": "2WwwSwfLKZAmAGxXMFdlZi/iNpVbBL5RWVV2y3eVXJg="
         }
       },
       "is_incremental": true,
@@ -381,7 +381,7 @@
       "output": {
         ".html": {
           "relative_path": "api/SimpleSimulator.AquitisionCommunication.Trame.TrameRSA.html",
-          "hash": "tBmL1UTvIogRCVes+9BeHFMULSwK/Rml8L2j1ZCmYkg="
+          "hash": "YmWOb51GXJXnzibkppqT+GLEBObw6CJIQMRyKccrokY="
         }
       },
       "is_incremental": true,
@@ -393,7 +393,7 @@
       "output": {
         ".html": {
           "relative_path": "api/SimpleSimulator.AquitisionCommunication.Trame.TrameVDM.html",
-          "hash": "gG6KRVuCusjOtMEVfJHHfigYLhBXKRJ4udlx5uFTbRo="
+          "hash": "Jb689TsZDQZtpHyxe3cQIVtDh7oMyOzI4LvTx5hnf28="
         }
       },
       "is_incremental": true,
@@ -405,7 +405,7 @@
       "output": {
         ".html": {
           "relative_path": "api/SimpleSimulator.AquitisionCommunication.Trame.TrameVHW.html",
-          "hash": "uMkPZjh0GYyGCbKpEhGBZ58NdxPiuqw4YRWUywkm+tE="
+          "hash": "VPsCSEDqSm7pxnyONhmsmWJe8UhkRpl4zKc1+QCHJZY="
         }
       },
       "is_incremental": true,
@@ -417,7 +417,7 @@
       "output": {
         ".html": {
           "relative_path": "api/SimpleSimulator.AquitisionCommunication.Trame.TrameXDR.html",
-          "hash": "oTOT+CIWdFwVqbIyVbyXitEiyZuFXjECkjWTP6M30Fg="
+          "hash": "edmyefrsSg+rFCgqgM+xejadRBVSfMyzT00iDrkU6Gs="
         }
       },
       "is_incremental": true,
@@ -429,7 +429,7 @@
       "output": {
         ".html": {
           "relative_path": "api/SimpleSimulator.AquitisionCommunication.Trame.XDRSub.html",
-          "hash": "2HKUx7xIc0dN2rFnt4tvV4D9VueOfASdTVeq5NVMCgs="
+          "hash": "+cvfpC0HsC1nIs+UbN8HIUcQeqR5XESPkgB72c1kfxI="
         }
       },
       "is_incremental": true,
@@ -465,7 +465,7 @@
       "output": {
         ".html": {
           "relative_path": "api/physicSimulator.physics_simulator.html",
-          "hash": "5ZHZ79vQ5hUouIIrD7Woi0iZhI0ptOpgK7h3YMOJ6f0="
+          "hash": "UkpnTs7Xa2jKKR23DuDWviF3zNuOXII1hgAhwrbU9EY="
         }
       },
       "is_incremental": true,
@@ -489,7 +489,7 @@
       "output": {
         ".html": {
           "relative_path": "api/toc.html",
-          "hash": "wwO/6mL7fF3Ii0IkjaSvvbmIxvY+OUn2KDroNaB+uBE="
+          "hash": "LxrPLA8bDfqo5MlDjwvAzUMEryysNpna+7y2UeGh3l4="
         }
       },
       "is_incremental": false,
@@ -563,7 +563,7 @@
           "can_incremental": true,
           "incrementalPhase": "build",
           "total_file_count": 39,
-          "skipped_file_count": 36
+          "skipped_file_count": 39
         },
         "TocDocumentProcessor": {
           "can_incremental": false,

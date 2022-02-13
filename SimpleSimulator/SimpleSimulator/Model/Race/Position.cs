@@ -4,7 +4,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 
-namespace Model.Race
+namespace PRace
 {
     public class Position {
 
@@ -39,5 +39,20 @@ namespace Model.Race
             return this.latitude;
         }
 
+        public float GetLatitudeAngle()
+        {
+            return latitude * MathF.PI / 180;
+        }
+
+        public float GetLongitudeAngle()
+        {
+            return longitude * 2 * MathF.PI / 360;
+        }
+
+        public override string ToString()
+        {
+            string s = "Position:[ long:" + Convert.ToString(longitude) + "; lat:" + Convert.ToString(latitude) + "]";
+            return s;
+        }
     }
 }

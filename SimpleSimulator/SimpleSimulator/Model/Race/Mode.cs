@@ -1,5 +1,5 @@
 
-namespace Model.Race
+namespace PRace
 {
     public enum Mode {
         Entrainement,

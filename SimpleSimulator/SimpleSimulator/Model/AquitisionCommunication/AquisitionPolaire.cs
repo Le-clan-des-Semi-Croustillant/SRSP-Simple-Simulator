@@ -33,8 +33,6 @@ namespace AquitisionCommunication
             foreach (string ligne in file)
             {
                 List<string> filei = ligne.Split('\t').ToList().Where(x => x != "").ToList();
-                Console.WriteLine(filei);
-                Console.WriteLine(speed);
                 Dictionary<float, float> dictAngle = new Dictionary<float, float>();
                 foreach (int j in seq)
                 {

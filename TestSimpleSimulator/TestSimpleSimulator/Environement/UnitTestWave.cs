@@ -18,10 +18,10 @@ namespace TestEnvironement
         public void TestUpdate()
         {
             var wave = new Wave();
-            wave.Update(1, 1, 1);
+            wave.Update(1, 2, -1);
             Assert.AreEqual(wave.GetDirection(), 1);
-            Assert.AreEqual(wave.GetAmplitude(), 1);
-            Assert.AreEqual(wave.GetWaveLength(), 1);
+            Assert.AreEqual(wave.GetAmplitude(), 2);
+            Assert.AreEqual(wave.GetWaveLength(), -1);
         }
     }
 }

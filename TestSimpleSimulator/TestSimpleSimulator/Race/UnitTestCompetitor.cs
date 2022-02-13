@@ -1,5 +1,5 @@
 using Microsoft.VisualStudio.TestTools.UnitTesting;
-using Race;
+using PRace;
 namespace TestRace
 {
     [TestClass]

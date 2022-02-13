@@ -4,20 +4,13 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 
-namespace Model.Race
+namespace PRace
 {
-    public class MyBoat {
+    public class Boat {
 
-        public MyBoat(int id, List<Polaire> polaires, Position pos)
+        public Boat()
         {
-            this.id = id;
-            this.allPolaire = polaires;
-            this.currentPolaire = null;
-            this.pos = pos;
-            this.simPhy = new physicSimulator.physics_simulator();
             this.regulateurAmure = new RegulateurAmure();
-
-
         }
 
         private int id;
@@ -34,7 +27,14 @@ namespace Model.Race
 
         private Position pos;
 
-        private physicSimulator.physics_simulator simPhy;
+
+        public void init(int id, List<Polaire> polaires, Position pos)
+        {
+            this.id = id;
+            this.allPolaire = polaires;
+            this.currentPolaire = null;
+            this.pos = pos;
+        }
 
         public int GetId()
         {
@@ -102,12 +102,9 @@ namespace Model.Race
             // TODO implement here
         }
 
-        public void nextPosition() {
-            this.simPhy.ComputePhysique();
-        }
-
-        public Polaire getcurrentPolaire() {
-            return this.currentPolaire;
+        public void SetAvailablePolaire(List<Polaire> listPolaire)
+        {
+            this.allPolaire = listPolaire;
         }
 
         public List<Polaire> getAvailablePolaire()

@@ -1,8 +1,6 @@
 ﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
-using Race;
+using PRace;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
 
 namespace TestRace
 {
@@ -23,17 +21,18 @@ namespace TestRace
             listpolaire.Add(pol2);
             listpolaire.Add(pol3);
             Position pos = new Position(12, 15);
-            MyBoat boat = new MyBoat(12, listpolaire, pos);
-            boat.SetPolaire("");
-            Assert.AreEqual(boat.getcurrentPolaire().getName(), "");
-            boat.SetPolaire("Pol1");
-            Assert.AreEqual(boat.getcurrentPolaire().getName(), "Pol1");
-            boat.SetPolaire("Pol2");
-            Assert.AreEqual(boat.getcurrentPolaire().getName(), "Pol2");
-            boat.SetPolaire("Pol3");
-            Assert.AreEqual(boat.getcurrentPolaire().getName(), "Pol3");
-            boat.SetPolaire("");
-            Assert.AreEqual(boat.getcurrentPolaire().getName(), "");
+            Boat boat = new Boat();
+            boat.init(12, listpolaire, pos);
+            boat.SetCurrentPolaire("");
+            Assert.AreEqual(boat.GetCurrentPolaire().getName(), "");
+            boat.SetCurrentPolaire("Pol1");
+            Assert.AreEqual(boat.GetCurrentPolaire().getName(), "Pol1");
+            boat.SetCurrentPolaire("Pol2");
+            Assert.AreEqual(boat.GetCurrentPolaire().getName(), "Pol2");
+            boat.SetCurrentPolaire("Pol3");
+            Assert.AreEqual(boat.GetCurrentPolaire().getName(), "Pol3");
+            boat.SetCurrentPolaire("");
+            Assert.AreEqual(boat.GetCurrentPolaire().getName(), "");
         }
 
         [TestMethod]
@@ -46,7 +45,8 @@ namespace TestRace
             listpolaire.Add(pol);
             listpolaire.Add(pol1);
             Position pos = new Position(12, 15);
-            MyBoat boat = new MyBoat(12, listpolaire, pos);
+            Boat boat = new Boat();
+            boat.init(12, listpolaire, pos);
             Assert.AreEqual(boat.getCap(), 0);
             boat.IncrementerCap(ModeCommande.cap, DegreeIncrement.One);
             Assert.AreEqual(boat.getCap(), 1);

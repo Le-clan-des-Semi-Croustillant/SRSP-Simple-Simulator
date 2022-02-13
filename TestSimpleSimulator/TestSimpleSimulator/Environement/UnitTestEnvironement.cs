@@ -54,7 +54,7 @@ namespace TestEnvironement
             var env = new Environement.Environment();
             env.UpdateWave(24.9F, 17, 19);
             var envState = env.getEnvState();
-            float[] exp = { 0, 0, 0, 0, 24.9F, 17, 19 };
+            float[] exp = { 0, 0, 0, 0, 19, 24.9F, 17 };
 
             bool test = true;
             float val;
@@ -76,7 +76,7 @@ namespace TestEnvironement
             var env = new Environement.Environment();
             env.UpdateWind(17, 24.9F);
             var envState = env.getEnvState();
-            float[] exp = { 17, 24.9F, 0, 0, 0, 0, 0};
+            float[] exp = { 24.9F, 17, 0, 0, 0, 0, 0};
 
             bool test = true;
             float val;

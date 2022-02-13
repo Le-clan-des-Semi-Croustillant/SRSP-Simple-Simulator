@@ -18,9 +18,9 @@ namespace TestEnvironement
         public void TestUpdate()
         {
             var current = new Current();
-            current.Update(1, 1);
+            current.Update(1, 8);
             Assert.AreEqual(current.GetCurrentSpeed(), 1);
-            Assert.AreEqual(current.GetCurrentDirection(), 1);
+            Assert.AreEqual(current.GetCurrentDirection(), 8);
         }
 
     }

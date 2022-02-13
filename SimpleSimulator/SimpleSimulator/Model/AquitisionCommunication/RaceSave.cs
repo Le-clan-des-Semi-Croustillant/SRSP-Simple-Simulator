@@ -4,7 +4,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using Newtonsoft.Json;
-using Model.Race;
+using PRace;
 
 namespace AquitisionCommunication
 {
@@ -51,7 +51,7 @@ namespace AquitisionCommunication
             return jrace;
         }
 
-        public void Update(Model.Race.Race race)
+        public void Update(PRace.Race race)
         {
             jrace.RaceId = race.GetId();
             jrace.RaceTime = race.GetCurrentInstant();
@@ -61,7 +61,14 @@ namespace AquitisionCommunication
             {
                 jrace.polFiles.Add(pol.getName());
             }
-            jrace.currentPol = race.GetCurrentPolaire().getName();
+            if (race.GetCurrentPolaire() == null)
+            {
+                jrace.currentPol = null;
+            }
+            else
+            {
+                jrace.currentPol = race.GetCurrentPolaire().getName();
+            }
             (jrace.longitude, jrace.latitude) = race.GetPosition();
         }
 

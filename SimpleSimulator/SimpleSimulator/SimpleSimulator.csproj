@@ -7,7 +7,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Folder Include="Modele\AquitisionCommunication\Communication\" />
+    <Folder Include="Model\AquitisionCommunication\Communication\" />
   </ItemGroup>
 
   <ItemGroup>

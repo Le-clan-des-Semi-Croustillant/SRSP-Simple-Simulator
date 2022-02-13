@@ -4,14 +4,16 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 
-namespace Model.Race
+namespace PRace
 {
     public class Race {
 
         public Race(Mode mode, AquitisionCommunication.RaceSave.JsonRace jrace = null) {
             this.env = new Environement.Environment();
-            this.physics = new physicSimulator.physics_simulator();
             this.clock = new Clock(this);
+            this.boat = new Boat();
+            this.physics = new physicSimulator.physics_simulator();
+            this.physics.init(this.env, this.boat);
             switch (mode)
             {
                 case Mode.Entrainement:
@@ -30,7 +32,7 @@ namespace Model.Race
                 this.wayPoints = new List<WayPoint>();
                 Position pos = new Position(jrace.longitude, jrace.latitude);
                 List<Polaire> pols = MultiplePolaireAssimilation(jrace.polFiles);
-                this.boat = new MyBoat(jrace.BoatId, pols, pos);
+                this.boat.init(jrace.BoatId, pols, pos);
                 this.boat.SetCurrentPolaire(jrace.currentPol);
                 this.boat.setCap(jrace.BoatCap);
                 this.physics.SetAccelerationFactor(jrace.accelerationFactor);
@@ -42,7 +44,8 @@ namespace Model.Race
                 this.wayPoints = new List<WayPoint>();
                 Position pos = new Position(0, 0);
                 List<Polaire> pols = new List<Polaire>();
-                this.boat = new MyBoat(1, pols, pos);
+                this.boat = new Boat();
+                this.boat.init(1, pols, pos);
                 this.boat.setCap(0);
                 this.physics.SetAccelerationFactor(0);
                 this.clock.SetCurrentMoment(new DateTime());
@@ -57,7 +60,7 @@ namespace Model.Race
 
         private Environement.Environment env;
 
-        private MyBoat boat;
+        private Boat boat;
 
         private physicSimulator.physics_simulator physics;
 
@@ -138,7 +141,7 @@ namespace Model.Race
             }
         }
 
-        public MyBoat GetBoat()
+        public Boat GetBoat()
         {
             return this.boat;
         }
@@ -191,7 +194,8 @@ namespace Model.Race
         }
 
         public void nextIteration() {
-            // TODO implement here
+            this.physics.Move();
+            Console.Write(boat.GetPosition().ToString());
         }
 
         public bool GetisPause()

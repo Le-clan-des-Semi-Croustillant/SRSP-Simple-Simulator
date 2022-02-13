@@ -4,7 +4,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 
-namespace Model.Race
+namespace PRace
 {
     public class Polaire {
 
@@ -51,27 +51,27 @@ namespace Model.Race
         /// @param int WindSpeed 
         /// @param int angle
         /// </summary>
-        public float getSpeed(float WindSpeed, float angle) {
-            float[] WindSpeedKey = new float[this.pol.Count];
+        public float getSpeed(float angle, float WindSpeed) {
+            float[] AngleKey = new float[this.pol.Count];
             int i = 0;
             foreach (float key in this.pol.Keys) {
-                WindSpeedKey[i] = key;
+                AngleKey[i] = key;
                 i++;
             }
-            var approxWS = GetNearest(WindSpeedKey, WindSpeed);
-            Dictionary<float, float> angleDict = new Dictionary<float, float>();
-            this.pol.TryGetValue(approxWS, out angleDict);
+            var approxAngle = GetNearest(AngleKey, angle);
+            Dictionary<float, float> SpeedDict = new Dictionary<float, float>();
+            this.pol.TryGetValue(approxAngle, out SpeedDict);
 
-            float[] angleKey = new float[angleDict.Count];
+            float[] speedKey = new float[SpeedDict.Count];
             i = 0;
-            foreach (float key in angleDict.Keys)
+            foreach (float key in SpeedDict.Keys)
             {
-                angleKey[i] = key;
+                speedKey[i] = key;
                 i++;
             }
-            var approxAngle = GetNearest(angleKey, angle);
+            var approxSpeed = GetNearest(speedKey, WindSpeed);
             float speed = 0;
-            angleDict.TryGetValue(approxAngle, out speed);
+            SpeedDict.TryGetValue(approxSpeed, out speed);
             return speed;
 
         }

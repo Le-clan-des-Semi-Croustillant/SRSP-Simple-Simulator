@@ -1,4 +1,4 @@
-namespace Model.Race
+namespace PRace
 {
     public enum ModeCommande {
         cap,
