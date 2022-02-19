@@ -17,9 +17,9 @@ namespace PRace
 
         private int tickSpeed = 200;
 
-        private bool run = true;
+        private bool run = false;
 
-        private bool IsPause = false;
+        private bool IsPause = true;
 
         private bool iterationOk = false;
 
@@ -52,6 +52,7 @@ namespace PRace
 
         public void nextIteration()
         {
+            race.nextIteration();
             iterationOk = true;
             race.nextIteration();
         }

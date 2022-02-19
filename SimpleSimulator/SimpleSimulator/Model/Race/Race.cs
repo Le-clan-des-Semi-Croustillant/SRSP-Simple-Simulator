@@ -90,6 +90,7 @@ namespace PRace
             }
             return allPol;
         }
+
         public int GetId()
         {
             return id;
@@ -103,6 +104,11 @@ namespace PRace
         public List<WayPoint> GetWayPoint()
         {
             return wayPoints;
+        }
+
+        public Environement.Environment GetEnvironment()
+        {
+            return env;
         }
 
         public Polaire GetCurrentPolaire()
@@ -146,7 +152,7 @@ namespace PRace
             return this.boat;
         }
 
-        public (float,float) GetPosition()
+        public (float longitude,float latitude) GetPosition()
         {
             Position pos = this.boat.GetPosition();
             return (pos.GetLongitude(), pos.GetLatitude());
@@ -201,6 +207,18 @@ namespace PRace
         public bool GetisPause()
         {
             return clock.GetIsPause();
+        }
+
+        public List<float> GetBoatStatus()
+        {
+            List<float> status = new List<float>();
+            (float lon, float lat) pos = GetPosition();
+            status.Add(pos.lon);
+            status.Add(pos.lat);
+            status.Add(GetBoatCap());
+            status.Add(physics.GetCOG());
+            status.Add(physics.GetCOG());
+            return status;
         }
 
     }

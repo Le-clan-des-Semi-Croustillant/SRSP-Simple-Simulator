@@ -161,11 +161,23 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/Model.BoatInfo.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Model.BoatInfo.html",
+          "hash": "HQPZYmT0EPRMM0hkR2Y57+w5ToNegOBhyCQwuWHKvOk="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/Model.RaceModel.yml",
       "output": {
         ".html": {
           "relative_path": "api/Model.RaceModel.html",
-          "hash": "9PSXmZ2T2p8fW83mIPC4YMik2nSc1YO9cAMl5GkpGNw="
+          "hash": "p1LLqnawHvjDpy5fkhy9VIjH1o3Iks1lWT8OkvQT5ms="
         }
       },
       "is_incremental": true,
@@ -177,10 +189,10 @@
       "output": {
         ".html": {
           "relative_path": "api/Model.html",
-          "hash": "x1zYvtQja0bqJqEKQvzlZJeAR+rVMWgc7IFKix38Fu4="
+          "hash": "hP/weUkE84a3+07shWu/y56enUAelhDR59dPrhjW/vI="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -189,7 +201,7 @@
       "output": {
         ".html": {
           "relative_path": "api/PRace.Boat.html",
-          "hash": "lnf7i7I2CRtHDSD41A+C2BP9LjI4O/shl+IAi9R1CI8="
+          "hash": "aBJIb570JhyINzyOu2pMXuylteZyuyUgMaSj7X5IIQU="
         }
       },
       "is_incremental": true,
@@ -201,7 +213,7 @@
       "output": {
         ".html": {
           "relative_path": "api/PRace.Clock.html",
-          "hash": "iXxHA9wjodExxR2/P6bUv7lhJYUy1arcUofCbvdR/A8="
+          "hash": "wI638X77XyXUFPbNMc1E/HaYuq1McQP/w6W7tqJY/jg="
         }
       },
       "is_incremental": true,
@@ -285,7 +297,7 @@
       "output": {
         ".html": {
           "relative_path": "api/PRace.Race.html",
-          "hash": "GV3E2ARtNV7uQnmUcOas/WIw4vOu0im0tIl0MgqpCzY="
+          "hash": "u0HzUwMDD1CIr0/KMSrs3ASkwWwG5/5PuDsccuMxv4k="
         }
       },
       "is_incremental": true,
@@ -465,7 +477,7 @@
       "output": {
         ".html": {
           "relative_path": "api/physicSimulator.physics_simulator.html",
-          "hash": "UkpnTs7Xa2jKKR23DuDWviF3zNuOXII1hgAhwrbU9EY="
+          "hash": "11M7mdt//rwGdhb9VCnXiBqkrjUkOTsZKdjyen93+O8="
         }
       },
       "is_incremental": true,
@@ -489,7 +501,7 @@
       "output": {
         ".html": {
           "relative_path": "api/toc.html",
-          "hash": "LxrPLA8bDfqo5MlDjwvAzUMEryysNpna+7y2UeGh3l4="
+          "hash": "U2o7bWmeYqKDB3yC6T/Yu1rTVcoxRq4SNFECF5ZY350="
         }
       },
       "is_incremental": false,
@@ -562,7 +574,7 @@
         "ManagedReferenceDocumentProcessor": {
           "can_incremental": true,
           "incrementalPhase": "build",
-          "total_file_count": 39,
+          "total_file_count": 40,
           "skipped_file_count": 39
         },
         "TocDocumentProcessor": {

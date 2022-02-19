@@ -11,6 +11,7 @@ namespace PRace
         public Boat()
         {
             this.regulateurAmure = new RegulateurAmure();
+            this.pos = new Position(0,0);
         }
 
         private int id;

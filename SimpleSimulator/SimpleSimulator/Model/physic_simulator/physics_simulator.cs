@@ -17,9 +17,13 @@ namespace physicSimulator{
 
         private float accFactor;
 
-        private float deltat = 1;
+        private float deltat = 0;
 
         private float radius = 6371000F;
+
+        private float COG = 0;
+
+        private float SOG = 0;
 
 
         public void init(Environement.Environment env, PRace.Boat boat)
@@ -42,6 +46,8 @@ namespace physicSimulator{
             this.boat = boat;
         }
 
+
+
         public void Move()
         {
             Dictionary<Environement.Conditions, float> envState = env.getEnvState();
@@ -51,12 +57,35 @@ namespace physicSimulator{
             envState.TryGetValue(Environement.Conditions.WindSpeed, out ws);
             envState.TryGetValue(Environement.Conditions.WindDirection, out wd);
             (float x,float y) step = nextStep(ws, wd, cs, cd);
+            (SOG, COG) = CalculateAngle(step);
             if (step.x != 0 || step.y != 0)
             {
                 (float teta, float phi, float cap) modif = projectionOnSphere(step);
                 boat.setCap(modif.cap);
                 boat.GetPosition().Update(modif.phi / (MathF.PI*2) * 360, modif.teta/ MathF.PI * 180);
             }
+        }
+
+        private (float norm, float angle) CalculateAngle((float x, float y) vect)
+        {
+            float angle;
+            float norm = CalculateNorm(vect.x, vect.y);
+            if (norm == 0){
+                return (0,0);
+            }
+            float costw = dot(1, 0, vect.x, vect.y) / norm;
+            float sintw = CrossProductNorm(1, 0, vect.x, vect.y) / norm;
+
+            if (sintw >= 0)
+            {
+                angle = MathF.Acos(costw);
+            }
+            else
+            {
+                angle = MathF.Acos(costw) + MathF.PI;
+            }
+
+            return (norm, angle);
         }
 
         private (float x, float y) nextStep(float ws, float wd, float cs, float cd)
@@ -82,9 +111,9 @@ namespace physicSimulator{
             }
 
             (float x, float y) trueWindVector = (windVector.x - currentVector.x, windVector.y - currentVector.y);
-            float twNorm = norm(trueWindVector.x, trueWindVector.y);
+            float twNorm = CalculateNorm(trueWindVector.x, trueWindVector.y);
 
-            if (twNorm == 0)
+            if (twNorm == 0 || boat.GetCurrentPolaire() == null)
             {
                 nextStep = (currentVector.x, currentVector.y);
 
@@ -97,11 +126,11 @@ namespace physicSimulator{
 
                 if (sintw >= 0)
                 {
-                    dirtw = MathF.Acosh(costw);
+                    dirtw = MathF.Acos(costw);
                 }
                 else
                 {
-                    dirtw = MathF.Acosh(costw) + MathF.PI;
+                    dirtw = MathF.Acos(costw) + MathF.PI;
                 }
                 dirtw = dirtw / (2 * MathF.PI) * 360;
 
@@ -130,7 +159,7 @@ namespace physicSimulator{
         private (float teta, float phi, float cap) projectionOnSphere((float x, float y) step)
         {
             float dphi, phi;
-            float stepNorm = norm(step.x, step.y);
+            float stepNorm = CalculateNorm(step.x, step.y);
             float sinstep = CrossProductNorm(1, 0, step.x, step.y) / stepNorm;
             float dteta = dot(1, 0, step.x, step.y) / radius;
             float radiusTeta = (radius * MathF.Sin(boat.GetPosition().GetLatitudeAngle()));
@@ -167,9 +196,19 @@ namespace physicSimulator{
             return (MathF.Abs(z));
         }
 
-        private float norm(float x, float y)
+        private float CalculateNorm(float x, float y)
         {
             return MathF.Sqrt(x * x + y * y);
+        }
+
+        public float GetCOG()
+        {
+            return COG;
+        }
+
+        public float GetSOG()
+        {
+            return SOG;
         }
     }
 }

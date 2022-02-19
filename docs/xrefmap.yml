@@ -770,6 +770,42 @@ references:
   commentId: N:Model
   fullName: Model
   nameWithType: Model
+- uid: Model.BoatInfo
+  name: BoatInfo
+  href: api/Model.BoatInfo.html
+  commentId: T:Model.BoatInfo
+  fullName: Model.BoatInfo
+  nameWithType: BoatInfo
+- uid: Model.BoatInfo.Cap
+  name: Cap
+  href: api/Model.BoatInfo.html#Model_BoatInfo_Cap
+  commentId: F:Model.BoatInfo.Cap
+  fullName: Model.BoatInfo.Cap
+  nameWithType: BoatInfo.Cap
+- uid: Model.BoatInfo.COG
+  name: COG
+  href: api/Model.BoatInfo.html#Model_BoatInfo_COG
+  commentId: F:Model.BoatInfo.COG
+  fullName: Model.BoatInfo.COG
+  nameWithType: BoatInfo.COG
+- uid: Model.BoatInfo.Latitude
+  name: Latitude
+  href: api/Model.BoatInfo.html#Model_BoatInfo_Latitude
+  commentId: F:Model.BoatInfo.Latitude
+  fullName: Model.BoatInfo.Latitude
+  nameWithType: BoatInfo.Latitude
+- uid: Model.BoatInfo.Longitude
+  name: Longitude
+  href: api/Model.BoatInfo.html#Model_BoatInfo_Longitude
+  commentId: F:Model.BoatInfo.Longitude
+  fullName: Model.BoatInfo.Longitude
+  nameWithType: BoatInfo.Longitude
+- uid: Model.BoatInfo.SOG
+  name: SOG
+  href: api/Model.BoatInfo.html#Model_BoatInfo_SOG
+  commentId: F:Model.BoatInfo.SOG
+  fullName: Model.BoatInfo.SOG
+  nameWithType: BoatInfo.SOG
 - uid: Model.RaceModel
   name: RaceModel
   href: api/Model.RaceModel.html
@@ -821,6 +857,19 @@ references:
   isSpec: "True"
   fullName: Model.RaceModel.AskMode
   nameWithType: RaceModel.AskMode
+- uid: Model.RaceModel.GetBoatStatus
+  name: GetBoatStatus()
+  href: api/Model.RaceModel.html#Model_RaceModel_GetBoatStatus
+  commentId: M:Model.RaceModel.GetBoatStatus
+  fullName: Model.RaceModel.GetBoatStatus()
+  nameWithType: RaceModel.GetBoatStatus()
+- uid: Model.RaceModel.GetBoatStatus*
+  name: GetBoatStatus
+  href: api/Model.RaceModel.html#Model_RaceModel_GetBoatStatus_
+  commentId: Overload:Model.RaceModel.GetBoatStatus
+  isSpec: "True"
+  fullName: Model.RaceModel.GetBoatStatus
+  nameWithType: RaceModel.GetBoatStatus
 - uid: Model.RaceModel.GetRace
   name: GetRace()
   href: api/Model.RaceModel.html#Model_RaceModel_GetRace
@@ -911,6 +960,32 @@ references:
   isSpec: "True"
   fullName: physicSimulator.physics_simulator.ComputePhysique
   nameWithType: physics_simulator.ComputePhysique
+- uid: physicSimulator.physics_simulator.GetCOG
+  name: GetCOG()
+  href: api/physicSimulator.physics_simulator.html#physicSimulator_physics_simulator_GetCOG
+  commentId: M:physicSimulator.physics_simulator.GetCOG
+  fullName: physicSimulator.physics_simulator.GetCOG()
+  nameWithType: physics_simulator.GetCOG()
+- uid: physicSimulator.physics_simulator.GetCOG*
+  name: GetCOG
+  href: api/physicSimulator.physics_simulator.html#physicSimulator_physics_simulator_GetCOG_
+  commentId: Overload:physicSimulator.physics_simulator.GetCOG
+  isSpec: "True"
+  fullName: physicSimulator.physics_simulator.GetCOG
+  nameWithType: physics_simulator.GetCOG
+- uid: physicSimulator.physics_simulator.GetSOG
+  name: GetSOG()
+  href: api/physicSimulator.physics_simulator.html#physicSimulator_physics_simulator_GetSOG
+  commentId: M:physicSimulator.physics_simulator.GetSOG
+  fullName: physicSimulator.physics_simulator.GetSOG()
+  nameWithType: physics_simulator.GetSOG()
+- uid: physicSimulator.physics_simulator.GetSOG*
+  name: GetSOG
+  href: api/physicSimulator.physics_simulator.html#physicSimulator_physics_simulator_GetSOG_
+  commentId: Overload:physicSimulator.physics_simulator.GetSOG
+  isSpec: "True"
+  fullName: physicSimulator.physics_simulator.GetSOG
+  nameWithType: physics_simulator.GetSOG
 - uid: physicSimulator.physics_simulator.init(Environement.Environment,PRace.Boat)
   name: init(Environment, Boat)
   href: api/physicSimulator.physics_simulator.html#physicSimulator_physics_simulator_init_Environement_Environment_PRace_Boat_
@@ -1715,6 +1790,19 @@ references:
   isSpec: "True"
   fullName: PRace.Race.GetBoatId
   nameWithType: Race.GetBoatId
+- uid: PRace.Race.GetBoatStatus
+  name: GetBoatStatus()
+  href: api/PRace.Race.html#PRace_Race_GetBoatStatus
+  commentId: M:PRace.Race.GetBoatStatus
+  fullName: PRace.Race.GetBoatStatus()
+  nameWithType: Race.GetBoatStatus()
+- uid: PRace.Race.GetBoatStatus*
+  name: GetBoatStatus
+  href: api/PRace.Race.html#PRace_Race_GetBoatStatus_
+  commentId: Overload:PRace.Race.GetBoatStatus
+  isSpec: "True"
+  fullName: PRace.Race.GetBoatStatus
+  nameWithType: Race.GetBoatStatus
 - uid: PRace.Race.GetCompetitors
   name: GetCompetitors()
   href: api/PRace.Race.html#PRace_Race_GetCompetitors
@@ -1754,6 +1842,19 @@ references:
   isSpec: "True"
   fullName: PRace.Race.GetCurrentPolaire
   nameWithType: Race.GetCurrentPolaire
+- uid: PRace.Race.GetEnvironment
+  name: GetEnvironment()
+  href: api/PRace.Race.html#PRace_Race_GetEnvironment
+  commentId: M:PRace.Race.GetEnvironment
+  fullName: PRace.Race.GetEnvironment()
+  nameWithType: Race.GetEnvironment()
+- uid: PRace.Race.GetEnvironment*
+  name: GetEnvironment
+  href: api/PRace.Race.html#PRace_Race_GetEnvironment_
+  commentId: Overload:PRace.Race.GetEnvironment
+  isSpec: "True"
+  fullName: PRace.Race.GetEnvironment
+  nameWithType: Race.GetEnvironment
 - uid: PRace.Race.GetId
   name: GetId()
   href: api/PRace.Race.html#PRace_Race_GetId

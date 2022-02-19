@@ -19,7 +19,6 @@ namespace Model
             {
                 race = new PRace.Race(this.mode);// to change to be chosen by the user
             }
-            race.Run();
         }
         public RaceModel(string path)
         {
@@ -34,7 +33,6 @@ namespace Model
             {
                 race = new PRace.Race(this.mode);
             }
-            race.Run();
         }
 
         private string savePath = null;
@@ -83,6 +81,18 @@ namespace Model
             this.race.Pause();
         }
 
+        public Dictionary<BoatInfo, float> GetBoatStatus()
+        {
+            Dictionary<BoatInfo, float> status = new Dictionary<BoatInfo, float>();
+            List<float> values = race.GetBoatStatus();
+            status.Add(BoatInfo.Longitude, values.ElementAt(0));
+            status.Add(BoatInfo.Latitude, values.ElementAt(1));
+            status.Add(BoatInfo.Cap, values.ElementAt(2));
+            status.Add(BoatInfo.COG, values.ElementAt(3));
+            status.Add(BoatInfo.SOG, values.ElementAt(4));
+
+            return status;
+        }
 
 
 

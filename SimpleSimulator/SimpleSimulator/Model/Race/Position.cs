@@ -13,9 +13,9 @@ namespace PRace
             this.longitude = longitude;
         }
 
-        private float latitude;
+        private float latitude = 0;
 
-        private float longitude;
+        private float longitude = 0;
 
 
 
