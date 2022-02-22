@@ -8,14 +8,14 @@ namespace PRace
 {
     public class Position {
 
-        public Position(float longitude, float latitude) {
+        public Position(double longitude, double latitude) {
             this.latitude = latitude;
             this.longitude = longitude;
         }
 
-        private float latitude = 0;
+        private double latitude = 0;
 
-        private float longitude = 0;
+        private double longitude = 0;
 
 
 
@@ -24,27 +24,27 @@ namespace PRace
         /// @param float latitude 
         /// @param float longitude
         /// </summary>
-        public void Update(float longitude, float latitude) {
+        public void Update(double longitude, double latitude) {
             this.longitude=longitude;
             this.latitude=latitude;
         }
 
-        public float GetLongitude()
+        public double GetLongitude()
         {
             return this.longitude;
         }
 
-        public float GetLatitude()
+        public double GetLatitude()
         {
             return this.latitude;
         }
 
-        public float GetLatitudeAngle()
+        public double GetLatitudeAngle()
         {
             return latitude * MathF.PI / 180;
         }
 
-        public float GetLongitudeAngle()
+        public double GetLongitudeAngle()
         {
             return longitude * 2 * MathF.PI / 360;
         }

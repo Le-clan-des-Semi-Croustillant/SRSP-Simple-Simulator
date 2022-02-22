@@ -44,7 +44,6 @@ namespace PRace
                 this.wayPoints = new List<WayPoint>();
                 Position pos = new Position(0, 0);
                 List<Polaire> pols = new List<Polaire>();
-                this.boat = new Boat();
                 this.boat.init(1, pols, pos);
                 this.boat.setCap(0);
                 this.physics.SetAccelerationFactor(0);
@@ -152,7 +151,7 @@ namespace PRace
             return this.boat;
         }
 
-        public (float longitude,float latitude) GetPosition()
+        public (double longitude, double latitude) GetPosition()
         {
             Position pos = this.boat.GetPosition();
             return (pos.GetLongitude(), pos.GetLatitude());
@@ -201,7 +200,7 @@ namespace PRace
 
         public void nextIteration() {
             this.physics.Move();
-            Console.Write(boat.GetPosition().ToString());
+            Console.WriteLine(boat.GetPosition().ToString());
         }
 
         public bool GetisPause()
@@ -209,10 +208,10 @@ namespace PRace
             return clock.GetIsPause();
         }
 
-        public List<float> GetBoatStatus()
+        public List<double> GetBoatStatus()
         {
-            List<float> status = new List<float>();
-            (float lon, float lat) pos = GetPosition();
+            List<double> status = new List<double>();
+            (double lon, double lat) pos = GetPosition();
             status.Add(pos.lon);
             status.Add(pos.lat);
             status.Add(GetBoatCap());

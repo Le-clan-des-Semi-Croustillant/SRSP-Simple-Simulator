@@ -74,17 +74,17 @@ namespace Model
         public void Run()
         {
             this.race.Run();
-        } 
+         } 
 
         public void Pause()
         {
             this.race.Pause();
         }
 
-        public Dictionary<BoatInfo, float> GetBoatStatus()
+        public Dictionary<BoatInfo, double> GetBoatStatus()
         {
-            Dictionary<BoatInfo, float> status = new Dictionary<BoatInfo, float>();
-            List<float> values = race.GetBoatStatus();
+            Dictionary<BoatInfo, double> status = new Dictionary<BoatInfo, double>();
+            List<double> values = race.GetBoatStatus();
             status.Add(BoatInfo.Longitude, values.ElementAt(0));
             status.Add(BoatInfo.Latitude, values.ElementAt(1));
             status.Add(BoatInfo.Cap, values.ElementAt(2));

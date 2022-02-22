@@ -13,15 +13,5 @@ namespace TestEnvironement
             Assert.AreEqual(wind.GetWindDirection(), 0);
             Assert.AreEqual(wind.GetWindSpeed(), 0);
         }
-
-        [TestMethod]
-        public void TestUpdate()
-        {
-            var wind = new Wind();
-            wind.Update(1, 5);
-            Assert.AreEqual(wind.GetWindSpeed(), 1);
-            Assert.AreEqual(wind.GetWindDirection(), 5);
-        }
-
     }
 }

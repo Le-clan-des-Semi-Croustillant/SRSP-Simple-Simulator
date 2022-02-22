@@ -1,11 +1,5 @@
-
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using Model;
-
-namespace physicSimulator{
+namespace physicSimulator
+{
     public class physics_simulator {
 
         public physics_simulator() {
@@ -32,9 +26,6 @@ namespace physicSimulator{
             this.boat = boat;
         }
 
-        public void ComputePhysique() {
-            // TODO implement here
-        }
 
         public void SetAccelerationFactor(float acc)
         {
@@ -46,7 +37,16 @@ namespace physicSimulator{
             this.boat = boat;
         }
 
-
+        public double MathMod(double a, double b)
+        {
+            int integerPart = (int) (a/b);
+            double mod = a - integerPart*b;
+            if (a*b < 0)
+            {
+                mod = mod + b;
+            }
+            return mod;
+        }
 
         public void Move()
         {
@@ -60,7 +60,7 @@ namespace physicSimulator{
             (SOG, COG) = CalculateAngle(step);
             if (step.x != 0 || step.y != 0)
             {
-                (float teta, float phi, float cap) modif = projectionOnSphere(step);
+                (double teta, double phi, float cap) modif = projectionOnSphere(step);
                 boat.setCap(modif.cap);
                 boat.GetPosition().Update(modif.phi / (MathF.PI*2) * 360, modif.teta/ MathF.PI * 180);
             }
@@ -134,7 +134,7 @@ namespace physicSimulator{
                 }
                 dirtw = dirtw / (2 * MathF.PI) * 360;
 
-                windAngle = (boat.getCap() - dirtw) % 360;
+                windAngle = (float)MathMod((boat.getCap() - dirtw), 360);
                 if (windAngle == 0)
                 {
                     windAngle = 180;
@@ -145,7 +145,8 @@ namespace physicSimulator{
                 }
                 else
                 {
-                    windAngle = (windAngle * (windAngle - 180 / MathF.Abs(windAngle - 180))) % 180;
+                    windAngle = windAngle - 180;
+                    windAngle = (MathF.Abs(windAngle) + 180) % 180;
                 }
                 float capInRad = boat.getCap()/360*2*MathF.PI;
                 (float x, float y) capVector = (MathF.Cos(capInRad), MathF.Sin(capInRad)); 
@@ -156,13 +157,12 @@ namespace physicSimulator{
             return nextStep;
         }
 
-        private (float teta, float phi, float cap) projectionOnSphere((float x, float y) step)
+        private (double teta, double phi, float cap) projectionOnSphere((float x, float y) step)
         {
-            float dphi, phi;
+            double dphi, phi, dteta, teta;
             float stepNorm = CalculateNorm(step.x, step.y);
-            float sinstep = CrossProductNorm(1, 0, step.x, step.y) / stepNorm;
-            float dteta = dot(1, 0, step.x, step.y) / radius;
-            float radiusTeta = (radius * MathF.Sin(boat.GetPosition().GetLatitudeAngle()));
+            dteta = dot(1, 0, step.x, step.y) / radius;
+            double radiusTeta = (radius * Math.Sin(boat.GetPosition().GetLatitudeAngle()));
             if (radiusTeta == 0)
             {
                 dphi = 0;
@@ -171,16 +171,16 @@ namespace physicSimulator{
                 dphi = CrossProductNorm(1, 0, step.x, step.y) / radiusTeta;
             }
             float cap = boat.getCap();
-            float teta = boat.GetPosition().GetLatitudeAngle() + dteta;
-            if (teta != teta % MathF.PI)
+            teta = boat.GetPosition().GetLatitudeAngle() + dteta;
+            if (teta != MathMod(teta, MathF.PI))
             {
-                teta = -(teta % MathF.PI) + MathF.PI;
+                teta = MathMod(- teta, MathF.PI);
                 cap = cap + 180;
-                phi = ( boat.GetPosition().GetLongitudeAngle() + MathF.PI - dphi ) % MathF.PI;
+                phi = MathMod( (boat.GetPosition().GetLongitudeAngle() + MathF.PI - dphi), MathF.PI);
             }
             else
             {
-                phi = boat.GetPosition().GetLongitudeAngle() + dphi;
+                phi = MathMod( (boat.GetPosition().GetLongitudeAngle() + dphi), MathF.PI);
             }
             return (teta, phi, cap);
         }

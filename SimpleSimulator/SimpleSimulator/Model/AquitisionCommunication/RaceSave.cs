@@ -33,8 +33,8 @@ namespace AquitisionCommunication
             public List<string> polFiles = new List<string>(); 
             public int BoatId = 1;
             public float BoatCap = 0F;
-            public float longitude = 0F;
-            public float latitude = 0F;
+            public double longitude = 0F;
+            public double latitude = 0F;
             public float accelerationFactor = 1;
 
             

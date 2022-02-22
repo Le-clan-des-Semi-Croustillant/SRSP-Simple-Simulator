@@ -52,12 +52,12 @@ references:
   isSpec: "True"
   fullName: AquitisionCommunication.Aquisition.change_Env
   nameWithType: Aquisition.change_Env
-- uid: AquitisionCommunication.Aquisition.sentPosition(System.Int32,System.Single,System.Single)
-  name: sentPosition(Int32, Single, Single)
-  href: api/AquitisionCommunication.Aquisition.html#AquitisionCommunication_Aquisition_sentPosition_System_Int32_System_Single_System_Single_
-  commentId: M:AquitisionCommunication.Aquisition.sentPosition(System.Int32,System.Single,System.Single)
-  fullName: AquitisionCommunication.Aquisition.sentPosition(System.Int32, System.Single, System.Single)
-  nameWithType: Aquisition.sentPosition(Int32, Single, Single)
+- uid: AquitisionCommunication.Aquisition.sentPosition(System.Int32,System.Double,System.Double)
+  name: sentPosition(Int32, Double, Double)
+  href: api/AquitisionCommunication.Aquisition.html#AquitisionCommunication_Aquisition_sentPosition_System_Int32_System_Double_System_Double_
+  commentId: M:AquitisionCommunication.Aquisition.sentPosition(System.Int32,System.Double,System.Double)
+  fullName: AquitisionCommunication.Aquisition.sentPosition(System.Int32, System.Double, System.Double)
+  nameWithType: Aquisition.sentPosition(Int32, Double, Double)
 - uid: AquitisionCommunication.Aquisition.sentPosition*
   name: sentPosition
   href: api/AquitisionCommunication.Aquisition.html#AquitisionCommunication_Aquisition_sentPosition_
@@ -947,19 +947,6 @@ references:
   isSpec: "True"
   fullName: physicSimulator.physics_simulator.physics_simulator
   nameWithType: physics_simulator.physics_simulator
-- uid: physicSimulator.physics_simulator.ComputePhysique
-  name: ComputePhysique()
-  href: api/physicSimulator.physics_simulator.html#physicSimulator_physics_simulator_ComputePhysique
-  commentId: M:physicSimulator.physics_simulator.ComputePhysique
-  fullName: physicSimulator.physics_simulator.ComputePhysique()
-  nameWithType: physics_simulator.ComputePhysique()
-- uid: physicSimulator.physics_simulator.ComputePhysique*
-  name: ComputePhysique
-  href: api/physicSimulator.physics_simulator.html#physicSimulator_physics_simulator_ComputePhysique_
-  commentId: Overload:physicSimulator.physics_simulator.ComputePhysique
-  isSpec: "True"
-  fullName: physicSimulator.physics_simulator.ComputePhysique
-  nameWithType: physics_simulator.ComputePhysique
 - uid: physicSimulator.physics_simulator.GetCOG
   name: GetCOG()
   href: api/physicSimulator.physics_simulator.html#physicSimulator_physics_simulator_GetCOG
@@ -999,6 +986,19 @@ references:
   isSpec: "True"
   fullName: physicSimulator.physics_simulator.init
   nameWithType: physics_simulator.init
+- uid: physicSimulator.physics_simulator.MathMod(System.Double,System.Double)
+  name: MathMod(Double, Double)
+  href: api/physicSimulator.physics_simulator.html#physicSimulator_physics_simulator_MathMod_System_Double_System_Double_
+  commentId: M:physicSimulator.physics_simulator.MathMod(System.Double,System.Double)
+  fullName: physicSimulator.physics_simulator.MathMod(System.Double, System.Double)
+  nameWithType: physics_simulator.MathMod(Double, Double)
+- uid: physicSimulator.physics_simulator.MathMod*
+  name: MathMod
+  href: api/physicSimulator.physics_simulator.html#physicSimulator_physics_simulator_MathMod_
+  commentId: Overload:physicSimulator.physics_simulator.MathMod
+  isSpec: "True"
+  fullName: physicSimulator.physics_simulator.MathMod
+  nameWithType: physics_simulator.MathMod
 - uid: physicSimulator.physics_simulator.Move
   name: Move()
   href: api/physicSimulator.physics_simulator.html#physicSimulator_physics_simulator_Move
@@ -1612,12 +1612,12 @@ references:
   commentId: T:PRace.Position
   fullName: PRace.Position
   nameWithType: Position
-- uid: PRace.Position.#ctor(System.Single,System.Single)
-  name: Position(Single, Single)
-  href: api/PRace.Position.html#PRace_Position__ctor_System_Single_System_Single_
-  commentId: M:PRace.Position.#ctor(System.Single,System.Single)
-  fullName: PRace.Position.Position(System.Single, System.Single)
-  nameWithType: Position.Position(Single, Single)
+- uid: PRace.Position.#ctor(System.Double,System.Double)
+  name: Position(Double, Double)
+  href: api/PRace.Position.html#PRace_Position__ctor_System_Double_System_Double_
+  commentId: M:PRace.Position.#ctor(System.Double,System.Double)
+  fullName: PRace.Position.Position(System.Double, System.Double)
+  nameWithType: Position.Position(Double, Double)
 - uid: PRace.Position.#ctor*
   name: Position
   href: api/PRace.Position.html#PRace_Position__ctor_
@@ -1690,12 +1690,12 @@ references:
   isSpec: "True"
   fullName: PRace.Position.ToString
   nameWithType: Position.ToString
-- uid: PRace.Position.Update(System.Single,System.Single)
-  name: Update(Single, Single)
-  href: api/PRace.Position.html#PRace_Position_Update_System_Single_System_Single_
-  commentId: M:PRace.Position.Update(System.Single,System.Single)
-  fullName: PRace.Position.Update(System.Single, System.Single)
-  nameWithType: Position.Update(Single, Single)
+- uid: PRace.Position.Update(System.Double,System.Double)
+  name: Update(Double, Double)
+  href: api/PRace.Position.html#PRace_Position_Update_System_Double_System_Double_
+  commentId: M:PRace.Position.Update(System.Double,System.Double)
+  fullName: PRace.Position.Update(System.Double, System.Double)
+  nameWithType: Position.Update(Double, Double)
 - uid: PRace.Position.Update*
   name: Update
   href: api/PRace.Position.html#PRace_Position_Update_

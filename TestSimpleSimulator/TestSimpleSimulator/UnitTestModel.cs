@@ -26,7 +26,7 @@ namespace TestModel
             float[] exp = { 0, 0, 0, 0, 0};
 
             bool test = true;
-            float val;
+            double val;
             int i = 0;
 
             var infos = Enum.GetValues(typeof(BoatInfo));
@@ -49,7 +49,7 @@ namespace TestModel
             float[] exp = { 42, 14, 75, 0, 0 };
 
             bool test = true;
-            float val;
+            double val;
             int i = 0;
 
             var infos = Enum.GetValues(typeof(BoatInfo));
