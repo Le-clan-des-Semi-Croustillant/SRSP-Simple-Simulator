@@ -9,11 +9,12 @@ namespace PRace
     public class Race {
 
         public Race(Mode mode, AquitisionCommunication.RaceSave.JsonRace jrace = null) {
+            AccFactor acc = new AccFactor();
+            this.accFactor = acc;
             this.env = new Environement.Environment();
-            this.clock = new Clock(this);
+            this.clock = new Clock(this, acc);
             this.boat = new Boat();
-            this.physics = new physicSimulator.physics_simulator();
-            this.physics.init(this.env, this.boat);
+            this.physics = new physicSimulator.physics_simulator(env,boat,acc);
             switch (mode)
             {
                 case Mode.Entrainement:
@@ -35,18 +36,18 @@ namespace PRace
                 this.boat.init(jrace.BoatId, pols, pos);
                 this.boat.SetCurrentPolaire(jrace.currentPol);
                 this.boat.setCap(jrace.BoatCap);
-                this.physics.SetAccelerationFactor(jrace.accelerationFactor);
+                this.accFactor.SetAccFactor(jrace.accelerationFactor);
                 this.clock.SetCurrentMoment(jrace.RaceTime);
             }
             else
             {
                 this.id = 1;
                 this.wayPoints = new List<WayPoint>();
-                Position pos = new Position(0, 0);
+                Position pos = new Position(0, 90);
                 List<Polaire> pols = new List<Polaire>();
                 this.boat.init(1, pols, pos);
                 this.boat.setCap(0);
-                this.physics.SetAccelerationFactor(0);
+                this.accFactor.SetAccFactor(1);
                 this.clock.SetCurrentMoment(new DateTime());
 
             }
@@ -57,18 +58,20 @@ namespace PRace
 
         private Mode mode;
 
+        private AquitisionCommunication.Aquisition myAquisition;
+
+        private physicSimulator.physics_simulator physics;
+
+        private Clock clock;
+
+        private AccFactor accFactor;
+
         private Environement.Environment env;
 
         private Boat boat;
 
-        private physicSimulator.physics_simulator physics;
-
         private List<WayPoint> wayPoints;
 
-        private AquitisionCommunication.Aquisition myAquisition;
-
-        private Clock clock;
-        
         private List<Competitor> competitors;
 
         private Polaire PolaireAssimilation(string path, AquitisionCommunication.AquisitionPolaire acq)
@@ -134,6 +137,16 @@ namespace PRace
             return this.competitors;
         }
 
+        public void SetAccFactor(float acc)
+        {
+            this.accFactor.SetAccFactor(acc);
+        }
+
+        public float GetAccFactor()
+        {
+            return accFactor.GetAccFactorValue();
+        }
+
         public void SetCompetitors(List<int> id, List<float> latitude, List<float> longitude)
         {
             competitors = new List<Competitor>();
@@ -184,7 +197,7 @@ namespace PRace
         /// @param int AccFac
         /// </summary>
         public void setacceleratorFactor(int AccFac) {
-            this.physics.SetAccelerationFactor(AccFac);
+            this.accFactor.SetAccFactor(AccFac);
         }
 
 

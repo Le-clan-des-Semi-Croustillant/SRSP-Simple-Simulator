@@ -9,11 +9,14 @@ namespace PRace
 {
     public class Clock {
 
-        public Clock(Race race) {
+        public Clock(Race race, AccFactor accFactor) {
             this.race = race;
+            this.accFactor = accFactor;
         }
 
         private DateTime currentMoment;
+
+        private AccFactor accFactor;
 
         private int tickSpeed = 200;
 

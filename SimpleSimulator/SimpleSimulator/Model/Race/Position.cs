@@ -54,5 +54,22 @@ namespace PRace
             string s = "Position:[ long:" + Convert.ToString(longitude) + "; lat:" + Convert.ToString(latitude) + "]";
             return s;
         }
+
+        public override bool Equals(Object o)
+        {
+            if (o is null)
+            {
+                return false;
+            }
+            else if (this.GetType() != o.GetType())
+            {
+                return false;
+            }
+            else
+            {
+                Position pos = (Position)o;
+                return pos.latitude == this.latitude && pos.longitude == this.longitude;
+            }
+        }
     }
 }

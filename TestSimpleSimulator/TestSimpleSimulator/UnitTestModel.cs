@@ -23,7 +23,7 @@ namespace TestModel
             RaceModel model = new RaceModel(null);
             var status = model.GetBoatStatus();
 
-            float[] exp = { 0, 0, 0, 0, 0};
+            float[] exp = { 0, 90, 0, 0, 0};
 
             bool test = true;
             double val;
@@ -35,6 +35,7 @@ namespace TestModel
                 status.TryGetValue(info, out val);
                 test = (test && (val == exp[i]));
                 i++;
+                Console.WriteLine(val);
             }
             Assert.IsTrue(test);
         }

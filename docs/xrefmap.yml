@@ -934,12 +934,12 @@ references:
   commentId: T:physicSimulator.physics_simulator
   fullName: physicSimulator.physics_simulator
   nameWithType: physics_simulator
-- uid: physicSimulator.physics_simulator.#ctor
-  name: physics_simulator()
-  href: api/physicSimulator.physics_simulator.html#physicSimulator_physics_simulator__ctor
-  commentId: M:physicSimulator.physics_simulator.#ctor
-  fullName: physicSimulator.physics_simulator.physics_simulator()
-  nameWithType: physics_simulator.physics_simulator()
+- uid: physicSimulator.physics_simulator.#ctor(Environement.Environment,PRace.Boat,PRace.AccFactor)
+  name: physics_simulator(Environment, Boat, AccFactor)
+  href: api/physicSimulator.physics_simulator.html#physicSimulator_physics_simulator__ctor_Environement_Environment_PRace_Boat_PRace_AccFactor_
+  commentId: M:physicSimulator.physics_simulator.#ctor(Environement.Environment,PRace.Boat,PRace.AccFactor)
+  fullName: physicSimulator.physics_simulator.physics_simulator(Environement.Environment, PRace.Boat, PRace.AccFactor)
+  nameWithType: physics_simulator.physics_simulator(Environment, Boat, AccFactor)
 - uid: physicSimulator.physics_simulator.#ctor*
   name: physics_simulator
   href: api/physicSimulator.physics_simulator.html#physicSimulator_physics_simulator__ctor_
@@ -973,19 +973,6 @@ references:
   isSpec: "True"
   fullName: physicSimulator.physics_simulator.GetSOG
   nameWithType: physics_simulator.GetSOG
-- uid: physicSimulator.physics_simulator.init(Environement.Environment,PRace.Boat)
-  name: init(Environment, Boat)
-  href: api/physicSimulator.physics_simulator.html#physicSimulator_physics_simulator_init_Environement_Environment_PRace_Boat_
-  commentId: M:physicSimulator.physics_simulator.init(Environement.Environment,PRace.Boat)
-  fullName: physicSimulator.physics_simulator.init(Environement.Environment, PRace.Boat)
-  nameWithType: physics_simulator.init(Environment, Boat)
-- uid: physicSimulator.physics_simulator.init*
-  name: init
-  href: api/physicSimulator.physics_simulator.html#physicSimulator_physics_simulator_init_
-  commentId: Overload:physicSimulator.physics_simulator.init
-  isSpec: "True"
-  fullName: physicSimulator.physics_simulator.init
-  nameWithType: physics_simulator.init
 - uid: physicSimulator.physics_simulator.MathMod(System.Double,System.Double)
   name: MathMod(Double, Double)
   href: api/physicSimulator.physics_simulator.html#physicSimulator_physics_simulator_MathMod_System_Double_System_Double_
@@ -1012,19 +999,6 @@ references:
   isSpec: "True"
   fullName: physicSimulator.physics_simulator.Move
   nameWithType: physics_simulator.Move
-- uid: physicSimulator.physics_simulator.SetAccelerationFactor(System.Single)
-  name: SetAccelerationFactor(Single)
-  href: api/physicSimulator.physics_simulator.html#physicSimulator_physics_simulator_SetAccelerationFactor_System_Single_
-  commentId: M:physicSimulator.physics_simulator.SetAccelerationFactor(System.Single)
-  fullName: physicSimulator.physics_simulator.SetAccelerationFactor(System.Single)
-  nameWithType: physics_simulator.SetAccelerationFactor(Single)
-- uid: physicSimulator.physics_simulator.SetAccelerationFactor*
-  name: SetAccelerationFactor
-  href: api/physicSimulator.physics_simulator.html#physicSimulator_physics_simulator_SetAccelerationFactor_
-  commentId: Overload:physicSimulator.physics_simulator.SetAccelerationFactor
-  isSpec: "True"
-  fullName: physicSimulator.physics_simulator.SetAccelerationFactor
-  nameWithType: physics_simulator.SetAccelerationFactor
 - uid: physicSimulator.physics_simulator.SetBoat(PRace.Boat)
   name: SetBoat(Boat)
   href: api/physicSimulator.physics_simulator.html#physicSimulator_physics_simulator_SetBoat_PRace_Boat_
@@ -1044,6 +1018,38 @@ references:
   commentId: N:PRace
   fullName: PRace
   nameWithType: PRace
+- uid: PRace.AccFactor
+  name: AccFactor
+  href: api/PRace.AccFactor.html
+  commentId: T:PRace.AccFactor
+  fullName: PRace.AccFactor
+  nameWithType: AccFactor
+- uid: PRace.AccFactor.GetAccFactorValue
+  name: GetAccFactorValue()
+  href: api/PRace.AccFactor.html#PRace_AccFactor_GetAccFactorValue
+  commentId: M:PRace.AccFactor.GetAccFactorValue
+  fullName: PRace.AccFactor.GetAccFactorValue()
+  nameWithType: AccFactor.GetAccFactorValue()
+- uid: PRace.AccFactor.GetAccFactorValue*
+  name: GetAccFactorValue
+  href: api/PRace.AccFactor.html#PRace_AccFactor_GetAccFactorValue_
+  commentId: Overload:PRace.AccFactor.GetAccFactorValue
+  isSpec: "True"
+  fullName: PRace.AccFactor.GetAccFactorValue
+  nameWithType: AccFactor.GetAccFactorValue
+- uid: PRace.AccFactor.SetAccFactor(System.Single)
+  name: SetAccFactor(Single)
+  href: api/PRace.AccFactor.html#PRace_AccFactor_SetAccFactor_System_Single_
+  commentId: M:PRace.AccFactor.SetAccFactor(System.Single)
+  fullName: PRace.AccFactor.SetAccFactor(System.Single)
+  nameWithType: AccFactor.SetAccFactor(Single)
+- uid: PRace.AccFactor.SetAccFactor*
+  name: SetAccFactor
+  href: api/PRace.AccFactor.html#PRace_AccFactor_SetAccFactor_
+  commentId: Overload:PRace.AccFactor.SetAccFactor
+  isSpec: "True"
+  fullName: PRace.AccFactor.SetAccFactor
+  nameWithType: AccFactor.SetAccFactor
 - uid: PRace.Boat
   name: Boat
   href: api/PRace.Boat.html
@@ -1276,12 +1282,12 @@ references:
   commentId: T:PRace.Clock
   fullName: PRace.Clock
   nameWithType: Clock
-- uid: PRace.Clock.#ctor(PRace.Race)
-  name: Clock(Race)
-  href: api/PRace.Clock.html#PRace_Clock__ctor_PRace_Race_
-  commentId: M:PRace.Clock.#ctor(PRace.Race)
-  fullName: PRace.Clock.Clock(PRace.Race)
-  nameWithType: Clock.Clock(Race)
+- uid: PRace.Clock.#ctor(PRace.Race,PRace.AccFactor)
+  name: Clock(Race, AccFactor)
+  href: api/PRace.Clock.html#PRace_Clock__ctor_PRace_Race_PRace_AccFactor_
+  commentId: M:PRace.Clock.#ctor(PRace.Race,PRace.AccFactor)
+  fullName: PRace.Clock.Clock(PRace.Race, PRace.AccFactor)
+  nameWithType: Clock.Clock(Race, AccFactor)
 - uid: PRace.Clock.#ctor*
   name: Clock
   href: api/PRace.Clock.html#PRace_Clock__ctor_
@@ -1738,6 +1744,19 @@ references:
   isSpec: "True"
   fullName: PRace.Race.change_Env
   nameWithType: Race.change_Env
+- uid: PRace.Race.GetAccFactor
+  name: GetAccFactor()
+  href: api/PRace.Race.html#PRace_Race_GetAccFactor
+  commentId: M:PRace.Race.GetAccFactor
+  fullName: PRace.Race.GetAccFactor()
+  nameWithType: Race.GetAccFactor()
+- uid: PRace.Race.GetAccFactor*
+  name: GetAccFactor
+  href: api/PRace.Race.html#PRace_Race_GetAccFactor_
+  commentId: Overload:PRace.Race.GetAccFactor
+  isSpec: "True"
+  fullName: PRace.Race.GetAccFactor
+  nameWithType: Race.GetAccFactor
 - uid: PRace.Race.GetAllPolaire
   name: GetAllPolaire()
   href: api/PRace.Race.html#PRace_Race_GetAllPolaire
@@ -1985,6 +2004,19 @@ references:
   isSpec: "True"
   fullName: PRace.Race.setacceleratorFactor
   nameWithType: Race.setacceleratorFactor
+- uid: PRace.Race.SetAccFactor(System.Single)
+  name: SetAccFactor(Single)
+  href: api/PRace.Race.html#PRace_Race_SetAccFactor_System_Single_
+  commentId: M:PRace.Race.SetAccFactor(System.Single)
+  fullName: PRace.Race.SetAccFactor(System.Single)
+  nameWithType: Race.SetAccFactor(Single)
+- uid: PRace.Race.SetAccFactor*
+  name: SetAccFactor
+  href: api/PRace.Race.html#PRace_Race_SetAccFactor_
+  commentId: Overload:PRace.Race.SetAccFactor
+  isSpec: "True"
+  fullName: PRace.Race.SetAccFactor
+  nameWithType: Race.SetAccFactor
 - uid: PRace.Race.SetCompetitors(System.Collections.Generic.List{System.Int32},System.Collections.Generic.List{System.Single},System.Collections.Generic.List{System.Single})
   name: SetCompetitors(List<Int32>, List<Single>, List<Single>)
   href: api/PRace.Race.html#PRace_Race_SetCompetitors_System_Collections_Generic_List_System_Int32__System_Collections_Generic_List_System_Single__System_Collections_Generic_List_System_Single__

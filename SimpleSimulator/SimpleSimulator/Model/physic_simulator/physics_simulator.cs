@@ -2,35 +2,28 @@ namespace physicSimulator
 {
     public class physics_simulator {
 
-        public physics_simulator() {
+        public physics_simulator(Environement.Environment env, PRace.Boat boat, PRace.AccFactor accFactor)
+        {
+            this.env = env;
+            this.boat = boat;
+            this.accFactor = accFactor;
         }
-        
-        private Environement.Environment env;
+
+    private Environement.Environment env;
 
         private PRace.Boat boat;
 
-        private float accFactor;
+        private PRace.AccFactor accFactor;
 
         private float deltat = 0;
 
-        private float radius = 6371000F;
+        private float Earthradius = 6371000F;
 
         private float COG = 0;
 
         private float SOG = 0;
 
 
-        public void init(Environement.Environment env, PRace.Boat boat)
-        {
-            this.env = env;
-            this.boat = boat;
-        }
-
-
-        public void SetAccelerationFactor(float acc)
-        {
-            this.accFactor = acc;
-        }
 
         public void SetBoat(PRace.Boat boat)
         {
@@ -159,6 +152,8 @@ namespace physicSimulator
 
         private (double teta, double phi, float cap) projectionOnSphere((float x, float y) step)
         {
+
+            float radius = Earthradius / accFactor.GetAccFactorValue();
             double dphi, phi, dteta, teta;
             float stepNorm = CalculateNorm(step.x, step.y);
             dteta = dot(1, 0, step.x, step.y) / radius;
