@@ -9,7 +9,7 @@ namespace PRace
     public class Race {
 
         public Race(Mode mode, AquitisionCommunication.RaceSave.JsonRace jrace = null) {
-            AccFactor acc = new AccFactor();
+            Time acc = new Time();
             this.accFactor = acc;
             this.env = new Environement.Environment();
             this.clock = new Clock(this, acc);
@@ -64,7 +64,7 @@ namespace PRace
 
         private Clock clock;
 
-        private AccFactor accFactor;
+        private Time accFactor;
 
         private Environement.Environment env;
 
@@ -213,6 +213,7 @@ namespace PRace
 
         public void nextIteration() {
             this.physics.Move();
+            Console.WriteLine(clock.GetCurrentMoment());
             Console.WriteLine(boat.GetPosition().ToString());
         }
 

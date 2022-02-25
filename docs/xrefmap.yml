@@ -934,12 +934,12 @@ references:
   commentId: T:physicSimulator.physics_simulator
   fullName: physicSimulator.physics_simulator
   nameWithType: physics_simulator
-- uid: physicSimulator.physics_simulator.#ctor(Environement.Environment,PRace.Boat,PRace.AccFactor)
-  name: physics_simulator(Environment, Boat, AccFactor)
-  href: api/physicSimulator.physics_simulator.html#physicSimulator_physics_simulator__ctor_Environement_Environment_PRace_Boat_PRace_AccFactor_
-  commentId: M:physicSimulator.physics_simulator.#ctor(Environement.Environment,PRace.Boat,PRace.AccFactor)
-  fullName: physicSimulator.physics_simulator.physics_simulator(Environement.Environment, PRace.Boat, PRace.AccFactor)
-  nameWithType: physics_simulator.physics_simulator(Environment, Boat, AccFactor)
+- uid: physicSimulator.physics_simulator.#ctor(Environement.Environment,PRace.Boat,PRace.Time)
+  name: physics_simulator(Environment, Boat, Time)
+  href: api/physicSimulator.physics_simulator.html#physicSimulator_physics_simulator__ctor_Environement_Environment_PRace_Boat_PRace_Time_
+  commentId: M:physicSimulator.physics_simulator.#ctor(Environement.Environment,PRace.Boat,PRace.Time)
+  fullName: physicSimulator.physics_simulator.physics_simulator(Environement.Environment, PRace.Boat, PRace.Time)
+  nameWithType: physics_simulator.physics_simulator(Environment, Boat, Time)
 - uid: physicSimulator.physics_simulator.#ctor*
   name: physics_simulator
   href: api/physicSimulator.physics_simulator.html#physicSimulator_physics_simulator__ctor_
@@ -1018,38 +1018,6 @@ references:
   commentId: N:PRace
   fullName: PRace
   nameWithType: PRace
-- uid: PRace.AccFactor
-  name: AccFactor
-  href: api/PRace.AccFactor.html
-  commentId: T:PRace.AccFactor
-  fullName: PRace.AccFactor
-  nameWithType: AccFactor
-- uid: PRace.AccFactor.GetAccFactorValue
-  name: GetAccFactorValue()
-  href: api/PRace.AccFactor.html#PRace_AccFactor_GetAccFactorValue
-  commentId: M:PRace.AccFactor.GetAccFactorValue
-  fullName: PRace.AccFactor.GetAccFactorValue()
-  nameWithType: AccFactor.GetAccFactorValue()
-- uid: PRace.AccFactor.GetAccFactorValue*
-  name: GetAccFactorValue
-  href: api/PRace.AccFactor.html#PRace_AccFactor_GetAccFactorValue_
-  commentId: Overload:PRace.AccFactor.GetAccFactorValue
-  isSpec: "True"
-  fullName: PRace.AccFactor.GetAccFactorValue
-  nameWithType: AccFactor.GetAccFactorValue
-- uid: PRace.AccFactor.SetAccFactor(System.Single)
-  name: SetAccFactor(Single)
-  href: api/PRace.AccFactor.html#PRace_AccFactor_SetAccFactor_System_Single_
-  commentId: M:PRace.AccFactor.SetAccFactor(System.Single)
-  fullName: PRace.AccFactor.SetAccFactor(System.Single)
-  nameWithType: AccFactor.SetAccFactor(Single)
-- uid: PRace.AccFactor.SetAccFactor*
-  name: SetAccFactor
-  href: api/PRace.AccFactor.html#PRace_AccFactor_SetAccFactor_
-  commentId: Overload:PRace.AccFactor.SetAccFactor
-  isSpec: "True"
-  fullName: PRace.AccFactor.SetAccFactor
-  nameWithType: AccFactor.SetAccFactor
 - uid: PRace.Boat
   name: Boat
   href: api/PRace.Boat.html
@@ -1282,12 +1250,12 @@ references:
   commentId: T:PRace.Clock
   fullName: PRace.Clock
   nameWithType: Clock
-- uid: PRace.Clock.#ctor(PRace.Race,PRace.AccFactor)
-  name: Clock(Race, AccFactor)
-  href: api/PRace.Clock.html#PRace_Clock__ctor_PRace_Race_PRace_AccFactor_
-  commentId: M:PRace.Clock.#ctor(PRace.Race,PRace.AccFactor)
-  fullName: PRace.Clock.Clock(PRace.Race, PRace.AccFactor)
-  nameWithType: Clock.Clock(Race, AccFactor)
+- uid: PRace.Clock.#ctor(PRace.Race,PRace.Time)
+  name: Clock(Race, Time)
+  href: api/PRace.Clock.html#PRace_Clock__ctor_PRace_Race_PRace_Time_
+  commentId: M:PRace.Clock.#ctor(PRace.Race,PRace.Time)
+  fullName: PRace.Clock.Clock(PRace.Race, PRace.Time)
+  nameWithType: Clock.Clock(Race, Time)
 - uid: PRace.Clock.#ctor*
   name: Clock
   href: api/PRace.Clock.html#PRace_Clock__ctor_
@@ -1334,6 +1302,19 @@ references:
   isSpec: "True"
   fullName: PRace.Clock.GetIsPause
   nameWithType: Clock.GetIsPause
+- uid: PRace.Clock.IncrementTime
+  name: IncrementTime()
+  href: api/PRace.Clock.html#PRace_Clock_IncrementTime
+  commentId: M:PRace.Clock.IncrementTime
+  fullName: PRace.Clock.IncrementTime()
+  nameWithType: Clock.IncrementTime()
+- uid: PRace.Clock.IncrementTime*
+  name: IncrementTime
+  href: api/PRace.Clock.html#PRace_Clock_IncrementTime_
+  commentId: Overload:PRace.Clock.IncrementTime
+  isSpec: "True"
+  fullName: PRace.Clock.IncrementTime
+  nameWithType: Clock.IncrementTime
 - uid: PRace.Clock.nextIteration
   name: nextIteration()
   href: api/PRace.Clock.html#PRace_Clock_nextIteration
@@ -1631,6 +1612,19 @@ references:
   isSpec: "True"
   fullName: PRace.Position.Position
   nameWithType: Position.Position
+- uid: PRace.Position.Equals(System.Object)
+  name: Equals(Object)
+  href: api/PRace.Position.html#PRace_Position_Equals_System_Object_
+  commentId: M:PRace.Position.Equals(System.Object)
+  fullName: PRace.Position.Equals(System.Object)
+  nameWithType: Position.Equals(Object)
+- uid: PRace.Position.Equals*
+  name: Equals
+  href: api/PRace.Position.html#PRace_Position_Equals_
+  commentId: Overload:PRace.Position.Equals
+  isSpec: "True"
+  fullName: PRace.Position.Equals
+  nameWithType: Position.Equals
 - uid: PRace.Position.GetLatitude
   name: GetLatitude()
   href: api/PRace.Position.html#PRace_Position_GetLatitude
@@ -2107,6 +2101,64 @@ references:
   isSpec: "True"
   fullName: PRace.RegulateurAmure.Update_cap
   nameWithType: RegulateurAmure.Update_cap
+- uid: PRace.Time
+  name: Time
+  href: api/PRace.Time.html
+  commentId: T:PRace.Time
+  fullName: PRace.Time
+  nameWithType: Time
+- uid: PRace.Time.GetAccFactorValue
+  name: GetAccFactorValue()
+  href: api/PRace.Time.html#PRace_Time_GetAccFactorValue
+  commentId: M:PRace.Time.GetAccFactorValue
+  fullName: PRace.Time.GetAccFactorValue()
+  nameWithType: Time.GetAccFactorValue()
+- uid: PRace.Time.GetAccFactorValue*
+  name: GetAccFactorValue
+  href: api/PRace.Time.html#PRace_Time_GetAccFactorValue_
+  commentId: Overload:PRace.Time.GetAccFactorValue
+  isSpec: "True"
+  fullName: PRace.Time.GetAccFactorValue
+  nameWithType: Time.GetAccFactorValue
+- uid: PRace.Time.GetTickValue
+  name: GetTickValue()
+  href: api/PRace.Time.html#PRace_Time_GetTickValue
+  commentId: M:PRace.Time.GetTickValue
+  fullName: PRace.Time.GetTickValue()
+  nameWithType: Time.GetTickValue()
+- uid: PRace.Time.GetTickValue*
+  name: GetTickValue
+  href: api/PRace.Time.html#PRace_Time_GetTickValue_
+  commentId: Overload:PRace.Time.GetTickValue
+  isSpec: "True"
+  fullName: PRace.Time.GetTickValue
+  nameWithType: Time.GetTickValue
+- uid: PRace.Time.SetAccFactor(System.Single)
+  name: SetAccFactor(Single)
+  href: api/PRace.Time.html#PRace_Time_SetAccFactor_System_Single_
+  commentId: M:PRace.Time.SetAccFactor(System.Single)
+  fullName: PRace.Time.SetAccFactor(System.Single)
+  nameWithType: Time.SetAccFactor(Single)
+- uid: PRace.Time.SetAccFactor*
+  name: SetAccFactor
+  href: api/PRace.Time.html#PRace_Time_SetAccFactor_
+  commentId: Overload:PRace.Time.SetAccFactor
+  isSpec: "True"
+  fullName: PRace.Time.SetAccFactor
+  nameWithType: Time.SetAccFactor
+- uid: PRace.Time.SetTick(System.Int32)
+  name: SetTick(Int32)
+  href: api/PRace.Time.html#PRace_Time_SetTick_System_Int32_
+  commentId: M:PRace.Time.SetTick(System.Int32)
+  fullName: PRace.Time.SetTick(System.Int32)
+  nameWithType: Time.SetTick(Int32)
+- uid: PRace.Time.SetTick*
+  name: SetTick
+  href: api/PRace.Time.html#PRace_Time_SetTick_
+  commentId: Overload:PRace.Time.SetTick
+  isSpec: "True"
+  fullName: PRace.Time.SetTick
+  nameWithType: Time.SetTick
 - uid: PRace.WayPoint
   name: WayPoint
   href: api/PRace.WayPoint.html

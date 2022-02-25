@@ -2,18 +2,18 @@ namespace physicSimulator
 {
     public class physics_simulator {
 
-        public physics_simulator(Environement.Environment env, PRace.Boat boat, PRace.AccFactor accFactor)
+        public physics_simulator(Environement.Environment env, PRace.Boat boat, PRace.Time time)
         {
             this.env = env;
             this.boat = boat;
-            this.accFactor = accFactor;
+            this.time = time;
         }
 
     private Environement.Environment env;
 
         private PRace.Boat boat;
 
-        private PRace.AccFactor accFactor;
+        private PRace.Time time;
 
         private float deltat = 0;
 
@@ -147,13 +147,14 @@ namespace physicSimulator
                 float windForce = boat.GetCurrentPolaire().getSpeed(windAngle, twNorm);
                 nextStep = (currentVector.x + windForce * capVector.x , currentVector.y + windForce * capVector.y);
             }
+            nextStep = (nextStep.x * time.GetTickValue()/1000, nextStep.y * time.GetTickValue()/1000);
             return nextStep;
         }
 
         private (double teta, double phi, float cap) projectionOnSphere((float x, float y) step)
         {
 
-            float radius = Earthradius / accFactor.GetAccFactorValue();
+            float radius = Earthradius / time.GetAccFactorValue();
             double dphi, phi, dteta, teta;
             float stepNorm = CalculateNorm(step.x, step.y);
             dteta = dot(1, 0, step.x, step.y) / radius;
