@@ -19,11 +19,11 @@ namespace SimpleSimulator.AquitisionCommunication.Trame
     public class TrameRSA
     {
         public string TrameType { get; set; } = "IIRSA";
-        
-        public float BarreT { get; set; }
-        public string EtatT { get; set; }
-        public float BarreB { get; set; }
-        public string EtatB { get; set; }
+
+        public float BarreT { get; set; } = 0f;
+        public string EtatT { get; set; } = "A";
+        public float BarreB { get; set; } = 0f;
+        public string EtatB { get; set; } = "A";
         public string Controle { get; set; }
         public string Checksum(string trame)
         {

@@ -14,16 +14,16 @@ namespace SimpleSimulator.AquitisionCommunication.Trame
         public string TrameType { get; set; } = "GPRMC";
         public DateTime Heure { get; set; } = DateTime.Now;
         public string Etat { get; set; } = "A";
-        public float Latitude { get; set; }
-        public char IndicateurLatitude { get; set; }
-        public float Longitude { get; set; }
-        public char IndicateurLongitude { get; set; }
-        public float Vitesse { get; set; }
-        public float Road { get; set; }
+        public float Latitude { get; set; } = 0f;
+        public char IndicateurLatitude { get; set; } = 'N';
+        public float Longitude { get; set; } = 0f;
+        public char IndicateurLongitude { get; set; } = 'W';
+        public float Vitesse { get; set; } = 0f;
+        public float Road { get; set; } = 0f;
         public DateTime Date { get; set; } = DateTime.Now;
-        public float Magneto { get; set; }
-        public char Sens { get; set; }
-        public char Mode { get; set; }
+        public float Magneto { get; set; } = 0.0f;
+        public char Sens { get; set; } = 'W';
+        public char Mode { get; set; } = 'A';
         public string Controle { get; set; }
         public string NormalizeHeure(DateTime date)
         {

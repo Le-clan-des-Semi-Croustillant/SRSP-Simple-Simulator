@@ -10,13 +10,15 @@ namespace SimpleSimulator.AquitisionCommunication.Trame
     public class Sender
     {
         public UdpClient udpClient = new UdpClient();
-        public void Send(TrameNMEA trame, string ip, int port)
+        public string ip { get; set; }
+        public int port { get; set; }
+        public void Send(TrameNMEA trame)
         {
             Byte[] sendTrame = Encoding.ASCII.GetBytes(trame.ToString());
             Console.WriteLine("trames" + trame);
             try
             {
-                udpClient.Send(sendTrame, sendTrame.Length, ip, port);
+                udpClient.Send(sendTrame, sendTrame.Length, this.ip, this.port);
             }
             catch (Exception e)
             {

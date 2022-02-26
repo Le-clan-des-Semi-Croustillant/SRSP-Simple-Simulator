@@ -25,10 +25,10 @@ namespace SimpleSimulator.AquitisionCommunication.Trame
     public class TrameVHW
     {
         public string TrameType { get; set; } = "GPVHW";
-      
-        public float CapDegres { get; set; }
+
+        public float CapDegres { get; set; } = 0f;
         public float CapMagne { get; set; } = float.NaN;
-        public float VitBateauNoeud { get; set; }
+        public float VitBateauNoeud { get; set; } = 0f;
         public float VitBateauKm { get; set; } = float.NaN;
         public string Controle { get; set; }
       

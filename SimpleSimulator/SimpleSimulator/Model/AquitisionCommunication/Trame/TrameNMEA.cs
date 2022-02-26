@@ -9,11 +9,17 @@ namespace SimpleSimulator.AquitisionCommunication.Trame
     public class TrameNMEA
     {
         
-        TrameRMC rmc = new TrameRMC();
-        TrameMWV mwv = new TrameMWV();
-        TrameVHW vhw = new TrameVHW();
-        TrameXDR xdr = new TrameXDR();
-        TrameRSA rsa = new TrameRSA();  
+        public TrameRMC rmc = new TrameRMC();
+        public TrameMWV mwv = new TrameMWV();
+        public TrameVHW vhw = new TrameVHW();
+        public TrameXDR xdr = new TrameXDR()
+        {
+            XDRSubs = new List<XDRSub>()
+        {
+        new XDRSub{}
+        }
+        };
+        public TrameRSA rsa = new TrameRSA();  
         //TrameAIVDM à ajouter
         //TrameVDM vdm = new TrameVDM();
 
@@ -22,8 +28,6 @@ namespace SimpleSimulator.AquitisionCommunication.Trame
             return rmc.ToString() + "\n" + mwv.ToString() + "\n" +
                 vhw.ToString() + "\n" + xdr.ToString() + "\n" + rsa.ToString() + "\n"; //+ vdm.ToString() + "\n";
         }
-
-        
 
     }
 }

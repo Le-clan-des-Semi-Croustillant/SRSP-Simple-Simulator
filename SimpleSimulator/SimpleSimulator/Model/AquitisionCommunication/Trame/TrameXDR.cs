@@ -23,7 +23,7 @@ namespace SimpleSimulator.AquitisionCommunication.Trame
     public class TrameXDR
     {
         public string TrameType { get; set; } = "IIXDR";
-        public List<XDRSub> XDRSubs { get; set; }
+        public List<XDRSub> XDRSubs { get; set; } 
         public string Controle { get; set; }
         
         public string Checksum(string trame)

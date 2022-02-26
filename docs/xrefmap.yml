@@ -2254,12 +2254,38 @@ references:
   commentId: T:SimpleSimulator.AquitisionCommunication.Trame.Sender
   fullName: SimpleSimulator.AquitisionCommunication.Trame.Sender
   nameWithType: Sender
-- uid: SimpleSimulator.AquitisionCommunication.Trame.Sender.Send(SimpleSimulator.AquitisionCommunication.Trame.TrameNMEA,System.String,System.Int32)
-  name: Send(TrameNMEA, String, Int32)
-  href: api/SimpleSimulator.AquitisionCommunication.Trame.Sender.html#SimpleSimulator_AquitisionCommunication_Trame_Sender_Send_SimpleSimulator_AquitisionCommunication_Trame_TrameNMEA_System_String_System_Int32_
-  commentId: M:SimpleSimulator.AquitisionCommunication.Trame.Sender.Send(SimpleSimulator.AquitisionCommunication.Trame.TrameNMEA,System.String,System.Int32)
-  fullName: SimpleSimulator.AquitisionCommunication.Trame.Sender.Send(SimpleSimulator.AquitisionCommunication.Trame.TrameNMEA, System.String, System.Int32)
-  nameWithType: Sender.Send(TrameNMEA, String, Int32)
+- uid: SimpleSimulator.AquitisionCommunication.Trame.Sender.ip
+  name: ip
+  href: api/SimpleSimulator.AquitisionCommunication.Trame.Sender.html#SimpleSimulator_AquitisionCommunication_Trame_Sender_ip
+  commentId: P:SimpleSimulator.AquitisionCommunication.Trame.Sender.ip
+  fullName: SimpleSimulator.AquitisionCommunication.Trame.Sender.ip
+  nameWithType: Sender.ip
+- uid: SimpleSimulator.AquitisionCommunication.Trame.Sender.ip*
+  name: ip
+  href: api/SimpleSimulator.AquitisionCommunication.Trame.Sender.html#SimpleSimulator_AquitisionCommunication_Trame_Sender_ip_
+  commentId: Overload:SimpleSimulator.AquitisionCommunication.Trame.Sender.ip
+  isSpec: "True"
+  fullName: SimpleSimulator.AquitisionCommunication.Trame.Sender.ip
+  nameWithType: Sender.ip
+- uid: SimpleSimulator.AquitisionCommunication.Trame.Sender.port
+  name: port
+  href: api/SimpleSimulator.AquitisionCommunication.Trame.Sender.html#SimpleSimulator_AquitisionCommunication_Trame_Sender_port
+  commentId: P:SimpleSimulator.AquitisionCommunication.Trame.Sender.port
+  fullName: SimpleSimulator.AquitisionCommunication.Trame.Sender.port
+  nameWithType: Sender.port
+- uid: SimpleSimulator.AquitisionCommunication.Trame.Sender.port*
+  name: port
+  href: api/SimpleSimulator.AquitisionCommunication.Trame.Sender.html#SimpleSimulator_AquitisionCommunication_Trame_Sender_port_
+  commentId: Overload:SimpleSimulator.AquitisionCommunication.Trame.Sender.port
+  isSpec: "True"
+  fullName: SimpleSimulator.AquitisionCommunication.Trame.Sender.port
+  nameWithType: Sender.port
+- uid: SimpleSimulator.AquitisionCommunication.Trame.Sender.Send(SimpleSimulator.AquitisionCommunication.Trame.TrameNMEA)
+  name: Send(TrameNMEA)
+  href: api/SimpleSimulator.AquitisionCommunication.Trame.Sender.html#SimpleSimulator_AquitisionCommunication_Trame_Sender_Send_SimpleSimulator_AquitisionCommunication_Trame_TrameNMEA_
+  commentId: M:SimpleSimulator.AquitisionCommunication.Trame.Sender.Send(SimpleSimulator.AquitisionCommunication.Trame.TrameNMEA)
+  fullName: SimpleSimulator.AquitisionCommunication.Trame.Sender.Send(SimpleSimulator.AquitisionCommunication.Trame.TrameNMEA)
+  nameWithType: Sender.Send(TrameNMEA)
 - uid: SimpleSimulator.AquitisionCommunication.Trame.Sender.Send*
   name: Send
   href: api/SimpleSimulator.AquitisionCommunication.Trame.Sender.html#SimpleSimulator_AquitisionCommunication_Trame_Sender_Send_
@@ -2402,6 +2428,24 @@ references:
   commentId: T:SimpleSimulator.AquitisionCommunication.Trame.TrameNMEA
   fullName: SimpleSimulator.AquitisionCommunication.Trame.TrameNMEA
   nameWithType: TrameNMEA
+- uid: SimpleSimulator.AquitisionCommunication.Trame.TrameNMEA.mwv
+  name: mwv
+  href: api/SimpleSimulator.AquitisionCommunication.Trame.TrameNMEA.html#SimpleSimulator_AquitisionCommunication_Trame_TrameNMEA_mwv
+  commentId: F:SimpleSimulator.AquitisionCommunication.Trame.TrameNMEA.mwv
+  fullName: SimpleSimulator.AquitisionCommunication.Trame.TrameNMEA.mwv
+  nameWithType: TrameNMEA.mwv
+- uid: SimpleSimulator.AquitisionCommunication.Trame.TrameNMEA.rmc
+  name: rmc
+  href: api/SimpleSimulator.AquitisionCommunication.Trame.TrameNMEA.html#SimpleSimulator_AquitisionCommunication_Trame_TrameNMEA_rmc
+  commentId: F:SimpleSimulator.AquitisionCommunication.Trame.TrameNMEA.rmc
+  fullName: SimpleSimulator.AquitisionCommunication.Trame.TrameNMEA.rmc
+  nameWithType: TrameNMEA.rmc
+- uid: SimpleSimulator.AquitisionCommunication.Trame.TrameNMEA.rsa
+  name: rsa
+  href: api/SimpleSimulator.AquitisionCommunication.Trame.TrameNMEA.html#SimpleSimulator_AquitisionCommunication_Trame_TrameNMEA_rsa
+  commentId: F:SimpleSimulator.AquitisionCommunication.Trame.TrameNMEA.rsa
+  fullName: SimpleSimulator.AquitisionCommunication.Trame.TrameNMEA.rsa
+  nameWithType: TrameNMEA.rsa
 - uid: SimpleSimulator.AquitisionCommunication.Trame.TrameNMEA.ToString
   name: ToString()
   href: api/SimpleSimulator.AquitisionCommunication.Trame.TrameNMEA.html#SimpleSimulator_AquitisionCommunication_Trame_TrameNMEA_ToString
@@ -2415,6 +2459,18 @@ references:
   isSpec: "True"
   fullName: SimpleSimulator.AquitisionCommunication.Trame.TrameNMEA.ToString
   nameWithType: TrameNMEA.ToString
+- uid: SimpleSimulator.AquitisionCommunication.Trame.TrameNMEA.vhw
+  name: vhw
+  href: api/SimpleSimulator.AquitisionCommunication.Trame.TrameNMEA.html#SimpleSimulator_AquitisionCommunication_Trame_TrameNMEA_vhw
+  commentId: F:SimpleSimulator.AquitisionCommunication.Trame.TrameNMEA.vhw
+  fullName: SimpleSimulator.AquitisionCommunication.Trame.TrameNMEA.vhw
+  nameWithType: TrameNMEA.vhw
+- uid: SimpleSimulator.AquitisionCommunication.Trame.TrameNMEA.xdr
+  name: xdr
+  href: api/SimpleSimulator.AquitisionCommunication.Trame.TrameNMEA.html#SimpleSimulator_AquitisionCommunication_Trame_TrameNMEA_xdr
+  commentId: F:SimpleSimulator.AquitisionCommunication.Trame.TrameNMEA.xdr
+  fullName: SimpleSimulator.AquitisionCommunication.Trame.TrameNMEA.xdr
+  nameWithType: TrameNMEA.xdr
 - uid: SimpleSimulator.AquitisionCommunication.Trame.TrameRMC
   name: TrameRMC
   href: api/SimpleSimulator.AquitisionCommunication.Trame.TrameRMC.html

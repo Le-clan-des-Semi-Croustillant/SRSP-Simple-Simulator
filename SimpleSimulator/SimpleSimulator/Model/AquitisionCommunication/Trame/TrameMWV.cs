@@ -20,10 +20,10 @@ namespace SimpleSimulator.AquitisionCommunication.Trame
     public class TrameMWV
     {
         public string TrameType { get; set; } = "GPMWV";
-        public float AngleVent { get; set; }
-        public char Reference { get; set; } 
-        public float VitesseVent { get; set; }
-        public char Unite { get; set; }
+        public float AngleVent { get; set; } = 0.0f;
+        public char Reference { get; set; } = 'N';
+        public float VitesseVent { get; set; } = 0.0f;
+        public char Unite { get; set; } = 'R';
         public string Etat { get; set; } = "A";
         public string Controle { get; set; }
        

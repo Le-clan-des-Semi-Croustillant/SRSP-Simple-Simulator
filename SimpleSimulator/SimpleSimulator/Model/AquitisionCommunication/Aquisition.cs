@@ -52,7 +52,7 @@ namespace AquitisionCommunication{
         /// @param float longitude
         /// </summary>
         public void sentPosition(int id, double latitude, double longitude) {
-            // TODO implement here
+            
         }
 
     }
