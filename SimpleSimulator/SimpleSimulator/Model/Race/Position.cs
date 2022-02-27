@@ -17,7 +17,23 @@ namespace PRace
 
         private double longitude = 0;
 
+        public struct Coords
+        {
+            public Coords(char pos, int degre, int min, int sec)
+            {
+                this.pos = pos;
+                this.degre = degre;
+                this.min = min;
+                this.sec = sec;
+            }
 
+            public char pos { get; }
+            public int degre { get; }
+            public int min { get; }
+            public int sec { get; }
+
+            public override string ToString() => $"({pos}, {degre}, {min}, {sec})";
+        }
 
 
         /// <summary>
@@ -27,6 +43,57 @@ namespace PRace
         public void Update(double longitude, double latitude) {
             this.longitude=longitude;
             this.latitude=latitude;
+        }
+
+        public Coords GetCoordLat()
+        {
+            Coords coordLat;
+            char pos;
+            float lat;
+            int degre, min, sec;
+            if (latitude < 90)
+            {
+                pos = 'S';
+                lat = (float) (90.0 - latitude);
+            }
+            else
+            {
+                pos = 'N';
+                lat = (float)(latitude-90);
+            }
+            degre = (int)lat;
+            lat = (lat - degre) * 60;
+            min = (int)lat;
+            lat = (lat - min) * 60;
+            sec = (int)lat;
+            coordLat = new Coords( pos, degre, min, sec);
+            return coordLat;
+        }
+
+        public Coords GetCoordLong()
+        {
+            Coords coordLong;
+            char pos;
+            float lon;
+            int degre, min, sec;
+            if (longitude < 180)
+            {
+                pos = 'W';
+                lon = (float)longitude;
+            }
+            else
+            {
+                pos = 'E';
+                lon = (float)(longitude - 180);
+                lon = 180 - lon;
+            }
+            degre = (int)lon;
+            lon = (lon - degre) * 60;
+            min = (int)lon;
+            lon = (lon - min) * 60;
+            sec = (int)lon;
+            coordLong = new Coords(pos, degre, min, sec);
+            return coordLong;
         }
 
         public double GetLongitude()
@@ -51,7 +118,7 @@ namespace PRace
 
         public override string ToString()
         {
-            string s = "Position:[ long:" + Convert.ToString(longitude) + "; lat:" + Convert.ToString(latitude) + "]";
+            string s = "Position:[ long:" + GetCoordLong().ToString() + "; lat:" + GetCoordLat().ToString() + "]";
             return s;
         }
 

@@ -159,12 +159,12 @@ namespace physicSimulator
             float stepNorm = CalculateNorm(step.x, step.y);
             dteta = dot(1, 0, step.x, step.y) / radius;
             double radiusTeta = (radius * Math.Sin(boat.GetPosition().GetLatitudeAngle()));
-            if (radiusTeta == 0)
+            if (radiusTeta == 0 || step.y == 0)
             {
                 dphi = 0;
             }
             else {
-                dphi = CrossProductNorm(1, 0, step.x, step.y) / radiusTeta;
+                dphi = step.y / MathF.Abs(step.y) * CrossProductNorm(1, 0, step.x, step.y) / radiusTeta;
             }
             float cap = boat.getCap();
             teta = boat.GetPosition().GetLatitudeAngle() + dteta;
@@ -172,11 +172,11 @@ namespace physicSimulator
             {
                 teta = MathMod(- teta, MathF.PI);
                 cap = cap + 180;
-                phi = MathMod( (boat.GetPosition().GetLongitudeAngle() + MathF.PI - dphi), MathF.PI);
+                phi = MathMod( (boat.GetPosition().GetLongitudeAngle() + MathF.PI - dphi), 2 * MathF.PI);
             }
             else
             {
-                phi = MathMod( (boat.GetPosition().GetLongitudeAngle() + dphi), MathF.PI);
+                phi = MathMod( (boat.GetPosition().GetLongitudeAngle() + dphi), 2 * MathF.PI);
             }
             return (teta, phi, cap);
         }

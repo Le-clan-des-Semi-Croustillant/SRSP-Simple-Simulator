@@ -52,12 +52,12 @@ references:
   isSpec: "True"
   fullName: AquitisionCommunication.Aquisition.change_Env
   nameWithType: Aquisition.change_Env
-- uid: AquitisionCommunication.Aquisition.sentPosition(System.Int32,System.Double,System.Double)
-  name: sentPosition(Int32, Double, Double)
-  href: api/AquitisionCommunication.Aquisition.html#AquitisionCommunication_Aquisition_sentPosition_System_Int32_System_Double_System_Double_
-  commentId: M:AquitisionCommunication.Aquisition.sentPosition(System.Int32,System.Double,System.Double)
-  fullName: AquitisionCommunication.Aquisition.sentPosition(System.Int32, System.Double, System.Double)
-  nameWithType: Aquisition.sentPosition(Int32, Double, Double)
+- uid: AquitisionCommunication.Aquisition.sentPosition(System.Int32,PRace.Position.Coords,PRace.Position.Coords,System.DateTime)
+  name: sentPosition(Int32, Position.Coords, Position.Coords, DateTime)
+  href: api/AquitisionCommunication.Aquisition.html#AquitisionCommunication_Aquisition_sentPosition_System_Int32_PRace_Position_Coords_PRace_Position_Coords_System_DateTime_
+  commentId: M:AquitisionCommunication.Aquisition.sentPosition(System.Int32,PRace.Position.Coords,PRace.Position.Coords,System.DateTime)
+  fullName: AquitisionCommunication.Aquisition.sentPosition(System.Int32, PRace.Position.Coords, PRace.Position.Coords, System.DateTime)
+  nameWithType: Aquisition.sentPosition(Int32, Position.Coords, Position.Coords, DateTime)
 - uid: AquitisionCommunication.Aquisition.sentPosition*
   name: sentPosition
   href: api/AquitisionCommunication.Aquisition.html#AquitisionCommunication_Aquisition_sentPosition_
@@ -1612,6 +1612,90 @@ references:
   isSpec: "True"
   fullName: PRace.Position.Position
   nameWithType: Position.Position
+- uid: PRace.Position.Coords
+  name: Position.Coords
+  href: api/PRace.Position.Coords.html
+  commentId: T:PRace.Position.Coords
+  fullName: PRace.Position.Coords
+  nameWithType: Position.Coords
+- uid: PRace.Position.Coords.#ctor(System.Char,System.Int32,System.Int32,System.Int32)
+  name: Coords(Char, Int32, Int32, Int32)
+  href: api/PRace.Position.Coords.html#PRace_Position_Coords__ctor_System_Char_System_Int32_System_Int32_System_Int32_
+  commentId: M:PRace.Position.Coords.#ctor(System.Char,System.Int32,System.Int32,System.Int32)
+  fullName: PRace.Position.Coords.Coords(System.Char, System.Int32, System.Int32, System.Int32)
+  nameWithType: Position.Coords.Coords(Char, Int32, Int32, Int32)
+- uid: PRace.Position.Coords.#ctor*
+  name: Coords
+  href: api/PRace.Position.Coords.html#PRace_Position_Coords__ctor_
+  commentId: Overload:PRace.Position.Coords.#ctor
+  isSpec: "True"
+  fullName: PRace.Position.Coords.Coords
+  nameWithType: Position.Coords.Coords
+- uid: PRace.Position.Coords.degre
+  name: degre
+  href: api/PRace.Position.Coords.html#PRace_Position_Coords_degre
+  commentId: P:PRace.Position.Coords.degre
+  fullName: PRace.Position.Coords.degre
+  nameWithType: Position.Coords.degre
+- uid: PRace.Position.Coords.degre*
+  name: degre
+  href: api/PRace.Position.Coords.html#PRace_Position_Coords_degre_
+  commentId: Overload:PRace.Position.Coords.degre
+  isSpec: "True"
+  fullName: PRace.Position.Coords.degre
+  nameWithType: Position.Coords.degre
+- uid: PRace.Position.Coords.min
+  name: min
+  href: api/PRace.Position.Coords.html#PRace_Position_Coords_min
+  commentId: P:PRace.Position.Coords.min
+  fullName: PRace.Position.Coords.min
+  nameWithType: Position.Coords.min
+- uid: PRace.Position.Coords.min*
+  name: min
+  href: api/PRace.Position.Coords.html#PRace_Position_Coords_min_
+  commentId: Overload:PRace.Position.Coords.min
+  isSpec: "True"
+  fullName: PRace.Position.Coords.min
+  nameWithType: Position.Coords.min
+- uid: PRace.Position.Coords.pos
+  name: pos
+  href: api/PRace.Position.Coords.html#PRace_Position_Coords_pos
+  commentId: P:PRace.Position.Coords.pos
+  fullName: PRace.Position.Coords.pos
+  nameWithType: Position.Coords.pos
+- uid: PRace.Position.Coords.pos*
+  name: pos
+  href: api/PRace.Position.Coords.html#PRace_Position_Coords_pos_
+  commentId: Overload:PRace.Position.Coords.pos
+  isSpec: "True"
+  fullName: PRace.Position.Coords.pos
+  nameWithType: Position.Coords.pos
+- uid: PRace.Position.Coords.sec
+  name: sec
+  href: api/PRace.Position.Coords.html#PRace_Position_Coords_sec
+  commentId: P:PRace.Position.Coords.sec
+  fullName: PRace.Position.Coords.sec
+  nameWithType: Position.Coords.sec
+- uid: PRace.Position.Coords.sec*
+  name: sec
+  href: api/PRace.Position.Coords.html#PRace_Position_Coords_sec_
+  commentId: Overload:PRace.Position.Coords.sec
+  isSpec: "True"
+  fullName: PRace.Position.Coords.sec
+  nameWithType: Position.Coords.sec
+- uid: PRace.Position.Coords.ToString
+  name: ToString()
+  href: api/PRace.Position.Coords.html#PRace_Position_Coords_ToString
+  commentId: M:PRace.Position.Coords.ToString
+  fullName: PRace.Position.Coords.ToString()
+  nameWithType: Position.Coords.ToString()
+- uid: PRace.Position.Coords.ToString*
+  name: ToString
+  href: api/PRace.Position.Coords.html#PRace_Position_Coords_ToString_
+  commentId: Overload:PRace.Position.Coords.ToString
+  isSpec: "True"
+  fullName: PRace.Position.Coords.ToString
+  nameWithType: Position.Coords.ToString
 - uid: PRace.Position.Equals(System.Object)
   name: Equals(Object)
   href: api/PRace.Position.html#PRace_Position_Equals_System_Object_
@@ -1625,6 +1709,32 @@ references:
   isSpec: "True"
   fullName: PRace.Position.Equals
   nameWithType: Position.Equals
+- uid: PRace.Position.GetCoordLat
+  name: GetCoordLat()
+  href: api/PRace.Position.html#PRace_Position_GetCoordLat
+  commentId: M:PRace.Position.GetCoordLat
+  fullName: PRace.Position.GetCoordLat()
+  nameWithType: Position.GetCoordLat()
+- uid: PRace.Position.GetCoordLat*
+  name: GetCoordLat
+  href: api/PRace.Position.html#PRace_Position_GetCoordLat_
+  commentId: Overload:PRace.Position.GetCoordLat
+  isSpec: "True"
+  fullName: PRace.Position.GetCoordLat
+  nameWithType: Position.GetCoordLat
+- uid: PRace.Position.GetCoordLong
+  name: GetCoordLong()
+  href: api/PRace.Position.html#PRace_Position_GetCoordLong
+  commentId: M:PRace.Position.GetCoordLong
+  fullName: PRace.Position.GetCoordLong()
+  nameWithType: Position.GetCoordLong()
+- uid: PRace.Position.GetCoordLong*
+  name: GetCoordLong
+  href: api/PRace.Position.html#PRace_Position_GetCoordLong_
+  commentId: Overload:PRace.Position.GetCoordLong
+  isSpec: "True"
+  fullName: PRace.Position.GetCoordLong
+  nameWithType: Position.GetCoordLong
 - uid: PRace.Position.GetLatitude
   name: GetLatitude()
   href: api/PRace.Position.html#PRace_Position_GetLatitude

@@ -15,6 +15,7 @@ namespace PRace
             this.clock = new Clock(this, acc);
             this.boat = new Boat();
             this.physics = new physicSimulator.physics_simulator(env,boat,acc);
+            this.myAquisition = new AquitisionCommunication.Aquisition(this);
             switch (mode)
             {
                 case Mode.Entrainement:
@@ -186,7 +187,7 @@ namespace PRace
 
         public void sendPosition() {
             Position pos = this.boat.GetPosition();
-            this.myAquisition.sentPosition(this.boat.GetId(), pos.GetLongitude(), pos.GetLatitude());
+            this.myAquisition.sentPosition(this.boat.GetId(), pos.GetCoordLong(), pos.GetCoordLat(), clock.GetCurrentMoment());
         }
 
         public Mode getMode() {
@@ -213,6 +214,7 @@ namespace PRace
 
         public void nextIteration() {
             this.physics.Move();
+            sendPosition();
             Console.WriteLine(clock.GetCurrentMoment());
             Console.WriteLine(boat.GetPosition().ToString());
         }
