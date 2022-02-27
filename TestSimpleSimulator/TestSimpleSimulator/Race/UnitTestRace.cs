@@ -10,7 +10,7 @@ namespace TestRace
 
         public void TestSetCompetitors()
         {
-            Race race = new Race(Mode.Entrainement);
+            Race race = new Race(null, Mode.Entrainement);
             List<int> idComp = new List<int> { 1,2,3,4,5,6,7};
             List<float> longitude = new List<float> { 1, 2, 3, 4, 5, 6, 7 };
             List<float> latitude = new List<float> { 1, 2, 3, 4, 5, 6, 7 };

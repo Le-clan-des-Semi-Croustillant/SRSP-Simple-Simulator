@@ -4,34 +4,33 @@ using Newtonsoft.Json;
 namespace Model
 {
 
-    public class RaceModel
+    public class RaceModel : ISubject
     {
         public RaceModel()
         {
             AskMode();
             AskForSavePath();
-            if (savePath != null)
-            {
-                AquitisionCommunication.RaceSave acq = new AquitisionCommunication.RaceSave(savePath);
-                race = new PRace.Race(this.mode, acq.loadfile());
-            }
-            else
-            {
-                race = new PRace.Race(this.mode);// to change to be chosen by the user
-            }
+            Set_Up();
         }
         public RaceModel(string path)
         {
             AskMode();
             this.savePath = path;
+            Set_Up();
+            
+        }
+
+        private void Set_Up()
+        {
+            ListObserver = new List<IObserver>();
             if (savePath != null)
             {
                 AquitisionCommunication.RaceSave acq = new AquitisionCommunication.RaceSave(savePath);
-                race = new PRace.Race(this.mode, acq.loadfile());
+                race = new PRace.Race(this, this.mode, acq.loadfile());
             }
             else
             {
-                race = new PRace.Race(this.mode);
+                race = new PRace.Race(this, this.mode);
             }
         }
 
@@ -40,6 +39,18 @@ namespace Model
         private PRace.Race race;
 
         private PRace.Mode mode;
+
+        private List<IObserver> ListObserver;
+
+        public void Attach(IObserver obs)
+        {
+            ListObserver.Add(obs);
+        }
+
+        public void Notify()
+        {
+            ListObserver.ForEach(o => o.Update(this));
+        }
 
         public PRace.Race GetRace()
         {

@@ -806,6 +806,102 @@ references:
   commentId: F:Model.BoatInfo.SOG
   fullName: Model.BoatInfo.SOG
   nameWithType: BoatInfo.SOG
+- uid: Model.IObserver
+  name: IObserver
+  href: api/Model.IObserver.html
+  commentId: T:Model.IObserver
+  fullName: Model.IObserver
+  nameWithType: IObserver
+- uid: Model.IObserver.Update(Model.ISubject)
+  name: Update(ISubject)
+  href: api/Model.IObserver.html#Model_IObserver_Update_Model_ISubject_
+  commentId: M:Model.IObserver.Update(Model.ISubject)
+  fullName: Model.IObserver.Update(Model.ISubject)
+  nameWithType: IObserver.Update(ISubject)
+- uid: Model.IObserver.Update*
+  name: Update
+  href: api/Model.IObserver.html#Model_IObserver_Update_
+  commentId: Overload:Model.IObserver.Update
+  isSpec: "True"
+  fullName: Model.IObserver.Update
+  nameWithType: IObserver.Update
+- uid: Model.ISubject
+  name: ISubject
+  href: api/Model.ISubject.html
+  commentId: T:Model.ISubject
+  fullName: Model.ISubject
+  nameWithType: ISubject
+- uid: Model.ISubject.Attach(Model.IObserver)
+  name: Attach(IObserver)
+  href: api/Model.ISubject.html#Model_ISubject_Attach_Model_IObserver_
+  commentId: M:Model.ISubject.Attach(Model.IObserver)
+  fullName: Model.ISubject.Attach(Model.IObserver)
+  nameWithType: ISubject.Attach(IObserver)
+- uid: Model.ISubject.Attach*
+  name: Attach
+  href: api/Model.ISubject.html#Model_ISubject_Attach_
+  commentId: Overload:Model.ISubject.Attach
+  isSpec: "True"
+  fullName: Model.ISubject.Attach
+  nameWithType: ISubject.Attach
+- uid: Model.ISubject.GetBoatStatus
+  name: GetBoatStatus()
+  href: api/Model.ISubject.html#Model_ISubject_GetBoatStatus
+  commentId: M:Model.ISubject.GetBoatStatus
+  fullName: Model.ISubject.GetBoatStatus()
+  nameWithType: ISubject.GetBoatStatus()
+- uid: Model.ISubject.GetBoatStatus*
+  name: GetBoatStatus
+  href: api/Model.ISubject.html#Model_ISubject_GetBoatStatus_
+  commentId: Overload:Model.ISubject.GetBoatStatus
+  isSpec: "True"
+  fullName: Model.ISubject.GetBoatStatus
+  nameWithType: ISubject.GetBoatStatus
+- uid: Model.ISubject.Notify
+  name: Notify()
+  href: api/Model.ISubject.html#Model_ISubject_Notify
+  commentId: M:Model.ISubject.Notify
+  fullName: Model.ISubject.Notify()
+  nameWithType: ISubject.Notify()
+- uid: Model.ISubject.Notify*
+  name: Notify
+  href: api/Model.ISubject.html#Model_ISubject_Notify_
+  commentId: Overload:Model.ISubject.Notify
+  isSpec: "True"
+  fullName: Model.ISubject.Notify
+  nameWithType: ISubject.Notify
+- uid: Model.Observer
+  name: Observer
+  href: api/Model.Observer.html
+  commentId: T:Model.Observer
+  fullName: Model.Observer
+  nameWithType: Observer
+- uid: Model.Observer.#ctor
+  name: Observer()
+  href: api/Model.Observer.html#Model_Observer__ctor
+  commentId: M:Model.Observer.#ctor
+  fullName: Model.Observer.Observer()
+  nameWithType: Observer.Observer()
+- uid: Model.Observer.#ctor*
+  name: Observer
+  href: api/Model.Observer.html#Model_Observer__ctor_
+  commentId: Overload:Model.Observer.#ctor
+  isSpec: "True"
+  fullName: Model.Observer.Observer
+  nameWithType: Observer.Observer
+- uid: Model.Observer.Update(Model.ISubject)
+  name: Update(ISubject)
+  href: api/Model.Observer.html#Model_Observer_Update_Model_ISubject_
+  commentId: M:Model.Observer.Update(Model.ISubject)
+  fullName: Model.Observer.Update(Model.ISubject)
+  nameWithType: Observer.Update(ISubject)
+- uid: Model.Observer.Update*
+  name: Update
+  href: api/Model.Observer.html#Model_Observer_Update_
+  commentId: Overload:Model.Observer.Update
+  isSpec: "True"
+  fullName: Model.Observer.Update
+  nameWithType: Observer.Update
 - uid: Model.RaceModel
   name: RaceModel
   href: api/Model.RaceModel.html
@@ -857,6 +953,19 @@ references:
   isSpec: "True"
   fullName: Model.RaceModel.AskMode
   nameWithType: RaceModel.AskMode
+- uid: Model.RaceModel.Attach(Model.IObserver)
+  name: Attach(IObserver)
+  href: api/Model.RaceModel.html#Model_RaceModel_Attach_Model_IObserver_
+  commentId: M:Model.RaceModel.Attach(Model.IObserver)
+  fullName: Model.RaceModel.Attach(Model.IObserver)
+  nameWithType: RaceModel.Attach(IObserver)
+- uid: Model.RaceModel.Attach*
+  name: Attach
+  href: api/Model.RaceModel.html#Model_RaceModel_Attach_
+  commentId: Overload:Model.RaceModel.Attach
+  isSpec: "True"
+  fullName: Model.RaceModel.Attach
+  nameWithType: RaceModel.Attach
 - uid: Model.RaceModel.GetBoatStatus
   name: GetBoatStatus()
   href: api/Model.RaceModel.html#Model_RaceModel_GetBoatStatus
@@ -883,6 +992,19 @@ references:
   isSpec: "True"
   fullName: Model.RaceModel.GetRace
   nameWithType: RaceModel.GetRace
+- uid: Model.RaceModel.Notify
+  name: Notify()
+  href: api/Model.RaceModel.html#Model_RaceModel_Notify
+  commentId: M:Model.RaceModel.Notify
+  fullName: Model.RaceModel.Notify()
+  nameWithType: RaceModel.Notify()
+- uid: Model.RaceModel.Notify*
+  name: Notify
+  href: api/Model.RaceModel.html#Model_RaceModel_Notify_
+  commentId: Overload:Model.RaceModel.Notify
+  isSpec: "True"
+  fullName: Model.RaceModel.Notify
+  nameWithType: RaceModel.Notify
 - uid: Model.RaceModel.Pause
   name: Pause()
   href: api/Model.RaceModel.html#Model_RaceModel_Pause
@@ -1819,12 +1941,12 @@ references:
   commentId: T:PRace.Race
   fullName: PRace.Race
   nameWithType: Race
-- uid: PRace.Race.#ctor(PRace.Mode,AquitisionCommunication.RaceSave.JsonRace)
-  name: Race(Mode, RaceSave.JsonRace)
-  href: api/PRace.Race.html#PRace_Race__ctor_PRace_Mode_AquitisionCommunication_RaceSave_JsonRace_
-  commentId: M:PRace.Race.#ctor(PRace.Mode,AquitisionCommunication.RaceSave.JsonRace)
-  fullName: PRace.Race.Race(PRace.Mode, AquitisionCommunication.RaceSave.JsonRace)
-  nameWithType: Race.Race(Mode, RaceSave.JsonRace)
+- uid: PRace.Race.#ctor(Model.RaceModel,PRace.Mode,AquitisionCommunication.RaceSave.JsonRace)
+  name: Race(RaceModel, Mode, RaceSave.JsonRace)
+  href: api/PRace.Race.html#PRace_Race__ctor_Model_RaceModel_PRace_Mode_AquitisionCommunication_RaceSave_JsonRace_
+  commentId: M:PRace.Race.#ctor(Model.RaceModel,PRace.Mode,AquitisionCommunication.RaceSave.JsonRace)
+  fullName: PRace.Race.Race(Model.RaceModel, PRace.Mode, AquitisionCommunication.RaceSave.JsonRace)
+  nameWithType: Race.Race(RaceModel, Mode, RaceSave.JsonRace)
 - uid: PRace.Race.#ctor*
   name: Race
   href: api/PRace.Race.html#PRace_Race__ctor_

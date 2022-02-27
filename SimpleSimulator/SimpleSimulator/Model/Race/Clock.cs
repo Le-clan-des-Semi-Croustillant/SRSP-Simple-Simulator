@@ -33,7 +33,10 @@ namespace PRace
 
         public void IncrementTime()
         {
-            currentMoment = currentMoment.AddMilliseconds(accFactor.GetTickValue());
+            if (accFactor.GetAccFactorValue() != 0)
+            {
+                currentMoment = currentMoment.AddMilliseconds(accFactor.GetTickValue() * accFactor.GetAccFactorValue());
+            }
         }
 
         public void pause()

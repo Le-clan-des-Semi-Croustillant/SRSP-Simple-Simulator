@@ -78,7 +78,7 @@ namespace physicSimulator
                 angle = MathF.Acos(costw) + MathF.PI;
             }
 
-            return (norm, angle);
+            return (norm * time.GetAccFactorValue(), angle);
         }
 
         private (float x, float y) nextStep(float ws, float wd, float cs, float cd)
@@ -153,30 +153,38 @@ namespace physicSimulator
 
         private (double teta, double phi, float cap) projectionOnSphere((float x, float y) step)
         {
-
-            float radius = Earthradius / time.GetAccFactorValue();
             double dphi, phi, dteta, teta;
-            float stepNorm = CalculateNorm(step.x, step.y);
-            dteta = dot(1, 0, step.x, step.y) / radius;
-            double radiusTeta = (radius * Math.Sin(boat.GetPosition().GetLatitudeAngle()));
-            if (radiusTeta == 0 || step.y == 0)
-            {
-                dphi = 0;
-            }
-            else {
-                dphi = step.y / MathF.Abs(step.y) * CrossProductNorm(1, 0, step.x, step.y) / radiusTeta;
-            }
             float cap = boat.getCap();
-            teta = boat.GetPosition().GetLatitudeAngle() + dteta;
-            if (teta != MathMod(teta, MathF.PI))
+            if (time.GetAccFactorValue() == 0)
             {
-                teta = MathMod(- teta, MathF.PI);
-                cap = cap + 180;
-                phi = MathMod( (boat.GetPosition().GetLongitudeAngle() + MathF.PI - dphi), 2 * MathF.PI);
+                teta = 0;
+                phi = 0;
             }
             else
             {
-                phi = MathMod( (boat.GetPosition().GetLongitudeAngle() + dphi), 2 * MathF.PI);
+                float radius = Earthradius / time.GetAccFactorValue();
+                float stepNorm = CalculateNorm(step.x, step.y);
+                dteta = dot(1, 0, step.x, step.y) / radius;
+                double radiusTeta = (radius * Math.Sin(boat.GetPosition().GetLatitudeAngle()));
+                if (radiusTeta == 0 || step.y == 0)
+                {
+                    dphi = 0;
+                }
+                else
+                {
+                    dphi = step.y / MathF.Abs(step.y) * CrossProductNorm(1, 0, step.x, step.y) / radiusTeta;
+                }
+                teta = boat.GetPosition().GetLatitudeAngle() + dteta;
+                if (teta != MathMod(teta, MathF.PI))
+                {
+                    teta = MathMod(-teta, MathF.PI);
+                    cap = cap + 180;
+                    phi = MathMod((boat.GetPosition().GetLongitudeAngle() + MathF.PI - dphi), 2 * MathF.PI);
+                }
+                else
+                {
+                    phi = MathMod((boat.GetPosition().GetLongitudeAngle() + dphi), 2 * MathF.PI);
+                }
             }
             return (teta, phi, cap);
         }

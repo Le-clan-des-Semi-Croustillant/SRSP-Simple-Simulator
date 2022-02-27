@@ -173,11 +173,47 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/Model.IObserver.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Model.IObserver.html",
+          "hash": "blVa2rZRuDjkQc+LZfCPy/fEE3ng+nI8wQS3pWeoO3Q="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Model.ISubject.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Model.ISubject.html",
+          "hash": "JAFuq3nrc0ya3/dA3QmXT4co76DbFMKYQ2ddpr5Lrq4="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Model.Observer.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Model.Observer.html",
+          "hash": "9wEKZRIckccV8WvbbEnf3vDuH7uiaFK8vMeDzjGTero="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/Model.RaceModel.yml",
       "output": {
         ".html": {
           "relative_path": "api/Model.RaceModel.html",
-          "hash": "/2RHoNDZczC2cW03i1d0mjYPWAcQm7MyknHeVHFbAvM="
+          "hash": "puPlEOOnxYA95dQAQzJVpkq+0vtHJqbnwFcuJIIsOSc="
         }
       },
       "is_incremental": true,
@@ -189,7 +225,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Model.html",
-          "hash": "hP/weUkE84a3+07shWu/y56enUAelhDR59dPrhjW/vI="
+          "hash": "G2wb8ZMUhSOXJqKTDGNOrbEgZnIJLzVuEEgPpJeCmLE="
         }
       },
       "is_incremental": true,
@@ -213,10 +249,10 @@
       "output": {
         ".html": {
           "relative_path": "api/PRace.Clock.html",
-          "hash": "SFczs8NomAMalyLC+f44WuB0DINyV+1oPivFLhuC2CA="
+          "hash": "73xCvPWTm4M2sBvckwTJfLROX3FIUq4TVy9KaWoOUdE="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -309,7 +345,7 @@
       "output": {
         ".html": {
           "relative_path": "api/PRace.Race.html",
-          "hash": "YKMssbLbqXpCssWfIhTzETKWfKg9yTY8Be5+0OAgouA="
+          "hash": "86vzvfvRgkbzAamtKLDxZ+Ax0gMYiJE/Ix6eGqqDlQw="
         }
       },
       "is_incremental": true,
@@ -360,7 +396,7 @@
           "hash": "8ZBnYSdn/OYNr/SYPOKggwEzL6sfuOiOYgph1BIv/u8="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -501,7 +537,7 @@
       "output": {
         ".html": {
           "relative_path": "api/physicSimulator.physics_simulator.html",
-          "hash": "3ug29+/l3hNyxRPO1Dv1Vmm6LM+v7U9QGJKoJQLUc6o="
+          "hash": "CCbOffXe9eovZGOjCOny4p+TiZ2M6aHcRhHpd83y6HI="
         }
       },
       "is_incremental": true,
@@ -525,7 +561,7 @@
       "output": {
         ".html": {
           "relative_path": "api/toc.html",
-          "hash": "ROcbpaz0BLaJNJtUpQPKhKv+Dv0gZrPWSe8Vyze2xXU="
+          "hash": "iBOeOuGBxjMr6y0olPd7u2+sWgICKWHfZnZAxkkJ4iQ="
         }
       },
       "is_incremental": false,
@@ -598,8 +634,8 @@
         "ManagedReferenceDocumentProcessor": {
           "can_incremental": true,
           "incrementalPhase": "build",
-          "total_file_count": 42,
-          "skipped_file_count": 42
+          "total_file_count": 45,
+          "skipped_file_count": 44
         },
         "TocDocumentProcessor": {
           "can_incremental": false,

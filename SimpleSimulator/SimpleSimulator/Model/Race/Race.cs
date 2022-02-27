@@ -3,12 +3,14 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using Model;
 
 namespace PRace
 {
     public class Race {
 
-        public Race(Mode mode, AquitisionCommunication.RaceSave.JsonRace jrace = null) {
+        public Race(RaceModel model, Mode mode, AquitisionCommunication.RaceSave.JsonRace jrace = null) {
+            this.model = model;
             Time acc = new Time();
             this.accFactor = acc;
             this.env = new Environement.Environment();
@@ -56,6 +58,8 @@ namespace PRace
         }
 
         private int id = 0;
+
+        private RaceModel model;
 
         private Mode mode;
 
@@ -217,6 +221,7 @@ namespace PRace
             sendPosition();
             Console.WriteLine(clock.GetCurrentMoment());
             Console.WriteLine(boat.GetPosition().ToString());
+            model.Notify();
         }
 
         public bool GetisPause()
@@ -232,7 +237,7 @@ namespace PRace
             status.Add(pos.lat);
             status.Add(GetBoatCap());
             status.Add(physics.GetCOG());
-            status.Add(physics.GetCOG());
+            status.Add(physics.GetSOG());
             return status;
         }
 
