@@ -26,20 +26,20 @@ Vous voici maintenant capable de jouer avec l’application.
 Emplacement : au milieu bas de l’écran  
 Action : change le cap (-10, -1, +1, +10)  
 
-![Alt text](/images/change-cap.png)
+![Alt text](~/images/change-cap.png)
 
 
 ### Champ "Set factor of acceleration" :
 Emplacement : en bas à gauche.  
 Action : après appuyer sur le bouton “ok”, change le facteur d’accélération par la valeur entrée dans le champ associé. (par défaut celui-ci est à 1)  
 
-![Alt text](/images/factor-of-acceleration.png)
+![Alt text](~/images/factor-of-acceleration.png)
 
 
 ### Champ configuration environnement :
 Action : après appuis sur le bouton “ok, change l’environnement par les valeurs entrée dans les champs associés. (sont à 0 par défaut)  
 
-![Alt text](/images/configuration-environnement.png)
+![Alt text](~/images/configuration-environnement.png)
 
 
 ## Bandeau menu
