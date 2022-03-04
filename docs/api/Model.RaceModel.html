@@ -106,6 +106,15 @@
                         </ul>  </li>
                     <li class="">
                       <span class="expand-stub"></span>
+                      <a href="Controller.html" title="Controller" class="">Controller</a>
+                        
+                        <ul class="nav level2">
+                          <li class="">
+                            <a href="Controller.Follow.html" title="Follow" class="">Follow</a>
+                          </li>
+                        </ul>  </li>
+                    <li class="">
+                      <span class="expand-stub"></span>
                       <a href="Environement.html" title="Environement" class="">Environement</a>
                         
                         <ul class="nav level2">
@@ -132,6 +141,15 @@
                         <ul class="nav level2">
                           <li class="">
                             <a href="Model.BoatInfo.html" title="BoatInfo" class="">BoatInfo</a>
+                          </li>
+                          <li class="">
+                            <a href="Model.IObserver.html" title="IObserver" class="">IObserver</a>
+                          </li>
+                          <li class="">
+                            <a href="Model.ISubject.html" title="ISubject" class="">ISubject</a>
+                          </li>
+                          <li class="">
+                            <a href="Model.Observer.html" title="Observer" class="">Observer</a>
                           </li>
                           <li class="active">
                             <a href="Model.RaceModel.html" title="RaceModel" class="active">RaceModel</a>
@@ -174,6 +192,9 @@
                           </li>
                           <li class="">
                             <a href="PRace.Position.html" title="Position" class="">Position</a>
+                          </li>
+                          <li class="">
+                            <a href="PRace.Position.Coords.html" title="Position.Coords" class="">Position.Coords</a>
                           </li>
                           <li class="">
                             <a href="PRace.Race.html" title="Race" class="">Race</a>
@@ -240,6 +261,10 @@
     <div class="level0"><span class="xref">System.Object</span></div>
     <div class="level1"><span class="xref">RaceModel</span></div>
   </div>
+  <div classs="implements">
+    <h5>Implements</h5>
+    <div><a class="xref" href="Model.ISubject.html">ISubject</a></div>
+  </div>
   <div class="inheritedMembers">
     <h5>Inherited Members</h5>
     <div>
@@ -265,10 +290,10 @@
     </div>
   </div>
   <h6><strong>Namespace</strong>: <a class="xref" href="Model.html">Model</a></h6>
-  <h6><strong>Assembly</strong>: SimpleSimulator.dll</h6>
+  <h6><strong>Assembly</strong>: Assembly-CSharp.dll</h6>
   <h5 id="Model_RaceModel_syntax">Syntax</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public class RaceModel</code></pre>
+    <pre><code class="lang-csharp hljs">public class RaceModel : ISubject</code></pre>
   </div>
   <h3 id="constructors">Constructors
   </h3>
@@ -277,7 +302,7 @@
     <a href="https://github.com/Le-clan-des-Semi-Croustillant/SRSP-Simple-Simulator/new/main/apiSpec/new?filename=Model_RaceModel__ctor.md&amp;value=---%0Auid%3A%20Model.RaceModel.%23ctor%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/Le-clan-des-Semi-Croustillant/SRSP-Simple-Simulator/blob/main/SimpleSimulator/SimpleSimulator/Model/Model.cs/#L9">View Source</a>
+    <a href="https://github.com/Le-clan-des-Semi-Croustillant/SRSP-Simple-Simulator/blob/main/SRSP-Simple-Simulator/Assets/Controller/script/Model/Model.cs/#L12">View Source</a>
   </span>
   <a id="Model_RaceModel__ctor_" data-uid="Model.RaceModel.#ctor*"></a>
   <h4 id="Model_RaceModel__ctor" data-uid="Model.RaceModel.#ctor">RaceModel()</h4>
@@ -292,7 +317,7 @@
     <a href="https://github.com/Le-clan-des-Semi-Croustillant/SRSP-Simple-Simulator/new/main/apiSpec/new?filename=Model_RaceModel__ctor_System_String_.md&amp;value=---%0Auid%3A%20Model.RaceModel.%23ctor(System.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/Le-clan-des-Semi-Croustillant/SRSP-Simple-Simulator/blob/main/SimpleSimulator/SimpleSimulator/Model/Model.cs/#L23">View Source</a>
+    <a href="https://github.com/Le-clan-des-Semi-Croustillant/SRSP-Simple-Simulator/blob/main/SRSP-Simple-Simulator/Assets/Controller/script/Model/Model.cs/#L18">View Source</a>
   </span>
   <a id="Model_RaceModel__ctor_" data-uid="Model.RaceModel.#ctor*"></a>
   <h4 id="Model_RaceModel__ctor_System_String_" data-uid="Model.RaceModel.#ctor(System.String)">RaceModel(String)</h4>
@@ -326,7 +351,7 @@
     <a href="https://github.com/Le-clan-des-Semi-Croustillant/SRSP-Simple-Simulator/new/main/apiSpec/new?filename=Model_RaceModel_AskForSavePath.md&amp;value=---%0Auid%3A%20Model.RaceModel.AskForSavePath%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/Le-clan-des-Semi-Croustillant/SRSP-Simple-Simulator/blob/main/SimpleSimulator/SimpleSimulator/Model/Model.cs/#L53">View Source</a>
+    <a href="https://github.com/Le-clan-des-Semi-Croustillant/SRSP-Simple-Simulator/blob/main/SRSP-Simple-Simulator/Assets/Controller/script/Model/Model.cs/#L67">View Source</a>
   </span>
   <a id="Model_RaceModel_AskForSavePath_" data-uid="Model.RaceModel.AskForSavePath*"></a>
   <h4 id="Model_RaceModel_AskForSavePath" data-uid="Model.RaceModel.AskForSavePath">AskForSavePath()</h4>
@@ -341,7 +366,7 @@
     <a href="https://github.com/Le-clan-des-Semi-Croustillant/SRSP-Simple-Simulator/new/main/apiSpec/new?filename=Model_RaceModel_AskMode.md&amp;value=---%0Auid%3A%20Model.RaceModel.AskMode%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/Le-clan-des-Semi-Croustillant/SRSP-Simple-Simulator/blob/main/SimpleSimulator/SimpleSimulator/Model/Model.cs/#L49">View Source</a>
+    <a href="https://github.com/Le-clan-des-Semi-Croustillant/SRSP-Simple-Simulator/blob/main/SRSP-Simple-Simulator/Assets/Controller/script/Model/Model.cs/#L63">View Source</a>
   </span>
   <a id="Model_RaceModel_AskMode_" data-uid="Model.RaceModel.AskMode*"></a>
   <h4 id="Model_RaceModel_AskMode" data-uid="Model.RaceModel.AskMode">AskMode()</h4>
@@ -353,10 +378,72 @@
   </div>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
+    <a href="https://github.com/Le-clan-des-Semi-Croustillant/SRSP-Simple-Simulator/new/main/apiSpec/new?filename=Model_RaceModel_Attach_Model_IObserver_.md&amp;value=---%0Auid%3A%20Model.RaceModel.Attach(Model.IObserver)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Le-clan-des-Semi-Croustillant/SRSP-Simple-Simulator/blob/main/SRSP-Simple-Simulator/Assets/Controller/script/Model/Model.cs/#L48">View Source</a>
+  </span>
+  <a id="Model_RaceModel_Attach_" data-uid="Model.RaceModel.Attach*"></a>
+  <h4 id="Model_RaceModel_Attach_Model_IObserver_" data-uid="Model.RaceModel.Attach(Model.IObserver)">Attach(IObserver)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Attach(IObserver obs)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Model.IObserver.html">IObserver</a></td>
+        <td><span class="parametername">obs</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Le-clan-des-Semi-Croustillant/SRSP-Simple-Simulator/new/main/apiSpec/new?filename=Model_RaceModel_GetAccFactor.md&amp;value=---%0Auid%3A%20Model.RaceModel.GetAccFactor%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Le-clan-des-Semi-Croustillant/SRSP-Simple-Simulator/blob/main/SRSP-Simple-Simulator/Assets/Controller/script/Model/Model.cs/#L128">View Source</a>
+  </span>
+  <a id="Model_RaceModel_GetAccFactor_" data-uid="Model.RaceModel.GetAccFactor*"></a>
+  <h4 id="Model_RaceModel_GetAccFactor" data-uid="Model.RaceModel.GetAccFactor">GetAccFactor()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float GetAccFactor()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
     <a href="https://github.com/Le-clan-des-Semi-Croustillant/SRSP-Simple-Simulator/new/main/apiSpec/new?filename=Model_RaceModel_GetBoatStatus.md&amp;value=---%0Auid%3A%20Model.RaceModel.GetBoatStatus%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/Le-clan-des-Semi-Croustillant/SRSP-Simple-Simulator/blob/main/SimpleSimulator/SimpleSimulator/Model/Model.cs/#L84">View Source</a>
+    <a href="https://github.com/Le-clan-des-Semi-Croustillant/SRSP-Simple-Simulator/blob/main/SRSP-Simple-Simulator/Assets/Controller/script/Model/Model.cs/#L98">View Source</a>
   </span>
   <a id="Model_RaceModel_GetBoatStatus_" data-uid="Model.RaceModel.GetBoatStatus*"></a>
   <h4 id="Model_RaceModel_GetBoatStatus" data-uid="Model.RaceModel.GetBoatStatus">GetBoatStatus()</h4>
@@ -376,7 +463,67 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">Dictionary</span>&lt;<a class="xref" href="Model.BoatInfo.html">BoatInfo</a>, <span class="xref">System.Double</span>&gt;</td>
+        <td><span class="xref">System.Collections.Generic.Dictionary</span>&lt;<a class="xref" href="Model.BoatInfo.html">BoatInfo</a>, <span class="xref">System.Double</span>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Le-clan-des-Semi-Croustillant/SRSP-Simple-Simulator/new/main/apiSpec/new?filename=Model_RaceModel_getCommandeMode.md&amp;value=---%0Auid%3A%20Model.RaceModel.getCommandeMode%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Le-clan-des-Semi-Croustillant/SRSP-Simple-Simulator/blob/main/SRSP-Simple-Simulator/Assets/Controller/script/Model/Model.cs/#L157">View Source</a>
+  </span>
+  <a id="Model_RaceModel_getCommandeMode_" data-uid="Model.RaceModel.getCommandeMode*"></a>
+  <h4 id="Model_RaceModel_getCommandeMode" data-uid="Model.RaceModel.getCommandeMode">getCommandeMode()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ModeCommande getCommandeMode()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="PRace.ModeCommande.html">ModeCommande</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Le-clan-des-Semi-Croustillant/SRSP-Simple-Simulator/new/main/apiSpec/new?filename=Model_RaceModel_getModelCap.md&amp;value=---%0Auid%3A%20Model.RaceModel.getModelCap%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Le-clan-des-Semi-Croustillant/SRSP-Simple-Simulator/blob/main/SRSP-Simple-Simulator/Assets/Controller/script/Model/Model.cs/#L153">View Source</a>
+  </span>
+  <a id="Model_RaceModel_getModelCap_" data-uid="Model.RaceModel.getModelCap*"></a>
+  <h4 id="Model_RaceModel_getModelCap" data-uid="Model.RaceModel.getModelCap">getModelCap()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float getModelCap()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
         <td></td>
       </tr>
     </tbody>
@@ -386,7 +533,7 @@
     <a href="https://github.com/Le-clan-des-Semi-Croustillant/SRSP-Simple-Simulator/new/main/apiSpec/new?filename=Model_RaceModel_GetRace.md&amp;value=---%0Auid%3A%20Model.RaceModel.GetRace%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/Le-clan-des-Semi-Croustillant/SRSP-Simple-Simulator/blob/main/SimpleSimulator/SimpleSimulator/Model/Model.cs/#L44">View Source</a>
+    <a href="https://github.com/Le-clan-des-Semi-Croustillant/SRSP-Simple-Simulator/blob/main/SRSP-Simple-Simulator/Assets/Controller/script/Model/Model.cs/#L58">View Source</a>
   </span>
   <a id="Model_RaceModel_GetRace_" data-uid="Model.RaceModel.GetRace*"></a>
   <h4 id="Model_RaceModel_GetRace" data-uid="Model.RaceModel.GetRace">GetRace()</h4>
@@ -413,10 +560,62 @@
   </table>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
+    <a href="https://github.com/Le-clan-des-Semi-Croustillant/SRSP-Simple-Simulator/new/main/apiSpec/new?filename=Model_RaceModel_IncrementCap_PRace_ModeCommande_PRace_DegreeIncrement_.md&amp;value=---%0Auid%3A%20Model.RaceModel.IncrementCap(PRace.ModeCommande%2CPRace.DegreeIncrement)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Le-clan-des-Semi-Croustillant/SRSP-Simple-Simulator/blob/main/SRSP-Simple-Simulator/Assets/Controller/script/Model/Model.cs/#L133">View Source</a>
+  </span>
+  <a id="Model_RaceModel_IncrementCap_" data-uid="Model.RaceModel.IncrementCap*"></a>
+  <h4 id="Model_RaceModel_IncrementCap_PRace_ModeCommande_PRace_DegreeIncrement_" data-uid="Model.RaceModel.IncrementCap(PRace.ModeCommande,PRace.DegreeIncrement)">IncrementCap(ModeCommande, DegreeIncrement)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void IncrementCap(ModeCommande commande, DegreeIncrement degre)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="PRace.ModeCommande.html">ModeCommande</a></td>
+        <td><span class="parametername">commande</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="PRace.DegreeIncrement.html">DegreeIncrement</a></td>
+        <td><span class="parametername">degre</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Le-clan-des-Semi-Croustillant/SRSP-Simple-Simulator/new/main/apiSpec/new?filename=Model_RaceModel_Notify.md&amp;value=---%0Auid%3A%20Model.RaceModel.Notify%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Le-clan-des-Semi-Croustillant/SRSP-Simple-Simulator/blob/main/SRSP-Simple-Simulator/Assets/Controller/script/Model/Model.cs/#L53">View Source</a>
+  </span>
+  <a id="Model_RaceModel_Notify_" data-uid="Model.RaceModel.Notify*"></a>
+  <h4 id="Model_RaceModel_Notify" data-uid="Model.RaceModel.Notify">Notify()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Notify()</code></pre>
+  </div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
     <a href="https://github.com/Le-clan-des-Semi-Croustillant/SRSP-Simple-Simulator/new/main/apiSpec/new?filename=Model_RaceModel_Pause.md&amp;value=---%0Auid%3A%20Model.RaceModel.Pause%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/Le-clan-des-Semi-Croustillant/SRSP-Simple-Simulator/blob/main/SimpleSimulator/SimpleSimulator/Model/Model.cs/#L79">View Source</a>
+    <a href="https://github.com/Le-clan-des-Semi-Croustillant/SRSP-Simple-Simulator/blob/main/SRSP-Simple-Simulator/Assets/Controller/script/Model/Model.cs/#L93">View Source</a>
   </span>
   <a id="Model_RaceModel_Pause_" data-uid="Model.RaceModel.Pause*"></a>
   <h4 id="Model_RaceModel_Pause" data-uid="Model.RaceModel.Pause">Pause()</h4>
@@ -431,7 +630,7 @@
     <a href="https://github.com/Le-clan-des-Semi-Croustillant/SRSP-Simple-Simulator/new/main/apiSpec/new?filename=Model_RaceModel_Run.md&amp;value=---%0Auid%3A%20Model.RaceModel.Run%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/Le-clan-des-Semi-Croustillant/SRSP-Simple-Simulator/blob/main/SimpleSimulator/SimpleSimulator/Model/Model.cs/#L74">View Source</a>
+    <a href="https://github.com/Le-clan-des-Semi-Croustillant/SRSP-Simple-Simulator/blob/main/SRSP-Simple-Simulator/Assets/Controller/script/Model/Model.cs/#L88">View Source</a>
   </span>
   <a id="Model_RaceModel_Run_" data-uid="Model.RaceModel.Run*"></a>
   <h4 id="Model_RaceModel_Run" data-uid="Model.RaceModel.Run">Run()</h4>
@@ -446,7 +645,7 @@
     <a href="https://github.com/Le-clan-des-Semi-Croustillant/SRSP-Simple-Simulator/new/main/apiSpec/new?filename=Model_RaceModel_Save.md&amp;value=---%0Auid%3A%20Model.RaceModel.Save%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/Le-clan-des-Semi-Croustillant/SRSP-Simple-Simulator/blob/main/SimpleSimulator/SimpleSimulator/Model/Model.cs/#L58">View Source</a>
+    <a href="https://github.com/Le-clan-des-Semi-Croustillant/SRSP-Simple-Simulator/blob/main/SRSP-Simple-Simulator/Assets/Controller/script/Model/Model.cs/#L72">View Source</a>
   </span>
   <a id="Model_RaceModel_Save_" data-uid="Model.RaceModel.Save*"></a>
   <h4 id="Model_RaceModel_Save" data-uid="Model.RaceModel.Save">Save()</h4>
@@ -455,6 +654,173 @@
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public void Save()</code></pre>
+  </div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Le-clan-des-Semi-Croustillant/SRSP-Simple-Simulator/new/main/apiSpec/new?filename=Model_RaceModel_SetCurrent_System_Single_System_Single_.md&amp;value=---%0Auid%3A%20Model.RaceModel.SetCurrent(System.Single%2CSystem.Single)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Le-clan-des-Semi-Croustillant/SRSP-Simple-Simulator/blob/main/SRSP-Simple-Simulator/Assets/Controller/script/Model/Model.cs/#L111">View Source</a>
+  </span>
+  <a id="Model_RaceModel_SetCurrent_" data-uid="Model.RaceModel.SetCurrent*"></a>
+  <h4 id="Model_RaceModel_SetCurrent_System_Single_System_Single_" data-uid="Model.RaceModel.SetCurrent(System.Single,System.Single)">SetCurrent(Single, Single)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetCurrent(float currentspeed, float currentdir)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td><span class="parametername">currentspeed</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td><span class="parametername">currentdir</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Le-clan-des-Semi-Croustillant/SRSP-Simple-Simulator/new/main/apiSpec/new?filename=Model_RaceModel_SetFactor_System_Single_.md&amp;value=---%0Auid%3A%20Model.RaceModel.SetFactor(System.Single)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Le-clan-des-Semi-Croustillant/SRSP-Simple-Simulator/blob/main/SRSP-Simple-Simulator/Assets/Controller/script/Model/Model.cs/#L123">View Source</a>
+  </span>
+  <a id="Model_RaceModel_SetFactor_" data-uid="Model.RaceModel.SetFactor*"></a>
+  <h4 id="Model_RaceModel_SetFactor_System_Single_" data-uid="Model.RaceModel.SetFactor(System.Single)">SetFactor(Single)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetFactor(float acc)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td><span class="parametername">acc</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Le-clan-des-Semi-Croustillant/SRSP-Simple-Simulator/new/main/apiSpec/new?filename=Model_RaceModel_SetWave_System_Single_System_Single_System_Single_.md&amp;value=---%0Auid%3A%20Model.RaceModel.SetWave(System.Single%2CSystem.Single%2CSystem.Single)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Le-clan-des-Semi-Croustillant/SRSP-Simple-Simulator/blob/main/SRSP-Simple-Simulator/Assets/Controller/script/Model/Model.cs/#L115">View Source</a>
+  </span>
+  <a id="Model_RaceModel_SetWave_" data-uid="Model.RaceModel.SetWave*"></a>
+  <h4 id="Model_RaceModel_SetWave_System_Single_System_Single_System_Single_" data-uid="Model.RaceModel.SetWave(System.Single,System.Single,System.Single)">SetWave(Single, Single, Single)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetWave(float wavesampl, float wavedir, float wavelength)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td><span class="parametername">wavesampl</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td><span class="parametername">wavedir</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td><span class="parametername">wavelength</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Le-clan-des-Semi-Croustillant/SRSP-Simple-Simulator/new/main/apiSpec/new?filename=Model_RaceModel_SetWind_System_Single_System_Single_.md&amp;value=---%0Auid%3A%20Model.RaceModel.SetWind(System.Single%2CSystem.Single)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Le-clan-des-Semi-Croustillant/SRSP-Simple-Simulator/blob/main/SRSP-Simple-Simulator/Assets/Controller/script/Model/Model.cs/#L119">View Source</a>
+  </span>
+  <a id="Model_RaceModel_SetWind_" data-uid="Model.RaceModel.SetWind*"></a>
+  <h4 id="Model_RaceModel_SetWind_System_Single_System_Single_" data-uid="Model.RaceModel.SetWind(System.Single,System.Single)">SetWind(Single, Single)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetWind(float windspeed, float winddir)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td><span class="parametername">windspeed</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td><span class="parametername">winddir</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Le-clan-des-Semi-Croustillant/SRSP-Simple-Simulator/new/main/apiSpec/new?filename=Model_RaceModel_SwitchCommande.md&amp;value=---%0Auid%3A%20Model.RaceModel.SwitchCommande%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Le-clan-des-Semi-Croustillant/SRSP-Simple-Simulator/blob/main/SRSP-Simple-Simulator/Assets/Controller/script/Model/Model.cs/#L149">View Source</a>
+  </span>
+  <a id="Model_RaceModel_SwitchCommande_" data-uid="Model.RaceModel.SwitchCommande*"></a>
+  <h4 id="Model_RaceModel_SwitchCommande" data-uid="Model.RaceModel.SwitchCommande">SwitchCommande()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SwitchCommande()</code></pre>
+  </div>
+  <h3 id="implements">Implements</h3>
+  <div>
+      <a class="xref" href="Model.ISubject.html">ISubject</a>
   </div>
 </article>
           </div>
@@ -467,7 +833,7 @@
                     <a href="https://github.com/Le-clan-des-Semi-Croustillant/SRSP-Simple-Simulator/new/main/apiSpec/new?filename=Model_RaceModel.md&amp;value=---%0Auid%3A%20Model.RaceModel%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
                   </li>
                   <li>
-                    <a href="https://github.com/Le-clan-des-Semi-Croustillant/SRSP-Simple-Simulator/blob/main/SimpleSimulator/SimpleSimulator/Model/Model.cs/#L7" class="contribution-link">View Source</a>
+                    <a href="https://github.com/Le-clan-des-Semi-Croustillant/SRSP-Simple-Simulator/blob/main/SRSP-Simple-Simulator/Assets/Controller/script/Model/Model.cs/#L10" class="contribution-link">View Source</a>
                   </li>
                 </ul>
               </div>

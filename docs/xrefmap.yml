@@ -52,12 +52,15 @@ references:
   isSpec: "True"
   fullName: AquitisionCommunication.Aquisition.change_Env
   nameWithType: Aquisition.change_Env
-- uid: AquitisionCommunication.Aquisition.sentPosition(System.Int32,System.Double,System.Double)
-  name: sentPosition(Int32, Double, Double)
-  href: api/AquitisionCommunication.Aquisition.html#AquitisionCommunication_Aquisition_sentPosition_System_Int32_System_Double_System_Double_
-  commentId: M:AquitisionCommunication.Aquisition.sentPosition(System.Int32,System.Double,System.Double)
-  fullName: AquitisionCommunication.Aquisition.sentPosition(System.Int32, System.Double, System.Double)
-  nameWithType: Aquisition.sentPosition(Int32, Double, Double)
+- uid: AquitisionCommunication.Aquisition.sentPosition(System.Collections.Generic.Dictionary{Environement.Conditions,System.Single},System.Single,System.Single,System.Single,PRace.Position.Coords,PRace.Position.Coords,System.DateTime)
+  name: sentPosition(Dictionary<Conditions, Single>, Single, Single, Single, Position.Coords, Position.Coords, DateTime)
+  href: api/AquitisionCommunication.Aquisition.html#AquitisionCommunication_Aquisition_sentPosition_System_Collections_Generic_Dictionary_Environement_Conditions_System_Single__System_Single_System_Single_System_Single_PRace_Position_Coords_PRace_Position_Coords_System_DateTime_
+  commentId: M:AquitisionCommunication.Aquisition.sentPosition(System.Collections.Generic.Dictionary{Environement.Conditions,System.Single},System.Single,System.Single,System.Single,PRace.Position.Coords,PRace.Position.Coords,System.DateTime)
+  name.vb: sentPosition(Dictionary(Of Conditions, Single), Single, Single, Single, Position.Coords, Position.Coords, DateTime)
+  fullName: AquitisionCommunication.Aquisition.sentPosition(System.Collections.Generic.Dictionary<Environement.Conditions, System.Single>, System.Single, System.Single, System.Single, PRace.Position.Coords, PRace.Position.Coords, System.DateTime)
+  fullName.vb: AquitisionCommunication.Aquisition.sentPosition(System.Collections.Generic.Dictionary(Of Environement.Conditions, System.Single), System.Single, System.Single, System.Single, PRace.Position.Coords, PRace.Position.Coords, System.DateTime)
+  nameWithType: Aquisition.sentPosition(Dictionary<Conditions, Single>, Single, Single, Single, Position.Coords, Position.Coords, DateTime)
+  nameWithType.vb: Aquisition.sentPosition(Dictionary(Of Conditions, Single), Single, Single, Single, Position.Coords, Position.Coords, DateTime)
 - uid: AquitisionCommunication.Aquisition.sentPosition*
   name: sentPosition
   href: api/AquitisionCommunication.Aquisition.html#AquitisionCommunication_Aquisition_sentPosition_
@@ -345,6 +348,54 @@ references:
   commentId: F:AquitisionCommunication.Sauvegarde.InstantT
   fullName: AquitisionCommunication.Sauvegarde.InstantT
   nameWithType: Sauvegarde.InstantT
+- uid: Controller
+  name: Controller
+  href: api/Controller.html
+  commentId: N:Controller
+  fullName: Controller
+  nameWithType: Controller
+- uid: Controller.Follow
+  name: Follow
+  href: api/Controller.Follow.html
+  commentId: T:Controller.Follow
+  fullName: Controller.Follow
+  nameWithType: Follow
+- uid: Controller.Follow.camera
+  name: camera
+  href: api/Controller.Follow.html#Controller_Follow_camera
+  commentId: F:Controller.Follow.camera
+  fullName: Controller.Follow.camera
+  nameWithType: Follow.camera
+- uid: Controller.Follow.currentX
+  name: currentX
+  href: api/Controller.Follow.html#Controller_Follow_currentX
+  commentId: F:Controller.Follow.currentX
+  fullName: Controller.Follow.currentX
+  nameWithType: Follow.currentX
+- uid: Controller.Follow.currentY
+  name: currentY
+  href: api/Controller.Follow.html#Controller_Follow_currentY
+  commentId: F:Controller.Follow.currentY
+  fullName: Controller.Follow.currentY
+  nameWithType: Follow.currentY
+- uid: Controller.Follow.music
+  name: music
+  href: api/Controller.Follow.html#Controller_Follow_music
+  commentId: F:Controller.Follow.music
+  fullName: Controller.Follow.music
+  nameWithType: Follow.music
+- uid: Controller.Follow.range
+  name: range
+  href: api/Controller.Follow.html#Controller_Follow_range
+  commentId: F:Controller.Follow.range
+  fullName: Controller.Follow.range
+  nameWithType: Follow.range
+- uid: Controller.Follow.target
+  name: target
+  href: api/Controller.Follow.html#Controller_Follow_target
+  commentId: F:Controller.Follow.target
+  fullName: Controller.Follow.target
+  nameWithType: Follow.target
 - uid: Environement
   name: Environement
   href: api/Environement.html
@@ -806,6 +857,108 @@ references:
   commentId: F:Model.BoatInfo.SOG
   fullName: Model.BoatInfo.SOG
   nameWithType: BoatInfo.SOG
+- uid: Model.IObserver
+  name: IObserver
+  href: api/Model.IObserver.html
+  commentId: T:Model.IObserver
+  fullName: Model.IObserver
+  nameWithType: IObserver
+- uid: Model.IObserver.Update(Model.ISubject)
+  name: Update(ISubject)
+  href: api/Model.IObserver.html#Model_IObserver_Update_Model_ISubject_
+  commentId: M:Model.IObserver.Update(Model.ISubject)
+  fullName: Model.IObserver.Update(Model.ISubject)
+  nameWithType: IObserver.Update(ISubject)
+- uid: Model.IObserver.Update*
+  name: Update
+  href: api/Model.IObserver.html#Model_IObserver_Update_
+  commentId: Overload:Model.IObserver.Update
+  isSpec: "True"
+  fullName: Model.IObserver.Update
+  nameWithType: IObserver.Update
+- uid: Model.ISubject
+  name: ISubject
+  href: api/Model.ISubject.html
+  commentId: T:Model.ISubject
+  fullName: Model.ISubject
+  nameWithType: ISubject
+- uid: Model.ISubject.Attach(Model.IObserver)
+  name: Attach(IObserver)
+  href: api/Model.ISubject.html#Model_ISubject_Attach_Model_IObserver_
+  commentId: M:Model.ISubject.Attach(Model.IObserver)
+  fullName: Model.ISubject.Attach(Model.IObserver)
+  nameWithType: ISubject.Attach(IObserver)
+- uid: Model.ISubject.Attach*
+  name: Attach
+  href: api/Model.ISubject.html#Model_ISubject_Attach_
+  commentId: Overload:Model.ISubject.Attach
+  isSpec: "True"
+  fullName: Model.ISubject.Attach
+  nameWithType: ISubject.Attach
+- uid: Model.ISubject.GetBoatStatus
+  name: GetBoatStatus()
+  href: api/Model.ISubject.html#Model_ISubject_GetBoatStatus
+  commentId: M:Model.ISubject.GetBoatStatus
+  fullName: Model.ISubject.GetBoatStatus()
+  nameWithType: ISubject.GetBoatStatus()
+- uid: Model.ISubject.GetBoatStatus*
+  name: GetBoatStatus
+  href: api/Model.ISubject.html#Model_ISubject_GetBoatStatus_
+  commentId: Overload:Model.ISubject.GetBoatStatus
+  isSpec: "True"
+  fullName: Model.ISubject.GetBoatStatus
+  nameWithType: ISubject.GetBoatStatus
+- uid: Model.ISubject.Notify
+  name: Notify()
+  href: api/Model.ISubject.html#Model_ISubject_Notify
+  commentId: M:Model.ISubject.Notify
+  fullName: Model.ISubject.Notify()
+  nameWithType: ISubject.Notify()
+- uid: Model.ISubject.Notify*
+  name: Notify
+  href: api/Model.ISubject.html#Model_ISubject_Notify_
+  commentId: Overload:Model.ISubject.Notify
+  isSpec: "True"
+  fullName: Model.ISubject.Notify
+  nameWithType: ISubject.Notify
+- uid: Model.Observer
+  name: Observer
+  href: api/Model.Observer.html
+  commentId: T:Model.Observer
+  fullName: Model.Observer
+  nameWithType: Observer
+- uid: Model.Observer.#ctor(Creation)
+  name: Observer(Creation)
+  href: api/Model.Observer.html#Model_Observer__ctor_Creation_
+  commentId: M:Model.Observer.#ctor(Creation)
+  fullName: Model.Observer.Observer(Creation)
+  nameWithType: Observer.Observer(Creation)
+- uid: Model.Observer.#ctor*
+  name: Observer
+  href: api/Model.Observer.html#Model_Observer__ctor_
+  commentId: Overload:Model.Observer.#ctor
+  isSpec: "True"
+  fullName: Model.Observer.Observer
+  nameWithType: Observer.Observer
+- uid: Model.Observer.creation
+  name: creation
+  href: api/Model.Observer.html#Model_Observer_creation
+  commentId: F:Model.Observer.creation
+  fullName: Model.Observer.creation
+  nameWithType: Observer.creation
+- uid: Model.Observer.Update(Model.ISubject)
+  name: Update(ISubject)
+  href: api/Model.Observer.html#Model_Observer_Update_Model_ISubject_
+  commentId: M:Model.Observer.Update(Model.ISubject)
+  fullName: Model.Observer.Update(Model.ISubject)
+  nameWithType: Observer.Update(ISubject)
+- uid: Model.Observer.Update*
+  name: Update
+  href: api/Model.Observer.html#Model_Observer_Update_
+  commentId: Overload:Model.Observer.Update
+  isSpec: "True"
+  fullName: Model.Observer.Update
+  nameWithType: Observer.Update
 - uid: Model.RaceModel
   name: RaceModel
   href: api/Model.RaceModel.html
@@ -857,6 +1010,32 @@ references:
   isSpec: "True"
   fullName: Model.RaceModel.AskMode
   nameWithType: RaceModel.AskMode
+- uid: Model.RaceModel.Attach(Model.IObserver)
+  name: Attach(IObserver)
+  href: api/Model.RaceModel.html#Model_RaceModel_Attach_Model_IObserver_
+  commentId: M:Model.RaceModel.Attach(Model.IObserver)
+  fullName: Model.RaceModel.Attach(Model.IObserver)
+  nameWithType: RaceModel.Attach(IObserver)
+- uid: Model.RaceModel.Attach*
+  name: Attach
+  href: api/Model.RaceModel.html#Model_RaceModel_Attach_
+  commentId: Overload:Model.RaceModel.Attach
+  isSpec: "True"
+  fullName: Model.RaceModel.Attach
+  nameWithType: RaceModel.Attach
+- uid: Model.RaceModel.GetAccFactor
+  name: GetAccFactor()
+  href: api/Model.RaceModel.html#Model_RaceModel_GetAccFactor
+  commentId: M:Model.RaceModel.GetAccFactor
+  fullName: Model.RaceModel.GetAccFactor()
+  nameWithType: RaceModel.GetAccFactor()
+- uid: Model.RaceModel.GetAccFactor*
+  name: GetAccFactor
+  href: api/Model.RaceModel.html#Model_RaceModel_GetAccFactor_
+  commentId: Overload:Model.RaceModel.GetAccFactor
+  isSpec: "True"
+  fullName: Model.RaceModel.GetAccFactor
+  nameWithType: RaceModel.GetAccFactor
 - uid: Model.RaceModel.GetBoatStatus
   name: GetBoatStatus()
   href: api/Model.RaceModel.html#Model_RaceModel_GetBoatStatus
@@ -870,6 +1049,32 @@ references:
   isSpec: "True"
   fullName: Model.RaceModel.GetBoatStatus
   nameWithType: RaceModel.GetBoatStatus
+- uid: Model.RaceModel.getCommandeMode
+  name: getCommandeMode()
+  href: api/Model.RaceModel.html#Model_RaceModel_getCommandeMode
+  commentId: M:Model.RaceModel.getCommandeMode
+  fullName: Model.RaceModel.getCommandeMode()
+  nameWithType: RaceModel.getCommandeMode()
+- uid: Model.RaceModel.getCommandeMode*
+  name: getCommandeMode
+  href: api/Model.RaceModel.html#Model_RaceModel_getCommandeMode_
+  commentId: Overload:Model.RaceModel.getCommandeMode
+  isSpec: "True"
+  fullName: Model.RaceModel.getCommandeMode
+  nameWithType: RaceModel.getCommandeMode
+- uid: Model.RaceModel.getModelCap
+  name: getModelCap()
+  href: api/Model.RaceModel.html#Model_RaceModel_getModelCap
+  commentId: M:Model.RaceModel.getModelCap
+  fullName: Model.RaceModel.getModelCap()
+  nameWithType: RaceModel.getModelCap()
+- uid: Model.RaceModel.getModelCap*
+  name: getModelCap
+  href: api/Model.RaceModel.html#Model_RaceModel_getModelCap_
+  commentId: Overload:Model.RaceModel.getModelCap
+  isSpec: "True"
+  fullName: Model.RaceModel.getModelCap
+  nameWithType: RaceModel.getModelCap
 - uid: Model.RaceModel.GetRace
   name: GetRace()
   href: api/Model.RaceModel.html#Model_RaceModel_GetRace
@@ -883,6 +1088,32 @@ references:
   isSpec: "True"
   fullName: Model.RaceModel.GetRace
   nameWithType: RaceModel.GetRace
+- uid: Model.RaceModel.IncrementCap(PRace.ModeCommande,PRace.DegreeIncrement)
+  name: IncrementCap(ModeCommande, DegreeIncrement)
+  href: api/Model.RaceModel.html#Model_RaceModel_IncrementCap_PRace_ModeCommande_PRace_DegreeIncrement_
+  commentId: M:Model.RaceModel.IncrementCap(PRace.ModeCommande,PRace.DegreeIncrement)
+  fullName: Model.RaceModel.IncrementCap(PRace.ModeCommande, PRace.DegreeIncrement)
+  nameWithType: RaceModel.IncrementCap(ModeCommande, DegreeIncrement)
+- uid: Model.RaceModel.IncrementCap*
+  name: IncrementCap
+  href: api/Model.RaceModel.html#Model_RaceModel_IncrementCap_
+  commentId: Overload:Model.RaceModel.IncrementCap
+  isSpec: "True"
+  fullName: Model.RaceModel.IncrementCap
+  nameWithType: RaceModel.IncrementCap
+- uid: Model.RaceModel.Notify
+  name: Notify()
+  href: api/Model.RaceModel.html#Model_RaceModel_Notify
+  commentId: M:Model.RaceModel.Notify
+  fullName: Model.RaceModel.Notify()
+  nameWithType: RaceModel.Notify()
+- uid: Model.RaceModel.Notify*
+  name: Notify
+  href: api/Model.RaceModel.html#Model_RaceModel_Notify_
+  commentId: Overload:Model.RaceModel.Notify
+  isSpec: "True"
+  fullName: Model.RaceModel.Notify
+  nameWithType: RaceModel.Notify
 - uid: Model.RaceModel.Pause
   name: Pause()
   href: api/Model.RaceModel.html#Model_RaceModel_Pause
@@ -922,6 +1153,71 @@ references:
   isSpec: "True"
   fullName: Model.RaceModel.Save
   nameWithType: RaceModel.Save
+- uid: Model.RaceModel.SetCurrent(System.Single,System.Single)
+  name: SetCurrent(Single, Single)
+  href: api/Model.RaceModel.html#Model_RaceModel_SetCurrent_System_Single_System_Single_
+  commentId: M:Model.RaceModel.SetCurrent(System.Single,System.Single)
+  fullName: Model.RaceModel.SetCurrent(System.Single, System.Single)
+  nameWithType: RaceModel.SetCurrent(Single, Single)
+- uid: Model.RaceModel.SetCurrent*
+  name: SetCurrent
+  href: api/Model.RaceModel.html#Model_RaceModel_SetCurrent_
+  commentId: Overload:Model.RaceModel.SetCurrent
+  isSpec: "True"
+  fullName: Model.RaceModel.SetCurrent
+  nameWithType: RaceModel.SetCurrent
+- uid: Model.RaceModel.SetFactor(System.Single)
+  name: SetFactor(Single)
+  href: api/Model.RaceModel.html#Model_RaceModel_SetFactor_System_Single_
+  commentId: M:Model.RaceModel.SetFactor(System.Single)
+  fullName: Model.RaceModel.SetFactor(System.Single)
+  nameWithType: RaceModel.SetFactor(Single)
+- uid: Model.RaceModel.SetFactor*
+  name: SetFactor
+  href: api/Model.RaceModel.html#Model_RaceModel_SetFactor_
+  commentId: Overload:Model.RaceModel.SetFactor
+  isSpec: "True"
+  fullName: Model.RaceModel.SetFactor
+  nameWithType: RaceModel.SetFactor
+- uid: Model.RaceModel.SetWave(System.Single,System.Single,System.Single)
+  name: SetWave(Single, Single, Single)
+  href: api/Model.RaceModel.html#Model_RaceModel_SetWave_System_Single_System_Single_System_Single_
+  commentId: M:Model.RaceModel.SetWave(System.Single,System.Single,System.Single)
+  fullName: Model.RaceModel.SetWave(System.Single, System.Single, System.Single)
+  nameWithType: RaceModel.SetWave(Single, Single, Single)
+- uid: Model.RaceModel.SetWave*
+  name: SetWave
+  href: api/Model.RaceModel.html#Model_RaceModel_SetWave_
+  commentId: Overload:Model.RaceModel.SetWave
+  isSpec: "True"
+  fullName: Model.RaceModel.SetWave
+  nameWithType: RaceModel.SetWave
+- uid: Model.RaceModel.SetWind(System.Single,System.Single)
+  name: SetWind(Single, Single)
+  href: api/Model.RaceModel.html#Model_RaceModel_SetWind_System_Single_System_Single_
+  commentId: M:Model.RaceModel.SetWind(System.Single,System.Single)
+  fullName: Model.RaceModel.SetWind(System.Single, System.Single)
+  nameWithType: RaceModel.SetWind(Single, Single)
+- uid: Model.RaceModel.SetWind*
+  name: SetWind
+  href: api/Model.RaceModel.html#Model_RaceModel_SetWind_
+  commentId: Overload:Model.RaceModel.SetWind
+  isSpec: "True"
+  fullName: Model.RaceModel.SetWind
+  nameWithType: RaceModel.SetWind
+- uid: Model.RaceModel.SwitchCommande
+  name: SwitchCommande()
+  href: api/Model.RaceModel.html#Model_RaceModel_SwitchCommande
+  commentId: M:Model.RaceModel.SwitchCommande
+  fullName: Model.RaceModel.SwitchCommande()
+  nameWithType: RaceModel.SwitchCommande()
+- uid: Model.RaceModel.SwitchCommande*
+  name: SwitchCommande
+  href: api/Model.RaceModel.html#Model_RaceModel_SwitchCommande_
+  commentId: Overload:Model.RaceModel.SwitchCommande
+  isSpec: "True"
+  fullName: Model.RaceModel.SwitchCommande
+  nameWithType: RaceModel.SwitchCommande
 - uid: physicSimulator
   name: physicSimulator
   href: api/physicSimulator.html
@@ -1612,6 +1908,90 @@ references:
   isSpec: "True"
   fullName: PRace.Position.Position
   nameWithType: Position.Position
+- uid: PRace.Position.Coords
+  name: Position.Coords
+  href: api/PRace.Position.Coords.html
+  commentId: T:PRace.Position.Coords
+  fullName: PRace.Position.Coords
+  nameWithType: Position.Coords
+- uid: PRace.Position.Coords.#ctor(System.Char,System.Int32,System.Int32,System.Int32)
+  name: Coords(Char, Int32, Int32, Int32)
+  href: api/PRace.Position.Coords.html#PRace_Position_Coords__ctor_System_Char_System_Int32_System_Int32_System_Int32_
+  commentId: M:PRace.Position.Coords.#ctor(System.Char,System.Int32,System.Int32,System.Int32)
+  fullName: PRace.Position.Coords.Coords(System.Char, System.Int32, System.Int32, System.Int32)
+  nameWithType: Position.Coords.Coords(Char, Int32, Int32, Int32)
+- uid: PRace.Position.Coords.#ctor*
+  name: Coords
+  href: api/PRace.Position.Coords.html#PRace_Position_Coords__ctor_
+  commentId: Overload:PRace.Position.Coords.#ctor
+  isSpec: "True"
+  fullName: PRace.Position.Coords.Coords
+  nameWithType: Position.Coords.Coords
+- uid: PRace.Position.Coords.degre
+  name: degre
+  href: api/PRace.Position.Coords.html#PRace_Position_Coords_degre
+  commentId: P:PRace.Position.Coords.degre
+  fullName: PRace.Position.Coords.degre
+  nameWithType: Position.Coords.degre
+- uid: PRace.Position.Coords.degre*
+  name: degre
+  href: api/PRace.Position.Coords.html#PRace_Position_Coords_degre_
+  commentId: Overload:PRace.Position.Coords.degre
+  isSpec: "True"
+  fullName: PRace.Position.Coords.degre
+  nameWithType: Position.Coords.degre
+- uid: PRace.Position.Coords.min
+  name: min
+  href: api/PRace.Position.Coords.html#PRace_Position_Coords_min
+  commentId: P:PRace.Position.Coords.min
+  fullName: PRace.Position.Coords.min
+  nameWithType: Position.Coords.min
+- uid: PRace.Position.Coords.min*
+  name: min
+  href: api/PRace.Position.Coords.html#PRace_Position_Coords_min_
+  commentId: Overload:PRace.Position.Coords.min
+  isSpec: "True"
+  fullName: PRace.Position.Coords.min
+  nameWithType: Position.Coords.min
+- uid: PRace.Position.Coords.pos
+  name: pos
+  href: api/PRace.Position.Coords.html#PRace_Position_Coords_pos
+  commentId: P:PRace.Position.Coords.pos
+  fullName: PRace.Position.Coords.pos
+  nameWithType: Position.Coords.pos
+- uid: PRace.Position.Coords.pos*
+  name: pos
+  href: api/PRace.Position.Coords.html#PRace_Position_Coords_pos_
+  commentId: Overload:PRace.Position.Coords.pos
+  isSpec: "True"
+  fullName: PRace.Position.Coords.pos
+  nameWithType: Position.Coords.pos
+- uid: PRace.Position.Coords.sec
+  name: sec
+  href: api/PRace.Position.Coords.html#PRace_Position_Coords_sec
+  commentId: P:PRace.Position.Coords.sec
+  fullName: PRace.Position.Coords.sec
+  nameWithType: Position.Coords.sec
+- uid: PRace.Position.Coords.sec*
+  name: sec
+  href: api/PRace.Position.Coords.html#PRace_Position_Coords_sec_
+  commentId: Overload:PRace.Position.Coords.sec
+  isSpec: "True"
+  fullName: PRace.Position.Coords.sec
+  nameWithType: Position.Coords.sec
+- uid: PRace.Position.Coords.ToString
+  name: ToString()
+  href: api/PRace.Position.Coords.html#PRace_Position_Coords_ToString
+  commentId: M:PRace.Position.Coords.ToString
+  fullName: PRace.Position.Coords.ToString()
+  nameWithType: Position.Coords.ToString()
+- uid: PRace.Position.Coords.ToString*
+  name: ToString
+  href: api/PRace.Position.Coords.html#PRace_Position_Coords_ToString_
+  commentId: Overload:PRace.Position.Coords.ToString
+  isSpec: "True"
+  fullName: PRace.Position.Coords.ToString
+  nameWithType: Position.Coords.ToString
 - uid: PRace.Position.Equals(System.Object)
   name: Equals(Object)
   href: api/PRace.Position.html#PRace_Position_Equals_System_Object_
@@ -1625,6 +2005,32 @@ references:
   isSpec: "True"
   fullName: PRace.Position.Equals
   nameWithType: Position.Equals
+- uid: PRace.Position.GetCoordLat
+  name: GetCoordLat()
+  href: api/PRace.Position.html#PRace_Position_GetCoordLat
+  commentId: M:PRace.Position.GetCoordLat
+  fullName: PRace.Position.GetCoordLat()
+  nameWithType: Position.GetCoordLat()
+- uid: PRace.Position.GetCoordLat*
+  name: GetCoordLat
+  href: api/PRace.Position.html#PRace_Position_GetCoordLat_
+  commentId: Overload:PRace.Position.GetCoordLat
+  isSpec: "True"
+  fullName: PRace.Position.GetCoordLat
+  nameWithType: Position.GetCoordLat
+- uid: PRace.Position.GetCoordLong
+  name: GetCoordLong()
+  href: api/PRace.Position.html#PRace_Position_GetCoordLong
+  commentId: M:PRace.Position.GetCoordLong
+  fullName: PRace.Position.GetCoordLong()
+  nameWithType: Position.GetCoordLong()
+- uid: PRace.Position.GetCoordLong*
+  name: GetCoordLong
+  href: api/PRace.Position.html#PRace_Position_GetCoordLong_
+  commentId: Overload:PRace.Position.GetCoordLong
+  isSpec: "True"
+  fullName: PRace.Position.GetCoordLong
+  nameWithType: Position.GetCoordLong
 - uid: PRace.Position.GetLatitude
   name: GetLatitude()
   href: api/PRace.Position.html#PRace_Position_GetLatitude
@@ -1709,12 +2115,12 @@ references:
   commentId: T:PRace.Race
   fullName: PRace.Race
   nameWithType: Race
-- uid: PRace.Race.#ctor(PRace.Mode,AquitisionCommunication.RaceSave.JsonRace)
-  name: Race(Mode, RaceSave.JsonRace)
-  href: api/PRace.Race.html#PRace_Race__ctor_PRace_Mode_AquitisionCommunication_RaceSave_JsonRace_
-  commentId: M:PRace.Race.#ctor(PRace.Mode,AquitisionCommunication.RaceSave.JsonRace)
-  fullName: PRace.Race.Race(PRace.Mode, AquitisionCommunication.RaceSave.JsonRace)
-  nameWithType: Race.Race(Mode, RaceSave.JsonRace)
+- uid: PRace.Race.#ctor(Model.RaceModel,PRace.Mode,AquitisionCommunication.RaceSave.JsonRace)
+  name: Race(RaceModel, Mode, RaceSave.JsonRace)
+  href: api/PRace.Race.html#PRace_Race__ctor_Model_RaceModel_PRace_Mode_AquitisionCommunication_RaceSave_JsonRace_
+  commentId: M:PRace.Race.#ctor(Model.RaceModel,PRace.Mode,AquitisionCommunication.RaceSave.JsonRace)
+  fullName: PRace.Race.Race(Model.RaceModel, PRace.Mode, AquitisionCommunication.RaceSave.JsonRace)
+  nameWithType: Race.Race(RaceModel, Mode, RaceSave.JsonRace)
 - uid: PRace.Race.#ctor*
   name: Race
   href: api/PRace.Race.html#PRace_Race__ctor_
@@ -1907,6 +2313,19 @@ references:
   isSpec: "True"
   fullName: PRace.Race.getMode
   nameWithType: Race.getMode
+- uid: PRace.Race.GetModeCommande
+  name: GetModeCommande()
+  href: api/PRace.Race.html#PRace_Race_GetModeCommande
+  commentId: M:PRace.Race.GetModeCommande
+  fullName: PRace.Race.GetModeCommande()
+  nameWithType: Race.GetModeCommande()
+- uid: PRace.Race.GetModeCommande*
+  name: GetModeCommande
+  href: api/PRace.Race.html#PRace_Race_GetModeCommande_
+  commentId: Overload:PRace.Race.GetModeCommande
+  isSpec: "True"
+  fullName: PRace.Race.GetModeCommande
+  nameWithType: Race.GetModeCommande
 - uid: PRace.Race.GetPosition
   name: GetPosition()
   href: api/PRace.Race.html#PRace_Race_GetPosition
@@ -2011,6 +2430,19 @@ references:
   isSpec: "True"
   fullName: PRace.Race.SetAccFactor
   nameWithType: Race.SetAccFactor
+- uid: PRace.Race.SetBoatCap(System.Single)
+  name: SetBoatCap(Single)
+  href: api/PRace.Race.html#PRace_Race_SetBoatCap_System_Single_
+  commentId: M:PRace.Race.SetBoatCap(System.Single)
+  fullName: PRace.Race.SetBoatCap(System.Single)
+  nameWithType: Race.SetBoatCap(Single)
+- uid: PRace.Race.SetBoatCap*
+  name: SetBoatCap
+  href: api/PRace.Race.html#PRace_Race_SetBoatCap_
+  commentId: Overload:PRace.Race.SetBoatCap
+  isSpec: "True"
+  fullName: PRace.Race.SetBoatCap
+  nameWithType: Race.SetBoatCap
 - uid: PRace.Race.SetCompetitors(System.Collections.Generic.List{System.Int32},System.Collections.Generic.List{System.Single},System.Collections.Generic.List{System.Single})
   name: SetCompetitors(List<Int32>, List<Single>, List<Single>)
   href: api/PRace.Race.html#PRace_Race_SetCompetitors_System_Collections_Generic_List_System_Int32__System_Collections_Generic_List_System_Single__System_Collections_Generic_List_System_Single__
@@ -2027,6 +2459,19 @@ references:
   isSpec: "True"
   fullName: PRace.Race.SetCompetitors
   nameWithType: Race.SetCompetitors
+- uid: PRace.Race.SetModeCommande(PRace.ModeCommande)
+  name: SetModeCommande(ModeCommande)
+  href: api/PRace.Race.html#PRace_Race_SetModeCommande_PRace_ModeCommande_
+  commentId: M:PRace.Race.SetModeCommande(PRace.ModeCommande)
+  fullName: PRace.Race.SetModeCommande(PRace.ModeCommande)
+  nameWithType: Race.SetModeCommande(ModeCommande)
+- uid: PRace.Race.SetModeCommande*
+  name: SetModeCommande
+  href: api/PRace.Race.html#PRace_Race_SetModeCommande_
+  commentId: Overload:PRace.Race.SetModeCommande
+  isSpec: "True"
+  fullName: PRace.Race.SetModeCommande
+  nameWithType: Race.SetModeCommande
 - uid: PRace.Race.SetWayPoint(System.Collections.Generic.List{PRace.WayPoint})
   name: SetWayPoint(List<WayPoint>)
   href: api/PRace.Race.html#PRace_Race_SetWayPoint_System_Collections_Generic_List_PRace_WayPoint__
@@ -2043,6 +2488,19 @@ references:
   isSpec: "True"
   fullName: PRace.Race.SetWayPoint
   nameWithType: Race.SetWayPoint
+- uid: PRace.Race.switchCommande
+  name: switchCommande()
+  href: api/PRace.Race.html#PRace_Race_switchCommande
+  commentId: M:PRace.Race.switchCommande
+  fullName: PRace.Race.switchCommande()
+  nameWithType: Race.switchCommande()
+- uid: PRace.Race.switchCommande*
+  name: switchCommande
+  href: api/PRace.Race.html#PRace_Race_switchCommande_
+  commentId: Overload:PRace.Race.switchCommande
+  isSpec: "True"
+  fullName: PRace.Race.switchCommande
+  nameWithType: Race.switchCommande
 - uid: PRace.RegulateurAmure
   name: RegulateurAmure
   href: api/PRace.RegulateurAmure.html
@@ -2254,12 +2712,38 @@ references:
   commentId: T:SimpleSimulator.AquitisionCommunication.Trame.Sender
   fullName: SimpleSimulator.AquitisionCommunication.Trame.Sender
   nameWithType: Sender
-- uid: SimpleSimulator.AquitisionCommunication.Trame.Sender.Send(SimpleSimulator.AquitisionCommunication.Trame.TrameNMEA,System.String,System.Int32)
-  name: Send(TrameNMEA, String, Int32)
-  href: api/SimpleSimulator.AquitisionCommunication.Trame.Sender.html#SimpleSimulator_AquitisionCommunication_Trame_Sender_Send_SimpleSimulator_AquitisionCommunication_Trame_TrameNMEA_System_String_System_Int32_
-  commentId: M:SimpleSimulator.AquitisionCommunication.Trame.Sender.Send(SimpleSimulator.AquitisionCommunication.Trame.TrameNMEA,System.String,System.Int32)
-  fullName: SimpleSimulator.AquitisionCommunication.Trame.Sender.Send(SimpleSimulator.AquitisionCommunication.Trame.TrameNMEA, System.String, System.Int32)
-  nameWithType: Sender.Send(TrameNMEA, String, Int32)
+- uid: SimpleSimulator.AquitisionCommunication.Trame.Sender.ip
+  name: ip
+  href: api/SimpleSimulator.AquitisionCommunication.Trame.Sender.html#SimpleSimulator_AquitisionCommunication_Trame_Sender_ip
+  commentId: P:SimpleSimulator.AquitisionCommunication.Trame.Sender.ip
+  fullName: SimpleSimulator.AquitisionCommunication.Trame.Sender.ip
+  nameWithType: Sender.ip
+- uid: SimpleSimulator.AquitisionCommunication.Trame.Sender.ip*
+  name: ip
+  href: api/SimpleSimulator.AquitisionCommunication.Trame.Sender.html#SimpleSimulator_AquitisionCommunication_Trame_Sender_ip_
+  commentId: Overload:SimpleSimulator.AquitisionCommunication.Trame.Sender.ip
+  isSpec: "True"
+  fullName: SimpleSimulator.AquitisionCommunication.Trame.Sender.ip
+  nameWithType: Sender.ip
+- uid: SimpleSimulator.AquitisionCommunication.Trame.Sender.port
+  name: port
+  href: api/SimpleSimulator.AquitisionCommunication.Trame.Sender.html#SimpleSimulator_AquitisionCommunication_Trame_Sender_port
+  commentId: P:SimpleSimulator.AquitisionCommunication.Trame.Sender.port
+  fullName: SimpleSimulator.AquitisionCommunication.Trame.Sender.port
+  nameWithType: Sender.port
+- uid: SimpleSimulator.AquitisionCommunication.Trame.Sender.port*
+  name: port
+  href: api/SimpleSimulator.AquitisionCommunication.Trame.Sender.html#SimpleSimulator_AquitisionCommunication_Trame_Sender_port_
+  commentId: Overload:SimpleSimulator.AquitisionCommunication.Trame.Sender.port
+  isSpec: "True"
+  fullName: SimpleSimulator.AquitisionCommunication.Trame.Sender.port
+  nameWithType: Sender.port
+- uid: SimpleSimulator.AquitisionCommunication.Trame.Sender.Send(SimpleSimulator.AquitisionCommunication.Trame.TrameNMEA)
+  name: Send(TrameNMEA)
+  href: api/SimpleSimulator.AquitisionCommunication.Trame.Sender.html#SimpleSimulator_AquitisionCommunication_Trame_Sender_Send_SimpleSimulator_AquitisionCommunication_Trame_TrameNMEA_
+  commentId: M:SimpleSimulator.AquitisionCommunication.Trame.Sender.Send(SimpleSimulator.AquitisionCommunication.Trame.TrameNMEA)
+  fullName: SimpleSimulator.AquitisionCommunication.Trame.Sender.Send(SimpleSimulator.AquitisionCommunication.Trame.TrameNMEA)
+  nameWithType: Sender.Send(TrameNMEA)
 - uid: SimpleSimulator.AquitisionCommunication.Trame.Sender.Send*
   name: Send
   href: api/SimpleSimulator.AquitisionCommunication.Trame.Sender.html#SimpleSimulator_AquitisionCommunication_Trame_Sender_Send_
@@ -2402,6 +2886,24 @@ references:
   commentId: T:SimpleSimulator.AquitisionCommunication.Trame.TrameNMEA
   fullName: SimpleSimulator.AquitisionCommunication.Trame.TrameNMEA
   nameWithType: TrameNMEA
+- uid: SimpleSimulator.AquitisionCommunication.Trame.TrameNMEA.mwv
+  name: mwv
+  href: api/SimpleSimulator.AquitisionCommunication.Trame.TrameNMEA.html#SimpleSimulator_AquitisionCommunication_Trame_TrameNMEA_mwv
+  commentId: F:SimpleSimulator.AquitisionCommunication.Trame.TrameNMEA.mwv
+  fullName: SimpleSimulator.AquitisionCommunication.Trame.TrameNMEA.mwv
+  nameWithType: TrameNMEA.mwv
+- uid: SimpleSimulator.AquitisionCommunication.Trame.TrameNMEA.rmc
+  name: rmc
+  href: api/SimpleSimulator.AquitisionCommunication.Trame.TrameNMEA.html#SimpleSimulator_AquitisionCommunication_Trame_TrameNMEA_rmc
+  commentId: F:SimpleSimulator.AquitisionCommunication.Trame.TrameNMEA.rmc
+  fullName: SimpleSimulator.AquitisionCommunication.Trame.TrameNMEA.rmc
+  nameWithType: TrameNMEA.rmc
+- uid: SimpleSimulator.AquitisionCommunication.Trame.TrameNMEA.rsa
+  name: rsa
+  href: api/SimpleSimulator.AquitisionCommunication.Trame.TrameNMEA.html#SimpleSimulator_AquitisionCommunication_Trame_TrameNMEA_rsa
+  commentId: F:SimpleSimulator.AquitisionCommunication.Trame.TrameNMEA.rsa
+  fullName: SimpleSimulator.AquitisionCommunication.Trame.TrameNMEA.rsa
+  nameWithType: TrameNMEA.rsa
 - uid: SimpleSimulator.AquitisionCommunication.Trame.TrameNMEA.ToString
   name: ToString()
   href: api/SimpleSimulator.AquitisionCommunication.Trame.TrameNMEA.html#SimpleSimulator_AquitisionCommunication_Trame_TrameNMEA_ToString
@@ -2415,6 +2917,18 @@ references:
   isSpec: "True"
   fullName: SimpleSimulator.AquitisionCommunication.Trame.TrameNMEA.ToString
   nameWithType: TrameNMEA.ToString
+- uid: SimpleSimulator.AquitisionCommunication.Trame.TrameNMEA.vhw
+  name: vhw
+  href: api/SimpleSimulator.AquitisionCommunication.Trame.TrameNMEA.html#SimpleSimulator_AquitisionCommunication_Trame_TrameNMEA_vhw
+  commentId: F:SimpleSimulator.AquitisionCommunication.Trame.TrameNMEA.vhw
+  fullName: SimpleSimulator.AquitisionCommunication.Trame.TrameNMEA.vhw
+  nameWithType: TrameNMEA.vhw
+- uid: SimpleSimulator.AquitisionCommunication.Trame.TrameNMEA.xdr
+  name: xdr
+  href: api/SimpleSimulator.AquitisionCommunication.Trame.TrameNMEA.html#SimpleSimulator_AquitisionCommunication_Trame_TrameNMEA_xdr
+  commentId: F:SimpleSimulator.AquitisionCommunication.Trame.TrameNMEA.xdr
+  fullName: SimpleSimulator.AquitisionCommunication.Trame.TrameNMEA.xdr
+  nameWithType: TrameNMEA.xdr
 - uid: SimpleSimulator.AquitisionCommunication.Trame.TrameRMC
   name: TrameRMC
   href: api/SimpleSimulator.AquitisionCommunication.Trame.TrameRMC.html

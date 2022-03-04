@@ -14,6 +14,11 @@
     name: RaceSave.JsonRace
   - uid: AquitisionCommunication.Sauvegarde
     name: Sauvegarde
+- uid: Controller
+  name: Controller
+  items:
+  - uid: Controller.Follow
+    name: Follow
 - uid: Environement
   name: Environement
   items:
@@ -32,6 +37,12 @@
   items:
   - uid: Model.BoatInfo
     name: BoatInfo
+  - uid: Model.IObserver
+    name: IObserver
+  - uid: Model.ISubject
+    name: ISubject
+  - uid: Model.Observer
+    name: Observer
   - uid: Model.RaceModel
     name: RaceModel
 - uid: physicSimulator
@@ -58,6 +69,8 @@
     name: Polaire
   - uid: PRace.Position
     name: Position
+  - uid: PRace.Position.Coords
+    name: Position.Coords
   - uid: PRace.Race
     name: Race
   - uid: PRace.RegulateurAmure

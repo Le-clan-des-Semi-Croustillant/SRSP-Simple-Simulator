@@ -1,5 +1,5 @@
 # Installation
-## Télécharger (toutes plateformes)
+## Télécharger les fichiers (toutes plateformes)
 Téléchargez la [dernière version]() dépendamment de votre plateforme (windows-x86, Linux-x86, android)
 
 ## Windows et Linux

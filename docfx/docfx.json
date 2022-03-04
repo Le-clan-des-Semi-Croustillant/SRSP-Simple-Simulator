@@ -4,9 +4,9 @@
       "src": [
         {
           "files": [
-            "**.csproj"
+            "Assembly-CSharp.csproj"
           ],
-          "src": "../SimpleSimulator/SimpleSimulator"
+          "src": "../SRSP-Simple-Simulator"
         }
       ],
       "dest": "api",
