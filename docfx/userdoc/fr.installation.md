@@ -1,6 +1,6 @@
 # Installation
 ## Télécharger les fichiers (toutes plateformes)
-Téléchargez la [dernière version]() dépendamment de votre plateforme (windows-x86, Linux-x86, android)
+Téléchargez la [dernière version](https://github.com/Le-clan-des-Semi-Croustillant/SRSP-Simple-Simulator/releases) dépendamment de votre plateforme (windows-x86, Linux-x86, android)
 
 ## Windows et Linux
 Vous aurez besoin de dézipper l'archive, ensuite vous pourrez lancer *voile*.
