@@ -55,8 +55,8 @@
     "globalMetadataFiles": [],
     "fileMetadataFiles": [],
     "template": [
-      "statictoc",
-      "darkfx"
+     "statictoc", "darkfx"      
+
     ],
     "postProcessors": [],
     "markdownEngineName": "markdig",
