@@ -6,7 +6,7 @@
           "files": [
             "**.csproj"
           ],
-          "src": "."
+          "src": "../SimpleSimulator/SimpleSimulator"
         }
       ],
       "dest": "api",
@@ -24,8 +24,10 @@
       },
       {
         "files": [
-          "articles/**.md",
-          "articles/**/toc.yml",
+          "userdoc/**.md",
+          "userdoc/**/toc.yml",
+          "devres/**.md",
+          "devres/**/toc.yml",
           "toc.yml",
           "*.md"
         ]
@@ -45,15 +47,16 @@
         ],
         "exclude": [
           "obj/**",
-          "docs/**"
+          "_site/**"
         ]
       }
     ],
-    "dest": "../../docs",
+    "dest": "../docs",
     "globalMetadataFiles": [],
     "fileMetadataFiles": [],
     "template": [
-      "default"
+      "statictoc",
+      "darkfx"
     ],
     "postProcessors": [],
     "markdownEngineName": "markdig",
