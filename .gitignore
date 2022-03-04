@@ -137,7 +137,10 @@ consoleTests/obj/project.nuget.cache
 *.cache
 docs/manifest.json
 **/log.txt
-docfx/api/
-!docfx/api/index.md
-!docfx/api/toc.yml
+
 *.bak
+
+docfx/api/*
+!docfx/api/*.md
+!docfx/api/toc.yml
+!docfx/api/.manifest

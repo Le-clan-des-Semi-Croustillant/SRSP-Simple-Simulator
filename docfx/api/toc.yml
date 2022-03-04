@@ -1,0 +1,89 @@
+### YamlMime:TableOfContent
+- uid: AquitisionCommunication
+  name: AquitisionCommunication
+  items:
+  - uid: AquitisionCommunication.Aquisition
+    name: Aquisition
+  - uid: AquitisionCommunication.AquisitionFichierSaveRace
+    name: AquisitionFichierSaveRace
+  - uid: AquitisionCommunication.AquisitionPolaire
+    name: AquisitionPolaire
+  - uid: AquitisionCommunication.RaceSave
+    name: RaceSave
+  - uid: AquitisionCommunication.RaceSave.JsonRace
+    name: RaceSave.JsonRace
+  - uid: AquitisionCommunication.Sauvegarde
+    name: Sauvegarde
+- uid: Environement
+  name: Environement
+  items:
+  - uid: Environement.Conditions
+    name: Conditions
+  - uid: Environement.Current
+    name: Current
+  - uid: Environement.Environment
+    name: Environment
+  - uid: Environement.Wave
+    name: Wave
+  - uid: Environement.Wind
+    name: Wind
+- uid: Model
+  name: Model
+  items:
+  - uid: Model.BoatInfo
+    name: BoatInfo
+  - uid: Model.RaceModel
+    name: RaceModel
+- uid: physicSimulator
+  name: physicSimulator
+  items:
+  - uid: physicSimulator.physics_simulator
+    name: physics_simulator
+- uid: PRace
+  name: PRace
+  items:
+  - uid: PRace.Boat
+    name: Boat
+  - uid: PRace.Clock
+    name: Clock
+  - uid: PRace.Competitor
+    name: Competitor
+  - uid: PRace.DegreeIncrement
+    name: DegreeIncrement
+  - uid: PRace.Mode
+    name: Mode
+  - uid: PRace.ModeCommande
+    name: ModeCommande
+  - uid: PRace.Polaire
+    name: Polaire
+  - uid: PRace.Position
+    name: Position
+  - uid: PRace.Race
+    name: Race
+  - uid: PRace.RegulateurAmure
+    name: RegulateurAmure
+  - uid: PRace.Time
+    name: Time
+  - uid: PRace.WayPoint
+    name: WayPoint
+- uid: SimpleSimulator.AquitisionCommunication.Trame
+  name: SimpleSimulator.AquitisionCommunication.Trame
+  items:
+  - uid: SimpleSimulator.AquitisionCommunication.Trame.Sender
+    name: Sender
+  - uid: SimpleSimulator.AquitisionCommunication.Trame.TrameMWV
+    name: TrameMWV
+  - uid: SimpleSimulator.AquitisionCommunication.Trame.TrameNMEA
+    name: TrameNMEA
+  - uid: SimpleSimulator.AquitisionCommunication.Trame.TrameRMC
+    name: TrameRMC
+  - uid: SimpleSimulator.AquitisionCommunication.Trame.TrameRSA
+    name: TrameRSA
+  - uid: SimpleSimulator.AquitisionCommunication.Trame.TrameVDM
+    name: TrameVDM
+  - uid: SimpleSimulator.AquitisionCommunication.Trame.TrameVHW
+    name: TrameVHW
+  - uid: SimpleSimulator.AquitisionCommunication.Trame.TrameXDR
+    name: TrameXDR
+  - uid: SimpleSimulator.AquitisionCommunication.Trame.XDRSub
+    name: XDRSub
