@@ -1,0 +1,12 @@
+{
+	"RaceId":1,
+	"RaceTime":"2001-01-01T00:00:10",
+	"wayPointFile":".gpx",
+	"currentPol":"a31.pol",
+	"polFiles":["amel_supermaramu2000.pol", "a31.pol"],
+	"BoatId":1,
+	"BoatCap":90.0,
+	"longitude":314.0,
+	"latitude":27.0,
+	"accelerationFactor":1.0
+}

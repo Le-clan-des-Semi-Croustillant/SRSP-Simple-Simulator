@@ -4,6 +4,9 @@ using Newtonsoft.Json;
 
 namespace Model
 {
+    /// <summary>
+    /// Interface for a model pattern
+    /// </summary>
     public interface ISubject
     {
         void Attach(IObserver observer);

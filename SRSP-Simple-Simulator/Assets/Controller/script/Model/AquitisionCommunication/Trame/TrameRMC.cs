@@ -23,6 +23,16 @@ A = Alerte du logiciel de navigation ( A = OK, V = warning (alerte)
 
 namespace SimpleSimulator.AquitisionCommunication.Trame
 {
+    /// <summary>
+    /// Trame RMC
+    /// Important parameters :
+    /// Heure wich refer to the date time Hour
+    /// Date with refer to the date time Day
+    /// Latitude / indicateur Latitude 
+    /// Longitude / indicateur Longitude
+    /// Vitesse witch refer to speed in knots
+    /// Controle wich get the checksum string 
+    /// </summary>
     public class TrameRMC
     {
         public string TrameType { get; set; } = "GPRMC";
@@ -39,17 +49,52 @@ namespace SimpleSimulator.AquitisionCommunication.Trame
         public char Sens { get; set; } = 'W';
         public char Mode { get; set; } = 'A';
         public string Controle { get; set; }
+
+        /// <summary>
+        /// compute the accepted hour time to the second 
+        /// </summary>
+        /// <param name="date"></param>
+        /// <returns></returns>
         public string NormalizeHeure(DateTime date)
         {
             return date.Hour.ToString() + date.Minute.ToString() + date.Second.ToString();// + "." + date.Millisecond.ToString();
         }
 
+        /// <summary>
+        /// compute the accepted date day
+        /// </summary>
+        /// <param name="date"></param>
+        /// <returns></returns>
         public string NormalizeDate(DateTime date)
         {
             string year = date.Year.ToString();
-            return date.Day.ToString() + date.Month.ToString() + year[2] + year[3];
+            if (year.Length == 4)
+            {
+                return date.Day.ToString() + date.Month.ToString() + year[2] + year[3];
+            }
+            if (year.Length == 3)
+            {
+                return date.Day.ToString() + date.Month.ToString() + year[1] + year[2];
+            }
+            if (year.Length == 2)
+            {
+                return date.Day.ToString() + date.Month.ToString() + year[0] + year[1];
+            }
+            if (year.Length == 1)
+            {
+                return date.Day.ToString() + date.Month.ToString() + year[0];
+            }
+            else
+            {
+                return date.Day.ToString() + date.Month.ToString() + year;
+            }
         }
 
+        /// <summary>
+        /// compute the resulting checksum of a trame RMC
+        /// </summary>
+        /// <param name="trame">string of a trame RMC</param>
+        /// <returns></returns>
         public string Checksum(string trame)
         {
             ushort checksum = 0;
@@ -60,6 +105,10 @@ namespace SimpleSimulator.AquitisionCommunication.Trame
             return checksum.ToString("X2");
         }
 
+        /// <summary>
+        /// compute the resulting trame RMC in string
+        /// </summary>
+        /// <returns></returns>
         public override string? ToString()
         {
             string trame = TrameType + "," + NormalizeHeure(Heure) + "," + Etat + "," + Latitude.ToString(CultureInfo.InvariantCulture) 

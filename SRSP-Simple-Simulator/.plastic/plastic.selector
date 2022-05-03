@@ -1,0 +1,3 @@
+rep "SRSP-Simple-Simulator@Sky_csc@cloud"
+  path "/"
+    smartbranch "/main"

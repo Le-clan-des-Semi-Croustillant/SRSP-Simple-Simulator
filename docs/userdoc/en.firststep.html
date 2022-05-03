@@ -5,10 +5,10 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>Premiers pas </title>
+    <title>Getting Started -Navigation Scene </title>
     <meta name="viewport" content="width=device-width">
-    <meta name="title" content="Premiers pas ">
-    <meta name="generator" content="docfx 2.59.0.0">
+    <meta name="title" content="Getting Started -Navigation Scene ">
+    <meta name="generator" content="docfx 2.59.2.0">
     
     <link rel="shortcut icon" href="../favicon.ico">
     <link rel="stylesheet" href="../styles/docfx.vendor.css">
@@ -95,10 +95,13 @@
                           <li class="">
                             <a href="fr.firststep.html" title="Premiers pas" class="">Premiers pas</a>
                           </li>
+                          <li class="">
+                            <a href="fr.menu.html" title="Menu fonctionnalit&#233;" class="">Menu fonctionnalit&#233;</a>
+                          </li>
                         </ul>  </li>
                     <li class="">
                       <span class="expand-stub"></span>
-                      <a class="">English (todo)</a>
+                      <a class="">English</a>
                         
                         <ul class="nav level2">
                           <li class="">
@@ -110,6 +113,9 @@
                           <li class="active">
                             <a href="en.firststep.html" title="First steps" class="active">First steps</a>
                           </li>
+                          <li class="">
+                            <a href="en.menu.html" title="Menu fonctionnalities" class="">Menu fonctionnalities</a>
+                          </li>
                         </ul>  </li>
                   </ul>        </div>
               </div>
@@ -119,54 +125,56 @@
         <div class="article row grid-right">
           <div class="col-md-10">
             <article class="content wrap" id="_content" data-uid="">
-<h1 id="premiers-pas">Premiers pas</h1>
+<h1 id="getting-started--navigation-scene">Getting Started -Navigation Scene</h1>
 
-<h2 id="guide-vers-la-scène-de-navigation">Guide vers la scène de navigation</h2>
-<p>Une fois lancé, l’application vous amène dans son menu.<br>
-Appuyez sur le bouton “Continue Navigation”. (Le système de sauvegarde n’est pas encore correctement implémenté)<br>
-Vous voici maintenant capable de jouer avec l’application.</p>
-<h2 id="touches-utilisateur">Touches utilisateur</h2>
+<h2 id="user-keys">User keys</h2>
 <ul>
-<li><p>TAB : action : change entre mode cap et mode allure (mais allure non fonctionnelle).</p>
+<li><p>TAB: action: change between heading mode and pace mode (but pace not functional).</p>
 </li>
-<li><p>F1 : action :</p>
+<li><p>F1: action:</p>
 <ul>
-<li>ouvre la fenêtre de configuration du vent.</li>
-<li>ferme la fenêtre de configuration du vent.</li>
+<li>opens the wind configuration window.</li>
+<li>closes the wind configuration window.</li>
 </ul>
 </li>
-<li><p>F2 : action :</p>
+<li><p>F2: share:</p>
 <ul>
-<li>ouvre la fenêtre de configuration des vagues.</li>
-<li>ferme la fenêtre de configuration des vagues.</li>
+<li>opens the wave configuration window.</li>
+<li>closes the wave configuration window.</li>
 </ul>
 </li>
-<li><p>F3 : action :</p>
+<li><p>F3: action:</p>
 <ul>
-<li>ouvre la fenêtre de configuration du courant.</li>
-<li>ferme la fenêtre de configuration du courant.</li>
+<li>opens the current configuration window.</li>
+<li>closes the current configuration window.</li>
 </ul>
 </li>
 </ul>
-<h2 id="inputs-utilisateur">Inputs utilisateur</h2>
-<h3 id="boutons-cap-">Boutons cap :</h3>
-<p>Emplacement : au milieu bas de l’écran<br>
-Action : change le cap (-10, -1, +1, +10)</p>
-<p><img src="../images/change-cap.png" alt="Alt text"></p>
-<h3 id="champ-set-factor-of-acceleration-">Champ &quot;Set factor of acceleration&quot; :</h3>
-<p>Emplacement : en bas à gauche.<br>
-Action : après appuyer sur le bouton “ok”, change le facteur d’accélération par la valeur entrée dans le champ associé. (par défaut celui-ci est à 1)</p>
-<p><img src="../images/factor-of-acceleration.png" alt="Alt text"></p>
-<h3 id="champ-configuration-environnement-">Champ configuration environnement :</h3>
-<p>Action : après appuis sur le bouton “ok, change l’environnement par les valeurs entrée dans les champs associés. (sont à 0 par défaut)</p>
-<p><img src="../images/configuration-environnement.png" alt="Alt text"></p>
-<h2 id="bandeau-menu">Bandeau menu</h2>
-<p>Emplacement : en haut à gauche<br>
-Fonctionnalités : (toutes ne sont pas encore implémentées comme “Save navigation”)</p>
+<h2 id="user-inputs">User inputs</h2>
+<h3 id="cap-heading-buttons">Cap Heading Buttons:</h3>
+<p>Location: middle bottom of screen
+Action: change cap (-10, -1, +1, +10)<br>
+Switch button : swap between heading and wind mode.</p>
+<p><img src="../images/cap.PNG" alt="Alt text"></p>
+<h3 id="set-factor-of-acceleration-field">&quot;Set factor of acceleration&quot; field:</h3>
+<p>Location: bottom left.
+Action: changes the acceleration factor by the value entered in the associated field. (by default this is 1)</p>
+<p><img src="../images/acc.PNG" alt="Alt text"></p>
+<h3 id="environment-configuration-field">Environment configuration field:</h3>
+<p>Action: after pressing the &quot;ok&quot; button, changes the environment by the values ​​entered in the associated fields. (are at 0 by default)</p>
+<p><img src="../images/env.PNG" alt="Alt text"></p>
+<h3 id="change-of-polar">Change of polar:</h3>
+<p>Location: bottom right.
+Action: Allows a change of polar following its selection by a user click (the active polar is in green).</p>
+<p><img src="../images/polars.PNG" alt="Alt text"></p>
+<h2 id="menu-banner">Menu banner</h2>
+<p>Location: top left
+Features:</p>
 <ul>
-<li>Navigation : Exit : permet de quitter l’application.</li>
-<li>Environnement : permet d’afficher les fenêtres de configuration associées.</li>
-<li>Help : Documentation, ouvre la page web de documentation utilisateur et développeur.</li>
+<li>Navigation: Exit: allows you to quit the application.</li>
+<li>Save: allows you to display a panel to save your race by a name chosen by the user in an associated field.</li>
+<li>Environment: displays the associated configuration windows.</li>
+<li>Help: Documentation, opens the user and developer documentation web page.</li>
 </ul>
 </article>
           </div>

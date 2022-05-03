@@ -5,10 +5,10 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>Premiers pas </title>
+    <title>Premiers pas - Sc&#232;ne de navigation </title>
     <meta name="viewport" content="width=device-width">
-    <meta name="title" content="Premiers pas ">
-    <meta name="generator" content="docfx 2.59.0.0">
+    <meta name="title" content="Premiers pas - Sc&#232;ne de navigation ">
+    <meta name="generator" content="docfx 2.59.2.0">
     
     <link rel="shortcut icon" href="../favicon.ico">
     <link rel="stylesheet" href="../styles/docfx.vendor.css">
@@ -95,10 +95,13 @@
                           <li class="active">
                             <a href="fr.firststep.html" title="Premiers pas" class="active">Premiers pas</a>
                           </li>
+                          <li class="">
+                            <a href="fr.menu.html" title="Menu fonctionnalit&#233;" class="">Menu fonctionnalit&#233;</a>
+                          </li>
                         </ul>  </li>
                     <li class="">
                       <span class="expand-stub"></span>
-                      <a class="">English (todo)</a>
+                      <a class="">English</a>
                         
                         <ul class="nav level2">
                           <li class="">
@@ -110,6 +113,9 @@
                           <li class="">
                             <a href="en.firststep.html" title="First steps" class="">First steps</a>
                           </li>
+                          <li class="">
+                            <a href="en.menu.html" title="Menu fonctionnalities" class="">Menu fonctionnalities</a>
+                          </li>
                         </ul>  </li>
                   </ul>        </div>
               </div>
@@ -119,12 +125,8 @@
         <div class="article row grid-right">
           <div class="col-md-10">
             <article class="content wrap" id="_content" data-uid="">
-<h1 id="premiers-pas">Premiers pas</h1>
+<h1 id="premiers-pas---scène-de-navigation">Premiers pas - Scène de navigation</h1>
 
-<h2 id="guide-vers-la-scène-de-navigation">Guide vers la scène de navigation</h2>
-<p>Une fois lancé, l’application vous amène dans son menu.<br>
-Appuyez sur le bouton “Continue Navigation”. (Le système de sauvegarde n’est pas encore correctement implémenté)<br>
-Vous voici maintenant capable de jouer avec l’application.</p>
 <h2 id="touches-utilisateur">Touches utilisateur</h2>
 <ul>
 <li><p>TAB : action : change entre mode cap et mode allure (mais allure non fonctionnelle).</p>
@@ -151,20 +153,27 @@ Vous voici maintenant capable de jouer avec l’application.</p>
 <h2 id="inputs-utilisateur">Inputs utilisateur</h2>
 <h3 id="boutons-cap-">Boutons cap :</h3>
 <p>Emplacement : au milieu bas de l’écran<br>
-Action : change le cap (-10, -1, +1, +10)</p>
-<p><img src="../images/change-cap.png" alt="Alt text"></p>
+Action : change le cap (-10, -1, +1, +10)<br>
+Switch bouton : change entre mode cap et mode allure.</p>
+<p><img src="../images/cap.PNG" alt="Alt text"></p>
 <h3 id="champ-set-factor-of-acceleration-">Champ &quot;Set factor of acceleration&quot; :</h3>
 <p>Emplacement : en bas à gauche.<br>
-Action : après appuyer sur le bouton “ok”, change le facteur d’accélération par la valeur entrée dans le champ associé. (par défaut celui-ci est à 1)</p>
-<p><img src="../images/factor-of-acceleration.png" alt="Alt text"></p>
+Action : change le facteur d’accélération par la valeur entrée dans le champ associé. (par défaut celui-ci est à 1)</p>
+<p><img src="../images/acc.PNG" alt="Alt text"></p>
 <h3 id="champ-configuration-environnement-">Champ configuration environnement :</h3>
-<p>Action : après appuis sur le bouton “ok, change l’environnement par les valeurs entrée dans les champs associés. (sont à 0 par défaut)</p>
-<p><img src="../images/configuration-environnement.png" alt="Alt text"></p>
+<p>Action : après appuis sur le bouton “ok&quot;, change l’environnement par les valeurs entrée dans les champs associés. (sont à 0 par défaut)</p>
+<p><img src="../images/env.PNG" alt="Alt text"></p>
+<h3 id="changement-de-polaire-">Changement de polaire :</h3>
+<p>Emplacement : en bas à droite.<br>
+Action : Permet un changement de polaire suite à la selection de celle-ci par un clique utilisateur (la polaire active est en verte).<br>
+Vous pouvez également baisser les voiles en cliquant sur le bouton correspondant.</p>
+<p><img src="../images/polars.PNG" alt="Alt text"></p>
 <h2 id="bandeau-menu">Bandeau menu</h2>
 <p>Emplacement : en haut à gauche<br>
-Fonctionnalités : (toutes ne sont pas encore implémentées comme “Save navigation”)</p>
+Fonctionnalités :</p>
 <ul>
 <li>Navigation : Exit : permet de quitter l’application.</li>
+<li>Save : permet d'affichier un panel pour sauvegarder sa course par un nom choisi par l'utilisateur dans un champ associé.</li>
 <li>Environnement : permet d’afficher les fenêtres de configuration associées.</li>
 <li>Help : Documentation, ouvre la page web de documentation utilisateur et développeur.</li>
 </ul>

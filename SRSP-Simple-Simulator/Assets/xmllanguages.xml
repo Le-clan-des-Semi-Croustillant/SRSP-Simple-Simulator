@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<languages>	
+
+	<language>
+		<Name>English</Name>
+		<Navigation>Navigation</Navigation>
+		<Environment>Environment</Environment>
+		<Help>Help</Help>
+		<AcceletationFactor>Acceleration Factor</AcceletationFactor>
+		
+		<Menu>Menu</Menu>
+		<Continue>Continue</Continue>
+		<NewNavigation>New navigation</NewNavigation>
+		<Configuration>Configuration</Configuration>
+		<Exit>Exit</Exit>
+		
+		<ModeSelection>Mode Selection</ModeSelection>
+		<Training>Training</Training>
+		<Asynchronus>Asynchronus</Asynchronus>
+		<Synchronus>Synchronus</Synchronus>
+		<Cancel>Cancel</Cancel>
+
+		<BoatSelection>Boat Selection</BoatSelection>
+		<Refresh>Refresh</Refresh>
+		
+		<SaveSelection>Save Selection</SaveSelection>
+		<Ok>Ok</Ok>
+		
+		<WaypointSelection>WaypointSelection</WaypointSelection>
+		
+		<Save>Save</Save>
+		<Verify>Verify</Verify>
+		<Back>Back</Back>
+		
+		<QuestionInit>Is the boat turning on itself ?</QuestionInit>
+		<QTVLM>(On QTVLM)</QTVLM>
+		<Yes>Yes</Yes>
+		<No>No</No>
+		
+		<Wind>Wind setup</Wind>
+		<Wave>Wave setup</Wave>
+		<Current>Current setup</Current>
+		<Documentation>Documentation</Documentation>
+		<coming>Coming soon</coming>
+
+		<HeadingMode>Heading Mode</HeadingMode>
+		<WindMode>Wind Mode</WindMode>
+		<SwitchH>Switch to heading mode</SwitchH>
+		<SwitchW>Switch to wind mode</SwitchW>
+
+		
+		<WindSpeed>Wind speed</WindSpeed>
+		<WindDirection>Wind direction</WindDirection>
+		
+		<Amplitude>Amplitude</Amplitude>
+		<WaveDirection>Wave direction</WaveDirection>
+		<WaveLength>Wave length</WaveLength>
+
+		<WaterCurrentSetup>Water current setup</WaterCurrentSetup>
+		<CurrentSpeed>Water current speed</CurrentSpeed>
+		<CurrentDirection>Water current direction</CurrentDirection>
+		
+		<Polar>Polar</Polar>
+
+		<SaveFile>Save file</SaveFile>
+		<NoPolar>lower the sails</NoPolar>
+
+	</language>
+	
+	<language>
+		<Name>Français</Name>
+		<Navigation>Navigation</Navigation>
+		<Environment>Environnement</Environment>
+		<Help>Aide</Help>
+		<AcceletationFactor>Facteur d'accélération</AcceletationFactor>
+		
+		<Menu>Menu</Menu>
+		<Continue>Continue</Continue>
+		<NewNavigation>Nouvelle course</NewNavigation>
+		<Configuration>Configuration</Configuration>
+		<Exit>Quitter</Exit>
+
+		<ModeSelection>Choix du Mode</ModeSelection>
+		<Training>Entraînement</Training>
+		<Asynchronus>Asynchrone</Asynchronus>
+		<Synchronus>Synchrone</Synchronus>
+		<Cancel>Annuler</Cancel>
+
+		<BoatSelection>Choix du Bateau</BoatSelection>
+		<Refresh>Actualiser</Refresh>
+
+		<SaveSelection>Choix de Sauvegarde</SaveSelection>
+		<Ok>Ok</Ok>
+
+		<WaypointSelection>Choix de la Balise</WaypointSelection>
+
+		<Save>Sauvegarder</Save>
+		<Verify>Verifier</Verify>
+		<Back>Retour</Back>
+
+		<QuestionInit>Le bateau tourne-t-il sur lui-même ?</QuestionInit>
+		<QTVLM>(Sur QTVLM)</QTVLM>
+		<Yes>Oui</Yes>
+		<No>Non</No>
+	
+		<Wind>Configuration du vent</Wind>
+		<Wave>Configuration des vagues</Wave>
+		<Current>Configuration du courant</Current>
+		<Documentation>Documentation</Documentation>
+		<coming>A venir</coming>
+
+		<HeadingMode>Mode Cap</HeadingMode>
+		<WindMode>Mode allure</WindMode>
+		<SwitchH>Passer au mode cap</SwitchH>
+		<SwitchW>Passer au mode allure</SwitchW>
+
+		<WindSpeed>Vitesse du vent</WindSpeed>
+		<WindDirection>Direction du vent</WindDirection>
+		
+		<Amplitude>Amplitude</Amplitude>
+		<WaveDirection>Direction des vagues</WaveDirection>
+		<WaveLength>Longeur d'onde</WaveLength>
+
+		<WaterCurrentSetup>Configuration du courrant d'eau</WaterCurrentSetup>
+		<CurrentSpeed>Vitesse du courant</CurrentSpeed>
+		<CurrentDirection>Direction du courant</CurrentDirection>
+		
+		<Polar>Polaire</Polar>
+		
+		<SaveFile>Sauvegarder fichier</SaveFile>
+
+		<NoPolar>baisser les voiles</NoPolar>
+	
+	</language>
+
+</languages>

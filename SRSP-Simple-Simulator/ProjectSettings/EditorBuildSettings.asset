@@ -6,6 +6,9 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
+    path: Assets/Scenes/Debut.unity
+    guid: 19b52b17b16bf1d48852d9619cb3554f
+  - enabled: 1
     path: Assets/Scenes/Menu.unity
     guid: 83655e74de8e2fe48b97391bb298fb8b
   - enabled: 1
@@ -20,4 +23,13 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Initialisation.unity
     guid: 088891e94de537f4788f7fd1bd492a41
+  - enabled: 1
+    path: Assets/Scenes/SelectionBoatType.unity
+    guid: bd0b7d9209fe17d4abd3f7e803a8a469
+  - enabled: 1
+    path: Assets/Scenes/Backups.unity
+    guid: 80f7fbb47a0eca84f986b88aec9a1414
+  - enabled: 1
+    path: Assets/Scenes/Waypoint.unity
+    guid: 648dd2cd0494ae048b71e0dcaf3028b2
   m_configObjects: {}

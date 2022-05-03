@@ -6,6 +6,9 @@ using System.Text;
 
 namespace PRace
 {
+    /// <summary>
+    /// This class represents a waypoint of the course
+    /// </summary>
     public class WayPoint {
 
         public WayPoint(int id, string nom, Position position) {

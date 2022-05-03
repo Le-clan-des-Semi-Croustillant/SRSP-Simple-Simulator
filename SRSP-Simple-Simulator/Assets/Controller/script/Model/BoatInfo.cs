@@ -6,6 +6,9 @@ using System.Threading.Tasks;
 
 namespace Model
 {
+    /// <summary>
+    /// Enumerate all information about the boat that should be transmitted ton the interface
+    /// </summary>
     public enum BoatInfo
     {
         Longitude,
@@ -13,5 +16,8 @@ namespace Model
         Cap,
         COG,
         SOG,
+        STW,
+        AWS,
+        AWA,
     }
 }

@@ -293,7 +293,7 @@ GameObject:
   - component: {fileID: 198594054}
   - component: {fileID: 198594053}
   m_Layer: 5
-  m_Name: Text
+  m_Name: TextQuestion
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -315,8 +315,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -51.217, y: 356}
-  m_SizeDelta: {x: 780.412, y: 175.492}
+  m_AnchoredPosition: {x: -51.217, y: 603.0832}
+  m_SizeDelta: {x: 780.412, y: 60.572}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &198594053
 MonoBehaviour:
@@ -353,7 +353,7 @@ MonoBehaviour:
     m_LineSpacing: 1
   m_Text: 'Is the boat turning on itself ?
 
-    (On QTVLM)'
+'
 --- !u!222 &198594054
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -445,6 +445,85 @@ Transform:
   m_Father: {fileID: 1266886047}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &564783703
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 564783704}
+  - component: {fileID: 564783706}
+  - component: {fileID: 564783705}
+  m_Layer: 5
+  m_Name: (On QTVLM)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &564783704
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 564783703}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 3.351512, y: 4.300077, z: 1}
+  m_Children: []
+  m_Father: {fileID: 809819746}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: -69, y: 361}
+  m_SizeDelta: {x: 780.412, y: 60.572}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &564783705
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 564783703}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_FontData:
+    m_Font: {fileID: 12800000, guid: e3265ab4bf004d28a9537516768c1c75, type: 3}
+    m_FontSize: 50
+    m_FontStyle: 0
+    m_BestFit: 0
+    m_MinSize: 2
+    m_MaxSize: 50
+    m_Alignment: 0
+    m_AlignByGeometry: 0
+    m_RichText: 1
+    m_HorizontalOverflow: 0
+    m_VerticalOverflow: 0
+    m_LineSpacing: 1
+  m_Text: (On QTVLM)
+--- !u!222 &564783706
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 564783703}
+  m_CullTransparentMesh: 1
 --- !u!1 &809819745
 GameObject:
   m_ObjectHideFlags: 0
@@ -475,6 +554,7 @@ RectTransform:
   m_LocalScale: {x: 0.13167647, y: 0.10409798, z: 1}
   m_Children:
   - {fileID: 198594052}
+  - {fileID: 564783704}
   - {fileID: 1159894036}
   - {fileID: 812430998}
   m_Father: {fileID: 1483778323}
@@ -555,7 +635,7 @@ RectTransform:
   m_Children:
   - {fileID: 139563393}
   m_Father: {fileID: 809819746}
-  m_RootOrder: 2
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -718,7 +798,7 @@ RectTransform:
   m_Children:
   - {fileID: 133021066}
   m_Father: {fileID: 809819746}
-  m_RootOrder: 1
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -1013,7 +1093,6 @@ MonoBehaviour:
   Boat: {fileID: 1576302182}
   rotation: {x: 0, y: 0, z: 1}
   cap: 0
-  config: {fileID: 0}
 --- !u!4 &1480637263
 Transform:
   m_ObjectHideFlags: 0
@@ -1040,6 +1119,7 @@ GameObject:
   - component: {fileID: 1483778326}
   - component: {fileID: 1483778325}
   - component: {fileID: 1483778324}
+  - component: {fileID: 1483778327}
   m_Layer: 5
   m_Name: Canvas
   m_TagString: Untagged
@@ -1128,6 +1208,28 @@ Canvas:
   m_SortingLayerID: 0
   m_SortingOrder: 0
   m_TargetDisplay: 0
+--- !u!114 &1483778327
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1483778322}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6b02b697acbf861408685dccc0c45602, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  currentLanguage: 0
+  dictionary: {fileID: 4900000, guid: 604a08fe0f981134d9eaba7f71583605, type: 3}
+  question: 
+  onqtvlm: 
+  yes: 
+  no: 
+  textQuestion: {fileID: 198594053}
+  textOnQTVLM: {fileID: 564783705}
+  textYes: {fileID: 133021067}
+  textNo: {fileID: 139563394}
 --- !u!1 &1576302180
 GameObject:
   m_ObjectHideFlags: 0
@@ -1203,13 +1305,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1576302180}
-  m_LocalRotation: {x: -0, y: -0, z: 0.7071068, w: 0.7071068}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: -1}
   m_LocalScale: {x: 1, y: 1, z: 0}
   m_Children: []
   m_Father: {fileID: 1266886047}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 90}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1653814562
 GameObject:
   m_ObjectHideFlags: 0
@@ -1239,7 +1341,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: df01ae1fa433d9940859fd4d8fb88771, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 1
+  m_Volume: 0.116
   m_Pitch: 1
   Loop: 0
   Mute: 0

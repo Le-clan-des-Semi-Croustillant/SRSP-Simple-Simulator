@@ -7,64 +7,86 @@ using Model;
 using PRace;
 using SimpleSimulator.AquitisionCommunication.Trame;
 using Environement;
+using UnityEngine;
 
 namespace AquitisionCommunication{
+    /// <summary>
+    /// this classe manages the communication with QTVLM on OpenCPN
+    /// </summary>
     public class Aquisition {
 
-        public Aquisition(PRace.Race race) {
+        /// <summary>
+        /// Create an instance of Aquisition
+        /// </summary>
+        /// <param name="race">the race whose launch the communication</param>
+        /// <param name="portQTVLM"></param>
+        /// <param name="ipQTVLM"></param>
+        /// <param name="portRM"></param>
+        /// <param name="ipRM"></param>
+        public Aquisition(PRace.Race race, int portQTVLM, string ipQTVLM, int portRM, string ipRM) {
             this.my_race = race;
             this.sender = new Sender();
-            sender.ip = "127.0.0.1";
-            sender.port = 10114;
+            SavedConfigReader test = new SavedConfigReader();
+            conf = test.getConfig();
+            sender.port = conf.portQTVL;
+            sender.ip = conf.ipQTVL;
+            
         }
-
-
-
-
         private PRace.Race my_race;
 
         private Sender sender;
 
+        public SavedConfigReader.SavedConfig conf;
+        
+
         /// <summary>
-        /// @param Mode mode
+        /// Set the ip and port to communicate with QTVLM
         /// </summary>
-        public void SetUp(PRace.Mode mode) {
-            switch (mode)
-            {
-                case PRace.Mode.Entrainement:
-                    break;
-                default:
-                    break;
-            }
+        /// <param name="port"></param>
+        /// <param name="ip"></param>
+        public void SetNMEA(int port, string ip)
+        {
+            this.sender.port = port;
+            this.sender.ip = ip;
         }
 
         /// <summary>
-        /// @param float env
+        /// Return the port used to communicate with QTVML
         /// </summary>
-        public void change_Env(float env) {
-            // TODO implement here
-        }
-
-        /// @param float id 
-        /// <summary>
-        /// @param float latitude 
-        /// @param float longitude
-        /// </summary>
-        public void change_competitors(float id, float longitude, float latitude) {
-            // TODO implement here
+        /// <returns></returns>
+        public int getPortNMEA()
+        {
+            return this.sender.port;
         }
 
         /// <summary>
-        /// @param int id 
-        /// @param float latitude 
-        /// @param float longitude
+        /// Return the ip used to communicate with QTVML
         /// </summary>
-        public void sentPosition(Dictionary<Environement.Conditions,float> condition, float SOG ,float COG, float cap, Position.Coords latitude, Position.Coords longitude, DateTime date) {
+        /// <returns></returns>
+        public string getIpNMEA()
+        {
+            return this.sender.ip;
+        }
+
+        /// <summary>
+        /// Sent information about the race to QTVLM
+        /// </summary>
+        /// <param name="condition">Environmentale conditions</param>
+        /// <param name="SOG">Speed over ground</param>
+        /// <param name="COG">course over ground</param>
+        /// <param name="cap">heading</param>
+        /// <param name="latitude">latitude</param>
+        /// <param name="longitude"longitude></param>
+        /// <param name="date">date of the simulation</param>
+        /// <param name="STW">speed throw water</param>
+        /// <param name="AWS">speed throw air</param>
+        /// <param name="AWA">angle throw air</param>
+        public void sentPosition(Dictionary<Environement.Conditions,float> condition, float SOG ,float COG, float cap, Position.Coords latitude, Position.Coords longitude, DateTime date, float STW, float AWS, float AWA) {
             TrameNMEA trameNMEA = new TrameNMEA();
             TrameRMC rmc = trameNMEA.rmc;
             TrameVHW vhw = trameNMEA.vhw;
             TrameMWV mwv = trameNMEA.mwv;
-            TrameXDR xdr = trameNMEA.xdr;
+            /*
             foreach (Conditions cond in condition.Keys)
             {
                 switch (cond)
@@ -83,16 +105,20 @@ namespace AquitisionCommunication{
                         mwv.VitesseVent = condition[cond];
                         break;
                     case Conditions.WindDirection:
-                        mwv.AngleVent = condition[cond];
+                        //by dany
+                        //mwv.AngleVent = condition[cond];
                         break;
                     default:
                         break;
                 }
             }
+            */
             //4916.45,N = Latitude 49 deg. 16.45 min North
+            mwv.AngleVent = AWA;
+            mwv.VitesseVent = AWS;
             vhw.CapDegres = cap;
-            vhw.VitBateauKm = SOG * 3.6f;
-            vhw.VitBateauNoeud = SOG * 1.94384f;
+             //need STW
+            vhw.VitBateauNoeud = STW; //need STW
             rmc.IndicateurLongitude = longitude.pos;
             rmc.Longitude = longitude.degre * 100 + (float)longitude.min + (float)longitude.sec/60;
             rmc.IndicateurLatitude = latitude.pos;
@@ -100,6 +126,9 @@ namespace AquitisionCommunication{
             rmc.Latitude = test;
             rmc.Heure = date;
             rmc.Date = date;
+
+            rmc.Road = COG;
+            rmc.Vitesse = SOG;
             sender.Send(trameNMEA);
 
         }

@@ -1,50 +1,54 @@
-# Premiers pas
+# Getting Started -Navigation Scene
 
-## Guide vers la scène de navigation
-Une fois lancé, l’application vous amène dans son menu.  
-Appuyez sur le bouton “Continue Navigation”. (Le système de sauvegarde n’est pas encore correctement implémenté)  
-Vous voici maintenant capable de jouer avec l’application.
+## User keys
+* TAB: action: change between heading mode and pace mode (but pace not functional).
 
-## Touches utilisateur
-* TAB : action : change entre mode cap et mode allure (mais allure non fonctionnelle).
-
-* F1 : action :
-  - ouvre la fenêtre de configuration du vent.
-  - ferme la fenêtre de configuration du vent.
+* F1: action:
+  - opens the wind configuration window.
+  - closes the wind configuration window.
   
-* F2 : action :
-  - ouvre la fenêtre de configuration des vagues.
-  - ferme la fenêtre de configuration des vagues.
+* F2: share:
+  - opens the wave configuration window.
+  - closes the wave configuration window.
   
-* F3 : action : 
-  - ouvre la fenêtre de configuration du courant.
-  - ferme la fenêtre de configuration du courant.
+* F3: action:
+  - opens the current configuration window.
+  - closes the current configuration window.
+## User inputs
 
-## Inputs utilisateur
+### Cap Heading Buttons:
+Location: middle bottom of screen
+Action: change cap (-10, -1, +1, +10)  
+Switch button : swap between heading and wind mode.
 
-### Boutons cap : 
-Emplacement : au milieu bas de l’écran  
-Action : change le cap (-10, -1, +1, +10)  
-
-![Alt text](~/images/change-cap.png)
-
-
-### Champ "Set factor of acceleration" :
-Emplacement : en bas à gauche.  
-Action : après appuyer sur le bouton “ok”, change le facteur d’accélération par la valeur entrée dans le champ associé. (par défaut celui-ci est à 1)  
-
-![Alt text](~/images/factor-of-acceleration.png)
+![Alt text](~/images/cap.png)
 
 
-### Champ configuration environnement :
-Action : après appuis sur le bouton “ok, change l’environnement par les valeurs entrée dans les champs associés. (sont à 0 par défaut)  
+### "Set factor of acceleration" field:
+Location: bottom left.
+Action: changes the acceleration factor by the value entered in the associated field. (by default this is 1)
 
-![Alt text](~/images/configuration-environnement.png)
+![Alt text](~/images/acc.png)
 
 
-## Bandeau menu
-Emplacement : en haut à gauche  
-Fonctionnalités : (toutes ne sont pas encore implémentées comme “Save navigation”)
-* Navigation : Exit : permet de quitter l’application.
-* Environnement : permet d’afficher les fenêtres de configuration associées.
-* Help : Documentation, ouvre la page web de documentation utilisateur et développeur.  
+### Environment configuration field:
+Action: after pressing the "ok" button, changes the environment by the values ​​entered in the associated fields. (are at 0 by default)
+
+
+![Alt text](~/images/env.png)
+
+### Change of polar:
+Location: bottom right.
+Action: Allows a change of polar following its selection by a user click (the active polar is in green).
+
+![Alt text](~/images/polars.png)
+
+
+## Menu banner
+Location: top left
+Features:
+* Navigation: Exit: allows you to quit the application.
+* Save: allows you to display a panel to save your race by a name chosen by the user in an associated field.
+* Environment: displays the associated configuration windows.
+* Help: Documentation, opens the user and developer documentation web page.
+

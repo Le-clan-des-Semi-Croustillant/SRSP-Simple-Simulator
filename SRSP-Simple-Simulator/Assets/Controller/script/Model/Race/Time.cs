@@ -6,6 +6,9 @@ using System.Threading.Tasks;
 
 namespace PRace
 {
+    /// <summary>
+    /// This class contains the compression factor and the tick duration of the simulation
+    /// </summary>
     public class Time
     {
         float compressionFactor = 1;
@@ -21,6 +24,7 @@ namespace PRace
         {
             this.compressionFactor = factor;
         }
+
         public float GetTickValue()
         {
             return tick;

@@ -2,29 +2,35 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
-
-public class Controler : MonoBehaviour
+namespace Unityscript
 {
-    //public BoatPhys boat;
-    //public Manager manager;
-    public Text captext;
-
-    public void Start()
+    /// <summary>
+    /// Allow cap to be change with input 
+    /// </summary>
+    public class Controler : MonoBehaviour
     {
-        //manager = FindObjectOfType<Manager>();
-        DisplayCap();
-    }
+        public Text captext;
+        public Text capAllureText;
 
-    public void DisplayCap()
-    {
-       captext.text = Creation.creation.showCap().ToString();
-    }
-    
-    public void changeCap(int n)
-    {
-        //manager.boat.setCap(manager.boat.getCap() + n);
-        Creation.creation.capChange(n);
-        DisplayCap();
-    }
+        public void Start()
+        {
+            DisplayCap();
+        }
 
+        public void DisplayCap()
+        {
+            captext.text = Creation.creation.showCap().ToString();
+            capAllureText.text = Creation.creation.ShowRegulateurCap().ToString();
+        }
+        /// <summary>
+        /// change cap with a n degres 
+        /// </summary>
+        /// <param name="n">degres of incremental cap change</param>
+        public void changeCap(int n)
+        {
+            Creation.creation.capChange(n);
+            DisplayCap();
+        }
+
+    }
 }

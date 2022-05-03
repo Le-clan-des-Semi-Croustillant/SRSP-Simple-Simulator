@@ -3,22 +3,41 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using Communication.DataProcessing.Json;
+
 
 namespace PRace
 {
+    /// <summary>
+    /// This represent a boat
+    /// </summary>
     public class Boat {
 
+        /// <summary>
+        /// create au boat instance
+        /// </summary>
         public Boat()
         {
-            this.regulateurAmure = new RegulateurAmure();
-            this.pos = new Position(0,0);
+            this.regulateurAmure = new RegulateurAmure(this);
+            this.pos = new Position(90,0);
         }
 
+        /// <summary>
+        /// create au boat instance based on the the input boat type
+        /// </summary>
+        /// <param name="selectedBoatType"></param>
+        public Boat(BoatType selectedBoatType)
+        {
+            this.regulateurAmure = new RegulateurAmure(this);
+            this.pos = new Position(90, 0);
+        }
         private int id;
 
         private float cap;
 
-        private ModeCommande mode;
+        private Race race;
+
+        private ModeCommande commande = ModeCommande.cap;
 
         private RegulateurAmure regulateurAmure;
 
@@ -28,13 +47,19 @@ namespace PRace
 
         private Position pos;
 
-
-        public void init(int id, List<Polaire> polaires, Position pos)
+        /// <summary>
+        /// Initialise the 'allPolaire', id and pos attribut
+        /// </summary>
+        /// <param name="id"></param>
+        /// <param name="polaires"></param>
+        /// <param name="pos"></param>
+        public void init(int id, List<Polaire> polaires, Position pos, Race race)
         {
             this.id = id;
             this.allPolaire = polaires;
             this.currentPolaire = null;
             this.pos = pos;
+            this.race = race;
         }
 
         public int GetId()
@@ -42,23 +67,37 @@ namespace PRace
             return id;
         }
 
-        /// <summary>
-        /// @param int cap
-        /// </summary>
-        public void setCap(int cap) {
-            this.cap = cap;
-        }
+
 
         public float getCap()
         {
             return this.cap;
         }
 
+        /// <summary>
+        /// set the boat heading
+        /// </summary>
+        /// <param name="cap">this value as to be in radient</param>
         public void setCap(float cap)
         {
-            this.cap = cap;
+            this.cap = (cap + 360) % 360;
         }
 
+        public float getCapRad()
+        {
+            return this.cap / 360 * 2 * (float)Math.PI;
+        }
+
+        public void setCapRad(float cap)
+        {
+            this.cap = (cap + 2 * (float)Math.PI) % 2 * (float)Math.PI;
+            this.cap = cap / 2 / (float)Math.PI * 360;
+        }
+
+        /// <summary>
+        /// return the value of the cap of the attribut 'regulateurAmure'
+        /// </summary>
+        /// <returns>the angle is in randiant</returns>
         public float GetCapRegulateurAmure()
         {
             return this.regulateurAmure.Get_cap();
@@ -69,25 +108,63 @@ namespace PRace
             return this.pos;
         }
 
-        /// <summary>
-        /// @param ModeCommande mode
-        /// </summary>
-        public void switchMode(ModeCommande mode) {
-            this.mode = mode;
+
+        public void SetModeCommande(ModeCommande commande)
+        {
+            this.commande = commande;
+            if (commande == ModeCommande.RegulateurAmure)
+            {
+                var env = race.GetEnvironment().getEnvState();
+                float wd;
+                env.TryGetValue(Environement.Conditions.WindDirection, out wd);
+                regulateurAmure.SetCap(this.cap - wd);
+            }
         }
 
         /// <summary>
-        /// @param ModeCommande modeCommande 
-        /// @param DegreeIncrement D
+        /// If the attrubit commande is 'cap' switch to 'RegulateurAmure'.
+        /// If the attrubit commande is 'RegulateurAmure' switch to 'cap'.
         /// </summary>
-        public void IncrementerCap(ModeCommande modeCommande, DegreeIncrement DI) {
-            if (modeCommande == ModeCommande.RegulateurAmure)
+        public void switchCommande()
+        {
+            switch (commande)
             {
-                this.regulateurAmure.SetCap(regulateurAmure.Get_cap() + (float)DI);
+                case ModeCommande.RegulateurAmure:
+                    this.commande = ModeCommande.cap;
+                    break;
+                case ModeCommande.cap:
+                    this.commande = ModeCommande.RegulateurAmure;
+                    var env = race.GetEnvironment().getEnvState();
+                    float wd;
+                    env.TryGetValue(Environement.Conditions.WindDirection, out wd);
+                    regulateurAmure.SetCap(this.cap - wd);
+                    break;
+                default:
+                    break;
             }
-            else
+        }
+
+        public ModeCommande GetModeCommande()
+        {
+            return this.commande;
+        }
+
+        /// <summary>
+        /// If the attrubit commande is 'RegulateurAmure' change the heading of the boat (attribut cap)
+        /// to keep the windward course set in regulateurAmure
+        /// </summary>
+        /// <param name="env"></param>
+        public void UpdateCap(Environement.Environment env)
+        {
+            switch (this.commande )
             {
-                cap = cap + (float)DI;
+                case ModeCommande.RegulateurAmure:
+                    this.regulateurAmure.Update_cap(env);
+                    break;
+                case ModeCommande.cap:
+                    break;
+                default:
+                    break;
             }
         }
 
@@ -96,23 +173,50 @@ namespace PRace
             this.pos = pos;
         }
 
-        /// <summary>
-        /// @param int factor
-        /// </summary>
-        public void setAcceleration(int factor) {
-            // TODO implement here
-        }
 
+        /// <summary>
+        /// set 'allPolaire' attribut
+        /// </summary>
+        /// <param name="listPolaire"></param>
         public void SetAvailablePolaire(List<Polaire> listPolaire)
         {
             this.allPolaire = listPolaire;
         }
 
+        /// <summary>
+        /// getter for 'allPolaire' attribut
+        /// </summary>
+        /// <returns></returns>
         public List<Polaire> getAvailablePolaire()
         {
             return this.allPolaire;
         }
 
+        /// <summary>
+        /// Increment the cap of the active mode ('commande' attribut)
+        /// </summary>
+        /// <param name="commande"></param>
+        /// <param name="degre"></param>
+        public void IncrementCap(ModeCommande commande, DegreeIncrement degre)
+        {
+            switch (commande)
+            {
+                case ModeCommande.RegulateurAmure:
+                    this.regulateurAmure.SetCap(regulateurAmure.Get_cap() + (float)degre);
+                    break;
+                case ModeCommande.cap:
+                    this.setCap(cap + (float)degre);
+                    break;
+                default:
+                    break;
+            }
+        }
+
+        /// <summary>
+        /// If a polar with the attribut name corresponding to the input name exist in the attribut 'allPolaire',
+        /// set it as the current polar ('currentPolaire' attribut)
+        /// </summary>
+        /// <param name="name"></param>
         public void SetCurrentPolaire(string name) {
             bool change = false; 
             for (int i = 0; i < this.allPolaire.Count(); i++)
@@ -130,10 +234,17 @@ namespace PRace
             return this.currentPolaire;
         }
 
-        public List<Polaire> GetAllPolaire()
+        public float GetAllureCap()
         {
-            return allPolaire;
+            return this.regulateurAmure.Get_cap();
         }
 
+        /// <summary>
+        /// Set the attribut 'currentPolaire' to null
+        /// </summary>
+        public void setNullCurrentPolar()
+        {
+            this.currentPolaire = null;
+        }
     }
 }

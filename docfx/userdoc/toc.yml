@@ -9,8 +9,10 @@
     href: fr.opencpn-qtvlm-connection.md
   - name: Premiers pas
     href: fr.firststep.md
+  - name: Menu fonctionnalité
+    href: fr.menu.md
     
-- name: English (todo)
+- name: English
   items:
   - name: Installation
     href: en.installation.md
@@ -18,3 +20,5 @@
     href: en.opencpn-qtvlm-connection.md
   - name: First steps
     href: en.firststep.md
+  - name: Menu fonctionnalities
+    href: en.menu.md

@@ -2,32 +2,39 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class keyPress : MonoBehaviour
+namespace Unityscript
 {
-    public SwitchMode switchMode;
-    public EnvPanel envPanel;
-    private void Start()
+    /// <summary>
+    /// Allow user to press F1/F2/F3 to display environment panels
+    /// and TAB to switch in between heading mode and wind mode
+    /// </summary>
+    public class keyPress : MonoBehaviour
     {
-        switchMode = FindObjectOfType<SwitchMode>();
-        envPanel = FindObjectOfType<EnvPanel>();    
-    }
-    void Update()
-    {
-        if (Input.GetKeyUp(KeyCode.Tab))
+        public SwitchMode switchMode;
+        public EnvPanel envPanel;
+        private void Start()
         {
-            switchMode.tabpress();
+            switchMode = FindObjectOfType<SwitchMode>();
+            envPanel = FindObjectOfType<EnvPanel>();
         }
-        if (Input.GetKeyUp(KeyCode.F1))
+        void Update()
         {
-            envPanel.pressfone();
-        }
-        if (Input.GetKeyUp(KeyCode.F2))
-        {
-            envPanel.pressftwo();   
-        }
-        if (Input.GetKeyUp(KeyCode.F3))
-        {
-            envPanel.pressfthree();
+            if (Input.GetKeyUp(KeyCode.Tab))
+            {
+                switchMode.tabpress();
+            }
+            if (Input.GetKeyUp(KeyCode.F1))
+            {
+                envPanel.pressfone();
+            }
+            if (Input.GetKeyUp(KeyCode.F2))
+            {
+                envPanel.pressftwo();
+            }
+            if (Input.GetKeyUp(KeyCode.F3))
+            {
+                envPanel.pressfthree();
+            }
         }
     }
 }

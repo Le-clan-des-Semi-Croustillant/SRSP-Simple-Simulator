@@ -17,16 +17,27 @@ namespace SimpleSimulator.AquitisionCommunication.Trame
         Vitesse du vent,
         Unité de vitesse du vent, K/M/N,
         Etat, A = Données valide,*/
+    /// <summary>
+    /// Trame MWV
+    /// Important parameters : AngleVent wich refer to Wind angle and VitesseVent wich refer to Wind speed  
+    /// the string Controle get the checksum value of the trame MWV
+    /// </summary>
     public class TrameMWV
     {
         public string TrameType { get; set; } = "GPMWV";
         public float AngleVent { get; set; } = 0.0f;
-        public char Reference { get; set; } = 'N';
+        public char Reference { get; set; } = 'R';
         public float VitesseVent { get; set; } = 0.0f;
-        public char Unite { get; set; } = 'R';
+        public char Unite { get; set; } = 'N';
         public string Etat { get; set; } = "A";
         public string Controle { get; set; }
        
+        /// <summary>
+        /// Compute the checksum of a string, we use the current trame in our case
+        /// It's computed with xor operation in between each caracters of the string trame
+        /// </summary>
+        /// <param name="trame">string trame to get checksum with</param>
+        /// <returns></returns>
         public string Checksum(string trame)
         {
             ushort checksum = 0;
@@ -37,9 +48,14 @@ namespace SimpleSimulator.AquitisionCommunication.Trame
             return checksum.ToString("X2");
         }
 
+        /// <summary>
+        /// Methode to compute the resulting MWV trame
+        /// </summary>
+        /// <returns></returns>
         public override string? ToString()
         {
             string trame = TrameType + "," + AngleVent.ToString(CultureInfo.InvariantCulture) + "," + Reference + "," + VitesseVent.ToString(CultureInfo.InvariantCulture) + "," + Unite + "," + Etat;
+            Controle = Checksum(trame);
             return "$" + trame + "*" + Controle;
         }
 }

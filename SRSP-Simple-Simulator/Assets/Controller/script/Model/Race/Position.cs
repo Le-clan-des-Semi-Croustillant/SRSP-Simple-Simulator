@@ -7,8 +7,16 @@ using UnityEngine;
 
 namespace PRace
 {
+    /// <summary>
+    /// This class represent a position on the globe using latitude and longitude
+    /// </summary>
     public class Position {
 
+        /// <summary>
+        /// create an instance of Position
+        /// </summary>
+        /// <param name="longitude">the longitude in radiant</param>
+        /// <param name="latitude">the latitude in radiant</param>
         public Position(double longitude, double latitude) {
             this.latitude = latitude;
             this.longitude = longitude;
@@ -18,6 +26,9 @@ namespace PRace
 
         private double longitude = 0;
 
+        /// <summary>
+        /// struct representing a latitude or a longitude in degre, minute, second
+        /// </summary>
         public struct Coords
         {
             public Coords(char pos, int degre, int min, int sec)
@@ -38,14 +49,19 @@ namespace PRace
 
 
         /// <summary>
-        /// @param float latitude 
-        /// @param float longitude
+        /// Update the 'longitude' and 'latitude' attributs
         /// </summary>
+        /// <param name="longitude">the longitude in radiant</param>
+        /// <param name="latitude">the latitude in radiant</param>
         public void Update(double longitude, double latitude) {
             this.longitude=longitude;
             this.latitude=latitude;
         }
 
+        /// <summary>
+        /// Create a <see cref="Coords"/> corresponding to the latitude attribut
+        /// </summary>
+        /// <returns>return a <see cref="Coords"/> corresponding to the latitude attribut</returns>
         public Coords GetCoordLat()
         {
             Coords coordLat;
@@ -71,6 +87,10 @@ namespace PRace
             return coordLat;
         }
 
+        /// <summary>
+        /// Create a <see cref="Coords"/> corresponding to the longitude attribut
+        /// </summary>
+        /// <returns>return a <see cref="Coords"/> corresponding to the longitude attribut</returns>
         public Coords GetCoordLong()
         {
             Coords coordLong;
@@ -97,21 +117,37 @@ namespace PRace
             return coordLong;
         }
 
+        /// <summary>
+        /// return the value of the longitude in radiant
+        /// </summary>
+        /// <returns>return the value of the longitude in radiant</returns>
         public double GetLongitude()
         {
             return this.longitude;
         }
 
+        /// <summary>
+        /// return the value of the latitude in radiant
+        /// </summary>
+        /// <returns>return the value of the latitude in radiant</returns>
         public double GetLatitude()
         {
             return this.latitude;
         }
 
+        /// <summary>
+        /// return the value of the longitude in degre
+        /// </summary>
+        /// <returns>return the value of the longitude in degre</returns>
         public double GetLatitudeAngle()
         {
             return latitude * UnityEngine.Mathf.PI / 180;
         }
 
+        /// <summary>
+        /// return the value of the latitude in degre
+        /// </summary>
+        /// <returns>return the value of the latitude in degre</returns>
         public double GetLongitudeAngle()
         {
             return longitude * 2 * Mathf.PI / 360;

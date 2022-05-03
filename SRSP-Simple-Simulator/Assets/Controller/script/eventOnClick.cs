@@ -3,41 +3,56 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class eventOnClick : MonoBehaviour
+namespace Unityscript
 {
-    public void exitApp()
+    /// <summary>
+    /// Main script to manage scene transition
+    /// </summary>
+    public class eventOnClick : MonoBehaviour
     {
-        Application.Quit();
-    }
-    public void continueRace()
-    {
-        SceneManager.LoadScene(1);
-    }
-    public void startNewGame()
-    {
-        SceneManager.LoadScene(2);
-    }
-    public void Menu()
-    {
-        SceneManager.LoadScene(0);
-    }
+        public void exitApp()
+        {
+            Application.Quit();
+        }
+        public void continueRace()
+        {
+            SceneManager.LoadScene("Scenes/Backups");
+        }
+        public void startNewGame()
+        {
+            SceneManager.LoadScene("Scenes/Mode");
+        }
+        public void Menu()
+        {
+            SceneManager.LoadScene("Scenes/Menu");
+        }
 
-    public void configIPfromMode()
-    {
-        SceneManager.LoadScene(4);
-    } 
+        public void configIPfromMode()
+        {
+            SceneManager.LoadScene("Scenes/Initialisation");
+        }
 
-    public void ConfigIpFromMenu()
-    {
-        SceneManager.LoadScene(3);
-    }
-    public void initVerify()
-    {
-        SceneManager.LoadScene("Scenes/Initialisation");
-    }
+        public void ConfigIpFromMenu()
+        {
+            SceneManager.LoadScene("Scenes/ConfigFromMenu");
+        }
 
-    public void loadDocumentation()
-    {
-        Application.OpenURL("https://le-clan-des-semi-croustillant.github.io/SRSP-Simple-Simulator/"); 
+        public void loadRMBoatList()
+        {
+            SceneManager.LoadScene("Scenes/SelectionBoatType");
+        }
+
+        public void initVerify()
+        {
+            SceneManager.LoadScene("Scenes/Initialisation");
+        }
+        public void waypointLoadScene()
+        {
+            SceneManager.LoadScene("Scenes/Waypoint");
+        }
+        public void loadDocumentation()
+        {
+            Application.OpenURL("https://le-clan-des-semi-croustillant.github.io/SRSP-Simple-Simulator/");
+        }
     }
 }

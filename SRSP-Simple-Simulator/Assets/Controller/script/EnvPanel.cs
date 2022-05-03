@@ -2,12 +2,23 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+
+/// <summary>
+/// Manage panels visibility on the "main scene" 
+/// </summary>
 public class EnvPanel : MonoBehaviour
 {
 
     public GameObject PanelWind;
     public GameObject PanelWave;
     public GameObject PanelWater;
+    public GameObject PanelSave;
+
+    //All methodes below allow to set visible/inactive Panels
+    public void showPanelSave()
+    {
+        PanelSave.gameObject.SetActive(true);
+    }
     
     public void showPanelWind()
     {
@@ -28,6 +39,12 @@ public class EnvPanel : MonoBehaviour
         PanelWave.gameObject.SetActive(false);
         PanelWater.gameObject.SetActive(true);
     }
+
+    public void closePanelSave()
+    {
+        PanelSave.gameObject.SetActive(false);
+    }
+
     public void closePanelWind()
     {
         PanelWind.gameObject.SetActive(false);
@@ -40,7 +57,9 @@ public class EnvPanel : MonoBehaviour
     {
         PanelWater.gameObject.SetActive(false);
     }
-
+    /// <summary>
+    /// Allow user to press F1 to display wind panel 
+    /// </summary>
     public void pressfone()
     {
         if (PanelWind.activeSelf)
@@ -53,6 +72,9 @@ public class EnvPanel : MonoBehaviour
         }
     }
 
+    /// <summary>
+    /// Allow user to press F2 to display wave panel
+    /// </summary>
     public void pressftwo()
     {
         if (PanelWave.activeSelf)
@@ -65,6 +87,9 @@ public class EnvPanel : MonoBehaviour
         }
     }
 
+    /// <summary>
+    /// Allow user to press F3 to display current panel
+    /// </summary>
     public void pressfthree()
     {
         if (PanelWater.activeSelf)

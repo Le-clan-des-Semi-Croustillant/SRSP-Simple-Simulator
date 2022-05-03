@@ -6,20 +6,31 @@ using System.Text;
 
 namespace PRace
 {
+    /// <summary>
+    /// This class maintains the cap in regard of wind during wind mode(<see cref="ModeCommande.RegulateurAmure"/>
+    /// </summary>
     public class RegulateurAmure{
 
-        public RegulateurAmure() {
+        /// <summary>
+        /// create an instance of RegulateurAmure
+        /// </summary>
+        /// <param name="boat">The <see cref="Boat"/> whose course must be maintained</param>
+        public RegulateurAmure(Boat boat) {
             this.cap = 0;
+            this.boat = boat;
         }
 
-        private float cap;
-
+        private float cap; // cap in regard of the wind
+        private Boat boat;
 
         /// <summary>
-        /// @param MyBoat boat
+        /// Update the heading of the boat in regard of the wind
         /// </summary>
-        public void Update_cap(float cap) {
-            this.cap = cap;
+        /// <param name="env">Enviromnentale conditions</param>
+        public void Update_cap(Environement.Environment env) {
+            float windDir = 0;
+            env.getEnvState().TryGetValue(Environement.Conditions.WindDirection, out windDir);
+            this.boat.setCap( windDir + cap );
         }
 
         public float Get_cap()
@@ -30,7 +41,7 @@ namespace PRace
 
         public void SetCap(float cap)
         {
-            this.cap = cap;
+            this.cap = (cap + 360) % 360;
         }
             
     }

@@ -1,40 +1,57 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
-public class SwitchMode : MonoBehaviour
+namespace Unityscript
 {
-    public GameObject PanelCap;
-    public GameObject PanelWind;
-    public bool isActive = true;
-    // Start is called before the first frame update
-    public void showCappanel()
-    {
-        PanelCap.gameObject.SetActive(true);
-        PanelWind.gameObject.SetActive(false);
 
-        Creation.creation.switchCommande();
-        //switchmode switch mode link model
-    }
+    /// <summary>
+    /// Allow user to switch in between heading mode and wind mode
+    /// </summary>
+    public class SwitchMode : MonoBehaviour
+    {
+        public GameObject PanelCap;
+        public GameObject PanelWind;
+        public bool isActive = true;
+        public Text captext;
+        public Text capAllureText;
 
-    public void showWindpanel()
-    {
-        PanelCap.gameObject.SetActive(false);
-        PanelWind.gameObject.SetActive(true);
-        Creation.creation.switchCommande();
-        //switch mode link model
-    }
-    public void tabpress()
-    {
-        if (isActive)
+        private void Start()
         {
-            showWindpanel();
-            isActive = !isActive;
+            captext.text = Creation.creation.showCap().ToString();
+            capAllureText.text = Creation.creation.ShowRegulateurCap().ToString();
         }
-        else
+        public void showCappanel()
         {
-            showCappanel();
-            isActive = !isActive;
+            captext.text = Creation.creation.showCap().ToString();
+            PanelCap.gameObject.SetActive(true);
+            PanelWind.gameObject.SetActive(false);
+            Creation.creation.switchCommande();
+        }
+
+        public void showWindpanel()
+        {
+            capAllureText.text = Creation.creation.ShowRegulateurCap().ToString();
+            PanelCap.gameObject.SetActive(false);
+            PanelWind.gameObject.SetActive(true);
+            Creation.creation.switchCommande();
+        }
+        /// <summary>
+        /// Allow user to switch with pressing TAB
+        /// </summary>
+        public void tabpress()
+        {
+            if (isActive)
+            {
+                showWindpanel();
+                isActive = !isActive;
+            }
+            else
+            {
+                showCappanel();
+                isActive = !isActive;
+            }
         }
     }
 }

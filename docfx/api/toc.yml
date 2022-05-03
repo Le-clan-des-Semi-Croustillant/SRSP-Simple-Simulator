@@ -14,11 +14,38 @@
     name: RaceSave.JsonRace
   - uid: AquitisionCommunication.Sauvegarde
     name: Sauvegarde
-- uid: Controller
-  name: Controller
+- uid: Communication
+  name: Communication
   items:
-  - uid: Controller.Follow
-    name: Follow
+  - uid: Communication.AsynchronousClient
+    name: AsynchronousClient
+  - uid: Communication.StateObject
+    name: StateObject
+- uid: Communication.DataProcessing
+  name: Communication.DataProcessing
+  items:
+  - uid: Communication.DataProcessing.IMessageType
+    name: IMessageType
+  - uid: Communication.DataProcessing.OMessageType
+    name: OMessageType
+- uid: Communication.DataProcessing.Files
+  name: Communication.DataProcessing.Files
+  items:
+  - uid: Communication.DataProcessing.Files.FileManageData
+    name: FileManageData
+  - uid: Communication.DataProcessing.Files.FileManageData.WriteInFile
+    name: FileManageData.WriteInFile
+- uid: Communication.DataProcessing.Json
+  name: Communication.DataProcessing.Json
+  items:
+  - uid: Communication.DataProcessing.Json.BoatType
+    name: BoatType
+  - uid: Communication.DataProcessing.Json.JsonParse
+    name: JsonParse
+  - uid: Communication.DataProcessing.Json.Polar
+    name: Polar
+  - uid: Communication.DataProcessing.Json.PolFile
+    name: PolFile
 - uid: Environement
   name: Environement
   items:
@@ -100,3 +127,67 @@
     name: TrameXDR
   - uid: SimpleSimulator.AquitisionCommunication.Trame.XDRSub
     name: XDRSub
+- uid: Traductionscript
+  name: Traductionscript
+  items:
+  - uid: Traductionscript.BoatSelectTrad
+    name: BoatSelectTrad
+  - uid: Traductionscript.ConfigTrad
+    name: ConfigTrad
+  - uid: Traductionscript.InitialisationTrad
+    name: InitialisationTrad
+  - uid: Traductionscript.MenuTrad
+    name: MenuTrad
+  - uid: Traductionscript.ModeTrad
+    name: ModeTrad
+  - uid: Traductionscript.SavesSelectionTrad
+    name: SavesSelectionTrad
+  - uid: Traductionscript.WaypointSelectionTrad
+    name: WaypointSelectionTrad
+  - uid: Traductionscript.xmlReader
+    name: xmlReader
+- uid: Unityscript
+  name: Unityscript
+  items:
+  - uid: Unityscript.BoatPhys
+    name: BoatPhys
+  - uid: Unityscript.ButtonListButton
+    name: ButtonListButton
+  - uid: Unityscript.ButtonListControl
+    name: ButtonListControl
+  - uid: Unityscript.ButtonsSavesControl
+    name: ButtonsSavesControl
+  - uid: Unityscript.ButtonWaypoint
+    name: ButtonWaypoint
+  - uid: Unityscript.Controler
+    name: Controler
+  - uid: Unityscript.CreateSave
+    name: CreateSave
+  - uid: Unityscript.Creation
+    name: Creation
+  - uid: Unityscript.DisplayCadran
+    name: DisplayCadran
+  - uid: Unityscript.eventOnClick
+    name: eventOnClick
+  - uid: Unityscript.Follow
+    name: Follow
+  - uid: Unityscript.Initialisation
+    name: Initialisation
+  - uid: Unityscript.keyPress
+    name: keyPress
+  - uid: Unityscript.PanelSwitch
+    name: PanelSwitch
+  - uid: Unityscript.PolarSelection
+    name: PolarSelection
+  - uid: Unityscript.Run
+    name: Run
+  - uid: Unityscript.SetAcc
+    name: SetAcc
+  - uid: Unityscript.setConfig
+    name: setConfig
+  - uid: Unityscript.SetEnv
+    name: SetEnv
+  - uid: Unityscript.ShowValue
+    name: ShowValue
+  - uid: Unityscript.SwitchMode
+    name: SwitchMode
