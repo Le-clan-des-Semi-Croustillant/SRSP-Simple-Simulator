@@ -29,7 +29,11 @@
           "devres/**.md",
           "devres/**/toc.yml",
           "toc.yml",
-          "*.md"
+          "*.md",
+          "builddoc/**.md",
+          "builddoc/**/toc.yml",
+          "docdoc/**.md",
+          "docdoc/**/toc.yml"
         ]
       }
     ],

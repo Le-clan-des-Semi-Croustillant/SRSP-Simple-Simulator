@@ -4,6 +4,18 @@
 # - name: Developer Resources
 #   href: devres/
 #   homepage: devres/intro.md
-- name: Api Documentation
+- name: Developper Documentation
   href: api/
   homepage: api/index.md
+
+- name: Generate Build
+  href: builddoc/
+  homepage: builddoc/buildoc.md
+
+- name: Generate Documentation
+  href: docdoc/
+  homepage: docdoc/docdoc.md
+
+
+
+

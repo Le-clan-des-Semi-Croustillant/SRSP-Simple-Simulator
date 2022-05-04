@@ -39,7 +39,8 @@ Action: after pressing the "ok" button, changes the environment by the values â€
 
 ### Change of polar:
 Location: bottom right.
-Action: Allows a change of polar following its selection by a user click (the active polar is in green).
+Action: Allows a change of polar following its selection by a user click (the active polar is in green).  
+You can also lower the sails by clicking on the corresponding button.
 
 ![Alt text](~/images/polars.png)
 
