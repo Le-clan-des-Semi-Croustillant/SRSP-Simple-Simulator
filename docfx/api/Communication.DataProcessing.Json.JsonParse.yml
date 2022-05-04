@@ -1,0 +1,922 @@
+### YamlMime:ManagedReference
+items:
+- uid: Communication.DataProcessing.Json.JsonParse
+  commentId: T:Communication.DataProcessing.Json.JsonParse
+  id: JsonParse
+  parent: Communication.DataProcessing.Json
+  children:
+  - Communication.DataProcessing.Json.JsonParse.JsonDeserialize(System.String)
+  - Communication.DataProcessing.Json.JsonParse.JsonSerialiseConnection(Communication.DataProcessing.IMessageType,System.Int64,System.Int64,System.String,System.String,System.Int32,System.String)
+  - Communication.DataProcessing.Json.JsonParse.JsonSerialiseIBoatListRequest(Communication.DataProcessing.IMessageType)
+  - Communication.DataProcessing.Json.JsonParse.JsonSerialiseIBoatSelect(Communication.DataProcessing.IMessageType)
+  - Communication.DataProcessing.Json.JsonParse.JsonSerialiseIConnection(Communication.DataProcessing.IMessageType)
+  - Communication.DataProcessing.Json.JsonParse.JsonSerialiseIDisconnection(Communication.DataProcessing.IMessageType)
+  - Communication.DataProcessing.Json.JsonParse.JsonSerialiseIEndRace(Communication.DataProcessing.IMessageType)
+  - Communication.DataProcessing.Json.JsonParse.JsonSerialiseIPlayerInfo(Communication.DataProcessing.IMessageType)
+  - Communication.DataProcessing.Json.JsonParse.JsonSerialiseOBoatList
+  - Communication.DataProcessing.Json.JsonParse.JsonSerialiseOConnection
+  - Communication.DataProcessing.Json.JsonParse.JsonSerialiseODisconnection
+  - Communication.DataProcessing.Json.JsonParse.JsonSerialiseOEndRace
+  - Communication.DataProcessing.Json.JsonParse.JsonSerialiseOEnvironmentInfo(Communication.DataProcessing.OMessageType)
+  - Communication.DataProcessing.Json.JsonParse.JsonSerialiseOInitRace(Communication.DataProcessing.OMessageType)
+  langs:
+  - csharp
+  - vb
+  name: JsonParse
+  nameWithType: JsonParse
+  fullName: Communication.DataProcessing.Json.JsonParse
+  type: Class
+  source:
+    id: JsonParse
+    path: E:\Unity\Project\SRSP-Simple-Simulator\Assets\Controller\script\Model\AquitisionCommunication\Communication\DataProcessing\Json\JsonParse.cs
+    startLine: 6
+  assemblies:
+  - Assembly-CSharp
+  namespace: Communication.DataProcessing.Json
+  syntax:
+    content: public class JsonParse
+    content.vb: Public Class JsonParse
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: Communication.DataProcessing.Json.JsonParse.JsonDeserialize(System.String)
+  commentId: M:Communication.DataProcessing.Json.JsonParse.JsonDeserialize(System.String)
+  id: JsonDeserialize(System.String)
+  parent: Communication.DataProcessing.Json.JsonParse
+  langs:
+  - csharp
+  - vb
+  name: JsonDeserialize(String)
+  nameWithType: JsonParse.JsonDeserialize(String)
+  fullName: Communication.DataProcessing.Json.JsonParse.JsonDeserialize(System.String)
+  type: Method
+  source:
+    id: JsonDeserialize
+    path: E:\Unity\Project\SRSP-Simple-Simulator\Assets\Controller\script\Model\AquitisionCommunication\Communication\DataProcessing\Json\JsonParse.cs
+    startLine: 8
+  assemblies:
+  - Assembly-CSharp
+  namespace: Communication.DataProcessing.Json
+  syntax:
+    content: public static dynamic JsonDeserialize(string data)
+    parameters:
+    - id: data
+      type: System.String
+    return:
+      type: System.Object
+    content.vb: Public Shared Function JsonDeserialize(data As String) As Object
+  overload: Communication.DataProcessing.Json.JsonParse.JsonDeserialize*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Communication.DataProcessing.Json.JsonParse.JsonSerialiseConnection(Communication.DataProcessing.IMessageType,System.Int64,System.Int64,System.String,System.String,System.Int32,System.String)
+  commentId: M:Communication.DataProcessing.Json.JsonParse.JsonSerialiseConnection(Communication.DataProcessing.IMessageType,System.Int64,System.Int64,System.String,System.String,System.Int32,System.String)
+  id: JsonSerialiseConnection(Communication.DataProcessing.IMessageType,System.Int64,System.Int64,System.String,System.String,System.Int32,System.String)
+  parent: Communication.DataProcessing.Json.JsonParse
+  langs:
+  - csharp
+  - vb
+  name: JsonSerialiseConnection(IMessageType, Int64, Int64, String, String, Int32, String)
+  nameWithType: JsonParse.JsonSerialiseConnection(IMessageType, Int64, Int64, String, String, Int32, String)
+  fullName: Communication.DataProcessing.Json.JsonParse.JsonSerialiseConnection(Communication.DataProcessing.IMessageType, System.Int64, System.Int64, System.String, System.String, System.Int32, System.String)
+  type: Method
+  source:
+    id: JsonSerialiseConnection
+    path: E:\Unity\Project\SRSP-Simple-Simulator\Assets\Controller\script\Model\AquitisionCommunication\Communication\DataProcessing\Json\JsonParse.cs
+    startLine: 12
+  assemblies:
+  - Assembly-CSharp
+  namespace: Communication.DataProcessing.Json
+  syntax:
+    content: public static string JsonSerialiseConnection(IMessageType TypeMessage, long Id, long IdGame, string NMEA, string Boat, int IdPlayer, string NamePlayer)
+    parameters:
+    - id: TypeMessage
+      type: Communication.DataProcessing.IMessageType
+    - id: Id
+      type: System.Int64
+    - id: IdGame
+      type: System.Int64
+    - id: NMEA
+      type: System.String
+    - id: Boat
+      type: System.String
+    - id: IdPlayer
+      type: System.Int32
+    - id: NamePlayer
+      type: System.String
+    return:
+      type: System.String
+    content.vb: Public Shared Function JsonSerialiseConnection(TypeMessage As IMessageType, Id As Long, IdGame As Long, NMEA As String, Boat As String, IdPlayer As Integer, NamePlayer As String) As String
+  overload: Communication.DataProcessing.Json.JsonParse.JsonSerialiseConnection*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Communication.DataProcessing.Json.JsonParse.JsonSerialiseIConnection(Communication.DataProcessing.IMessageType)
+  commentId: M:Communication.DataProcessing.Json.JsonParse.JsonSerialiseIConnection(Communication.DataProcessing.IMessageType)
+  id: JsonSerialiseIConnection(Communication.DataProcessing.IMessageType)
+  parent: Communication.DataProcessing.Json.JsonParse
+  langs:
+  - csharp
+  - vb
+  name: JsonSerialiseIConnection(IMessageType)
+  nameWithType: JsonParse.JsonSerialiseIConnection(IMessageType)
+  fullName: Communication.DataProcessing.Json.JsonParse.JsonSerialiseIConnection(Communication.DataProcessing.IMessageType)
+  type: Method
+  source:
+    id: JsonSerialiseIConnection
+    path: E:\Unity\Project\SRSP-Simple-Simulator\Assets\Controller\script\Model\AquitisionCommunication\Communication\DataProcessing\Json\JsonParse.cs
+    startLine: 30
+  assemblies:
+  - Assembly-CSharp
+  namespace: Communication.DataProcessing.Json
+  syntax:
+    content: public static string JsonSerialiseIConnection(IMessageType TypeMessage)
+    parameters:
+    - id: TypeMessage
+      type: Communication.DataProcessing.IMessageType
+    return:
+      type: System.String
+    content.vb: Public Shared Function JsonSerialiseIConnection(TypeMessage As IMessageType) As String
+  overload: Communication.DataProcessing.Json.JsonParse.JsonSerialiseIConnection*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Communication.DataProcessing.Json.JsonParse.JsonSerialiseIDisconnection(Communication.DataProcessing.IMessageType)
+  commentId: M:Communication.DataProcessing.Json.JsonParse.JsonSerialiseIDisconnection(Communication.DataProcessing.IMessageType)
+  id: JsonSerialiseIDisconnection(Communication.DataProcessing.IMessageType)
+  parent: Communication.DataProcessing.Json.JsonParse
+  langs:
+  - csharp
+  - vb
+  name: JsonSerialiseIDisconnection(IMessageType)
+  nameWithType: JsonParse.JsonSerialiseIDisconnection(IMessageType)
+  fullName: Communication.DataProcessing.Json.JsonParse.JsonSerialiseIDisconnection(Communication.DataProcessing.IMessageType)
+  type: Method
+  source:
+    id: JsonSerialiseIDisconnection
+    path: E:\Unity\Project\SRSP-Simple-Simulator\Assets\Controller\script\Model\AquitisionCommunication\Communication\DataProcessing\Json\JsonParse.cs
+    startLine: 39
+  assemblies:
+  - Assembly-CSharp
+  namespace: Communication.DataProcessing.Json
+  syntax:
+    content: public static string JsonSerialiseIDisconnection(IMessageType TypeMessage)
+    parameters:
+    - id: TypeMessage
+      type: Communication.DataProcessing.IMessageType
+    return:
+      type: System.String
+    content.vb: Public Shared Function JsonSerialiseIDisconnection(TypeMessage As IMessageType) As String
+  overload: Communication.DataProcessing.Json.JsonParse.JsonSerialiseIDisconnection*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Communication.DataProcessing.Json.JsonParse.JsonSerialiseIPlayerInfo(Communication.DataProcessing.IMessageType)
+  commentId: M:Communication.DataProcessing.Json.JsonParse.JsonSerialiseIPlayerInfo(Communication.DataProcessing.IMessageType)
+  id: JsonSerialiseIPlayerInfo(Communication.DataProcessing.IMessageType)
+  parent: Communication.DataProcessing.Json.JsonParse
+  langs:
+  - csharp
+  - vb
+  name: JsonSerialiseIPlayerInfo(IMessageType)
+  nameWithType: JsonParse.JsonSerialiseIPlayerInfo(IMessageType)
+  fullName: Communication.DataProcessing.Json.JsonParse.JsonSerialiseIPlayerInfo(Communication.DataProcessing.IMessageType)
+  type: Method
+  source:
+    id: JsonSerialiseIPlayerInfo
+    path: E:\Unity\Project\SRSP-Simple-Simulator\Assets\Controller\script\Model\AquitisionCommunication\Communication\DataProcessing\Json\JsonParse.cs
+    startLine: 49
+  assemblies:
+  - Assembly-CSharp
+  namespace: Communication.DataProcessing.Json
+  syntax:
+    content: public static string JsonSerialiseIPlayerInfo(IMessageType TypeMessage)
+    parameters:
+    - id: TypeMessage
+      type: Communication.DataProcessing.IMessageType
+    return:
+      type: System.String
+    content.vb: Public Shared Function JsonSerialiseIPlayerInfo(TypeMessage As IMessageType) As String
+  overload: Communication.DataProcessing.Json.JsonParse.JsonSerialiseIPlayerInfo*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Communication.DataProcessing.Json.JsonParse.JsonSerialiseIBoatSelect(Communication.DataProcessing.IMessageType)
+  commentId: M:Communication.DataProcessing.Json.JsonParse.JsonSerialiseIBoatSelect(Communication.DataProcessing.IMessageType)
+  id: JsonSerialiseIBoatSelect(Communication.DataProcessing.IMessageType)
+  parent: Communication.DataProcessing.Json.JsonParse
+  langs:
+  - csharp
+  - vb
+  name: JsonSerialiseIBoatSelect(IMessageType)
+  nameWithType: JsonParse.JsonSerialiseIBoatSelect(IMessageType)
+  fullName: Communication.DataProcessing.Json.JsonParse.JsonSerialiseIBoatSelect(Communication.DataProcessing.IMessageType)
+  type: Method
+  source:
+    id: JsonSerialiseIBoatSelect
+    path: E:\Unity\Project\SRSP-Simple-Simulator\Assets\Controller\script\Model\AquitisionCommunication\Communication\DataProcessing\Json\JsonParse.cs
+    startLine: 58
+  assemblies:
+  - Assembly-CSharp
+  namespace: Communication.DataProcessing.Json
+  syntax:
+    content: public static string JsonSerialiseIBoatSelect(IMessageType TypeMessage)
+    parameters:
+    - id: TypeMessage
+      type: Communication.DataProcessing.IMessageType
+    return:
+      type: System.String
+    content.vb: Public Shared Function JsonSerialiseIBoatSelect(TypeMessage As IMessageType) As String
+  overload: Communication.DataProcessing.Json.JsonParse.JsonSerialiseIBoatSelect*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Communication.DataProcessing.Json.JsonParse.JsonSerialiseIBoatListRequest(Communication.DataProcessing.IMessageType)
+  commentId: M:Communication.DataProcessing.Json.JsonParse.JsonSerialiseIBoatListRequest(Communication.DataProcessing.IMessageType)
+  id: JsonSerialiseIBoatListRequest(Communication.DataProcessing.IMessageType)
+  parent: Communication.DataProcessing.Json.JsonParse
+  langs:
+  - csharp
+  - vb
+  name: JsonSerialiseIBoatListRequest(IMessageType)
+  nameWithType: JsonParse.JsonSerialiseIBoatListRequest(IMessageType)
+  fullName: Communication.DataProcessing.Json.JsonParse.JsonSerialiseIBoatListRequest(Communication.DataProcessing.IMessageType)
+  type: Method
+  source:
+    id: JsonSerialiseIBoatListRequest
+    path: E:\Unity\Project\SRSP-Simple-Simulator\Assets\Controller\script\Model\AquitisionCommunication\Communication\DataProcessing\Json\JsonParse.cs
+    startLine: 68
+  assemblies:
+  - Assembly-CSharp
+  namespace: Communication.DataProcessing.Json
+  syntax:
+    content: public static string JsonSerialiseIBoatListRequest(IMessageType TypeMessage)
+    parameters:
+    - id: TypeMessage
+      type: Communication.DataProcessing.IMessageType
+    return:
+      type: System.String
+    content.vb: Public Shared Function JsonSerialiseIBoatListRequest(TypeMessage As IMessageType) As String
+  overload: Communication.DataProcessing.Json.JsonParse.JsonSerialiseIBoatListRequest*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Communication.DataProcessing.Json.JsonParse.JsonSerialiseIEndRace(Communication.DataProcessing.IMessageType)
+  commentId: M:Communication.DataProcessing.Json.JsonParse.JsonSerialiseIEndRace(Communication.DataProcessing.IMessageType)
+  id: JsonSerialiseIEndRace(Communication.DataProcessing.IMessageType)
+  parent: Communication.DataProcessing.Json.JsonParse
+  langs:
+  - csharp
+  - vb
+  name: JsonSerialiseIEndRace(IMessageType)
+  nameWithType: JsonParse.JsonSerialiseIEndRace(IMessageType)
+  fullName: Communication.DataProcessing.Json.JsonParse.JsonSerialiseIEndRace(Communication.DataProcessing.IMessageType)
+  type: Method
+  source:
+    id: JsonSerialiseIEndRace
+    path: E:\Unity\Project\SRSP-Simple-Simulator\Assets\Controller\script\Model\AquitisionCommunication\Communication\DataProcessing\Json\JsonParse.cs
+    startLine: 77
+  assemblies:
+  - Assembly-CSharp
+  namespace: Communication.DataProcessing.Json
+  syntax:
+    content: public static string JsonSerialiseIEndRace(IMessageType TypeMessage)
+    parameters:
+    - id: TypeMessage
+      type: Communication.DataProcessing.IMessageType
+    return:
+      type: System.String
+    content.vb: Public Shared Function JsonSerialiseIEndRace(TypeMessage As IMessageType) As String
+  overload: Communication.DataProcessing.Json.JsonParse.JsonSerialiseIEndRace*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Communication.DataProcessing.Json.JsonParse.JsonSerialiseOConnection
+  commentId: M:Communication.DataProcessing.Json.JsonParse.JsonSerialiseOConnection
+  id: JsonSerialiseOConnection
+  parent: Communication.DataProcessing.Json.JsonParse
+  langs:
+  - csharp
+  - vb
+  name: JsonSerialiseOConnection()
+  nameWithType: JsonParse.JsonSerialiseOConnection()
+  fullName: Communication.DataProcessing.Json.JsonParse.JsonSerialiseOConnection()
+  type: Method
+  source:
+    id: JsonSerialiseOConnection
+    path: E:\Unity\Project\SRSP-Simple-Simulator\Assets\Controller\script\Model\AquitisionCommunication\Communication\DataProcessing\Json\JsonParse.cs
+    startLine: 87
+  assemblies:
+  - Assembly-CSharp
+  namespace: Communication.DataProcessing.Json
+  syntax:
+    content: public static string JsonSerialiseOConnection()
+    return:
+      type: System.String
+    content.vb: Public Shared Function JsonSerialiseOConnection As String
+  overload: Communication.DataProcessing.Json.JsonParse.JsonSerialiseOConnection*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Communication.DataProcessing.Json.JsonParse.JsonSerialiseODisconnection
+  commentId: M:Communication.DataProcessing.Json.JsonParse.JsonSerialiseODisconnection
+  id: JsonSerialiseODisconnection
+  parent: Communication.DataProcessing.Json.JsonParse
+  langs:
+  - csharp
+  - vb
+  name: JsonSerialiseODisconnection()
+  nameWithType: JsonParse.JsonSerialiseODisconnection()
+  fullName: Communication.DataProcessing.Json.JsonParse.JsonSerialiseODisconnection()
+  type: Method
+  source:
+    id: JsonSerialiseODisconnection
+    path: E:\Unity\Project\SRSP-Simple-Simulator\Assets\Controller\script\Model\AquitisionCommunication\Communication\DataProcessing\Json\JsonParse.cs
+    startLine: 97
+  assemblies:
+  - Assembly-CSharp
+  namespace: Communication.DataProcessing.Json
+  syntax:
+    content: public static string JsonSerialiseODisconnection()
+    return:
+      type: System.String
+    content.vb: Public Shared Function JsonSerialiseODisconnection As String
+  overload: Communication.DataProcessing.Json.JsonParse.JsonSerialiseODisconnection*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Communication.DataProcessing.Json.JsonParse.JsonSerialiseOInitRace(Communication.DataProcessing.OMessageType)
+  commentId: M:Communication.DataProcessing.Json.JsonParse.JsonSerialiseOInitRace(Communication.DataProcessing.OMessageType)
+  id: JsonSerialiseOInitRace(Communication.DataProcessing.OMessageType)
+  parent: Communication.DataProcessing.Json.JsonParse
+  langs:
+  - csharp
+  - vb
+  name: JsonSerialiseOInitRace(OMessageType)
+  nameWithType: JsonParse.JsonSerialiseOInitRace(OMessageType)
+  fullName: Communication.DataProcessing.Json.JsonParse.JsonSerialiseOInitRace(Communication.DataProcessing.OMessageType)
+  type: Method
+  source:
+    id: JsonSerialiseOInitRace
+    path: E:\Unity\Project\SRSP-Simple-Simulator\Assets\Controller\script\Model\AquitisionCommunication\Communication\DataProcessing\Json\JsonParse.cs
+    startLine: 107
+  assemblies:
+  - Assembly-CSharp
+  namespace: Communication.DataProcessing.Json
+  syntax:
+    content: public static string JsonSerialiseOInitRace(OMessageType TypeMessage)
+    parameters:
+    - id: TypeMessage
+      type: Communication.DataProcessing.OMessageType
+    return:
+      type: System.String
+    content.vb: Public Shared Function JsonSerialiseOInitRace(TypeMessage As OMessageType) As String
+  overload: Communication.DataProcessing.Json.JsonParse.JsonSerialiseOInitRace*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Communication.DataProcessing.Json.JsonParse.JsonSerialiseOEnvironmentInfo(Communication.DataProcessing.OMessageType)
+  commentId: M:Communication.DataProcessing.Json.JsonParse.JsonSerialiseOEnvironmentInfo(Communication.DataProcessing.OMessageType)
+  id: JsonSerialiseOEnvironmentInfo(Communication.DataProcessing.OMessageType)
+  parent: Communication.DataProcessing.Json.JsonParse
+  langs:
+  - csharp
+  - vb
+  name: JsonSerialiseOEnvironmentInfo(OMessageType)
+  nameWithType: JsonParse.JsonSerialiseOEnvironmentInfo(OMessageType)
+  fullName: Communication.DataProcessing.Json.JsonParse.JsonSerialiseOEnvironmentInfo(Communication.DataProcessing.OMessageType)
+  type: Method
+  source:
+    id: JsonSerialiseOEnvironmentInfo
+    path: E:\Unity\Project\SRSP-Simple-Simulator\Assets\Controller\script\Model\AquitisionCommunication\Communication\DataProcessing\Json\JsonParse.cs
+    startLine: 117
+  assemblies:
+  - Assembly-CSharp
+  namespace: Communication.DataProcessing.Json
+  syntax:
+    content: public static string JsonSerialiseOEnvironmentInfo(OMessageType TypeMessage)
+    parameters:
+    - id: TypeMessage
+      type: Communication.DataProcessing.OMessageType
+    return:
+      type: System.String
+    content.vb: Public Shared Function JsonSerialiseOEnvironmentInfo(TypeMessage As OMessageType) As String
+  overload: Communication.DataProcessing.Json.JsonParse.JsonSerialiseOEnvironmentInfo*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Communication.DataProcessing.Json.JsonParse.JsonSerialiseOBoatList
+  commentId: M:Communication.DataProcessing.Json.JsonParse.JsonSerialiseOBoatList
+  id: JsonSerialiseOBoatList
+  parent: Communication.DataProcessing.Json.JsonParse
+  langs:
+  - csharp
+  - vb
+  name: JsonSerialiseOBoatList()
+  nameWithType: JsonParse.JsonSerialiseOBoatList()
+  fullName: Communication.DataProcessing.Json.JsonParse.JsonSerialiseOBoatList()
+  type: Method
+  source:
+    id: JsonSerialiseOBoatList
+    path: E:\Unity\Project\SRSP-Simple-Simulator\Assets\Controller\script\Model\AquitisionCommunication\Communication\DataProcessing\Json\JsonParse.cs
+    startLine: 127
+  assemblies:
+  - Assembly-CSharp
+  namespace: Communication.DataProcessing.Json
+  syntax:
+    content: public static string JsonSerialiseOBoatList()
+    return:
+      type: System.String
+    content.vb: Public Shared Function JsonSerialiseOBoatList As String
+  overload: Communication.DataProcessing.Json.JsonParse.JsonSerialiseOBoatList*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Communication.DataProcessing.Json.JsonParse.JsonSerialiseOEndRace
+  commentId: M:Communication.DataProcessing.Json.JsonParse.JsonSerialiseOEndRace
+  id: JsonSerialiseOEndRace
+  parent: Communication.DataProcessing.Json.JsonParse
+  langs:
+  - csharp
+  - vb
+  name: JsonSerialiseOEndRace()
+  nameWithType: JsonParse.JsonSerialiseOEndRace()
+  fullName: Communication.DataProcessing.Json.JsonParse.JsonSerialiseOEndRace()
+  type: Method
+  source:
+    id: JsonSerialiseOEndRace
+    path: E:\Unity\Project\SRSP-Simple-Simulator\Assets\Controller\script\Model\AquitisionCommunication\Communication\DataProcessing\Json\JsonParse.cs
+    startLine: 140
+  assemblies:
+  - Assembly-CSharp
+  namespace: Communication.DataProcessing.Json
+  syntax:
+    content: public static string JsonSerialiseOEndRace()
+    return:
+      type: System.String
+    content.vb: Public Shared Function JsonSerialiseOEndRace As String
+  overload: Communication.DataProcessing.Json.JsonParse.JsonSerialiseOEndRace*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+references:
+- uid: Communication.DataProcessing.Json
+  commentId: N:Communication.DataProcessing.Json
+  name: Communication.DataProcessing.Json
+  nameWithType: Communication.DataProcessing.Json
+  fullName: Communication.DataProcessing.Json
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  nameWithType: Object.ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Communication.DataProcessing.Json.JsonParse.JsonDeserialize*
+  commentId: Overload:Communication.DataProcessing.Json.JsonParse.JsonDeserialize
+  name: JsonDeserialize
+  nameWithType: JsonParse.JsonDeserialize
+  fullName: Communication.DataProcessing.Json.JsonParse.JsonDeserialize
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: Communication.DataProcessing.Json.JsonParse.JsonSerialiseConnection*
+  commentId: Overload:Communication.DataProcessing.Json.JsonParse.JsonSerialiseConnection
+  name: JsonSerialiseConnection
+  nameWithType: JsonParse.JsonSerialiseConnection
+  fullName: Communication.DataProcessing.Json.JsonParse.JsonSerialiseConnection
+- uid: Communication.DataProcessing.IMessageType
+  commentId: T:Communication.DataProcessing.IMessageType
+  parent: Communication.DataProcessing
+  name: IMessageType
+  nameWithType: IMessageType
+  fullName: Communication.DataProcessing.IMessageType
+- uid: System.Int64
+  commentId: T:System.Int64
+  parent: System
+  isExternal: true
+  name: Int64
+  nameWithType: Int64
+  fullName: System.Int64
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  name: Int32
+  nameWithType: Int32
+  fullName: System.Int32
+- uid: Communication.DataProcessing
+  commentId: N:Communication.DataProcessing
+  name: Communication.DataProcessing
+  nameWithType: Communication.DataProcessing
+  fullName: Communication.DataProcessing
+- uid: Communication.DataProcessing.Json.JsonParse.JsonSerialiseIConnection*
+  commentId: Overload:Communication.DataProcessing.Json.JsonParse.JsonSerialiseIConnection
+  name: JsonSerialiseIConnection
+  nameWithType: JsonParse.JsonSerialiseIConnection
+  fullName: Communication.DataProcessing.Json.JsonParse.JsonSerialiseIConnection
+- uid: Communication.DataProcessing.Json.JsonParse.JsonSerialiseIDisconnection*
+  commentId: Overload:Communication.DataProcessing.Json.JsonParse.JsonSerialiseIDisconnection
+  name: JsonSerialiseIDisconnection
+  nameWithType: JsonParse.JsonSerialiseIDisconnection
+  fullName: Communication.DataProcessing.Json.JsonParse.JsonSerialiseIDisconnection
+- uid: Communication.DataProcessing.Json.JsonParse.JsonSerialiseIPlayerInfo*
+  commentId: Overload:Communication.DataProcessing.Json.JsonParse.JsonSerialiseIPlayerInfo
+  name: JsonSerialiseIPlayerInfo
+  nameWithType: JsonParse.JsonSerialiseIPlayerInfo
+  fullName: Communication.DataProcessing.Json.JsonParse.JsonSerialiseIPlayerInfo
+- uid: Communication.DataProcessing.Json.JsonParse.JsonSerialiseIBoatSelect*
+  commentId: Overload:Communication.DataProcessing.Json.JsonParse.JsonSerialiseIBoatSelect
+  name: JsonSerialiseIBoatSelect
+  nameWithType: JsonParse.JsonSerialiseIBoatSelect
+  fullName: Communication.DataProcessing.Json.JsonParse.JsonSerialiseIBoatSelect
+- uid: Communication.DataProcessing.Json.JsonParse.JsonSerialiseIBoatListRequest*
+  commentId: Overload:Communication.DataProcessing.Json.JsonParse.JsonSerialiseIBoatListRequest
+  name: JsonSerialiseIBoatListRequest
+  nameWithType: JsonParse.JsonSerialiseIBoatListRequest
+  fullName: Communication.DataProcessing.Json.JsonParse.JsonSerialiseIBoatListRequest
+- uid: Communication.DataProcessing.Json.JsonParse.JsonSerialiseIEndRace*
+  commentId: Overload:Communication.DataProcessing.Json.JsonParse.JsonSerialiseIEndRace
+  name: JsonSerialiseIEndRace
+  nameWithType: JsonParse.JsonSerialiseIEndRace
+  fullName: Communication.DataProcessing.Json.JsonParse.JsonSerialiseIEndRace
+- uid: Communication.DataProcessing.Json.JsonParse.JsonSerialiseOConnection*
+  commentId: Overload:Communication.DataProcessing.Json.JsonParse.JsonSerialiseOConnection
+  name: JsonSerialiseOConnection
+  nameWithType: JsonParse.JsonSerialiseOConnection
+  fullName: Communication.DataProcessing.Json.JsonParse.JsonSerialiseOConnection
+- uid: Communication.DataProcessing.Json.JsonParse.JsonSerialiseODisconnection*
+  commentId: Overload:Communication.DataProcessing.Json.JsonParse.JsonSerialiseODisconnection
+  name: JsonSerialiseODisconnection
+  nameWithType: JsonParse.JsonSerialiseODisconnection
+  fullName: Communication.DataProcessing.Json.JsonParse.JsonSerialiseODisconnection
+- uid: Communication.DataProcessing.Json.JsonParse.JsonSerialiseOInitRace*
+  commentId: Overload:Communication.DataProcessing.Json.JsonParse.JsonSerialiseOInitRace
+  name: JsonSerialiseOInitRace
+  nameWithType: JsonParse.JsonSerialiseOInitRace
+  fullName: Communication.DataProcessing.Json.JsonParse.JsonSerialiseOInitRace
+- uid: Communication.DataProcessing.OMessageType
+  commentId: T:Communication.DataProcessing.OMessageType
+  parent: Communication.DataProcessing
+  name: OMessageType
+  nameWithType: OMessageType
+  fullName: Communication.DataProcessing.OMessageType
+- uid: Communication.DataProcessing.Json.JsonParse.JsonSerialiseOEnvironmentInfo*
+  commentId: Overload:Communication.DataProcessing.Json.JsonParse.JsonSerialiseOEnvironmentInfo
+  name: JsonSerialiseOEnvironmentInfo
+  nameWithType: JsonParse.JsonSerialiseOEnvironmentInfo
+  fullName: Communication.DataProcessing.Json.JsonParse.JsonSerialiseOEnvironmentInfo
+- uid: Communication.DataProcessing.Json.JsonParse.JsonSerialiseOBoatList*
+  commentId: Overload:Communication.DataProcessing.Json.JsonParse.JsonSerialiseOBoatList
+  name: JsonSerialiseOBoatList
+  nameWithType: JsonParse.JsonSerialiseOBoatList
+  fullName: Communication.DataProcessing.Json.JsonParse.JsonSerialiseOBoatList
+- uid: Communication.DataProcessing.Json.JsonParse.JsonSerialiseOEndRace*
+  commentId: Overload:Communication.DataProcessing.Json.JsonParse.JsonSerialiseOEndRace
+  name: JsonSerialiseOEndRace
+  nameWithType: JsonParse.JsonSerialiseOEndRace
+  fullName: Communication.DataProcessing.Json.JsonParse.JsonSerialiseOEndRace

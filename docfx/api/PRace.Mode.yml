@@ -1,0 +1,131 @@
+### YamlMime:ManagedReference
+items:
+- uid: PRace.Mode
+  commentId: T:PRace.Mode
+  id: Mode
+  parent: PRace
+  children:
+  - PRace.Mode.Asynchrone
+  - PRace.Mode.Entrainement
+  - PRace.Mode.Synchrone
+  langs:
+  - csharp
+  - vb
+  name: Mode
+  nameWithType: Mode
+  fullName: PRace.Mode
+  type: Enum
+  source:
+    id: Mode
+    path: E:\Unity\Project\SRSP-Simple-Simulator\Assets\Controller\script\Model\Race\Mode.cs
+    startLine: 6
+  assemblies:
+  - Assembly-CSharp
+  namespace: PRace
+  summary: "\nEnumerate the available race mode \n"
+  example: []
+  syntax:
+    content: public enum Mode
+    content.vb: Public Enum Mode
+  modifiers.csharp:
+  - public
+  - enum
+  modifiers.vb:
+  - Public
+  - Enum
+- uid: PRace.Mode.Entrainement
+  commentId: F:PRace.Mode.Entrainement
+  id: Entrainement
+  parent: PRace.Mode
+  langs:
+  - csharp
+  - vb
+  name: Entrainement
+  nameWithType: Mode.Entrainement
+  fullName: PRace.Mode.Entrainement
+  type: Field
+  source:
+    id: Entrainement
+    path: E:\Unity\Project\SRSP-Simple-Simulator\Assets\Controller\script\Model\Race\Mode.cs
+    startLine: 7
+  assemblies:
+  - Assembly-CSharp
+  namespace: PRace
+  syntax:
+    content: Entrainement = 0
+    return:
+      type: PRace.Mode
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: PRace.Mode.Asynchrone
+  commentId: F:PRace.Mode.Asynchrone
+  id: Asynchrone
+  parent: PRace.Mode
+  langs:
+  - csharp
+  - vb
+  name: Asynchrone
+  nameWithType: Mode.Asynchrone
+  fullName: PRace.Mode.Asynchrone
+  type: Field
+  source:
+    id: Asynchrone
+    path: E:\Unity\Project\SRSP-Simple-Simulator\Assets\Controller\script\Model\Race\Mode.cs
+    startLine: 8
+  assemblies:
+  - Assembly-CSharp
+  namespace: PRace
+  syntax:
+    content: Asynchrone = 1
+    return:
+      type: PRace.Mode
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: PRace.Mode.Synchrone
+  commentId: F:PRace.Mode.Synchrone
+  id: Synchrone
+  parent: PRace.Mode
+  langs:
+  - csharp
+  - vb
+  name: Synchrone
+  nameWithType: Mode.Synchrone
+  fullName: PRace.Mode.Synchrone
+  type: Field
+  source:
+    id: Synchrone
+    path: E:\Unity\Project\SRSP-Simple-Simulator\Assets\Controller\script\Model\Race\Mode.cs
+    startLine: 9
+  assemblies:
+  - Assembly-CSharp
+  namespace: PRace
+  syntax:
+    content: Synchrone = 2
+    return:
+      type: PRace.Mode
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+references:
+- uid: PRace
+  commentId: N:PRace
+  name: PRace
+  nameWithType: PRace
+  fullName: PRace
+- uid: PRace.Mode
+  commentId: T:PRace.Mode
+  parent: PRace
+  name: Mode
+  nameWithType: Mode
+  fullName: PRace.Mode

@@ -1,0 +1,28 @@
+### YamlMime:ManagedReference
+items:
+- uid: Communication.DataProcessing.Files
+  commentId: N:Communication.DataProcessing.Files
+  id: Communication.DataProcessing.Files
+  children:
+  - Communication.DataProcessing.Files.FileManageData
+  - Communication.DataProcessing.Files.FileManageData.WriteInFile
+  langs:
+  - csharp
+  - vb
+  name: Communication.DataProcessing.Files
+  nameWithType: Communication.DataProcessing.Files
+  fullName: Communication.DataProcessing.Files
+  type: Namespace
+  assemblies:
+  - Assembly-CSharp
+references:
+- uid: Communication.DataProcessing.Files.FileManageData
+  commentId: T:Communication.DataProcessing.Files.FileManageData
+  name: FileManageData
+  nameWithType: FileManageData
+  fullName: Communication.DataProcessing.Files.FileManageData
+- uid: Communication.DataProcessing.Files.FileManageData.WriteInFile
+  commentId: T:Communication.DataProcessing.Files.FileManageData.WriteInFile
+  name: FileManageData.WriteInFile
+  nameWithType: FileManageData.WriteInFile
+  fullName: Communication.DataProcessing.Files.FileManageData.WriteInFile

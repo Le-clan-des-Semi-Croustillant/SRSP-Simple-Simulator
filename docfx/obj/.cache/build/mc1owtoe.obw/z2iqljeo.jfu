@@ -1,0 +1,1523 @@
+<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class RaceModel
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class RaceModel
+   ">
+    <meta name="generator" content="docfx 2.59.2.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc">
+    <meta property="docfx:tocrel" content="toc">
+    
+    
+    
+  </head>  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+                
+                <ul class="nav level1 navbar-nav">
+                      <li>
+                          <a href="../userdoc/intro.html" title="User Documentation">User Documentation</a>
+                      </li>
+                      <li>
+                          <a href="../api/index.html" title="Developper Documentation">Developper Documentation</a>
+                      </li>
+                      <li>
+                          <a href="../builddoc/buildoc.html" title="Generate Build">Generate Build</a>
+                      </li>
+                      <li>
+                          <a href="../docdoc/docdoc.html" title="Generate Documentation">Generate Documentation</a>
+                      </li>
+                </ul>    </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div>
+              <div class="sidefilter">
+                <form class="toc-filter">
+                  <span class="glyphicon glyphicon-filter filter-icon"></span>
+                  <input type="text" id="toc_filter_input" placeholder="Enter here to filter..." onkeypress="if(event.keyCode==13) {return false;}">
+                </form>
+              </div>
+              <div class="sidetoc">
+                <div class="toc" id="toc">
+                  
+                  <ul class="nav level1">
+                    <li class="">
+                      <span class="expand-stub"></span>
+                      <a href="AquitisionCommunication.html" title="AquitisionCommunication" class="">AquitisionCommunication</a>
+                        
+                        <ul class="nav level2">
+                          <li class="">
+                            <a href="AquitisionCommunication.Aquisition.html" title="Aquisition" class="">Aquisition</a>
+                          </li>
+                          <li class="">
+                            <a href="AquitisionCommunication.AquisitionFichierSaveRace.html" title="AquisitionFichierSaveRace" class="">AquisitionFichierSaveRace</a>
+                          </li>
+                          <li class="">
+                            <a href="AquitisionCommunication.AquisitionPolaire.html" title="AquisitionPolaire" class="">AquisitionPolaire</a>
+                          </li>
+                          <li class="">
+                            <a href="AquitisionCommunication.RaceSave.html" title="RaceSave" class="">RaceSave</a>
+                          </li>
+                          <li class="">
+                            <a href="AquitisionCommunication.RaceSave.JsonRace.html" title="RaceSave.JsonRace" class="">RaceSave.JsonRace</a>
+                          </li>
+                          <li class="">
+                            <a href="AquitisionCommunication.Sauvegarde.html" title="Sauvegarde" class="">Sauvegarde</a>
+                          </li>
+                        </ul>  </li>
+                    <li class="">
+                      <span class="expand-stub"></span>
+                      <a href="Communication.html" title="Communication" class="">Communication</a>
+                        
+                        <ul class="nav level2">
+                          <li class="">
+                            <a href="Communication.AsynchronousClient.html" title="AsynchronousClient" class="">AsynchronousClient</a>
+                          </li>
+                          <li class="">
+                            <a href="Communication.StateObject.html" title="StateObject" class="">StateObject</a>
+                          </li>
+                        </ul>  </li>
+                    <li class="">
+                      <span class="expand-stub"></span>
+                      <a href="Communication.DataProcessing.html" title="Communication.DataProcessing" class="">Communication.DataProcessing</a>
+                        
+                        <ul class="nav level2">
+                          <li class="">
+                            <a href="Communication.DataProcessing.IMessageType.html" title="IMessageType" class="">IMessageType</a>
+                          </li>
+                          <li class="">
+                            <a href="Communication.DataProcessing.OMessageType.html" title="OMessageType" class="">OMessageType</a>
+                          </li>
+                        </ul>  </li>
+                    <li class="">
+                      <span class="expand-stub"></span>
+                      <a href="Communication.DataProcessing.Files.html" title="Communication.DataProcessing.Files" class="">Communication.DataProcessing.Files</a>
+                        
+                        <ul class="nav level2">
+                          <li class="">
+                            <a href="Communication.DataProcessing.Files.FileManageData.html" title="FileManageData" class="">FileManageData</a>
+                          </li>
+                          <li class="">
+                            <a href="Communication.DataProcessing.Files.FileManageData.WriteInFile.html" title="FileManageData.WriteInFile" class="">FileManageData.WriteInFile</a>
+                          </li>
+                        </ul>  </li>
+                    <li class="">
+                      <span class="expand-stub"></span>
+                      <a href="Communication.DataProcessing.Json.html" title="Communication.DataProcessing.Json" class="">Communication.DataProcessing.Json</a>
+                        
+                        <ul class="nav level2">
+                          <li class="">
+                            <a href="Communication.DataProcessing.Json.BoatType.html" title="BoatType" class="">BoatType</a>
+                          </li>
+                          <li class="">
+                            <a href="Communication.DataProcessing.Json.JsonParse.html" title="JsonParse" class="">JsonParse</a>
+                          </li>
+                          <li class="">
+                            <a href="Communication.DataProcessing.Json.Polar.html" title="Polar" class="">Polar</a>
+                          </li>
+                          <li class="">
+                            <a href="Communication.DataProcessing.Json.PolFile.html" title="PolFile" class="">PolFile</a>
+                          </li>
+                        </ul>  </li>
+                    <li class="">
+                      <span class="expand-stub"></span>
+                      <a href="Environement.html" title="Environement" class="">Environement</a>
+                        
+                        <ul class="nav level2">
+                          <li class="">
+                            <a href="Environement.Conditions.html" title="Conditions" class="">Conditions</a>
+                          </li>
+                          <li class="">
+                            <a href="Environement.Current.html" title="Current" class="">Current</a>
+                          </li>
+                          <li class="">
+                            <a href="Environement.Environment.html" title="Environment" class="">Environment</a>
+                          </li>
+                          <li class="">
+                            <a href="Environement.Wave.html" title="Wave" class="">Wave</a>
+                          </li>
+                          <li class="">
+                            <a href="Environement.Wind.html" title="Wind" class="">Wind</a>
+                          </li>
+                        </ul>  </li>
+                    <li class="">
+                      <span class="expand-stub"></span>
+                      <a href="Model.html" title="Model" class="">Model</a>
+                        
+                        <ul class="nav level2">
+                          <li class="">
+                            <a href="Model.BoatInfo.html" title="BoatInfo" class="">BoatInfo</a>
+                          </li>
+                          <li class="">
+                            <a href="Model.IObserver.html" title="IObserver" class="">IObserver</a>
+                          </li>
+                          <li class="">
+                            <a href="Model.ISubject.html" title="ISubject" class="">ISubject</a>
+                          </li>
+                          <li class="">
+                            <a href="Model.Observer.html" title="Observer" class="">Observer</a>
+                          </li>
+                          <li class="active">
+                            <a href="Model.RaceModel.html" title="RaceModel" class="active">RaceModel</a>
+                          </li>
+                        </ul>  </li>
+                    <li class="">
+                      <span class="expand-stub"></span>
+                      <a href="physicSimulator.html" title="physicSimulator" class="">physicSimulator</a>
+                        
+                        <ul class="nav level2">
+                          <li class="">
+                            <a href="physicSimulator.physics_simulator.html" title="physics_simulator" class="">physics_simulator</a>
+                          </li>
+                        </ul>  </li>
+                    <li class="">
+                      <span class="expand-stub"></span>
+                      <a href="PRace.html" title="PRace" class="">PRace</a>
+                        
+                        <ul class="nav level2">
+                          <li class="">
+                            <a href="PRace.Boat.html" title="Boat" class="">Boat</a>
+                          </li>
+                          <li class="">
+                            <a href="PRace.Clock.html" title="Clock" class="">Clock</a>
+                          </li>
+                          <li class="">
+                            <a href="PRace.Competitor.html" title="Competitor" class="">Competitor</a>
+                          </li>
+                          <li class="">
+                            <a href="PRace.DegreeIncrement.html" title="DegreeIncrement" class="">DegreeIncrement</a>
+                          </li>
+                          <li class="">
+                            <a href="PRace.Mode.html" title="Mode" class="">Mode</a>
+                          </li>
+                          <li class="">
+                            <a href="PRace.ModeCommande.html" title="ModeCommande" class="">ModeCommande</a>
+                          </li>
+                          <li class="">
+                            <a href="PRace.Polaire.html" title="Polaire" class="">Polaire</a>
+                          </li>
+                          <li class="">
+                            <a href="PRace.Position.html" title="Position" class="">Position</a>
+                          </li>
+                          <li class="">
+                            <a href="PRace.Position.Coords.html" title="Position.Coords" class="">Position.Coords</a>
+                          </li>
+                          <li class="">
+                            <a href="PRace.Race.html" title="Race" class="">Race</a>
+                          </li>
+                          <li class="">
+                            <a href="PRace.RegulateurAmure.html" title="RegulateurAmure" class="">RegulateurAmure</a>
+                          </li>
+                          <li class="">
+                            <a href="PRace.Time.html" title="Time" class="">Time</a>
+                          </li>
+                          <li class="">
+                            <a href="PRace.WayPoint.html" title="WayPoint" class="">WayPoint</a>
+                          </li>
+                        </ul>  </li>
+                    <li class="">
+                      <span class="expand-stub"></span>
+                      <a href="SimpleSimulator.AquitisionCommunication.Trame.html" title="SimpleSimulator.AquitisionCommunication.Trame" class="">SimpleSimulator.AquitisionCommunication.Trame</a>
+                        
+                        <ul class="nav level2">
+                          <li class="">
+                            <a href="SimpleSimulator.AquitisionCommunication.Trame.Sender.html" title="Sender" class="">Sender</a>
+                          </li>
+                          <li class="">
+                            <a href="SimpleSimulator.AquitisionCommunication.Trame.TrameMWV.html" title="TrameMWV" class="">TrameMWV</a>
+                          </li>
+                          <li class="">
+                            <a href="SimpleSimulator.AquitisionCommunication.Trame.TrameNMEA.html" title="TrameNMEA" class="">TrameNMEA</a>
+                          </li>
+                          <li class="">
+                            <a href="SimpleSimulator.AquitisionCommunication.Trame.TrameRMC.html" title="TrameRMC" class="">TrameRMC</a>
+                          </li>
+                          <li class="">
+                            <a href="SimpleSimulator.AquitisionCommunication.Trame.TrameRSA.html" title="TrameRSA" class="">TrameRSA</a>
+                          </li>
+                          <li class="">
+                            <a href="SimpleSimulator.AquitisionCommunication.Trame.TrameVDM.html" title="TrameVDM" class="">TrameVDM</a>
+                          </li>
+                          <li class="">
+                            <a href="SimpleSimulator.AquitisionCommunication.Trame.TrameVHW.html" title="TrameVHW" class="">TrameVHW</a>
+                          </li>
+                          <li class="">
+                            <a href="SimpleSimulator.AquitisionCommunication.Trame.TrameXDR.html" title="TrameXDR" class="">TrameXDR</a>
+                          </li>
+                          <li class="">
+                            <a href="SimpleSimulator.AquitisionCommunication.Trame.XDRSub.html" title="XDRSub" class="">XDRSub</a>
+                          </li>
+                        </ul>  </li>
+                    <li class="">
+                      <span class="expand-stub"></span>
+                      <a href="Traductionscript.html" title="Traductionscript" class="">Traductionscript</a>
+                        
+                        <ul class="nav level2">
+                          <li class="">
+                            <a href="Traductionscript.BoatSelectTrad.html" title="BoatSelectTrad" class="">BoatSelectTrad</a>
+                          </li>
+                          <li class="">
+                            <a href="Traductionscript.ConfigTrad.html" title="ConfigTrad" class="">ConfigTrad</a>
+                          </li>
+                          <li class="">
+                            <a href="Traductionscript.InitialisationTrad.html" title="InitialisationTrad" class="">InitialisationTrad</a>
+                          </li>
+                          <li class="">
+                            <a href="Traductionscript.MenuTrad.html" title="MenuTrad" class="">MenuTrad</a>
+                          </li>
+                          <li class="">
+                            <a href="Traductionscript.ModeTrad.html" title="ModeTrad" class="">ModeTrad</a>
+                          </li>
+                          <li class="">
+                            <a href="Traductionscript.SavesSelectionTrad.html" title="SavesSelectionTrad" class="">SavesSelectionTrad</a>
+                          </li>
+                          <li class="">
+                            <a href="Traductionscript.WaypointSelectionTrad.html" title="WaypointSelectionTrad" class="">WaypointSelectionTrad</a>
+                          </li>
+                          <li class="">
+                            <a href="Traductionscript.xmlReader.html" title="xmlReader" class="">xmlReader</a>
+                          </li>
+                        </ul>  </li>
+                    <li class="">
+                      <span class="expand-stub"></span>
+                      <a href="Unityscript.html" title="Unityscript" class="">Unityscript</a>
+                        
+                        <ul class="nav level2">
+                          <li class="">
+                            <a href="Unityscript.BoatPhys.html" title="BoatPhys" class="">BoatPhys</a>
+                          </li>
+                          <li class="">
+                            <a href="Unityscript.ButtonListButton.html" title="ButtonListButton" class="">ButtonListButton</a>
+                          </li>
+                          <li class="">
+                            <a href="Unityscript.ButtonListControl.html" title="ButtonListControl" class="">ButtonListControl</a>
+                          </li>
+                          <li class="">
+                            <a href="Unityscript.ButtonsSavesControl.html" title="ButtonsSavesControl" class="">ButtonsSavesControl</a>
+                          </li>
+                          <li class="">
+                            <a href="Unityscript.ButtonWaypoint.html" title="ButtonWaypoint" class="">ButtonWaypoint</a>
+                          </li>
+                          <li class="">
+                            <a href="Unityscript.Controler.html" title="Controler" class="">Controler</a>
+                          </li>
+                          <li class="">
+                            <a href="Unityscript.CreateSave.html" title="CreateSave" class="">CreateSave</a>
+                          </li>
+                          <li class="">
+                            <a href="Unityscript.Creation.html" title="Creation" class="">Creation</a>
+                          </li>
+                          <li class="">
+                            <a href="Unityscript.DisplayCadran.html" title="DisplayCadran" class="">DisplayCadran</a>
+                          </li>
+                          <li class="">
+                            <a href="Unityscript.eventOnClick.html" title="eventOnClick" class="">eventOnClick</a>
+                          </li>
+                          <li class="">
+                            <a href="Unityscript.Follow.html" title="Follow" class="">Follow</a>
+                          </li>
+                          <li class="">
+                            <a href="Unityscript.Initialisation.html" title="Initialisation" class="">Initialisation</a>
+                          </li>
+                          <li class="">
+                            <a href="Unityscript.keyPress.html" title="keyPress" class="">keyPress</a>
+                          </li>
+                          <li class="">
+                            <a href="Unityscript.PanelSwitch.html" title="PanelSwitch" class="">PanelSwitch</a>
+                          </li>
+                          <li class="">
+                            <a href="Unityscript.PolarSelection.html" title="PolarSelection" class="">PolarSelection</a>
+                          </li>
+                          <li class="">
+                            <a href="Unityscript.Run.html" title="Run" class="">Run</a>
+                          </li>
+                          <li class="">
+                            <a href="Unityscript.SetAcc.html" title="SetAcc" class="">SetAcc</a>
+                          </li>
+                          <li class="">
+                            <a href="Unityscript.setConfig.html" title="setConfig" class="">setConfig</a>
+                          </li>
+                          <li class="">
+                            <a href="Unityscript.SetEnv.html" title="SetEnv" class="">SetEnv</a>
+                          </li>
+                          <li class="">
+                            <a href="Unityscript.ShowValue.html" title="ShowValue" class="">ShowValue</a>
+                          </li>
+                          <li class="">
+                            <a href="Unityscript.SwitchMode.html" title="SwitchMode" class="">SwitchMode</a>
+                          </li>
+                        </ul>  </li>
+                  </ul>        </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="Model.RaceModel">
+  
+  
+  <h1 id="Model_RaceModel" data-uid="Model.RaceModel" class="text-break">Class RaceModel
+  </h1>
+  <div class="markdown level0 summary"><p sourcefile="api/Model.RaceModel.yml" sourcestartlinenumber="2">This class plays the role of model(pattern model-observer) for the class <a class="xref" href="PRace.Race.html">Race</a>.
+It's also manage the save process</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><span class="xref">RaceModel</span></div>
+  </div>
+  <div classs="implements">
+    <h5>Implements</h5>
+    <div><a class="xref" href="Model.ISubject.html">ISubject</a></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetHashCode()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetType()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.MemberwiseClone()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ToString()</span>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="Model.html">Model</a></h6>
+  <h6><strong>Assembly</strong>: Assembly-CSharp.dll</h6>
+  <h5 id="Model_RaceModel_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class RaceModel : ISubject</code></pre>
+  </div>
+  <h3 id="constructors">Constructors
+  </h3>
+  
+  
+  <a id="Model_RaceModel__ctor_" data-uid="Model.RaceModel.#ctor*"></a>
+  <h4 id="Model_RaceModel__ctor" data-uid="Model.RaceModel.#ctor">RaceModel()</h4>
+  <div class="markdown level1 summary"><p sourcefile="api/Model.RaceModel.yml" sourcestartlinenumber="2">Create an instance of RaceModel</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public RaceModel()</code></pre>
+  </div>
+  <h3 id="methods">Methods
+  </h3>
+  
+  
+  <a id="Model_RaceModel_Attach_" data-uid="Model.RaceModel.Attach*"></a>
+  <h4 id="Model_RaceModel_Attach_Model_IObserver_" data-uid="Model.RaceModel.Attach(Model.IObserver)">Attach(IObserver)</h4>
+  <div class="markdown level1 summary"><p sourcefile="api/Model.RaceModel.yml" sourcestartlinenumber="2">Attach a new <a class="xref" href="Model.IObserver.html">IObserver</a> to the model</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Attach(IObserver obs)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Model.IObserver.html">IObserver</a></td>
+        <td><span class="parametername">obs</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Model_RaceModel_GetAccFactor_" data-uid="Model.RaceModel.GetAccFactor*"></a>
+  <h4 id="Model_RaceModel_GetAccFactor" data-uid="Model.RaceModel.GetAccFactor">GetAccFactor()</h4>
+  <div class="markdown level1 summary"><p sourcefile="api/Model.RaceModel.yml" sourcestartlinenumber="2">return the acceleration factor of the simulation</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float GetAccFactor()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td><p sourcefile="api/Model.RaceModel.yml" sourcestartlinenumber="1">return the acceleration factor of the simulation</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Model_RaceModel_getAllureCap_" data-uid="Model.RaceModel.getAllureCap*"></a>
+  <h4 id="Model_RaceModel_getAllureCap" data-uid="Model.RaceModel.getAllureCap">getAllureCap()</h4>
+  <div class="markdown level1 summary"><p sourcefile="api/Model.RaceModel.yml" sourcestartlinenumber="2">return the cap of the wind mode</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float getAllureCap()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Model_RaceModel_getBoatList_" data-uid="Model.RaceModel.getBoatList*"></a>
+  <h4 id="Model_RaceModel_getBoatList_System_String_System_Int32_" data-uid="Model.RaceModel.getBoatList(System.String,System.Int32)">getBoatList(String, Int32)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public List&lt;string&gt; getBoatList(string ip, int port)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">ip</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">port</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.List</span>&lt;<span class="xref">System.String</span>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Model_RaceModel_GetBoatStatus_" data-uid="Model.RaceModel.GetBoatStatus*"></a>
+  <h4 id="Model_RaceModel_GetBoatStatus" data-uid="Model.RaceModel.GetBoatStatus">GetBoatStatus()</h4>
+  <div class="markdown level1 summary"><p sourcefile="api/Model.RaceModel.yml" sourcestartlinenumber="2">Return a dictionary with as key <a class="xref" href="Model.BoatInfo.html">BoatInfo</a> and as value the corresponding value of the race</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Dictionary&lt;BoatInfo, double&gt; GetBoatStatus()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.Dictionary</span>&lt;<a class="xref" href="Model.BoatInfo.html">BoatInfo</a>, <span class="xref">System.Double</span>&gt;</td>
+        <td><p sourcefile="api/Model.RaceModel.yml" sourcestartlinenumber="1">Return a dictionary with as key <a class="xref" href="Model.BoatInfo.html">BoatInfo</a> and as value the corresponding value of the race</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Model_RaceModel_getCommandeMode_" data-uid="Model.RaceModel.getCommandeMode*"></a>
+  <h4 id="Model_RaceModel_getCommandeMode" data-uid="Model.RaceModel.getCommandeMode">getCommandeMode()</h4>
+  <div class="markdown level1 summary"><p sourcefile="api/Model.RaceModel.yml" sourcestartlinenumber="2">return the active commande mode</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ModeCommande getCommandeMode()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="PRace.ModeCommande.html">ModeCommande</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Model_RaceModel_getipNMEA_" data-uid="Model.RaceModel.getipNMEA*"></a>
+  <h4 id="Model_RaceModel_getipNMEA" data-uid="Model.RaceModel.getipNMEA">getipNMEA()</h4>
+  <div class="markdown level1 summary"><p sourcefile="api/Model.RaceModel.yml" sourcestartlinenumber="2">return the ip use for QTVLM</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string getipNMEA()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Model_RaceModel_getListPolaire_" data-uid="Model.RaceModel.getListPolaire*"></a>
+  <h4 id="Model_RaceModel_getListPolaire" data-uid="Model.RaceModel.getListPolaire">getListPolaire()</h4>
+  <div class="markdown level1 summary"><p sourcefile="api/Model.RaceModel.yml" sourcestartlinenumber="2">Return the list of all available polars of the boat</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public List&lt;string&gt; getListPolaire()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.List</span>&lt;<span class="xref">System.String</span>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Model_RaceModel_getModelCap_" data-uid="Model.RaceModel.getModelCap*"></a>
+  <h4 id="Model_RaceModel_getModelCap" data-uid="Model.RaceModel.getModelCap">getModelCap()</h4>
+  <div class="markdown level1 summary"><p sourcefile="api/Model.RaceModel.yml" sourcestartlinenumber="2">return boat heading</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float getModelCap()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Model_RaceModel_getportNMEA_" data-uid="Model.RaceModel.getportNMEA*"></a>
+  <h4 id="Model_RaceModel_getportNMEA" data-uid="Model.RaceModel.getportNMEA">getportNMEA()</h4>
+  <div class="markdown level1 summary"><p sourcefile="api/Model.RaceModel.yml" sourcestartlinenumber="2">return the port use for QTVLM</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int getportNMEA()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Model_RaceModel_GetRace_" data-uid="Model.RaceModel.GetRace*"></a>
+  <h4 id="Model_RaceModel_GetRace" data-uid="Model.RaceModel.GetRace">GetRace()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Race GetRace()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="PRace.Race.html">Race</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Model_RaceModel_getSTW_" data-uid="Model.RaceModel.getSTW*"></a>
+  <h4 id="Model_RaceModel_getSTW" data-uid="Model.RaceModel.getSTW">getSTW()</h4>
+  <div class="markdown level1 summary"><p sourcefile="api/Model.RaceModel.yml" sourcestartlinenumber="2">return the speed throw water of the boat</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float getSTW()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Model_RaceModel_getTime_" data-uid="Model.RaceModel.getTime*"></a>
+  <h4 id="Model_RaceModel_getTime" data-uid="Model.RaceModel.getTime">getTime()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public DateTime getTime()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.DateTime</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Model_RaceModel_getWaterDir_" data-uid="Model.RaceModel.getWaterDir*"></a>
+  <h4 id="Model_RaceModel_getWaterDir" data-uid="Model.RaceModel.getWaterDir">getWaterDir()</h4>
+  <div class="markdown level1 summary"><p sourcefile="api/Model.RaceModel.yml" sourcestartlinenumber="2">return current direction of the simulation</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float getWaterDir()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Model_RaceModel_getWaterSpeed_" data-uid="Model.RaceModel.getWaterSpeed*"></a>
+  <h4 id="Model_RaceModel_getWaterSpeed" data-uid="Model.RaceModel.getWaterSpeed">getWaterSpeed()</h4>
+  <div class="markdown level1 summary"><p sourcefile="api/Model.RaceModel.yml" sourcestartlinenumber="2">return current speed of the simulation</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float getWaterSpeed()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Model_RaceModel_getWaveAmpl_" data-uid="Model.RaceModel.getWaveAmpl*"></a>
+  <h4 id="Model_RaceModel_getWaveAmpl" data-uid="Model.RaceModel.getWaveAmpl">getWaveAmpl()</h4>
+  <div class="markdown level1 summary"><p sourcefile="api/Model.RaceModel.yml" sourcestartlinenumber="2">return Wave Amplitude of the simulation</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float getWaveAmpl()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Model_RaceModel_getWaveDir_" data-uid="Model.RaceModel.getWaveDir*"></a>
+  <h4 id="Model_RaceModel_getWaveDir" data-uid="Model.RaceModel.getWaveDir">getWaveDir()</h4>
+  <div class="markdown level1 summary"><p sourcefile="api/Model.RaceModel.yml" sourcestartlinenumber="2">return Wave direction of the simulation</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float getWaveDir()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Model_RaceModel_getWaveLength_" data-uid="Model.RaceModel.getWaveLength*"></a>
+  <h4 id="Model_RaceModel_getWaveLength" data-uid="Model.RaceModel.getWaveLength">getWaveLength()</h4>
+  <div class="markdown level1 summary"><p sourcefile="api/Model.RaceModel.yml" sourcestartlinenumber="2">return Wave length of the simulation</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float getWaveLength()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Model_RaceModel_getWindDir_" data-uid="Model.RaceModel.getWindDir*"></a>
+  <h4 id="Model_RaceModel_getWindDir" data-uid="Model.RaceModel.getWindDir">getWindDir()</h4>
+  <div class="markdown level1 summary"><p sourcefile="api/Model.RaceModel.yml" sourcestartlinenumber="2">return the wind direction of the simulation</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float getWindDir()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Model_RaceModel_getWindSpeed_" data-uid="Model.RaceModel.getWindSpeed*"></a>
+  <h4 id="Model_RaceModel_getWindSpeed" data-uid="Model.RaceModel.getWindSpeed">getWindSpeed()</h4>
+  <div class="markdown level1 summary"><p sourcefile="api/Model.RaceModel.yml" sourcestartlinenumber="2">return the wind speed of the simulation</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float getWindSpeed()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Model_RaceModel_IncrementCap_" data-uid="Model.RaceModel.IncrementCap*"></a>
+  <h4 id="Model_RaceModel_IncrementCap_PRace_ModeCommande_PRace_DegreeIncrement_" data-uid="Model.RaceModel.IncrementCap(PRace.ModeCommande,PRace.DegreeIncrement)">IncrementCap(ModeCommande, DegreeIncrement)</h4>
+  <div class="markdown level1 summary"><p sourcefile="api/Model.RaceModel.yml" sourcestartlinenumber="2">Increment the cap the commande mode</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void IncrementCap(ModeCommande commande, DegreeIncrement degre)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="PRace.ModeCommande.html">ModeCommande</a></td>
+        <td><span class="parametername">commande</span></td>
+        <td><p sourcefile="api/Model.RaceModel.yml" sourcestartlinenumber="1">Commande mode to increment</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="PRace.DegreeIncrement.html">DegreeIncrement</a></td>
+        <td><span class="parametername">degre</span></td>
+        <td><p sourcefile="api/Model.RaceModel.yml" sourcestartlinenumber="1">value of the increment</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Model_RaceModel_ListSavePath_" data-uid="Model.RaceModel.ListSavePath*"></a>
+  <h4 id="Model_RaceModel_ListSavePath" data-uid="Model.RaceModel.ListSavePath">ListSavePath()</h4>
+  <div class="markdown level1 summary"><p sourcefile="api/Model.RaceModel.yml" sourcestartlinenumber="2">return the list the path of all available saves</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string[] ListSavePath()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span>[]</td>
+        <td><p sourcefile="api/Model.RaceModel.yml" sourcestartlinenumber="1">return the list the path of all available saves</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Model_RaceModel_Notify_" data-uid="Model.RaceModel.Notify*"></a>
+  <h4 id="Model_RaceModel_Notify" data-uid="Model.RaceModel.Notify">Notify()</h4>
+  <div class="markdown level1 summary"><p sourcefile="api/Model.RaceModel.yml" sourcestartlinenumber="2">Notify all the added observer (all observer in 'ListObserver' attribut</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Notify()</code></pre>
+  </div>
+  
+  
+  <a id="Model_RaceModel_Pause_" data-uid="Model.RaceModel.Pause*"></a>
+  <h4 id="Model_RaceModel_Pause" data-uid="Model.RaceModel.Pause">Pause()</h4>
+  <div class="markdown level1 summary"><p sourcefile="api/Model.RaceModel.yml" sourcestartlinenumber="2">pause the race</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Pause()</code></pre>
+  </div>
+  
+  
+  <a id="Model_RaceModel_Run_" data-uid="Model.RaceModel.Run*"></a>
+  <h4 id="Model_RaceModel_Run" data-uid="Model.RaceModel.Run">Run()</h4>
+  <div class="markdown level1 summary"><p sourcefile="api/Model.RaceModel.yml" sourcestartlinenumber="2">Run the race</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Run()</code></pre>
+  </div>
+  
+  
+  <a id="Model_RaceModel_Save_" data-uid="Model.RaceModel.Save*"></a>
+  <h4 id="Model_RaceModel_Save_System_String_" data-uid="Model.RaceModel.Save(System.String)">Save(String)</h4>
+  <div class="markdown level1 summary"><p sourcefile="api/Model.RaceModel.yml" sourcestartlinenumber="2">Create a save of the race</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Save(string inputSavePath)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">inputSavePath</span></td>
+        <td><p sourcefile="api/Model.RaceModel.yml" sourcestartlinenumber="1">Name of the save</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Model_RaceModel_Set_Up_" data-uid="Model.RaceModel.Set_Up*"></a>
+  <h4 id="Model_RaceModel_Set_Up_System_Nullable_PRace_Mode__System_String_System_String_System_Int32_System_String_System_Int32_System_String_" data-uid="Model.RaceModel.Set_Up(System.Nullable{PRace.Mode},System.String,System.String,System.Int32,System.String,System.Int32,System.String)">Set_Up(Nullable&lt;Mode&gt;, String, String, Int32, String, Int32, String)</h4>
+  <div class="markdown level1 summary"><p sourcefile="api/Model.RaceModel.yml" sourcestartlinenumber="2">Set up this instance by loading a save or creating a new race based on mode an boat type.
+In order to this fonction to work path or (mode and IDBoatType) need to be provided</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Set_Up(Mode? mode = null, string IDBoatType = null, string path = null, int portQTVLM = 10113, string ipQTVLM = &quot;127.0.0.1&quot;, int portRM = 0, string ipRM = &quot;0&quot;)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Nullable</span>&lt;<a class="xref" href="PRace.Mode.html">Mode</a>&gt;</td>
+        <td><span class="parametername">mode</span></td>
+        <td><p sourcefile="api/Model.RaceModel.yml" sourcestartlinenumber="1">the <see cref="!:"></see> for the new race</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">IDBoatType</span></td>
+        <td><p sourcefile="api/Model.RaceModel.yml" sourcestartlinenumber="1">the <a class="xref" href="Communication.DataProcessing.Json.BoatType.html">BoatType</a> which will be used to create the boat of the new race</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">path</span></td>
+        <td><p sourcefile="api/Model.RaceModel.yml" sourcestartlinenumber="1">the path at with be used to load the save</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">portQTVLM</span></td>
+        <td><p sourcefile="api/Model.RaceModel.yml" sourcestartlinenumber="1">the port that will be used to connect to QTVLM</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">ipQTVLM</span></td>
+        <td><p sourcefile="api/Model.RaceModel.yml" sourcestartlinenumber="1">the ip that will be used to connect to QTVLM</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">portRM</span></td>
+        <td><p sourcefile="api/Model.RaceModel.yml" sourcestartlinenumber="1">the port that will be used to connect to the Race Manager</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">ipRM</span></td>
+        <td><p sourcefile="api/Model.RaceModel.yml" sourcestartlinenumber="1">the ip that will be used to connect to the Race Manager</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="Model_RaceModel_Set_Up_System_Nullable_PRace_Mode__System_String_System_String_System_Int32_System_String_System_Int32_System_String__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p sourcefile="api/Model.RaceModel.yml" sourcestartlinenumber="1">this fonction priorizes the initialisation with the path</p>
+</div>
+  
+  
+  <a id="Model_RaceModel_SetCurrent_" data-uid="Model.RaceModel.SetCurrent*"></a>
+  <h4 id="Model_RaceModel_SetCurrent_System_Single_System_Single_" data-uid="Model.RaceModel.SetCurrent(System.Single,System.Single)">SetCurrent(Single, Single)</h4>
+  <div class="markdown level1 summary"><p sourcefile="api/Model.RaceModel.yml" sourcestartlinenumber="2">set the current of the race</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetCurrent(float currentspeed, float currentdir)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td><span class="parametername">currentspeed</span></td>
+        <td><p sourcefile="api/Model.RaceModel.yml" sourcestartlinenumber="1">current speed</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td><span class="parametername">currentdir</span></td>
+        <td><p sourcefile="api/Model.RaceModel.yml" sourcestartlinenumber="1">current direction</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Model_RaceModel_SetFactor_" data-uid="Model.RaceModel.SetFactor*"></a>
+  <h4 id="Model_RaceModel_SetFactor_System_Single_" data-uid="Model.RaceModel.SetFactor(System.Single)">SetFactor(Single)</h4>
+  <div class="markdown level1 summary"><p sourcefile="api/Model.RaceModel.yml" sourcestartlinenumber="2">set the acceleration factor of the simulation</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetFactor(float acc)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td><span class="parametername">acc</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Model_RaceModel_setNMEA_" data-uid="Model.RaceModel.setNMEA*"></a>
+  <h4 id="Model_RaceModel_setNMEA_System_Int32_System_String_" data-uid="Model.RaceModel.setNMEA(System.Int32,System.String)">setNMEA(Int32, String)</h4>
+  <div class="markdown level1 summary"><p sourcefile="api/Model.RaceModel.yml" sourcestartlinenumber="2">Set the IP and port of QTVLN</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void setNMEA(int port, string ip)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">port</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">ip</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Model_RaceModel_setNoneCurrentPolar_" data-uid="Model.RaceModel.setNoneCurrentPolar*"></a>
+  <h4 id="Model_RaceModel_setNoneCurrentPolar" data-uid="Model.RaceModel.setNoneCurrentPolar">setNoneCurrentPolar()</h4>
+  <div class="markdown level1 summary"><p sourcefile="api/Model.RaceModel.yml" sourcestartlinenumber="2">lower the sails</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void setNoneCurrentPolar()</code></pre>
+  </div>
+  
+  
+  <a id="Model_RaceModel_setPolaire_" data-uid="Model.RaceModel.setPolaire*"></a>
+  <h4 id="Model_RaceModel_setPolaire_System_String_" data-uid="Model.RaceModel.setPolaire(System.String)">setPolaire(String)</h4>
+  <div class="markdown level1 summary"><p sourcefile="api/Model.RaceModel.yml" sourcestartlinenumber="2">Set the current polar of the boat to the polars with the corresponding name amoung all available polars</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void setPolaire(string polaireName)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">polaireName</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Model_RaceModel_setPositionDeDepart_" data-uid="Model.RaceModel.setPositionDeDepart*"></a>
+  <h4 id="Model_RaceModel_setPositionDeDepart_System_Single_System_Single_" data-uid="Model.RaceModel.setPositionDeDepart(System.Single,System.Single)">setPositionDeDepart(Single, Single)</h4>
+  <div class="markdown level1 summary"><p sourcefile="api/Model.RaceModel.yml" sourcestartlinenumber="2">Set the position of the boat</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void setPositionDeDepart(float latitude, float longitude)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td><span class="parametername">latitude</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td><span class="parametername">longitude</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Model_RaceModel_SetWave_" data-uid="Model.RaceModel.SetWave*"></a>
+  <h4 id="Model_RaceModel_SetWave_System_Single_System_Single_System_Single_" data-uid="Model.RaceModel.SetWave(System.Single,System.Single,System.Single)">SetWave(Single, Single, Single)</h4>
+  <div class="markdown level1 summary"><p sourcefile="api/Model.RaceModel.yml" sourcestartlinenumber="2">set the waves of th simulation</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetWave(float wavesampl, float wavedir, float wavelength)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td><span class="parametername">wavesampl</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td><span class="parametername">wavedir</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td><span class="parametername">wavelength</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Model_RaceModel_SetWind_" data-uid="Model.RaceModel.SetWind*"></a>
+  <h4 id="Model_RaceModel_SetWind_System_Single_System_Single_" data-uid="Model.RaceModel.SetWind(System.Single,System.Single)">SetWind(Single, Single)</h4>
+  <div class="markdown level1 summary"><p sourcefile="api/Model.RaceModel.yml" sourcestartlinenumber="2">set the wind of the simulation</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetWind(float windspeed, float winddir)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td><span class="parametername">windspeed</span></td>
+        <td><p sourcefile="api/Model.RaceModel.yml" sourcestartlinenumber="1">wind speed</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td><span class="parametername">winddir</span></td>
+        <td><p sourcefile="api/Model.RaceModel.yml" sourcestartlinenumber="1">wind direction</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Model_RaceModel_SwitchCommande_" data-uid="Model.RaceModel.SwitchCommande*"></a>
+  <h4 id="Model_RaceModel_SwitchCommande" data-uid="Model.RaceModel.SwitchCommande">SwitchCommande()</h4>
+  <div class="markdown level1 summary"><p sourcefile="api/Model.RaceModel.yml" sourcestartlinenumber="2">If the attrubit commande is 'cap' switch to 'RegulateurAmure'.
+If the attrubit commande is 'RegulateurAmure' switch to 'cap'.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SwitchCommande()</code></pre>
+  </div>
+  <h3 id="implements">Implements</h3>
+  <div>
+      <a class="xref" href="Model.ISubject.html">ISubject</a>
+  </div>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <div class="toggle-mode">
+                <div class="icon">
+                  <i aria-hidden="true">☀</i>
+                </div>
+                <label class="switch">
+                  <input type="checkbox" id="switch-style">
+                  <span class="slider round"></span>
+                </label>
+                <div class="icon">
+                  <i aria-hidden="true">☾</i>
+                </div>
+              </div>
+          
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <h5>In This Article</h5>
+              <div></div>
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            <div class="pull-left">
+              
+              <span>Find this project on <a href="https://github.com/Le-clan-des-Semi-Croustillant/"><strong>GitHub</strong> </a>
+              </span> 
+            </div>
+            <div class="toggle-mode pull-right visible-sm visible-xs">
+              <div class="icon">
+                <i aria-hidden="true">☀</i>
+              </div>
+              <label class="switch">
+                <input type="checkbox" id="switch-style-m">
+                <span class="slider round"></span>
+              </label>
+              <div class="icon">
+                <i aria-hidden="true">☾</i>
+              </div>
+            </div>
+          </div>
+        </div>
+        <script type="text/javascript" src="../styles/toggle-theme.js"></script>
+      </footer>    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

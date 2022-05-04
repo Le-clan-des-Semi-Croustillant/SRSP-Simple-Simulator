@@ -1,0 +1,248 @@
+### YamlMime:ManagedReference
+items:
+- uid: Model.ISubject
+  commentId: T:Model.ISubject
+  id: ISubject
+  parent: Model
+  children:
+  - Model.ISubject.Attach(Model.IObserver)
+  - Model.ISubject.GetBoatStatus
+  - Model.ISubject.Notify
+  langs:
+  - csharp
+  - vb
+  name: ISubject
+  nameWithType: ISubject
+  fullName: Model.ISubject
+  type: Interface
+  source:
+    id: ISubject
+    path: E:\Unity\Project\SRSP-Simple-Simulator\Assets\Controller\script\Model\ISubject.cs
+    startLine: 9
+  assemblies:
+  - Assembly-CSharp
+  namespace: Model
+  summary: "\nInterface for a model pattern\n"
+  example: []
+  syntax:
+    content: public interface ISubject
+    content.vb: Public Interface ISubject
+  modifiers.csharp:
+  - public
+  - interface
+  modifiers.vb:
+  - Public
+  - Interface
+- uid: Model.ISubject.Attach(Model.IObserver)
+  commentId: M:Model.ISubject.Attach(Model.IObserver)
+  id: Attach(Model.IObserver)
+  parent: Model.ISubject
+  langs:
+  - csharp
+  - vb
+  name: Attach(IObserver)
+  nameWithType: ISubject.Attach(IObserver)
+  fullName: Model.ISubject.Attach(Model.IObserver)
+  type: Method
+  source:
+    id: Attach
+    path: E:\Unity\Project\SRSP-Simple-Simulator\Assets\Controller\script\Model\ISubject.cs
+    startLine: 11
+  assemblies:
+  - Assembly-CSharp
+  namespace: Model
+  syntax:
+    content: void Attach(IObserver observer)
+    parameters:
+    - id: observer
+      type: Model.IObserver
+    content.vb: Sub Attach(observer As IObserver)
+  overload: Model.ISubject.Attach*
+- uid: Model.ISubject.Notify
+  commentId: M:Model.ISubject.Notify
+  id: Notify
+  parent: Model.ISubject
+  langs:
+  - csharp
+  - vb
+  name: Notify()
+  nameWithType: ISubject.Notify()
+  fullName: Model.ISubject.Notify()
+  type: Method
+  source:
+    id: Notify
+    path: E:\Unity\Project\SRSP-Simple-Simulator\Assets\Controller\script\Model\ISubject.cs
+    startLine: 12
+  assemblies:
+  - Assembly-CSharp
+  namespace: Model
+  syntax:
+    content: void Notify()
+    content.vb: Sub Notify
+  overload: Model.ISubject.Notify*
+- uid: Model.ISubject.GetBoatStatus
+  commentId: M:Model.ISubject.GetBoatStatus
+  id: GetBoatStatus
+  parent: Model.ISubject
+  langs:
+  - csharp
+  - vb
+  name: GetBoatStatus()
+  nameWithType: ISubject.GetBoatStatus()
+  fullName: Model.ISubject.GetBoatStatus()
+  type: Method
+  source:
+    id: GetBoatStatus
+    path: E:\Unity\Project\SRSP-Simple-Simulator\Assets\Controller\script\Model\ISubject.cs
+    startLine: 13
+  assemblies:
+  - Assembly-CSharp
+  namespace: Model
+  syntax:
+    content: Dictionary<BoatInfo, double> GetBoatStatus()
+    return:
+      type: System.Collections.Generic.Dictionary{Model.BoatInfo,System.Double}
+    content.vb: Function GetBoatStatus As Dictionary(Of BoatInfo, Double)
+  overload: Model.ISubject.GetBoatStatus*
+references:
+- uid: Model
+  commentId: N:Model
+  name: Model
+  nameWithType: Model
+  fullName: Model
+- uid: Model.ISubject.Attach*
+  commentId: Overload:Model.ISubject.Attach
+  name: Attach
+  nameWithType: ISubject.Attach
+  fullName: Model.ISubject.Attach
+- uid: Model.IObserver
+  commentId: T:Model.IObserver
+  parent: Model
+  name: IObserver
+  nameWithType: IObserver
+  fullName: Model.IObserver
+- uid: Model.ISubject.Notify*
+  commentId: Overload:Model.ISubject.Notify
+  name: Notify
+  nameWithType: ISubject.Notify
+  fullName: Model.ISubject.Notify
+- uid: Model.ISubject.GetBoatStatus*
+  commentId: Overload:Model.ISubject.GetBoatStatus
+  name: GetBoatStatus
+  nameWithType: ISubject.GetBoatStatus
+  fullName: Model.ISubject.GetBoatStatus
+- uid: System.Collections.Generic.Dictionary{Model.BoatInfo,System.Double}
+  commentId: T:System.Collections.Generic.Dictionary{Model.BoatInfo,System.Double}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.Dictionary`2
+  name: Dictionary<BoatInfo, Double>
+  nameWithType: Dictionary<BoatInfo, Double>
+  fullName: System.Collections.Generic.Dictionary<Model.BoatInfo, System.Double>
+  nameWithType.vb: Dictionary(Of BoatInfo, Double)
+  fullName.vb: System.Collections.Generic.Dictionary(Of Model.BoatInfo, System.Double)
+  name.vb: Dictionary(Of BoatInfo, Double)
+  spec.csharp:
+  - uid: System.Collections.Generic.Dictionary`2
+    name: Dictionary
+    nameWithType: Dictionary
+    fullName: System.Collections.Generic.Dictionary
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Model.BoatInfo
+    name: BoatInfo
+    nameWithType: BoatInfo
+    fullName: Model.BoatInfo
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Double
+    name: Double
+    nameWithType: Double
+    fullName: System.Double
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.Dictionary`2
+    name: Dictionary
+    nameWithType: Dictionary
+    fullName: System.Collections.Generic.Dictionary
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: Model.BoatInfo
+    name: BoatInfo
+    nameWithType: BoatInfo
+    fullName: Model.BoatInfo
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Double
+    name: Double
+    nameWithType: Double
+    fullName: System.Double
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.Generic.Dictionary`2
+  commentId: T:System.Collections.Generic.Dictionary`2
+  isExternal: true
+  name: Dictionary<TKey, TValue>
+  nameWithType: Dictionary<TKey, TValue>
+  fullName: System.Collections.Generic.Dictionary<TKey, TValue>
+  nameWithType.vb: Dictionary(Of TKey, TValue)
+  fullName.vb: System.Collections.Generic.Dictionary(Of TKey, TValue)
+  name.vb: Dictionary(Of TKey, TValue)
+  spec.csharp:
+  - uid: System.Collections.Generic.Dictionary`2
+    name: Dictionary
+    nameWithType: Dictionary
+    fullName: System.Collections.Generic.Dictionary
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: TKey
+    nameWithType: TKey
+    fullName: TKey
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TValue
+    nameWithType: TValue
+    fullName: TValue
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.Dictionary`2
+    name: Dictionary
+    nameWithType: Dictionary
+    fullName: System.Collections.Generic.Dictionary
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: TKey
+    nameWithType: TKey
+    fullName: TKey
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TValue
+    nameWithType: TValue
+    fullName: TValue
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic

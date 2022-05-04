@@ -1,0 +1,46 @@
+### YamlMime:ManagedReference
+items:
+- uid: Communication.DataProcessing.Json
+  commentId: N:Communication.DataProcessing.Json
+  id: Communication.DataProcessing.Json
+  children:
+  - Communication.DataProcessing.Json.BoatType
+  - Communication.DataProcessing.Json.JsonParse
+  - Communication.DataProcessing.Json.Polar
+  - Communication.DataProcessing.Json.PolFile
+  langs:
+  - csharp
+  - vb
+  name: Communication.DataProcessing.Json
+  nameWithType: Communication.DataProcessing.Json
+  fullName: Communication.DataProcessing.Json
+  type: Namespace
+  assemblies:
+  - Assembly-CSharp
+references:
+- uid: Communication.DataProcessing.Json.BoatType
+  commentId: T:Communication.DataProcessing.Json.BoatType
+  parent: Communication.DataProcessing.Json
+  name: BoatType
+  nameWithType: BoatType
+  fullName: Communication.DataProcessing.Json.BoatType
+- uid: Communication.DataProcessing.Json.JsonParse
+  commentId: T:Communication.DataProcessing.Json.JsonParse
+  name: JsonParse
+  nameWithType: JsonParse
+  fullName: Communication.DataProcessing.Json.JsonParse
+- uid: Communication.DataProcessing.Json.Polar
+  commentId: T:Communication.DataProcessing.Json.Polar
+  name: Polar
+  nameWithType: Polar
+  fullName: Communication.DataProcessing.Json.Polar
+- uid: Communication.DataProcessing.Json.PolFile
+  commentId: T:Communication.DataProcessing.Json.PolFile
+  name: PolFile
+  nameWithType: PolFile
+  fullName: Communication.DataProcessing.Json.PolFile
+- uid: Communication.DataProcessing.Json
+  commentId: N:Communication.DataProcessing.Json
+  name: Communication.DataProcessing.Json
+  nameWithType: Communication.DataProcessing.Json
+  fullName: Communication.DataProcessing.Json

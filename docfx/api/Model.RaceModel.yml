@@ -1,0 +1,2228 @@
+### YamlMime:ManagedReference
+items:
+- uid: Model.RaceModel
+  commentId: T:Model.RaceModel
+  id: RaceModel
+  parent: Model
+  children:
+  - Model.RaceModel.#ctor
+  - Model.RaceModel.Attach(Model.IObserver)
+  - Model.RaceModel.GetAccFactor
+  - Model.RaceModel.getAllureCap
+  - Model.RaceModel.getBoatList(System.String,System.Int32)
+  - Model.RaceModel.GetBoatStatus
+  - Model.RaceModel.getCommandeMode
+  - Model.RaceModel.getipNMEA
+  - Model.RaceModel.getListPolaire
+  - Model.RaceModel.getModelCap
+  - Model.RaceModel.getportNMEA
+  - Model.RaceModel.GetRace
+  - Model.RaceModel.getSTW
+  - Model.RaceModel.getTime
+  - Model.RaceModel.getWaterDir
+  - Model.RaceModel.getWaterSpeed
+  - Model.RaceModel.getWaveAmpl
+  - Model.RaceModel.getWaveDir
+  - Model.RaceModel.getWaveLength
+  - Model.RaceModel.getWindDir
+  - Model.RaceModel.getWindSpeed
+  - Model.RaceModel.IncrementCap(PRace.ModeCommande,PRace.DegreeIncrement)
+  - Model.RaceModel.ListSavePath
+  - Model.RaceModel.Notify
+  - Model.RaceModel.Pause
+  - Model.RaceModel.Run
+  - Model.RaceModel.Save(System.String)
+  - Model.RaceModel.Set_Up(System.Nullable{PRace.Mode},System.String,System.String,System.Int32,System.String,System.Int32,System.String)
+  - Model.RaceModel.SetCurrent(System.Single,System.Single)
+  - Model.RaceModel.SetFactor(System.Single)
+  - Model.RaceModel.setNMEA(System.Int32,System.String)
+  - Model.RaceModel.setNoneCurrentPolar
+  - Model.RaceModel.setPolaire(System.String)
+  - Model.RaceModel.setPositionDeDepart(System.Single,System.Single)
+  - Model.RaceModel.SetWave(System.Single,System.Single,System.Single)
+  - Model.RaceModel.SetWind(System.Single,System.Single)
+  - Model.RaceModel.SwitchCommande
+  langs:
+  - csharp
+  - vb
+  name: RaceModel
+  nameWithType: RaceModel
+  fullName: Model.RaceModel
+  type: Class
+  source:
+    id: RaceModel
+    path: E:\Unity\Project\SRSP-Simple-Simulator\Assets\Controller\script\Model\Model.cs
+    startLine: 20
+  assemblies:
+  - Assembly-CSharp
+  namespace: Model
+  summary: "\nThis class plays the role of model(pattern model-observer) for the class <xref href=\"PRace.Race\" data-throw-if-not-resolved=\"false\"></xref>.\nIt&apos;s also manage the save process\n"
+  example: []
+  syntax:
+    content: 'public class RaceModel : ISubject'
+    content.vb: >-
+      Public Class RaceModel
+          Implements ISubject
+  inheritance:
+  - System.Object
+  implements:
+  - Model.ISubject
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: Model.RaceModel.#ctor
+  commentId: M:Model.RaceModel.#ctor
+  id: '#ctor'
+  parent: Model.RaceModel
+  langs:
+  - csharp
+  - vb
+  name: RaceModel()
+  nameWithType: RaceModel.RaceModel()
+  fullName: Model.RaceModel.RaceModel()
+  type: Constructor
+  source:
+    id: .ctor
+    path: E:\Unity\Project\SRSP-Simple-Simulator\Assets\Controller\script\Model\Model.cs
+    startLine: 25
+  assemblies:
+  - Assembly-CSharp
+  namespace: Model
+  summary: "\nCreate an instance of RaceModel\n"
+  example: []
+  syntax:
+    content: public RaceModel()
+    content.vb: Public Sub New
+  overload: Model.RaceModel.#ctor*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Model.RaceModel.Set_Up(System.Nullable{PRace.Mode},System.String,System.String,System.Int32,System.String,System.Int32,System.String)
+  commentId: M:Model.RaceModel.Set_Up(System.Nullable{PRace.Mode},System.String,System.String,System.Int32,System.String,System.Int32,System.String)
+  id: Set_Up(System.Nullable{PRace.Mode},System.String,System.String,System.Int32,System.String,System.Int32,System.String)
+  parent: Model.RaceModel
+  langs:
+  - csharp
+  - vb
+  name: Set_Up(Nullable<Mode>, String, String, Int32, String, Int32, String)
+  nameWithType: RaceModel.Set_Up(Nullable<Mode>, String, String, Int32, String, Int32, String)
+  fullName: Model.RaceModel.Set_Up(System.Nullable<PRace.Mode>, System.String, System.String, System.Int32, System.String, System.Int32, System.String)
+  type: Method
+  source:
+    id: Set_Up
+    path: E:\Unity\Project\SRSP-Simple-Simulator\Assets\Controller\script\Model\Model.cs
+    startLine: 43
+  assemblies:
+  - Assembly-CSharp
+  namespace: Model
+  summary: "\nSet up this instance by loading a save or creating a new race based on mode an boat type.\nIn order to this fonction to work path or (mode and IDBoatType) need to be provided        \n"
+  remarks: this fonction priorizes the initialisation with the path
+  example: []
+  syntax:
+    content: public void Set_Up(Mode? mode = null, string IDBoatType = null, string path = null, int portQTVLM = 10113, string ipQTVLM = "127.0.0.1", int portRM = 0, string ipRM = "0")
+    parameters:
+    - id: mode
+      type: System.Nullable{PRace.Mode}
+      description: the <see cref="!:"></see> for the new race
+    - id: IDBoatType
+      type: System.String
+      description: the <xref href="Communication.DataProcessing.Json.BoatType" data-throw-if-not-resolved="false"></xref> which will be used to create the boat of the new race
+    - id: path
+      type: System.String
+      description: the path at with be used to load the save
+    - id: portQTVLM
+      type: System.Int32
+      description: the port that will be used to connect to QTVLM
+    - id: ipQTVLM
+      type: System.String
+      description: the ip that will be used to connect to QTVLM
+    - id: portRM
+      type: System.Int32
+      description: the port that will be used to connect to the Race Manager
+    - id: ipRM
+      type: System.String
+      description: the ip that will be used to connect to the Race Manager
+    content.vb: Public Sub Set_Up(mode As Mode? = Nothing, IDBoatType As String = Nothing, path As String = Nothing, portQTVLM As Integer = 10113, ipQTVLM As String = "127.0.0.1", portRM As Integer = 0, ipRM As String = "0")
+  overload: Model.RaceModel.Set_Up*
+  nameWithType.vb: RaceModel.Set_Up(Nullable(Of Mode), String, String, Int32, String, Int32, String)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: Model.RaceModel.Set_Up(System.Nullable(Of PRace.Mode), System.String, System.String, System.Int32, System.String, System.Int32, System.String)
+  name.vb: Set_Up(Nullable(Of Mode), String, String, Int32, String, Int32, String)
+- uid: Model.RaceModel.Attach(Model.IObserver)
+  commentId: M:Model.RaceModel.Attach(Model.IObserver)
+  id: Attach(Model.IObserver)
+  parent: Model.RaceModel
+  langs:
+  - csharp
+  - vb
+  name: Attach(IObserver)
+  nameWithType: RaceModel.Attach(IObserver)
+  fullName: Model.RaceModel.Attach(Model.IObserver)
+  type: Method
+  source:
+    id: Attach
+    path: E:\Unity\Project\SRSP-Simple-Simulator\Assets\Controller\script\Model\Model.cs
+    startLine: 90
+  assemblies:
+  - Assembly-CSharp
+  namespace: Model
+  summary: "\nAttach a new <xref href=\"Model.IObserver\" data-throw-if-not-resolved=\"false\"></xref> to the model\n"
+  example: []
+  syntax:
+    content: public void Attach(IObserver obs)
+    parameters:
+    - id: obs
+      type: Model.IObserver
+      description: ''
+    content.vb: Public Sub Attach(obs As IObserver)
+  overload: Model.RaceModel.Attach*
+  implements:
+  - Model.ISubject.Attach(Model.IObserver)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Model.RaceModel.Notify
+  commentId: M:Model.RaceModel.Notify
+  id: Notify
+  parent: Model.RaceModel
+  langs:
+  - csharp
+  - vb
+  name: Notify()
+  nameWithType: RaceModel.Notify()
+  fullName: Model.RaceModel.Notify()
+  type: Method
+  source:
+    id: Notify
+    path: E:\Unity\Project\SRSP-Simple-Simulator\Assets\Controller\script\Model\Model.cs
+    startLine: 98
+  assemblies:
+  - Assembly-CSharp
+  namespace: Model
+  summary: "\nNotify all the added observer (all observer in &apos;ListObserver&apos; attribut\n"
+  example: []
+  syntax:
+    content: public void Notify()
+    content.vb: Public Sub Notify
+  overload: Model.RaceModel.Notify*
+  implements:
+  - Model.ISubject.Notify
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Model.RaceModel.GetRace
+  commentId: M:Model.RaceModel.GetRace
+  id: GetRace
+  parent: Model.RaceModel
+  langs:
+  - csharp
+  - vb
+  name: GetRace()
+  nameWithType: RaceModel.GetRace()
+  fullName: Model.RaceModel.GetRace()
+  type: Method
+  source:
+    id: GetRace
+    path: E:\Unity\Project\SRSP-Simple-Simulator\Assets\Controller\script\Model\Model.cs
+    startLine: 103
+  assemblies:
+  - Assembly-CSharp
+  namespace: Model
+  syntax:
+    content: public Race GetRace()
+    return:
+      type: PRace.Race
+    content.vb: Public Function GetRace As Race
+  overload: Model.RaceModel.GetRace*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Model.RaceModel.ListSavePath
+  commentId: M:Model.RaceModel.ListSavePath
+  id: ListSavePath
+  parent: Model.RaceModel
+  langs:
+  - csharp
+  - vb
+  name: ListSavePath()
+  nameWithType: RaceModel.ListSavePath()
+  fullName: Model.RaceModel.ListSavePath()
+  type: Method
+  source:
+    id: ListSavePath
+    path: E:\Unity\Project\SRSP-Simple-Simulator\Assets\Controller\script\Model\Model.cs
+    startLine: 112
+  assemblies:
+  - Assembly-CSharp
+  namespace: Model
+  summary: "\nreturn the list the path of all available saves\n"
+  example: []
+  syntax:
+    content: public string[] ListSavePath()
+    return:
+      type: System.String[]
+      description: return the list the path of all available saves
+    content.vb: Public Function ListSavePath As String()
+  overload: Model.RaceModel.ListSavePath*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Model.RaceModel.Save(System.String)
+  commentId: M:Model.RaceModel.Save(System.String)
+  id: Save(System.String)
+  parent: Model.RaceModel
+  langs:
+  - csharp
+  - vb
+  name: Save(String)
+  nameWithType: RaceModel.Save(String)
+  fullName: Model.RaceModel.Save(System.String)
+  type: Method
+  source:
+    id: Save
+    path: E:\Unity\Project\SRSP-Simple-Simulator\Assets\Controller\script\Model\Model.cs
+    startLine: 123
+  assemblies:
+  - Assembly-CSharp
+  namespace: Model
+  summary: "\nCreate a save of the race\n"
+  example: []
+  syntax:
+    content: public void Save(string inputSavePath)
+    parameters:
+    - id: inputSavePath
+      type: System.String
+      description: Name of the save
+    content.vb: Public Sub Save(inputSavePath As String)
+  overload: Model.RaceModel.Save*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Model.RaceModel.getBoatList(System.String,System.Int32)
+  commentId: M:Model.RaceModel.getBoatList(System.String,System.Int32)
+  id: getBoatList(System.String,System.Int32)
+  parent: Model.RaceModel
+  langs:
+  - csharp
+  - vb
+  name: getBoatList(String, Int32)
+  nameWithType: RaceModel.getBoatList(String, Int32)
+  fullName: Model.RaceModel.getBoatList(System.String, System.Int32)
+  type: Method
+  source:
+    id: getBoatList
+    path: E:\Unity\Project\SRSP-Simple-Simulator\Assets\Controller\script\Model\Model.cs
+    startLine: 185
+  assemblies:
+  - Assembly-CSharp
+  namespace: Model
+  syntax:
+    content: public List<string> getBoatList(string ip, int port)
+    parameters:
+    - id: ip
+      type: System.String
+    - id: port
+      type: System.Int32
+    return:
+      type: System.Collections.Generic.List{System.String}
+    content.vb: Public Function getBoatList(ip As String, port As Integer) As List(Of String)
+  overload: Model.RaceModel.getBoatList*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Model.RaceModel.Run
+  commentId: M:Model.RaceModel.Run
+  id: Run
+  parent: Model.RaceModel
+  langs:
+  - csharp
+  - vb
+  name: Run()
+  nameWithType: RaceModel.Run()
+  fullName: Model.RaceModel.Run()
+  type: Method
+  source:
+    id: Run
+    path: E:\Unity\Project\SRSP-Simple-Simulator\Assets\Controller\script\Model\Model.cs
+    startLine: 204
+  assemblies:
+  - Assembly-CSharp
+  namespace: Model
+  summary: "\nRun the race\n"
+  example: []
+  syntax:
+    content: public void Run()
+    content.vb: Public Sub Run
+  overload: Model.RaceModel.Run*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Model.RaceModel.Pause
+  commentId: M:Model.RaceModel.Pause
+  id: Pause
+  parent: Model.RaceModel
+  langs:
+  - csharp
+  - vb
+  name: Pause()
+  nameWithType: RaceModel.Pause()
+  fullName: Model.RaceModel.Pause()
+  type: Method
+  source:
+    id: Pause
+    path: E:\Unity\Project\SRSP-Simple-Simulator\Assets\Controller\script\Model\Model.cs
+    startLine: 212
+  assemblies:
+  - Assembly-CSharp
+  namespace: Model
+  summary: "\npause the race\n"
+  example: []
+  syntax:
+    content: public void Pause()
+    content.vb: Public Sub Pause
+  overload: Model.RaceModel.Pause*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Model.RaceModel.GetBoatStatus
+  commentId: M:Model.RaceModel.GetBoatStatus
+  id: GetBoatStatus
+  parent: Model.RaceModel
+  langs:
+  - csharp
+  - vb
+  name: GetBoatStatus()
+  nameWithType: RaceModel.GetBoatStatus()
+  fullName: Model.RaceModel.GetBoatStatus()
+  type: Method
+  source:
+    id: GetBoatStatus
+    path: E:\Unity\Project\SRSP-Simple-Simulator\Assets\Controller\script\Model\Model.cs
+    startLine: 221
+  assemblies:
+  - Assembly-CSharp
+  namespace: Model
+  summary: "\nReturn a dictionary with as key <xref href=\"Model.BoatInfo\" data-throw-if-not-resolved=\"false\"></xref> and as value the corresponding value of the race\n"
+  example: []
+  syntax:
+    content: public Dictionary<BoatInfo, double> GetBoatStatus()
+    return:
+      type: System.Collections.Generic.Dictionary{Model.BoatInfo,System.Double}
+      description: Return a dictionary with as key <xref href="Model.BoatInfo" data-throw-if-not-resolved="false"></xref> and as value the corresponding value of the race
+    content.vb: Public Function GetBoatStatus As Dictionary(Of BoatInfo, Double)
+  overload: Model.RaceModel.GetBoatStatus*
+  implements:
+  - Model.ISubject.GetBoatStatus
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Model.RaceModel.SetCurrent(System.Single,System.Single)
+  commentId: M:Model.RaceModel.SetCurrent(System.Single,System.Single)
+  id: SetCurrent(System.Single,System.Single)
+  parent: Model.RaceModel
+  langs:
+  - csharp
+  - vb
+  name: SetCurrent(Single, Single)
+  nameWithType: RaceModel.SetCurrent(Single, Single)
+  fullName: Model.RaceModel.SetCurrent(System.Single, System.Single)
+  type: Method
+  source:
+    id: SetCurrent
+    path: E:\Unity\Project\SRSP-Simple-Simulator\Assets\Controller\script\Model\Model.cs
+    startLine: 241
+  assemblies:
+  - Assembly-CSharp
+  namespace: Model
+  summary: "\nset the current of the race\n"
+  example: []
+  syntax:
+    content: public void SetCurrent(float currentspeed, float currentdir)
+    parameters:
+    - id: currentspeed
+      type: System.Single
+      description: current speed
+    - id: currentdir
+      type: System.Single
+      description: current direction
+    content.vb: Public Sub SetCurrent(currentspeed As Single, currentdir As Single)
+  overload: Model.RaceModel.SetCurrent*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Model.RaceModel.SetWave(System.Single,System.Single,System.Single)
+  commentId: M:Model.RaceModel.SetWave(System.Single,System.Single,System.Single)
+  id: SetWave(System.Single,System.Single,System.Single)
+  parent: Model.RaceModel
+  langs:
+  - csharp
+  - vb
+  name: SetWave(Single, Single, Single)
+  nameWithType: RaceModel.SetWave(Single, Single, Single)
+  fullName: Model.RaceModel.SetWave(System.Single, System.Single, System.Single)
+  type: Method
+  source:
+    id: SetWave
+    path: E:\Unity\Project\SRSP-Simple-Simulator\Assets\Controller\script\Model\Model.cs
+    startLine: 252
+  assemblies:
+  - Assembly-CSharp
+  namespace: Model
+  summary: "\nset the waves of th simulation\n"
+  example: []
+  syntax:
+    content: public void SetWave(float wavesampl, float wavedir, float wavelength)
+    parameters:
+    - id: wavesampl
+      type: System.Single
+      description: ''
+    - id: wavedir
+      type: System.Single
+      description: ''
+    - id: wavelength
+      type: System.Single
+      description: ''
+    content.vb: Public Sub SetWave(wavesampl As Single, wavedir As Single, wavelength As Single)
+  overload: Model.RaceModel.SetWave*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Model.RaceModel.SetWind(System.Single,System.Single)
+  commentId: M:Model.RaceModel.SetWind(System.Single,System.Single)
+  id: SetWind(System.Single,System.Single)
+  parent: Model.RaceModel
+  langs:
+  - csharp
+  - vb
+  name: SetWind(Single, Single)
+  nameWithType: RaceModel.SetWind(Single, Single)
+  fullName: Model.RaceModel.SetWind(System.Single, System.Single)
+  type: Method
+  source:
+    id: SetWind
+    path: E:\Unity\Project\SRSP-Simple-Simulator\Assets\Controller\script\Model\Model.cs
+    startLine: 262
+  assemblies:
+  - Assembly-CSharp
+  namespace: Model
+  summary: "\nset the wind of the simulation\n"
+  example: []
+  syntax:
+    content: public void SetWind(float windspeed, float winddir)
+    parameters:
+    - id: windspeed
+      type: System.Single
+      description: wind speed
+    - id: winddir
+      type: System.Single
+      description: wind direction
+    content.vb: Public Sub SetWind(windspeed As Single, winddir As Single)
+  overload: Model.RaceModel.SetWind*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Model.RaceModel.SetFactor(System.Single)
+  commentId: M:Model.RaceModel.SetFactor(System.Single)
+  id: SetFactor(System.Single)
+  parent: Model.RaceModel
+  langs:
+  - csharp
+  - vb
+  name: SetFactor(Single)
+  nameWithType: RaceModel.SetFactor(Single)
+  fullName: Model.RaceModel.SetFactor(System.Single)
+  type: Method
+  source:
+    id: SetFactor
+    path: E:\Unity\Project\SRSP-Simple-Simulator\Assets\Controller\script\Model\Model.cs
+    startLine: 271
+  assemblies:
+  - Assembly-CSharp
+  namespace: Model
+  summary: "\nset the acceleration factor of the simulation\n"
+  example: []
+  syntax:
+    content: public void SetFactor(float acc)
+    parameters:
+    - id: acc
+      type: System.Single
+      description: ''
+    content.vb: Public Sub SetFactor(acc As Single)
+  overload: Model.RaceModel.SetFactor*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Model.RaceModel.GetAccFactor
+  commentId: M:Model.RaceModel.GetAccFactor
+  id: GetAccFactor
+  parent: Model.RaceModel
+  langs:
+  - csharp
+  - vb
+  name: GetAccFactor()
+  nameWithType: RaceModel.GetAccFactor()
+  fullName: Model.RaceModel.GetAccFactor()
+  type: Method
+  source:
+    id: GetAccFactor
+    path: E:\Unity\Project\SRSP-Simple-Simulator\Assets\Controller\script\Model\Model.cs
+    startLine: 280
+  assemblies:
+  - Assembly-CSharp
+  namespace: Model
+  summary: "\nreturn the acceleration factor of the simulation\n"
+  example: []
+  syntax:
+    content: public float GetAccFactor()
+    return:
+      type: System.Single
+      description: return the acceleration factor of the simulation
+    content.vb: Public Function GetAccFactor As Single
+  overload: Model.RaceModel.GetAccFactor*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Model.RaceModel.IncrementCap(PRace.ModeCommande,PRace.DegreeIncrement)
+  commentId: M:Model.RaceModel.IncrementCap(PRace.ModeCommande,PRace.DegreeIncrement)
+  id: IncrementCap(PRace.ModeCommande,PRace.DegreeIncrement)
+  parent: Model.RaceModel
+  langs:
+  - csharp
+  - vb
+  name: IncrementCap(ModeCommande, DegreeIncrement)
+  nameWithType: RaceModel.IncrementCap(ModeCommande, DegreeIncrement)
+  fullName: Model.RaceModel.IncrementCap(PRace.ModeCommande, PRace.DegreeIncrement)
+  type: Method
+  source:
+    id: IncrementCap
+    path: E:\Unity\Project\SRSP-Simple-Simulator\Assets\Controller\script\Model\Model.cs
+    startLine: 291
+  assemblies:
+  - Assembly-CSharp
+  namespace: Model
+  summary: "\nIncrement the cap the commande mode\n"
+  example: []
+  syntax:
+    content: public void IncrementCap(ModeCommande commande, DegreeIncrement degre)
+    parameters:
+    - id: commande
+      type: PRace.ModeCommande
+      description: Commande mode to increment
+    - id: degre
+      type: PRace.DegreeIncrement
+      description: value of the increment
+    content.vb: Public Sub IncrementCap(commande As ModeCommande, degre As DegreeIncrement)
+  overload: Model.RaceModel.IncrementCap*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Model.RaceModel.SwitchCommande
+  commentId: M:Model.RaceModel.SwitchCommande
+  id: SwitchCommande
+  parent: Model.RaceModel
+  langs:
+  - csharp
+  - vb
+  name: SwitchCommande()
+  nameWithType: RaceModel.SwitchCommande()
+  fullName: Model.RaceModel.SwitchCommande()
+  type: Method
+  source:
+    id: SwitchCommande
+    path: E:\Unity\Project\SRSP-Simple-Simulator\Assets\Controller\script\Model\Model.cs
+    startLine: 301
+  assemblies:
+  - Assembly-CSharp
+  namespace: Model
+  summary: "\nIf the attrubit commande is &apos;cap&apos; switch to &apos;RegulateurAmure&apos;.\nIf the attrubit commande is &apos;RegulateurAmure&apos; switch to &apos;cap&apos;.\n"
+  example: []
+  syntax:
+    content: public void SwitchCommande()
+    content.vb: Public Sub SwitchCommande
+  overload: Model.RaceModel.SwitchCommande*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Model.RaceModel.getModelCap
+  commentId: M:Model.RaceModel.getModelCap
+  id: getModelCap
+  parent: Model.RaceModel
+  langs:
+  - csharp
+  - vb
+  name: getModelCap()
+  nameWithType: RaceModel.getModelCap()
+  fullName: Model.RaceModel.getModelCap()
+  type: Method
+  source:
+    id: getModelCap
+    path: E:\Unity\Project\SRSP-Simple-Simulator\Assets\Controller\script\Model\Model.cs
+    startLine: 310
+  assemblies:
+  - Assembly-CSharp
+  namespace: Model
+  summary: "\nreturn boat heading\n"
+  example: []
+  syntax:
+    content: public float getModelCap()
+    return:
+      type: System.Single
+      description: ''
+    content.vb: Public Function getModelCap As Single
+  overload: Model.RaceModel.getModelCap*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Model.RaceModel.getAllureCap
+  commentId: M:Model.RaceModel.getAllureCap
+  id: getAllureCap
+  parent: Model.RaceModel
+  langs:
+  - csharp
+  - vb
+  name: getAllureCap()
+  nameWithType: RaceModel.getAllureCap()
+  fullName: Model.RaceModel.getAllureCap()
+  type: Method
+  source:
+    id: getAllureCap
+    path: E:\Unity\Project\SRSP-Simple-Simulator\Assets\Controller\script\Model\Model.cs
+    startLine: 319
+  assemblies:
+  - Assembly-CSharp
+  namespace: Model
+  summary: "\nreturn the cap of the wind mode\n"
+  example: []
+  syntax:
+    content: public float getAllureCap()
+    return:
+      type: System.Single
+      description: ''
+    content.vb: Public Function getAllureCap As Single
+  overload: Model.RaceModel.getAllureCap*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Model.RaceModel.getCommandeMode
+  commentId: M:Model.RaceModel.getCommandeMode
+  id: getCommandeMode
+  parent: Model.RaceModel
+  langs:
+  - csharp
+  - vb
+  name: getCommandeMode()
+  nameWithType: RaceModel.getCommandeMode()
+  fullName: Model.RaceModel.getCommandeMode()
+  type: Method
+  source:
+    id: getCommandeMode
+    path: E:\Unity\Project\SRSP-Simple-Simulator\Assets\Controller\script\Model\Model.cs
+    startLine: 328
+  assemblies:
+  - Assembly-CSharp
+  namespace: Model
+  summary: "\nreturn the active commande mode\n"
+  example: []
+  syntax:
+    content: public ModeCommande getCommandeMode()
+    return:
+      type: PRace.ModeCommande
+      description: ''
+    content.vb: Public Function getCommandeMode As ModeCommande
+  overload: Model.RaceModel.getCommandeMode*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Model.RaceModel.getWindSpeed
+  commentId: M:Model.RaceModel.getWindSpeed
+  id: getWindSpeed
+  parent: Model.RaceModel
+  langs:
+  - csharp
+  - vb
+  name: getWindSpeed()
+  nameWithType: RaceModel.getWindSpeed()
+  fullName: Model.RaceModel.getWindSpeed()
+  type: Method
+  source:
+    id: getWindSpeed
+    path: E:\Unity\Project\SRSP-Simple-Simulator\Assets\Controller\script\Model\Model.cs
+    startLine: 337
+  assemblies:
+  - Assembly-CSharp
+  namespace: Model
+  summary: "\nreturn the wind speed of the simulation\n"
+  example: []
+  syntax:
+    content: public float getWindSpeed()
+    return:
+      type: System.Single
+      description: ''
+    content.vb: Public Function getWindSpeed As Single
+  overload: Model.RaceModel.getWindSpeed*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Model.RaceModel.getWindDir
+  commentId: M:Model.RaceModel.getWindDir
+  id: getWindDir
+  parent: Model.RaceModel
+  langs:
+  - csharp
+  - vb
+  name: getWindDir()
+  nameWithType: RaceModel.getWindDir()
+  fullName: Model.RaceModel.getWindDir()
+  type: Method
+  source:
+    id: getWindDir
+    path: E:\Unity\Project\SRSP-Simple-Simulator\Assets\Controller\script\Model\Model.cs
+    startLine: 346
+  assemblies:
+  - Assembly-CSharp
+  namespace: Model
+  summary: "\nreturn the wind direction of the simulation\n"
+  example: []
+  syntax:
+    content: public float getWindDir()
+    return:
+      type: System.Single
+      description: ''
+    content.vb: Public Function getWindDir As Single
+  overload: Model.RaceModel.getWindDir*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Model.RaceModel.getWaveAmpl
+  commentId: M:Model.RaceModel.getWaveAmpl
+  id: getWaveAmpl
+  parent: Model.RaceModel
+  langs:
+  - csharp
+  - vb
+  name: getWaveAmpl()
+  nameWithType: RaceModel.getWaveAmpl()
+  fullName: Model.RaceModel.getWaveAmpl()
+  type: Method
+  source:
+    id: getWaveAmpl
+    path: E:\Unity\Project\SRSP-Simple-Simulator\Assets\Controller\script\Model\Model.cs
+    startLine: 355
+  assemblies:
+  - Assembly-CSharp
+  namespace: Model
+  summary: "\nreturn Wave Amplitude of the simulation\n"
+  example: []
+  syntax:
+    content: public float getWaveAmpl()
+    return:
+      type: System.Single
+      description: ''
+    content.vb: Public Function getWaveAmpl As Single
+  overload: Model.RaceModel.getWaveAmpl*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Model.RaceModel.getWaveDir
+  commentId: M:Model.RaceModel.getWaveDir
+  id: getWaveDir
+  parent: Model.RaceModel
+  langs:
+  - csharp
+  - vb
+  name: getWaveDir()
+  nameWithType: RaceModel.getWaveDir()
+  fullName: Model.RaceModel.getWaveDir()
+  type: Method
+  source:
+    id: getWaveDir
+    path: E:\Unity\Project\SRSP-Simple-Simulator\Assets\Controller\script\Model\Model.cs
+    startLine: 364
+  assemblies:
+  - Assembly-CSharp
+  namespace: Model
+  summary: "\nreturn Wave direction of the simulation\n"
+  example: []
+  syntax:
+    content: public float getWaveDir()
+    return:
+      type: System.Single
+      description: ''
+    content.vb: Public Function getWaveDir As Single
+  overload: Model.RaceModel.getWaveDir*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Model.RaceModel.getWaveLength
+  commentId: M:Model.RaceModel.getWaveLength
+  id: getWaveLength
+  parent: Model.RaceModel
+  langs:
+  - csharp
+  - vb
+  name: getWaveLength()
+  nameWithType: RaceModel.getWaveLength()
+  fullName: Model.RaceModel.getWaveLength()
+  type: Method
+  source:
+    id: getWaveLength
+    path: E:\Unity\Project\SRSP-Simple-Simulator\Assets\Controller\script\Model\Model.cs
+    startLine: 373
+  assemblies:
+  - Assembly-CSharp
+  namespace: Model
+  summary: "\nreturn Wave length of the simulation\n"
+  example: []
+  syntax:
+    content: public float getWaveLength()
+    return:
+      type: System.Single
+      description: ''
+    content.vb: Public Function getWaveLength As Single
+  overload: Model.RaceModel.getWaveLength*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Model.RaceModel.getWaterSpeed
+  commentId: M:Model.RaceModel.getWaterSpeed
+  id: getWaterSpeed
+  parent: Model.RaceModel
+  langs:
+  - csharp
+  - vb
+  name: getWaterSpeed()
+  nameWithType: RaceModel.getWaterSpeed()
+  fullName: Model.RaceModel.getWaterSpeed()
+  type: Method
+  source:
+    id: getWaterSpeed
+    path: E:\Unity\Project\SRSP-Simple-Simulator\Assets\Controller\script\Model\Model.cs
+    startLine: 382
+  assemblies:
+  - Assembly-CSharp
+  namespace: Model
+  summary: "\nreturn current speed of the simulation\n"
+  example: []
+  syntax:
+    content: public float getWaterSpeed()
+    return:
+      type: System.Single
+      description: ''
+    content.vb: Public Function getWaterSpeed As Single
+  overload: Model.RaceModel.getWaterSpeed*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Model.RaceModel.getWaterDir
+  commentId: M:Model.RaceModel.getWaterDir
+  id: getWaterDir
+  parent: Model.RaceModel
+  langs:
+  - csharp
+  - vb
+  name: getWaterDir()
+  nameWithType: RaceModel.getWaterDir()
+  fullName: Model.RaceModel.getWaterDir()
+  type: Method
+  source:
+    id: getWaterDir
+    path: E:\Unity\Project\SRSP-Simple-Simulator\Assets\Controller\script\Model\Model.cs
+    startLine: 391
+  assemblies:
+  - Assembly-CSharp
+  namespace: Model
+  summary: "\nreturn current direction of the simulation\n"
+  example: []
+  syntax:
+    content: public float getWaterDir()
+    return:
+      type: System.Single
+      description: ''
+    content.vb: Public Function getWaterDir As Single
+  overload: Model.RaceModel.getWaterDir*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Model.RaceModel.getSTW
+  commentId: M:Model.RaceModel.getSTW
+  id: getSTW
+  parent: Model.RaceModel
+  langs:
+  - csharp
+  - vb
+  name: getSTW()
+  nameWithType: RaceModel.getSTW()
+  fullName: Model.RaceModel.getSTW()
+  type: Method
+  source:
+    id: getSTW
+    path: E:\Unity\Project\SRSP-Simple-Simulator\Assets\Controller\script\Model\Model.cs
+    startLine: 400
+  assemblies:
+  - Assembly-CSharp
+  namespace: Model
+  summary: "\nreturn the speed throw water of the boat\n"
+  example: []
+  syntax:
+    content: public float getSTW()
+    return:
+      type: System.Single
+      description: ''
+    content.vb: Public Function getSTW As Single
+  overload: Model.RaceModel.getSTW*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Model.RaceModel.setNMEA(System.Int32,System.String)
+  commentId: M:Model.RaceModel.setNMEA(System.Int32,System.String)
+  id: setNMEA(System.Int32,System.String)
+  parent: Model.RaceModel
+  langs:
+  - csharp
+  - vb
+  name: setNMEA(Int32, String)
+  nameWithType: RaceModel.setNMEA(Int32, String)
+  fullName: Model.RaceModel.setNMEA(System.Int32, System.String)
+  type: Method
+  source:
+    id: setNMEA
+    path: E:\Unity\Project\SRSP-Simple-Simulator\Assets\Controller\script\Model\Model.cs
+    startLine: 410
+  assemblies:
+  - Assembly-CSharp
+  namespace: Model
+  summary: "\nSet the IP and port of QTVLN\n"
+  example: []
+  syntax:
+    content: public void setNMEA(int port, string ip)
+    parameters:
+    - id: port
+      type: System.Int32
+      description: ''
+    - id: ip
+      type: System.String
+      description: ''
+    content.vb: Public Sub setNMEA(port As Integer, ip As String)
+  overload: Model.RaceModel.setNMEA*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Model.RaceModel.getportNMEA
+  commentId: M:Model.RaceModel.getportNMEA
+  id: getportNMEA
+  parent: Model.RaceModel
+  langs:
+  - csharp
+  - vb
+  name: getportNMEA()
+  nameWithType: RaceModel.getportNMEA()
+  fullName: Model.RaceModel.getportNMEA()
+  type: Method
+  source:
+    id: getportNMEA
+    path: E:\Unity\Project\SRSP-Simple-Simulator\Assets\Controller\script\Model\Model.cs
+    startLine: 419
+  assemblies:
+  - Assembly-CSharp
+  namespace: Model
+  summary: "\nreturn the port use for QTVLM\n"
+  example: []
+  syntax:
+    content: public int getportNMEA()
+    return:
+      type: System.Int32
+      description: ''
+    content.vb: Public Function getportNMEA As Integer
+  overload: Model.RaceModel.getportNMEA*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Model.RaceModel.getipNMEA
+  commentId: M:Model.RaceModel.getipNMEA
+  id: getipNMEA
+  parent: Model.RaceModel
+  langs:
+  - csharp
+  - vb
+  name: getipNMEA()
+  nameWithType: RaceModel.getipNMEA()
+  fullName: Model.RaceModel.getipNMEA()
+  type: Method
+  source:
+    id: getipNMEA
+    path: E:\Unity\Project\SRSP-Simple-Simulator\Assets\Controller\script\Model\Model.cs
+    startLine: 428
+  assemblies:
+  - Assembly-CSharp
+  namespace: Model
+  summary: "\nreturn the ip use for QTVLM\n"
+  example: []
+  syntax:
+    content: public string getipNMEA()
+    return:
+      type: System.String
+      description: ''
+    content.vb: Public Function getipNMEA As String
+  overload: Model.RaceModel.getipNMEA*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Model.RaceModel.getListPolaire
+  commentId: M:Model.RaceModel.getListPolaire
+  id: getListPolaire
+  parent: Model.RaceModel
+  langs:
+  - csharp
+  - vb
+  name: getListPolaire()
+  nameWithType: RaceModel.getListPolaire()
+  fullName: Model.RaceModel.getListPolaire()
+  type: Method
+  source:
+    id: getListPolaire
+    path: E:\Unity\Project\SRSP-Simple-Simulator\Assets\Controller\script\Model\Model.cs
+    startLine: 437
+  assemblies:
+  - Assembly-CSharp
+  namespace: Model
+  summary: "\nReturn the list of all available polars of the boat\n"
+  example: []
+  syntax:
+    content: public List<string> getListPolaire()
+    return:
+      type: System.Collections.Generic.List{System.String}
+      description: ''
+    content.vb: Public Function getListPolaire As List(Of String)
+  overload: Model.RaceModel.getListPolaire*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Model.RaceModel.setPolaire(System.String)
+  commentId: M:Model.RaceModel.setPolaire(System.String)
+  id: setPolaire(System.String)
+  parent: Model.RaceModel
+  langs:
+  - csharp
+  - vb
+  name: setPolaire(String)
+  nameWithType: RaceModel.setPolaire(String)
+  fullName: Model.RaceModel.setPolaire(System.String)
+  type: Method
+  source:
+    id: setPolaire
+    path: E:\Unity\Project\SRSP-Simple-Simulator\Assets\Controller\script\Model\Model.cs
+    startLine: 452
+  assemblies:
+  - Assembly-CSharp
+  namespace: Model
+  summary: "\nSet the current polar of the boat to the polars with the corresponding name amoung all available polars\n"
+  example: []
+  syntax:
+    content: public void setPolaire(string polaireName)
+    parameters:
+    - id: polaireName
+      type: System.String
+      description: ''
+    content.vb: Public Sub setPolaire(polaireName As String)
+  overload: Model.RaceModel.setPolaire*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Model.RaceModel.setNoneCurrentPolar
+  commentId: M:Model.RaceModel.setNoneCurrentPolar
+  id: setNoneCurrentPolar
+  parent: Model.RaceModel
+  langs:
+  - csharp
+  - vb
+  name: setNoneCurrentPolar()
+  nameWithType: RaceModel.setNoneCurrentPolar()
+  fullName: Model.RaceModel.setNoneCurrentPolar()
+  type: Method
+  source:
+    id: setNoneCurrentPolar
+    path: E:\Unity\Project\SRSP-Simple-Simulator\Assets\Controller\script\Model\Model.cs
+    startLine: 460
+  assemblies:
+  - Assembly-CSharp
+  namespace: Model
+  summary: "\nlower the sails\n"
+  example: []
+  syntax:
+    content: public void setNoneCurrentPolar()
+    content.vb: Public Sub setNoneCurrentPolar
+  overload: Model.RaceModel.setNoneCurrentPolar*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Model.RaceModel.setPositionDeDepart(System.Single,System.Single)
+  commentId: M:Model.RaceModel.setPositionDeDepart(System.Single,System.Single)
+  id: setPositionDeDepart(System.Single,System.Single)
+  parent: Model.RaceModel
+  langs:
+  - csharp
+  - vb
+  name: setPositionDeDepart(Single, Single)
+  nameWithType: RaceModel.setPositionDeDepart(Single, Single)
+  fullName: Model.RaceModel.setPositionDeDepart(System.Single, System.Single)
+  type: Method
+  source:
+    id: setPositionDeDepart
+    path: E:\Unity\Project\SRSP-Simple-Simulator\Assets\Controller\script\Model\Model.cs
+    startLine: 470
+  assemblies:
+  - Assembly-CSharp
+  namespace: Model
+  summary: "\nSet the position of the boat\n"
+  example: []
+  syntax:
+    content: public void setPositionDeDepart(float latitude, float longitude)
+    parameters:
+    - id: latitude
+      type: System.Single
+      description: ''
+    - id: longitude
+      type: System.Single
+      description: ''
+    content.vb: Public Sub setPositionDeDepart(latitude As Single, longitude As Single)
+  overload: Model.RaceModel.setPositionDeDepart*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Model.RaceModel.getTime
+  commentId: M:Model.RaceModel.getTime
+  id: getTime
+  parent: Model.RaceModel
+  langs:
+  - csharp
+  - vb
+  name: getTime()
+  nameWithType: RaceModel.getTime()
+  fullName: Model.RaceModel.getTime()
+  type: Method
+  source:
+    id: getTime
+    path: E:\Unity\Project\SRSP-Simple-Simulator\Assets\Controller\script\Model\Model.cs
+    startLine: 482
+  assemblies:
+  - Assembly-CSharp
+  namespace: Model
+  syntax:
+    content: public DateTime getTime()
+    return:
+      type: System.DateTime
+    content.vb: Public Function getTime As Date
+  overload: Model.RaceModel.getTime*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+references:
+- uid: PRace.Race
+  commentId: T:PRace.Race
+  parent: PRace
+  name: Race
+  nameWithType: Race
+  fullName: PRace.Race
+- uid: Model
+  commentId: N:Model
+  name: Model
+  nameWithType: Model
+  fullName: Model
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: Model.ISubject
+  commentId: T:Model.ISubject
+  parent: Model
+  name: ISubject
+  nameWithType: ISubject
+  fullName: Model.ISubject
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  nameWithType: Object.ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: PRace
+  commentId: N:PRace
+  name: PRace
+  nameWithType: PRace
+  fullName: PRace
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Model.RaceModel.#ctor*
+  commentId: Overload:Model.RaceModel.#ctor
+  name: RaceModel
+  nameWithType: RaceModel.RaceModel
+  fullName: Model.RaceModel.RaceModel
+- uid: Communication.DataProcessing.Json.BoatType
+  commentId: T:Communication.DataProcessing.Json.BoatType
+  parent: Communication.DataProcessing.Json
+  name: BoatType
+  nameWithType: BoatType
+  fullName: Communication.DataProcessing.Json.BoatType
+- uid: Model.RaceModel.Set_Up*
+  commentId: Overload:Model.RaceModel.Set_Up
+  name: Set_Up
+  nameWithType: RaceModel.Set_Up
+  fullName: Model.RaceModel.Set_Up
+- uid: System.Nullable{PRace.Mode}
+  commentId: T:System.Nullable{PRace.Mode}
+  parent: System
+  definition: System.Nullable`1
+  name: Nullable<Mode>
+  nameWithType: Nullable<Mode>
+  fullName: System.Nullable<PRace.Mode>
+  nameWithType.vb: Nullable(Of Mode)
+  fullName.vb: System.Nullable(Of PRace.Mode)
+  name.vb: Nullable(Of Mode)
+  spec.csharp:
+  - uid: System.Nullable`1
+    name: Nullable
+    nameWithType: Nullable
+    fullName: System.Nullable
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: PRace.Mode
+    name: Mode
+    nameWithType: Mode
+    fullName: PRace.Mode
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Nullable`1
+    name: Nullable
+    nameWithType: Nullable
+    fullName: System.Nullable
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: PRace.Mode
+    name: Mode
+    nameWithType: Mode
+    fullName: PRace.Mode
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  name: Int32
+  nameWithType: Int32
+  fullName: System.Int32
+- uid: Communication.DataProcessing.Json
+  commentId: N:Communication.DataProcessing.Json
+  name: Communication.DataProcessing.Json
+  nameWithType: Communication.DataProcessing.Json
+  fullName: Communication.DataProcessing.Json
+- uid: System.Nullable`1
+  commentId: T:System.Nullable`1
+  isExternal: true
+  name: Nullable<T>
+  nameWithType: Nullable<T>
+  fullName: System.Nullable<T>
+  nameWithType.vb: Nullable(Of T)
+  fullName.vb: System.Nullable(Of T)
+  name.vb: Nullable(Of T)
+  spec.csharp:
+  - uid: System.Nullable`1
+    name: Nullable
+    nameWithType: Nullable
+    fullName: System.Nullable
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Nullable`1
+    name: Nullable
+    nameWithType: Nullable
+    fullName: System.Nullable
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Model.IObserver
+  commentId: T:Model.IObserver
+  parent: Model
+  name: IObserver
+  nameWithType: IObserver
+  fullName: Model.IObserver
+- uid: Model.RaceModel.Attach*
+  commentId: Overload:Model.RaceModel.Attach
+  name: Attach
+  nameWithType: RaceModel.Attach
+  fullName: Model.RaceModel.Attach
+- uid: Model.ISubject.Attach(Model.IObserver)
+  commentId: M:Model.ISubject.Attach(Model.IObserver)
+  parent: Model.ISubject
+  name: Attach(IObserver)
+  nameWithType: ISubject.Attach(IObserver)
+  fullName: Model.ISubject.Attach(Model.IObserver)
+  spec.csharp:
+  - uid: Model.ISubject.Attach(Model.IObserver)
+    name: Attach
+    nameWithType: ISubject.Attach
+    fullName: Model.ISubject.Attach
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Model.IObserver
+    name: IObserver
+    nameWithType: IObserver
+    fullName: Model.IObserver
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Model.ISubject.Attach(Model.IObserver)
+    name: Attach
+    nameWithType: ISubject.Attach
+    fullName: Model.ISubject.Attach
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Model.IObserver
+    name: IObserver
+    nameWithType: IObserver
+    fullName: Model.IObserver
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Model.RaceModel.Notify*
+  commentId: Overload:Model.RaceModel.Notify
+  name: Notify
+  nameWithType: RaceModel.Notify
+  fullName: Model.RaceModel.Notify
+- uid: Model.ISubject.Notify
+  commentId: M:Model.ISubject.Notify
+  parent: Model.ISubject
+  name: Notify()
+  nameWithType: ISubject.Notify()
+  fullName: Model.ISubject.Notify()
+  spec.csharp:
+  - uid: Model.ISubject.Notify
+    name: Notify
+    nameWithType: ISubject.Notify
+    fullName: Model.ISubject.Notify
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Model.ISubject.Notify
+    name: Notify
+    nameWithType: ISubject.Notify
+    fullName: Model.ISubject.Notify
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Model.RaceModel.GetRace*
+  commentId: Overload:Model.RaceModel.GetRace
+  name: GetRace
+  nameWithType: RaceModel.GetRace
+  fullName: Model.RaceModel.GetRace
+- uid: Model.RaceModel.ListSavePath*
+  commentId: Overload:Model.RaceModel.ListSavePath
+  name: ListSavePath
+  nameWithType: RaceModel.ListSavePath
+  fullName: Model.RaceModel.ListSavePath
+- uid: System.String[]
+  isExternal: true
+  name: String[]
+  nameWithType: String[]
+  fullName: System.String[]
+  nameWithType.vb: String()
+  fullName.vb: System.String()
+  name.vb: String()
+  spec.csharp:
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: '[]'
+    nameWithType: '[]'
+    fullName: '[]'
+  spec.vb:
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ()
+    nameWithType: ()
+    fullName: ()
+- uid: Model.RaceModel.Save*
+  commentId: Overload:Model.RaceModel.Save
+  name: Save
+  nameWithType: RaceModel.Save
+  fullName: Model.RaceModel.Save
+- uid: Model.RaceModel.getBoatList*
+  commentId: Overload:Model.RaceModel.getBoatList
+  name: getBoatList
+  nameWithType: RaceModel.getBoatList
+  fullName: Model.RaceModel.getBoatList
+- uid: System.Collections.Generic.List{System.String}
+  commentId: T:System.Collections.Generic.List{System.String}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.List`1
+  name: List<String>
+  nameWithType: List<String>
+  fullName: System.Collections.Generic.List<System.String>
+  nameWithType.vb: List(Of String)
+  fullName.vb: System.Collections.Generic.List(Of System.String)
+  name.vb: List(Of String)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.Generic.List`1
+  commentId: T:System.Collections.Generic.List`1
+  isExternal: true
+  name: List<T>
+  nameWithType: List<T>
+  fullName: System.Collections.Generic.List<T>
+  nameWithType.vb: List(Of T)
+  fullName.vb: System.Collections.Generic.List(Of T)
+  name.vb: List(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+- uid: Model.RaceModel.Run*
+  commentId: Overload:Model.RaceModel.Run
+  name: Run
+  nameWithType: RaceModel.Run
+  fullName: Model.RaceModel.Run
+- uid: Model.RaceModel.Pause*
+  commentId: Overload:Model.RaceModel.Pause
+  name: Pause
+  nameWithType: RaceModel.Pause
+  fullName: Model.RaceModel.Pause
+- uid: Model.BoatInfo
+  commentId: T:Model.BoatInfo
+  parent: Model
+  name: BoatInfo
+  nameWithType: BoatInfo
+  fullName: Model.BoatInfo
+- uid: Model.RaceModel.GetBoatStatus*
+  commentId: Overload:Model.RaceModel.GetBoatStatus
+  name: GetBoatStatus
+  nameWithType: RaceModel.GetBoatStatus
+  fullName: Model.RaceModel.GetBoatStatus
+- uid: Model.ISubject.GetBoatStatus
+  commentId: M:Model.ISubject.GetBoatStatus
+  parent: Model.ISubject
+  name: GetBoatStatus()
+  nameWithType: ISubject.GetBoatStatus()
+  fullName: Model.ISubject.GetBoatStatus()
+  spec.csharp:
+  - uid: Model.ISubject.GetBoatStatus
+    name: GetBoatStatus
+    nameWithType: ISubject.GetBoatStatus
+    fullName: Model.ISubject.GetBoatStatus
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Model.ISubject.GetBoatStatus
+    name: GetBoatStatus
+    nameWithType: ISubject.GetBoatStatus
+    fullName: Model.ISubject.GetBoatStatus
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.Generic.Dictionary{Model.BoatInfo,System.Double}
+  commentId: T:System.Collections.Generic.Dictionary{Model.BoatInfo,System.Double}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.Dictionary`2
+  name: Dictionary<BoatInfo, Double>
+  nameWithType: Dictionary<BoatInfo, Double>
+  fullName: System.Collections.Generic.Dictionary<Model.BoatInfo, System.Double>
+  nameWithType.vb: Dictionary(Of BoatInfo, Double)
+  fullName.vb: System.Collections.Generic.Dictionary(Of Model.BoatInfo, System.Double)
+  name.vb: Dictionary(Of BoatInfo, Double)
+  spec.csharp:
+  - uid: System.Collections.Generic.Dictionary`2
+    name: Dictionary
+    nameWithType: Dictionary
+    fullName: System.Collections.Generic.Dictionary
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Model.BoatInfo
+    name: BoatInfo
+    nameWithType: BoatInfo
+    fullName: Model.BoatInfo
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Double
+    name: Double
+    nameWithType: Double
+    fullName: System.Double
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.Dictionary`2
+    name: Dictionary
+    nameWithType: Dictionary
+    fullName: System.Collections.Generic.Dictionary
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: Model.BoatInfo
+    name: BoatInfo
+    nameWithType: BoatInfo
+    fullName: Model.BoatInfo
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Double
+    name: Double
+    nameWithType: Double
+    fullName: System.Double
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.Generic.Dictionary`2
+  commentId: T:System.Collections.Generic.Dictionary`2
+  isExternal: true
+  name: Dictionary<TKey, TValue>
+  nameWithType: Dictionary<TKey, TValue>
+  fullName: System.Collections.Generic.Dictionary<TKey, TValue>
+  nameWithType.vb: Dictionary(Of TKey, TValue)
+  fullName.vb: System.Collections.Generic.Dictionary(Of TKey, TValue)
+  name.vb: Dictionary(Of TKey, TValue)
+  spec.csharp:
+  - uid: System.Collections.Generic.Dictionary`2
+    name: Dictionary
+    nameWithType: Dictionary
+    fullName: System.Collections.Generic.Dictionary
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: TKey
+    nameWithType: TKey
+    fullName: TKey
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TValue
+    nameWithType: TValue
+    fullName: TValue
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.Dictionary`2
+    name: Dictionary
+    nameWithType: Dictionary
+    fullName: System.Collections.Generic.Dictionary
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: TKey
+    nameWithType: TKey
+    fullName: TKey
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TValue
+    nameWithType: TValue
+    fullName: TValue
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Model.RaceModel.SetCurrent*
+  commentId: Overload:Model.RaceModel.SetCurrent
+  name: SetCurrent
+  nameWithType: RaceModel.SetCurrent
+  fullName: Model.RaceModel.SetCurrent
+- uid: System.Single
+  commentId: T:System.Single
+  parent: System
+  isExternal: true
+  name: Single
+  nameWithType: Single
+  fullName: System.Single
+- uid: Model.RaceModel.SetWave*
+  commentId: Overload:Model.RaceModel.SetWave
+  name: SetWave
+  nameWithType: RaceModel.SetWave
+  fullName: Model.RaceModel.SetWave
+- uid: Model.RaceModel.SetWind*
+  commentId: Overload:Model.RaceModel.SetWind
+  name: SetWind
+  nameWithType: RaceModel.SetWind
+  fullName: Model.RaceModel.SetWind
+- uid: Model.RaceModel.SetFactor*
+  commentId: Overload:Model.RaceModel.SetFactor
+  name: SetFactor
+  nameWithType: RaceModel.SetFactor
+  fullName: Model.RaceModel.SetFactor
+- uid: Model.RaceModel.GetAccFactor*
+  commentId: Overload:Model.RaceModel.GetAccFactor
+  name: GetAccFactor
+  nameWithType: RaceModel.GetAccFactor
+  fullName: Model.RaceModel.GetAccFactor
+- uid: Model.RaceModel.IncrementCap*
+  commentId: Overload:Model.RaceModel.IncrementCap
+  name: IncrementCap
+  nameWithType: RaceModel.IncrementCap
+  fullName: Model.RaceModel.IncrementCap
+- uid: PRace.ModeCommande
+  commentId: T:PRace.ModeCommande
+  parent: PRace
+  name: ModeCommande
+  nameWithType: ModeCommande
+  fullName: PRace.ModeCommande
+- uid: PRace.DegreeIncrement
+  commentId: T:PRace.DegreeIncrement
+  parent: PRace
+  name: DegreeIncrement
+  nameWithType: DegreeIncrement
+  fullName: PRace.DegreeIncrement
+- uid: Model.RaceModel.SwitchCommande*
+  commentId: Overload:Model.RaceModel.SwitchCommande
+  name: SwitchCommande
+  nameWithType: RaceModel.SwitchCommande
+  fullName: Model.RaceModel.SwitchCommande
+- uid: Model.RaceModel.getModelCap*
+  commentId: Overload:Model.RaceModel.getModelCap
+  name: getModelCap
+  nameWithType: RaceModel.getModelCap
+  fullName: Model.RaceModel.getModelCap
+- uid: Model.RaceModel.getAllureCap*
+  commentId: Overload:Model.RaceModel.getAllureCap
+  name: getAllureCap
+  nameWithType: RaceModel.getAllureCap
+  fullName: Model.RaceModel.getAllureCap
+- uid: Model.RaceModel.getCommandeMode*
+  commentId: Overload:Model.RaceModel.getCommandeMode
+  name: getCommandeMode
+  nameWithType: RaceModel.getCommandeMode
+  fullName: Model.RaceModel.getCommandeMode
+- uid: Model.RaceModel.getWindSpeed*
+  commentId: Overload:Model.RaceModel.getWindSpeed
+  name: getWindSpeed
+  nameWithType: RaceModel.getWindSpeed
+  fullName: Model.RaceModel.getWindSpeed
+- uid: Model.RaceModel.getWindDir*
+  commentId: Overload:Model.RaceModel.getWindDir
+  name: getWindDir
+  nameWithType: RaceModel.getWindDir
+  fullName: Model.RaceModel.getWindDir
+- uid: Model.RaceModel.getWaveAmpl*
+  commentId: Overload:Model.RaceModel.getWaveAmpl
+  name: getWaveAmpl
+  nameWithType: RaceModel.getWaveAmpl
+  fullName: Model.RaceModel.getWaveAmpl
+- uid: Model.RaceModel.getWaveDir*
+  commentId: Overload:Model.RaceModel.getWaveDir
+  name: getWaveDir
+  nameWithType: RaceModel.getWaveDir
+  fullName: Model.RaceModel.getWaveDir
+- uid: Model.RaceModel.getWaveLength*
+  commentId: Overload:Model.RaceModel.getWaveLength
+  name: getWaveLength
+  nameWithType: RaceModel.getWaveLength
+  fullName: Model.RaceModel.getWaveLength
+- uid: Model.RaceModel.getWaterSpeed*
+  commentId: Overload:Model.RaceModel.getWaterSpeed
+  name: getWaterSpeed
+  nameWithType: RaceModel.getWaterSpeed
+  fullName: Model.RaceModel.getWaterSpeed
+- uid: Model.RaceModel.getWaterDir*
+  commentId: Overload:Model.RaceModel.getWaterDir
+  name: getWaterDir
+  nameWithType: RaceModel.getWaterDir
+  fullName: Model.RaceModel.getWaterDir
+- uid: Model.RaceModel.getSTW*
+  commentId: Overload:Model.RaceModel.getSTW
+  name: getSTW
+  nameWithType: RaceModel.getSTW
+  fullName: Model.RaceModel.getSTW
+- uid: Model.RaceModel.setNMEA*
+  commentId: Overload:Model.RaceModel.setNMEA
+  name: setNMEA
+  nameWithType: RaceModel.setNMEA
+  fullName: Model.RaceModel.setNMEA
+- uid: Model.RaceModel.getportNMEA*
+  commentId: Overload:Model.RaceModel.getportNMEA
+  name: getportNMEA
+  nameWithType: RaceModel.getportNMEA
+  fullName: Model.RaceModel.getportNMEA
+- uid: Model.RaceModel.getipNMEA*
+  commentId: Overload:Model.RaceModel.getipNMEA
+  name: getipNMEA
+  nameWithType: RaceModel.getipNMEA
+  fullName: Model.RaceModel.getipNMEA
+- uid: Model.RaceModel.getListPolaire*
+  commentId: Overload:Model.RaceModel.getListPolaire
+  name: getListPolaire
+  nameWithType: RaceModel.getListPolaire
+  fullName: Model.RaceModel.getListPolaire
+- uid: Model.RaceModel.setPolaire*
+  commentId: Overload:Model.RaceModel.setPolaire
+  name: setPolaire
+  nameWithType: RaceModel.setPolaire
+  fullName: Model.RaceModel.setPolaire
+- uid: Model.RaceModel.setNoneCurrentPolar*
+  commentId: Overload:Model.RaceModel.setNoneCurrentPolar
+  name: setNoneCurrentPolar
+  nameWithType: RaceModel.setNoneCurrentPolar
+  fullName: Model.RaceModel.setNoneCurrentPolar
+- uid: Model.RaceModel.setPositionDeDepart*
+  commentId: Overload:Model.RaceModel.setPositionDeDepart
+  name: setPositionDeDepart
+  nameWithType: RaceModel.setPositionDeDepart
+  fullName: Model.RaceModel.setPositionDeDepart
+- uid: Model.RaceModel.getTime*
+  commentId: Overload:Model.RaceModel.getTime
+  name: getTime
+  nameWithType: RaceModel.getTime
+  fullName: Model.RaceModel.getTime
+- uid: System.DateTime
+  commentId: T:System.DateTime
+  parent: System
+  isExternal: true
+  name: DateTime
+  nameWithType: DateTime
+  fullName: System.DateTime

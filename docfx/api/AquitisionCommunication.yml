@@ -1,0 +1,59 @@
+### YamlMime:ManagedReference
+items:
+- uid: AquitisionCommunication
+  commentId: N:AquitisionCommunication
+  id: AquitisionCommunication
+  children:
+  - AquitisionCommunication.Aquisition
+  - AquitisionCommunication.AquisitionFichierSaveRace
+  - AquitisionCommunication.AquisitionPolaire
+  - AquitisionCommunication.RaceSave
+  - AquitisionCommunication.RaceSave.JsonRace
+  - AquitisionCommunication.Sauvegarde
+  langs:
+  - csharp
+  - vb
+  name: AquitisionCommunication
+  nameWithType: AquitisionCommunication
+  fullName: AquitisionCommunication
+  type: Namespace
+  assemblies:
+  - Assembly-CSharp
+references:
+- uid: AquitisionCommunication.AquisitionPolaire
+  commentId: T:AquitisionCommunication.AquisitionPolaire
+  name: AquisitionPolaire
+  nameWithType: AquisitionPolaire
+  fullName: AquitisionCommunication.AquisitionPolaire
+- uid: AquitisionCommunication.AquisitionFichierSaveRace
+  commentId: T:AquitisionCommunication.AquisitionFichierSaveRace
+  name: AquisitionFichierSaveRace
+  nameWithType: AquisitionFichierSaveRace
+  fullName: AquitisionCommunication.AquisitionFichierSaveRace
+- uid: AquitisionCommunication.Sauvegarde
+  commentId: T:AquitisionCommunication.Sauvegarde
+  name: Sauvegarde
+  nameWithType: Sauvegarde
+  fullName: AquitisionCommunication.Sauvegarde
+- uid: AquitisionCommunication.Aquisition
+  commentId: T:AquitisionCommunication.Aquisition
+  parent: AquitisionCommunication
+  name: Aquisition
+  nameWithType: Aquisition
+  fullName: AquitisionCommunication.Aquisition
+- uid: AquitisionCommunication.RaceSave
+  commentId: T:AquitisionCommunication.RaceSave
+  name: RaceSave
+  nameWithType: RaceSave
+  fullName: AquitisionCommunication.RaceSave
+- uid: AquitisionCommunication.RaceSave.JsonRace
+  commentId: T:AquitisionCommunication.RaceSave.JsonRace
+  parent: AquitisionCommunication
+  name: RaceSave.JsonRace
+  nameWithType: RaceSave.JsonRace
+  fullName: AquitisionCommunication.RaceSave.JsonRace
+- uid: AquitisionCommunication
+  commentId: N:AquitisionCommunication
+  name: AquitisionCommunication
+  nameWithType: AquitisionCommunication
+  fullName: AquitisionCommunication

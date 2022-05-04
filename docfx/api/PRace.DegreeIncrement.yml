@@ -1,0 +1,160 @@
+### YamlMime:ManagedReference
+items:
+- uid: PRace.DegreeIncrement
+  commentId: T:PRace.DegreeIncrement
+  id: DegreeIncrement
+  parent: PRace
+  children:
+  - PRace.DegreeIncrement.MinusOne
+  - PRace.DegreeIncrement.MinusTen
+  - PRace.DegreeIncrement.One
+  - PRace.DegreeIncrement.Ten
+  langs:
+  - csharp
+  - vb
+  name: DegreeIncrement
+  nameWithType: DegreeIncrement
+  fullName: PRace.DegreeIncrement
+  type: Enum
+  source:
+    id: DegreeIncrement
+    path: E:\Unity\Project\SRSP-Simple-Simulator\Assets\Controller\script\Model\Race\DegreeIncrement.cs
+    startLine: 6
+  assemblies:
+  - Assembly-CSharp
+  namespace: PRace
+  summary: "\nEnumerate tha available degre of cap incrementation\n"
+  example: []
+  syntax:
+    content: public enum DegreeIncrement
+    content.vb: Public Enum DegreeIncrement
+  modifiers.csharp:
+  - public
+  - enum
+  modifiers.vb:
+  - Public
+  - Enum
+- uid: PRace.DegreeIncrement.One
+  commentId: F:PRace.DegreeIncrement.One
+  id: One
+  parent: PRace.DegreeIncrement
+  langs:
+  - csharp
+  - vb
+  name: One
+  nameWithType: DegreeIncrement.One
+  fullName: PRace.DegreeIncrement.One
+  type: Field
+  source:
+    id: One
+    path: E:\Unity\Project\SRSP-Simple-Simulator\Assets\Controller\script\Model\Race\DegreeIncrement.cs
+    startLine: 7
+  assemblies:
+  - Assembly-CSharp
+  namespace: PRace
+  syntax:
+    content: One = 1
+    return:
+      type: PRace.DegreeIncrement
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: PRace.DegreeIncrement.Ten
+  commentId: F:PRace.DegreeIncrement.Ten
+  id: Ten
+  parent: PRace.DegreeIncrement
+  langs:
+  - csharp
+  - vb
+  name: Ten
+  nameWithType: DegreeIncrement.Ten
+  fullName: PRace.DegreeIncrement.Ten
+  type: Field
+  source:
+    id: Ten
+    path: E:\Unity\Project\SRSP-Simple-Simulator\Assets\Controller\script\Model\Race\DegreeIncrement.cs
+    startLine: 8
+  assemblies:
+  - Assembly-CSharp
+  namespace: PRace
+  syntax:
+    content: Ten = 10
+    return:
+      type: PRace.DegreeIncrement
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: PRace.DegreeIncrement.MinusOne
+  commentId: F:PRace.DegreeIncrement.MinusOne
+  id: MinusOne
+  parent: PRace.DegreeIncrement
+  langs:
+  - csharp
+  - vb
+  name: MinusOne
+  nameWithType: DegreeIncrement.MinusOne
+  fullName: PRace.DegreeIncrement.MinusOne
+  type: Field
+  source:
+    id: MinusOne
+    path: E:\Unity\Project\SRSP-Simple-Simulator\Assets\Controller\script\Model\Race\DegreeIncrement.cs
+    startLine: 9
+  assemblies:
+  - Assembly-CSharp
+  namespace: PRace
+  syntax:
+    content: MinusOne = -1
+    return:
+      type: PRace.DegreeIncrement
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: PRace.DegreeIncrement.MinusTen
+  commentId: F:PRace.DegreeIncrement.MinusTen
+  id: MinusTen
+  parent: PRace.DegreeIncrement
+  langs:
+  - csharp
+  - vb
+  name: MinusTen
+  nameWithType: DegreeIncrement.MinusTen
+  fullName: PRace.DegreeIncrement.MinusTen
+  type: Field
+  source:
+    id: MinusTen
+    path: E:\Unity\Project\SRSP-Simple-Simulator\Assets\Controller\script\Model\Race\DegreeIncrement.cs
+    startLine: 10
+  assemblies:
+  - Assembly-CSharp
+  namespace: PRace
+  syntax:
+    content: MinusTen = -10
+    return:
+      type: PRace.DegreeIncrement
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+references:
+- uid: PRace
+  commentId: N:PRace
+  name: PRace
+  nameWithType: PRace
+  fullName: PRace
+- uid: PRace.DegreeIncrement
+  commentId: T:PRace.DegreeIncrement
+  parent: PRace
+  name: DegreeIncrement
+  nameWithType: DegreeIncrement
+  fullName: PRace.DegreeIncrement

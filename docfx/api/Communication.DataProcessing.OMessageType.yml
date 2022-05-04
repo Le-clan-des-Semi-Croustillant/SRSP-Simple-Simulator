@@ -1,0 +1,274 @@
+### YamlMime:ManagedReference
+items:
+- uid: Communication.DataProcessing.OMessageType
+  commentId: T:Communication.DataProcessing.OMessageType
+  id: OMessageType
+  parent: Communication.DataProcessing
+  children:
+  - Communication.DataProcessing.OMessageType.BOATLIST
+  - Communication.DataProcessing.OMessageType.BOATSELECTED
+  - Communication.DataProcessing.OMessageType.CONNECTION
+  - Communication.DataProcessing.OMessageType.DISCONNECTION
+  - Communication.DataProcessing.OMessageType.ENDRACE
+  - Communication.DataProcessing.OMessageType.ENVIRONMENTINFO
+  - Communication.DataProcessing.OMessageType.INITRACE
+  - Communication.DataProcessing.OMessageType.RACELIST
+  langs:
+  - csharp
+  - vb
+  name: OMessageType
+  nameWithType: OMessageType
+  fullName: Communication.DataProcessing.OMessageType
+  type: Enum
+  source:
+    id: OMessageType
+    path: E:\Unity\Project\SRSP-Simple-Simulator\Assets\Controller\script\Model\AquitisionCommunication\Communication\DataProcessing\MessageType.cs
+    startLine: 16
+  assemblies:
+  - Assembly-CSharp
+  namespace: Communication.DataProcessing
+  syntax:
+    content: public enum OMessageType
+    content.vb: Public Enum OMessageType
+  modifiers.csharp:
+  - public
+  - enum
+  modifiers.vb:
+  - Public
+  - Enum
+- uid: Communication.DataProcessing.OMessageType.CONNECTION
+  commentId: F:Communication.DataProcessing.OMessageType.CONNECTION
+  id: CONNECTION
+  parent: Communication.DataProcessing.OMessageType
+  langs:
+  - csharp
+  - vb
+  name: CONNECTION
+  nameWithType: OMessageType.CONNECTION
+  fullName: Communication.DataProcessing.OMessageType.CONNECTION
+  type: Field
+  source:
+    id: CONNECTION
+    path: E:\Unity\Project\SRSP-Simple-Simulator\Assets\Controller\script\Model\AquitisionCommunication\Communication\DataProcessing\MessageType.cs
+    startLine: 18
+  assemblies:
+  - Assembly-CSharp
+  namespace: Communication.DataProcessing
+  syntax:
+    content: CONNECTION = 0
+    return:
+      type: Communication.DataProcessing.OMessageType
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: Communication.DataProcessing.OMessageType.DISCONNECTION
+  commentId: F:Communication.DataProcessing.OMessageType.DISCONNECTION
+  id: DISCONNECTION
+  parent: Communication.DataProcessing.OMessageType
+  langs:
+  - csharp
+  - vb
+  name: DISCONNECTION
+  nameWithType: OMessageType.DISCONNECTION
+  fullName: Communication.DataProcessing.OMessageType.DISCONNECTION
+  type: Field
+  source:
+    id: DISCONNECTION
+    path: E:\Unity\Project\SRSP-Simple-Simulator\Assets\Controller\script\Model\AquitisionCommunication\Communication\DataProcessing\MessageType.cs
+    startLine: 19
+  assemblies:
+  - Assembly-CSharp
+  namespace: Communication.DataProcessing
+  syntax:
+    content: DISCONNECTION = 1
+    return:
+      type: Communication.DataProcessing.OMessageType
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: Communication.DataProcessing.OMessageType.INITRACE
+  commentId: F:Communication.DataProcessing.OMessageType.INITRACE
+  id: INITRACE
+  parent: Communication.DataProcessing.OMessageType
+  langs:
+  - csharp
+  - vb
+  name: INITRACE
+  nameWithType: OMessageType.INITRACE
+  fullName: Communication.DataProcessing.OMessageType.INITRACE
+  type: Field
+  source:
+    id: INITRACE
+    path: E:\Unity\Project\SRSP-Simple-Simulator\Assets\Controller\script\Model\AquitisionCommunication\Communication\DataProcessing\MessageType.cs
+    startLine: 20
+  assemblies:
+  - Assembly-CSharp
+  namespace: Communication.DataProcessing
+  syntax:
+    content: INITRACE = 2
+    return:
+      type: Communication.DataProcessing.OMessageType
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: Communication.DataProcessing.OMessageType.ENVIRONMENTINFO
+  commentId: F:Communication.DataProcessing.OMessageType.ENVIRONMENTINFO
+  id: ENVIRONMENTINFO
+  parent: Communication.DataProcessing.OMessageType
+  langs:
+  - csharp
+  - vb
+  name: ENVIRONMENTINFO
+  nameWithType: OMessageType.ENVIRONMENTINFO
+  fullName: Communication.DataProcessing.OMessageType.ENVIRONMENTINFO
+  type: Field
+  source:
+    id: ENVIRONMENTINFO
+    path: E:\Unity\Project\SRSP-Simple-Simulator\Assets\Controller\script\Model\AquitisionCommunication\Communication\DataProcessing\MessageType.cs
+    startLine: 21
+  assemblies:
+  - Assembly-CSharp
+  namespace: Communication.DataProcessing
+  syntax:
+    content: ENVIRONMENTINFO = 3
+    return:
+      type: Communication.DataProcessing.OMessageType
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: Communication.DataProcessing.OMessageType.BOATSELECTED
+  commentId: F:Communication.DataProcessing.OMessageType.BOATSELECTED
+  id: BOATSELECTED
+  parent: Communication.DataProcessing.OMessageType
+  langs:
+  - csharp
+  - vb
+  name: BOATSELECTED
+  nameWithType: OMessageType.BOATSELECTED
+  fullName: Communication.DataProcessing.OMessageType.BOATSELECTED
+  type: Field
+  source:
+    id: BOATSELECTED
+    path: E:\Unity\Project\SRSP-Simple-Simulator\Assets\Controller\script\Model\AquitisionCommunication\Communication\DataProcessing\MessageType.cs
+    startLine: 22
+  assemblies:
+  - Assembly-CSharp
+  namespace: Communication.DataProcessing
+  syntax:
+    content: BOATSELECTED = 4
+    return:
+      type: Communication.DataProcessing.OMessageType
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: Communication.DataProcessing.OMessageType.BOATLIST
+  commentId: F:Communication.DataProcessing.OMessageType.BOATLIST
+  id: BOATLIST
+  parent: Communication.DataProcessing.OMessageType
+  langs:
+  - csharp
+  - vb
+  name: BOATLIST
+  nameWithType: OMessageType.BOATLIST
+  fullName: Communication.DataProcessing.OMessageType.BOATLIST
+  type: Field
+  source:
+    id: BOATLIST
+    path: E:\Unity\Project\SRSP-Simple-Simulator\Assets\Controller\script\Model\AquitisionCommunication\Communication\DataProcessing\MessageType.cs
+    startLine: 23
+  assemblies:
+  - Assembly-CSharp
+  namespace: Communication.DataProcessing
+  syntax:
+    content: BOATLIST = 5
+    return:
+      type: Communication.DataProcessing.OMessageType
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: Communication.DataProcessing.OMessageType.ENDRACE
+  commentId: F:Communication.DataProcessing.OMessageType.ENDRACE
+  id: ENDRACE
+  parent: Communication.DataProcessing.OMessageType
+  langs:
+  - csharp
+  - vb
+  name: ENDRACE
+  nameWithType: OMessageType.ENDRACE
+  fullName: Communication.DataProcessing.OMessageType.ENDRACE
+  type: Field
+  source:
+    id: ENDRACE
+    path: E:\Unity\Project\SRSP-Simple-Simulator\Assets\Controller\script\Model\AquitisionCommunication\Communication\DataProcessing\MessageType.cs
+    startLine: 24
+  assemblies:
+  - Assembly-CSharp
+  namespace: Communication.DataProcessing
+  syntax:
+    content: ENDRACE = 6
+    return:
+      type: Communication.DataProcessing.OMessageType
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: Communication.DataProcessing.OMessageType.RACELIST
+  commentId: F:Communication.DataProcessing.OMessageType.RACELIST
+  id: RACELIST
+  parent: Communication.DataProcessing.OMessageType
+  langs:
+  - csharp
+  - vb
+  name: RACELIST
+  nameWithType: OMessageType.RACELIST
+  fullName: Communication.DataProcessing.OMessageType.RACELIST
+  type: Field
+  source:
+    id: RACELIST
+    path: E:\Unity\Project\SRSP-Simple-Simulator\Assets\Controller\script\Model\AquitisionCommunication\Communication\DataProcessing\MessageType.cs
+    startLine: 25
+  assemblies:
+  - Assembly-CSharp
+  namespace: Communication.DataProcessing
+  syntax:
+    content: RACELIST = 7
+    return:
+      type: Communication.DataProcessing.OMessageType
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+references:
+- uid: Communication.DataProcessing
+  commentId: N:Communication.DataProcessing
+  name: Communication.DataProcessing
+  nameWithType: Communication.DataProcessing
+  fullName: Communication.DataProcessing
+- uid: Communication.DataProcessing.OMessageType
+  commentId: T:Communication.DataProcessing.OMessageType
+  parent: Communication.DataProcessing
+  name: OMessageType
+  nameWithType: OMessageType
+  fullName: Communication.DataProcessing.OMessageType

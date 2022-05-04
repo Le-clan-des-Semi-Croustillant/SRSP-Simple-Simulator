@@ -1,0 +1,879 @@
+### YamlMime:ManagedReference
+items:
+- uid: AquitisionCommunication.RaceSave.JsonRace
+  commentId: T:AquitisionCommunication.RaceSave.JsonRace
+  id: RaceSave.JsonRace
+  parent: AquitisionCommunication
+  children:
+  - AquitisionCommunication.RaceSave.JsonRace.#ctor
+  - AquitisionCommunication.RaceSave.JsonRace.accelerationFactor
+  - AquitisionCommunication.RaceSave.JsonRace.BoatCap
+  - AquitisionCommunication.RaceSave.JsonRace.BoatId
+  - AquitisionCommunication.RaceSave.JsonRace.currentPol
+  - AquitisionCommunication.RaceSave.JsonRace.Equals(System.Object)
+  - AquitisionCommunication.RaceSave.JsonRace.GetMode
+  - AquitisionCommunication.RaceSave.JsonRace.latitude
+  - AquitisionCommunication.RaceSave.JsonRace.longitude
+  - AquitisionCommunication.RaceSave.JsonRace.mode
+  - AquitisionCommunication.RaceSave.JsonRace.polFiles
+  - AquitisionCommunication.RaceSave.JsonRace.polNames
+  - AquitisionCommunication.RaceSave.JsonRace.RaceId
+  - AquitisionCommunication.RaceSave.JsonRace.RaceTime
+  - AquitisionCommunication.RaceSave.JsonRace.wayPointFile
+  langs:
+  - csharp
+  - vb
+  name: RaceSave.JsonRace
+  nameWithType: RaceSave.JsonRace
+  fullName: AquitisionCommunication.RaceSave.JsonRace
+  type: Class
+  source:
+    id: JsonRace
+    path: E:\Unity\Project\SRSP-Simple-Simulator\Assets\Controller\script\Model\AquitisionCommunication\RaceSave.cs
+    startLine: 34
+  assemblies:
+  - Assembly-CSharp
+  namespace: AquitisionCommunication
+  summary: "\nserilized vesion of the race\n"
+  example: []
+  syntax:
+    content: public class JsonRace
+    content.vb: Public Class JsonRace
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: AquitisionCommunication.RaceSave.JsonRace.#ctor
+  commentId: M:AquitisionCommunication.RaceSave.JsonRace.#ctor
+  id: '#ctor'
+  parent: AquitisionCommunication.RaceSave.JsonRace
+  langs:
+  - csharp
+  - vb
+  name: JsonRace()
+  nameWithType: RaceSave.JsonRace.JsonRace()
+  fullName: AquitisionCommunication.RaceSave.JsonRace.JsonRace()
+  type: Constructor
+  source:
+    id: .ctor
+    path: E:\Unity\Project\SRSP-Simple-Simulator\Assets\Controller\script\Model\AquitisionCommunication\RaceSave.cs
+    startLine: 36
+  assemblies:
+  - Assembly-CSharp
+  namespace: AquitisionCommunication
+  syntax:
+    content: public JsonRace()
+    content.vb: Public Sub New
+  overload: AquitisionCommunication.RaceSave.JsonRace.#ctor*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: AquitisionCommunication.RaceSave.JsonRace.mode
+  commentId: F:AquitisionCommunication.RaceSave.JsonRace.mode
+  id: mode
+  parent: AquitisionCommunication.RaceSave.JsonRace
+  langs:
+  - csharp
+  - vb
+  name: mode
+  nameWithType: RaceSave.JsonRace.mode
+  fullName: AquitisionCommunication.RaceSave.JsonRace.mode
+  type: Field
+  source:
+    id: mode
+    path: E:\Unity\Project\SRSP-Simple-Simulator\Assets\Controller\script\Model\AquitisionCommunication\RaceSave.cs
+    startLine: 39
+  assemblies:
+  - Assembly-CSharp
+  namespace: AquitisionCommunication
+  syntax:
+    content: public Mode mode
+    return:
+      type: PRace.Mode
+    content.vb: Public mode As Mode
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: AquitisionCommunication.RaceSave.JsonRace.RaceId
+  commentId: F:AquitisionCommunication.RaceSave.JsonRace.RaceId
+  id: RaceId
+  parent: AquitisionCommunication.RaceSave.JsonRace
+  langs:
+  - csharp
+  - vb
+  name: RaceId
+  nameWithType: RaceSave.JsonRace.RaceId
+  fullName: AquitisionCommunication.RaceSave.JsonRace.RaceId
+  type: Field
+  source:
+    id: RaceId
+    path: E:\Unity\Project\SRSP-Simple-Simulator\Assets\Controller\script\Model\AquitisionCommunication\RaceSave.cs
+    startLine: 40
+  assemblies:
+  - Assembly-CSharp
+  namespace: AquitisionCommunication
+  syntax:
+    content: public int RaceId
+    return:
+      type: System.Int32
+    content.vb: Public RaceId As Integer
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: AquitisionCommunication.RaceSave.JsonRace.RaceTime
+  commentId: F:AquitisionCommunication.RaceSave.JsonRace.RaceTime
+  id: RaceTime
+  parent: AquitisionCommunication.RaceSave.JsonRace
+  langs:
+  - csharp
+  - vb
+  name: RaceTime
+  nameWithType: RaceSave.JsonRace.RaceTime
+  fullName: AquitisionCommunication.RaceSave.JsonRace.RaceTime
+  type: Field
+  source:
+    id: RaceTime
+    path: E:\Unity\Project\SRSP-Simple-Simulator\Assets\Controller\script\Model\AquitisionCommunication\RaceSave.cs
+    startLine: 41
+  assemblies:
+  - Assembly-CSharp
+  namespace: AquitisionCommunication
+  syntax:
+    content: public DateTime RaceTime
+    return:
+      type: System.DateTime
+    content.vb: Public RaceTime As Date
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: AquitisionCommunication.RaceSave.JsonRace.wayPointFile
+  commentId: F:AquitisionCommunication.RaceSave.JsonRace.wayPointFile
+  id: wayPointFile
+  parent: AquitisionCommunication.RaceSave.JsonRace
+  langs:
+  - csharp
+  - vb
+  name: wayPointFile
+  nameWithType: RaceSave.JsonRace.wayPointFile
+  fullName: AquitisionCommunication.RaceSave.JsonRace.wayPointFile
+  type: Field
+  source:
+    id: wayPointFile
+    path: E:\Unity\Project\SRSP-Simple-Simulator\Assets\Controller\script\Model\AquitisionCommunication\RaceSave.cs
+    startLine: 42
+  assemblies:
+  - Assembly-CSharp
+  namespace: AquitisionCommunication
+  syntax:
+    content: public string wayPointFile
+    return:
+      type: System.String
+    content.vb: Public wayPointFile As String
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: AquitisionCommunication.RaceSave.JsonRace.currentPol
+  commentId: F:AquitisionCommunication.RaceSave.JsonRace.currentPol
+  id: currentPol
+  parent: AquitisionCommunication.RaceSave.JsonRace
+  langs:
+  - csharp
+  - vb
+  name: currentPol
+  nameWithType: RaceSave.JsonRace.currentPol
+  fullName: AquitisionCommunication.RaceSave.JsonRace.currentPol
+  type: Field
+  source:
+    id: currentPol
+    path: E:\Unity\Project\SRSP-Simple-Simulator\Assets\Controller\script\Model\AquitisionCommunication\RaceSave.cs
+    startLine: 43
+  assemblies:
+  - Assembly-CSharp
+  namespace: AquitisionCommunication
+  syntax:
+    content: public string currentPol
+    return:
+      type: System.String
+    content.vb: Public currentPol As String
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: AquitisionCommunication.RaceSave.JsonRace.polFiles
+  commentId: F:AquitisionCommunication.RaceSave.JsonRace.polFiles
+  id: polFiles
+  parent: AquitisionCommunication.RaceSave.JsonRace
+  langs:
+  - csharp
+  - vb
+  name: polFiles
+  nameWithType: RaceSave.JsonRace.polFiles
+  fullName: AquitisionCommunication.RaceSave.JsonRace.polFiles
+  type: Field
+  source:
+    id: polFiles
+    path: E:\Unity\Project\SRSP-Simple-Simulator\Assets\Controller\script\Model\AquitisionCommunication\RaceSave.cs
+    startLine: 44
+  assemblies:
+  - Assembly-CSharp
+  namespace: AquitisionCommunication
+  syntax:
+    content: public List<string> polFiles
+    return:
+      type: System.Collections.Generic.List{System.String}
+    content.vb: Public polFiles As List(Of String)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: AquitisionCommunication.RaceSave.JsonRace.polNames
+  commentId: F:AquitisionCommunication.RaceSave.JsonRace.polNames
+  id: polNames
+  parent: AquitisionCommunication.RaceSave.JsonRace
+  langs:
+  - csharp
+  - vb
+  name: polNames
+  nameWithType: RaceSave.JsonRace.polNames
+  fullName: AquitisionCommunication.RaceSave.JsonRace.polNames
+  type: Field
+  source:
+    id: polNames
+    path: E:\Unity\Project\SRSP-Simple-Simulator\Assets\Controller\script\Model\AquitisionCommunication\RaceSave.cs
+    startLine: 45
+  assemblies:
+  - Assembly-CSharp
+  namespace: AquitisionCommunication
+  syntax:
+    content: public List<string> polNames
+    return:
+      type: System.Collections.Generic.List{System.String}
+    content.vb: Public polNames As List(Of String)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: AquitisionCommunication.RaceSave.JsonRace.BoatId
+  commentId: F:AquitisionCommunication.RaceSave.JsonRace.BoatId
+  id: BoatId
+  parent: AquitisionCommunication.RaceSave.JsonRace
+  langs:
+  - csharp
+  - vb
+  name: BoatId
+  nameWithType: RaceSave.JsonRace.BoatId
+  fullName: AquitisionCommunication.RaceSave.JsonRace.BoatId
+  type: Field
+  source:
+    id: BoatId
+    path: E:\Unity\Project\SRSP-Simple-Simulator\Assets\Controller\script\Model\AquitisionCommunication\RaceSave.cs
+    startLine: 46
+  assemblies:
+  - Assembly-CSharp
+  namespace: AquitisionCommunication
+  syntax:
+    content: public int BoatId
+    return:
+      type: System.Int32
+    content.vb: Public BoatId As Integer
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: AquitisionCommunication.RaceSave.JsonRace.BoatCap
+  commentId: F:AquitisionCommunication.RaceSave.JsonRace.BoatCap
+  id: BoatCap
+  parent: AquitisionCommunication.RaceSave.JsonRace
+  langs:
+  - csharp
+  - vb
+  name: BoatCap
+  nameWithType: RaceSave.JsonRace.BoatCap
+  fullName: AquitisionCommunication.RaceSave.JsonRace.BoatCap
+  type: Field
+  source:
+    id: BoatCap
+    path: E:\Unity\Project\SRSP-Simple-Simulator\Assets\Controller\script\Model\AquitisionCommunication\RaceSave.cs
+    startLine: 47
+  assemblies:
+  - Assembly-CSharp
+  namespace: AquitisionCommunication
+  syntax:
+    content: public float BoatCap
+    return:
+      type: System.Single
+    content.vb: Public BoatCap As Single
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: AquitisionCommunication.RaceSave.JsonRace.longitude
+  commentId: F:AquitisionCommunication.RaceSave.JsonRace.longitude
+  id: longitude
+  parent: AquitisionCommunication.RaceSave.JsonRace
+  langs:
+  - csharp
+  - vb
+  name: longitude
+  nameWithType: RaceSave.JsonRace.longitude
+  fullName: AquitisionCommunication.RaceSave.JsonRace.longitude
+  type: Field
+  source:
+    id: longitude
+    path: E:\Unity\Project\SRSP-Simple-Simulator\Assets\Controller\script\Model\AquitisionCommunication\RaceSave.cs
+    startLine: 48
+  assemblies:
+  - Assembly-CSharp
+  namespace: AquitisionCommunication
+  syntax:
+    content: public double longitude
+    return:
+      type: System.Double
+    content.vb: Public longitude As Double
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: AquitisionCommunication.RaceSave.JsonRace.latitude
+  commentId: F:AquitisionCommunication.RaceSave.JsonRace.latitude
+  id: latitude
+  parent: AquitisionCommunication.RaceSave.JsonRace
+  langs:
+  - csharp
+  - vb
+  name: latitude
+  nameWithType: RaceSave.JsonRace.latitude
+  fullName: AquitisionCommunication.RaceSave.JsonRace.latitude
+  type: Field
+  source:
+    id: latitude
+    path: E:\Unity\Project\SRSP-Simple-Simulator\Assets\Controller\script\Model\AquitisionCommunication\RaceSave.cs
+    startLine: 49
+  assemblies:
+  - Assembly-CSharp
+  namespace: AquitisionCommunication
+  syntax:
+    content: public double latitude
+    return:
+      type: System.Double
+    content.vb: Public latitude As Double
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: AquitisionCommunication.RaceSave.JsonRace.accelerationFactor
+  commentId: F:AquitisionCommunication.RaceSave.JsonRace.accelerationFactor
+  id: accelerationFactor
+  parent: AquitisionCommunication.RaceSave.JsonRace
+  langs:
+  - csharp
+  - vb
+  name: accelerationFactor
+  nameWithType: RaceSave.JsonRace.accelerationFactor
+  fullName: AquitisionCommunication.RaceSave.JsonRace.accelerationFactor
+  type: Field
+  source:
+    id: accelerationFactor
+    path: E:\Unity\Project\SRSP-Simple-Simulator\Assets\Controller\script\Model\AquitisionCommunication\RaceSave.cs
+    startLine: 50
+  assemblies:
+  - Assembly-CSharp
+  namespace: AquitisionCommunication
+  syntax:
+    content: public float accelerationFactor
+    return:
+      type: System.Single
+    content.vb: Public accelerationFactor As Single
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: AquitisionCommunication.RaceSave.JsonRace.GetMode
+  commentId: M:AquitisionCommunication.RaceSave.JsonRace.GetMode
+  id: GetMode
+  parent: AquitisionCommunication.RaceSave.JsonRace
+  langs:
+  - csharp
+  - vb
+  name: GetMode()
+  nameWithType: RaceSave.JsonRace.GetMode()
+  fullName: AquitisionCommunication.RaceSave.JsonRace.GetMode()
+  type: Method
+  source:
+    id: GetMode
+    path: E:\Unity\Project\SRSP-Simple-Simulator\Assets\Controller\script\Model\AquitisionCommunication\RaceSave.cs
+    startLine: 52
+  assemblies:
+  - Assembly-CSharp
+  namespace: AquitisionCommunication
+  syntax:
+    content: public Mode GetMode()
+    return:
+      type: PRace.Mode
+    content.vb: Public Function GetMode As Mode
+  overload: AquitisionCommunication.RaceSave.JsonRace.GetMode*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: AquitisionCommunication.RaceSave.JsonRace.Equals(System.Object)
+  commentId: M:AquitisionCommunication.RaceSave.JsonRace.Equals(System.Object)
+  id: Equals(System.Object)
+  parent: AquitisionCommunication.RaceSave.JsonRace
+  langs:
+  - csharp
+  - vb
+  name: Equals(Object)
+  nameWithType: RaceSave.JsonRace.Equals(Object)
+  fullName: AquitisionCommunication.RaceSave.JsonRace.Equals(System.Object)
+  type: Method
+  source:
+    id: Equals
+    path: E:\Unity\Project\SRSP-Simple-Simulator\Assets\Controller\script\Model\AquitisionCommunication\RaceSave.cs
+    startLine: 56
+  assemblies:
+  - Assembly-CSharp
+  namespace: AquitisionCommunication
+  syntax:
+    content: public bool Equals(object o)
+    parameters:
+    - id: o
+      type: System.Object
+    return:
+      type: System.Boolean
+    content.vb: Public Function Equals(o As Object) As Boolean
+  overload: AquitisionCommunication.RaceSave.JsonRace.Equals*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+references:
+- uid: AquitisionCommunication
+  commentId: N:AquitisionCommunication
+  name: AquitisionCommunication
+  nameWithType: AquitisionCommunication
+  fullName: AquitisionCommunication
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  nameWithType: Object.ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: AquitisionCommunication.RaceSave.JsonRace.#ctor*
+  commentId: Overload:AquitisionCommunication.RaceSave.JsonRace.#ctor
+  name: JsonRace
+  nameWithType: RaceSave.JsonRace.JsonRace
+  fullName: AquitisionCommunication.RaceSave.JsonRace.JsonRace
+- uid: PRace.Mode
+  commentId: T:PRace.Mode
+  parent: PRace
+  name: Mode
+  nameWithType: Mode
+  fullName: PRace.Mode
+- uid: PRace
+  commentId: N:PRace
+  name: PRace
+  nameWithType: PRace
+  fullName: PRace
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  name: Int32
+  nameWithType: Int32
+  fullName: System.Int32
+- uid: System.DateTime
+  commentId: T:System.DateTime
+  parent: System
+  isExternal: true
+  name: DateTime
+  nameWithType: DateTime
+  fullName: System.DateTime
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: System.Collections.Generic.List{System.String}
+  commentId: T:System.Collections.Generic.List{System.String}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.List`1
+  name: List<String>
+  nameWithType: List<String>
+  fullName: System.Collections.Generic.List<System.String>
+  nameWithType.vb: List(Of String)
+  fullName.vb: System.Collections.Generic.List(Of System.String)
+  name.vb: List(Of String)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.Generic.List`1
+  commentId: T:System.Collections.Generic.List`1
+  isExternal: true
+  name: List<T>
+  nameWithType: List<T>
+  fullName: System.Collections.Generic.List<T>
+  nameWithType.vb: List(Of T)
+  fullName.vb: System.Collections.Generic.List(Of T)
+  name.vb: List(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+- uid: System.Single
+  commentId: T:System.Single
+  parent: System
+  isExternal: true
+  name: Single
+  nameWithType: Single
+  fullName: System.Single
+- uid: System.Double
+  commentId: T:System.Double
+  parent: System
+  isExternal: true
+  name: Double
+  nameWithType: Double
+  fullName: System.Double
+- uid: AquitisionCommunication.RaceSave.JsonRace.GetMode*
+  commentId: Overload:AquitisionCommunication.RaceSave.JsonRace.GetMode
+  name: GetMode
+  nameWithType: RaceSave.JsonRace.GetMode
+  fullName: AquitisionCommunication.RaceSave.JsonRace.GetMode
+- uid: AquitisionCommunication.RaceSave.JsonRace.Equals*
+  commentId: Overload:AquitisionCommunication.RaceSave.JsonRace.Equals
+  name: Equals
+  nameWithType: RaceSave.JsonRace.Equals
+  fullName: AquitisionCommunication.RaceSave.JsonRace.Equals
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  name: Boolean
+  nameWithType: Boolean
+  fullName: System.Boolean

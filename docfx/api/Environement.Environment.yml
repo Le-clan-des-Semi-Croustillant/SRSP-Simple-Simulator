@@ -1,0 +1,722 @@
+### YamlMime:ManagedReference
+items:
+- uid: Environement.Environment
+  commentId: T:Environement.Environment
+  id: Environment
+  parent: Environement
+  children:
+  - Environement.Environment.#ctor
+  - Environement.Environment.getEnvState
+  - Environement.Environment.setEnvironment(System.Collections.Generic.Dictionary{Environement.Conditions,System.Single})
+  - Environement.Environment.UpdateCurrent(System.Single,System.Single)
+  - Environement.Environment.UpdateWave(System.Single,System.Single,System.Single)
+  - Environement.Environment.UpdateWind(System.Single,System.Single)
+  langs:
+  - csharp
+  - vb
+  name: Environment
+  nameWithType: Environment
+  fullName: Environement.Environment
+  type: Class
+  source:
+    id: Environment
+    path: E:\Unity\Project\SRSP-Simple-Simulator\Assets\Controller\script\Model\Environement\Environment.cs
+    startLine: 10
+  assemblies:
+  - Assembly-CSharp
+  namespace: Environement
+  summary: "\nThe class contains and manages all the envorinmentales values\n"
+  example: []
+  syntax:
+    content: public class Environment
+    content.vb: Public Class Environment
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: Environement.Environment.#ctor
+  commentId: M:Environement.Environment.#ctor
+  id: '#ctor'
+  parent: Environement.Environment
+  langs:
+  - csharp
+  - vb
+  name: Environment()
+  nameWithType: Environment.Environment()
+  fullName: Environement.Environment.Environment()
+  type: Constructor
+  source:
+    id: .ctor
+    path: E:\Unity\Project\SRSP-Simple-Simulator\Assets\Controller\script\Model\Environement\Environment.cs
+    startLine: 18
+  assemblies:
+  - Assembly-CSharp
+  namespace: Environement
+  summary: "\nCreate an Environment instance \n"
+  remarks: "\nIt creates also instances of <xref href=\"Environement.Current\" data-throw-if-not-resolved=\"false\"></xref>, <xref href=\"Environement.Wave\" data-throw-if-not-resolved=\"false\"></xref> and <xref href=\"Environement.Wind\" data-throw-if-not-resolved=\"false\"></xref> and assigned them to wave, current and wind attribut.\n"
+  example: []
+  syntax:
+    content: public Environment()
+    content.vb: Public Sub New
+  overload: Environement.Environment.#ctor*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Environement.Environment.UpdateWind(System.Single,System.Single)
+  commentId: M:Environement.Environment.UpdateWind(System.Single,System.Single)
+  id: UpdateWind(System.Single,System.Single)
+  parent: Environement.Environment
+  langs:
+  - csharp
+  - vb
+  name: UpdateWind(Single, Single)
+  nameWithType: Environment.UpdateWind(Single, Single)
+  fullName: Environement.Environment.UpdateWind(System.Single, System.Single)
+  type: Method
+  source:
+    id: UpdateWind
+    path: E:\Unity\Project\SRSP-Simple-Simulator\Assets\Controller\script\Model\Environement\Environment.cs
+    startLine: 34
+  assemblies:
+  - Assembly-CSharp
+  namespace: Environement
+  summary: "\nUpdate directionWind and windSpeed of wind attribut according to inputs\n"
+  example: []
+  syntax:
+    content: public void UpdateWind(float windSpeed, float direction)
+    parameters:
+    - id: windSpeed
+      type: System.Single
+      description: ''
+    - id: direction
+      type: System.Single
+      description: ''
+    content.vb: Public Sub UpdateWind(windSpeed As Single, direction As Single)
+  overload: Environement.Environment.UpdateWind*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Environement.Environment.UpdateWave(System.Single,System.Single,System.Single)
+  commentId: M:Environement.Environment.UpdateWave(System.Single,System.Single,System.Single)
+  id: UpdateWave(System.Single,System.Single,System.Single)
+  parent: Environement.Environment
+  langs:
+  - csharp
+  - vb
+  name: UpdateWave(Single, Single, Single)
+  nameWithType: Environment.UpdateWave(Single, Single, Single)
+  fullName: Environement.Environment.UpdateWave(System.Single, System.Single, System.Single)
+  type: Method
+  source:
+    id: UpdateWave
+    path: E:\Unity\Project\SRSP-Simple-Simulator\Assets\Controller\script\Model\Environement\Environment.cs
+    startLine: 44
+  assemblies:
+  - Assembly-CSharp
+  namespace: Environement
+  summary: "\nUpdate waveLength, amplitude and direction of wave attribut according to inputs\n"
+  example: []
+  syntax:
+    content: public void UpdateWave(float amplitude, float waveLength, float direction)
+    parameters:
+    - id: amplitude
+      type: System.Single
+      description: ''
+    - id: waveLength
+      type: System.Single
+      description: ''
+    - id: direction
+      type: System.Single
+      description: ''
+    content.vb: Public Sub UpdateWave(amplitude As Single, waveLength As Single, direction As Single)
+  overload: Environement.Environment.UpdateWave*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Environement.Environment.UpdateCurrent(System.Single,System.Single)
+  commentId: M:Environement.Environment.UpdateCurrent(System.Single,System.Single)
+  id: UpdateCurrent(System.Single,System.Single)
+  parent: Environement.Environment
+  langs:
+  - csharp
+  - vb
+  name: UpdateCurrent(Single, Single)
+  nameWithType: Environment.UpdateCurrent(Single, Single)
+  fullName: Environement.Environment.UpdateCurrent(System.Single, System.Single)
+  type: Method
+  source:
+    id: UpdateCurrent
+    path: E:\Unity\Project\SRSP-Simple-Simulator\Assets\Controller\script\Model\Environement\Environment.cs
+    startLine: 53
+  assemblies:
+  - Assembly-CSharp
+  namespace: Environement
+  summary: "\nUpdate currentDirection and currentSpeed of current attribut according to inputs\n"
+  example: []
+  syntax:
+    content: public void UpdateCurrent(float speed, float direction)
+    parameters:
+    - id: speed
+      type: System.Single
+      description: ''
+    - id: direction
+      type: System.Single
+      description: ''
+    content.vb: Public Sub UpdateCurrent(speed As Single, direction As Single)
+  overload: Environement.Environment.UpdateCurrent*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Environement.Environment.setEnvironment(System.Collections.Generic.Dictionary{Environement.Conditions,System.Single})
+  commentId: M:Environement.Environment.setEnvironment(System.Collections.Generic.Dictionary{Environement.Conditions,System.Single})
+  id: setEnvironment(System.Collections.Generic.Dictionary{Environement.Conditions,System.Single})
+  parent: Environement.Environment
+  langs:
+  - csharp
+  - vb
+  name: setEnvironment(Dictionary<Conditions, Single>)
+  nameWithType: Environment.setEnvironment(Dictionary<Conditions, Single>)
+  fullName: Environement.Environment.setEnvironment(System.Collections.Generic.Dictionary<Environement.Conditions, System.Single>)
+  type: Method
+  source:
+    id: setEnvironment
+    path: E:\Unity\Project\SRSP-Simple-Simulator\Assets\Controller\script\Model\Environement\Environment.cs
+    startLine: 61
+  assemblies:
+  - Assembly-CSharp
+  namespace: Environement
+  summary: "\nfor all <xref href=\"Environement.Conditions\" data-throw-if-not-resolved=\"false\"></xref> keys in the input dictionary, modifie the correponding environmentale value according to the input\n"
+  example: []
+  syntax:
+    content: public void setEnvironment(Dictionary<Conditions, float> environment)
+    parameters:
+    - id: environment
+      type: System.Collections.Generic.Dictionary{Environement.Conditions,System.Single}
+      description: dictionary containing environmental values to set <xref href="Environement.Conditions" data-throw-if-not-resolved="false"></xref>
+    content.vb: Public Sub setEnvironment(environment As Dictionary(Of Conditions, Single))
+  overload: Environement.Environment.setEnvironment*
+  nameWithType.vb: Environment.setEnvironment(Dictionary(Of Conditions, Single))
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: Environement.Environment.setEnvironment(System.Collections.Generic.Dictionary(Of Environement.Conditions, System.Single))
+  name.vb: setEnvironment(Dictionary(Of Conditions, Single))
+- uid: Environement.Environment.getEnvState
+  commentId: M:Environement.Environment.getEnvState
+  id: getEnvState
+  parent: Environement.Environment
+  langs:
+  - csharp
+  - vb
+  name: getEnvState()
+  nameWithType: Environment.getEnvState()
+  fullName: Environement.Environment.getEnvState()
+  type: Method
+  source:
+    id: getEnvState
+    path: E:\Unity\Project\SRSP-Simple-Simulator\Assets\Controller\script\Model\Environement\Environment.cs
+    startLine: 98
+  assemblies:
+  - Assembly-CSharp
+  namespace: Environement
+  summary: "\ncreate and return a dictionary containing all environemental as values using <xref href=\"Environement.Conditions\" data-throw-if-not-resolved=\"false\"></xref> as keys\n"
+  example: []
+  syntax:
+    content: public Dictionary<Conditions, float> getEnvState()
+    return:
+      type: System.Collections.Generic.Dictionary{Environement.Conditions,System.Single}
+      description: return a dictionary containing all environemental values
+    content.vb: Public Function getEnvState As Dictionary(Of Conditions, Single)
+  overload: Environement.Environment.getEnvState*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+references:
+- uid: Environement
+  commentId: N:Environement
+  name: Environement
+  nameWithType: Environement
+  fullName: Environement
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  nameWithType: Object.ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Environement.Current
+  commentId: T:Environement.Current
+  name: Current
+  nameWithType: Current
+  fullName: Environement.Current
+- uid: Environement.Wave
+  commentId: T:Environement.Wave
+  name: Wave
+  nameWithType: Wave
+  fullName: Environement.Wave
+- uid: Environement.Wind
+  commentId: T:Environement.Wind
+  name: Wind
+  nameWithType: Wind
+  fullName: Environement.Wind
+- uid: Environement.Environment.#ctor*
+  commentId: Overload:Environement.Environment.#ctor
+  name: Environment
+  nameWithType: Environment.Environment
+  fullName: Environement.Environment.Environment
+- uid: Environement.Environment.UpdateWind*
+  commentId: Overload:Environement.Environment.UpdateWind
+  name: UpdateWind
+  nameWithType: Environment.UpdateWind
+  fullName: Environement.Environment.UpdateWind
+- uid: System.Single
+  commentId: T:System.Single
+  parent: System
+  isExternal: true
+  name: Single
+  nameWithType: Single
+  fullName: System.Single
+- uid: Environement.Environment.UpdateWave*
+  commentId: Overload:Environement.Environment.UpdateWave
+  name: UpdateWave
+  nameWithType: Environment.UpdateWave
+  fullName: Environement.Environment.UpdateWave
+- uid: Environement.Environment.UpdateCurrent*
+  commentId: Overload:Environement.Environment.UpdateCurrent
+  name: UpdateCurrent
+  nameWithType: Environment.UpdateCurrent
+  fullName: Environement.Environment.UpdateCurrent
+- uid: Environement.Conditions
+  commentId: T:Environement.Conditions
+  parent: Environement
+  name: Conditions
+  nameWithType: Conditions
+  fullName: Environement.Conditions
+- uid: Environement.Environment.setEnvironment*
+  commentId: Overload:Environement.Environment.setEnvironment
+  name: setEnvironment
+  nameWithType: Environment.setEnvironment
+  fullName: Environement.Environment.setEnvironment
+- uid: System.Collections.Generic.Dictionary{Environement.Conditions,System.Single}
+  commentId: T:System.Collections.Generic.Dictionary{Environement.Conditions,System.Single}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.Dictionary`2
+  name: Dictionary<Conditions, Single>
+  nameWithType: Dictionary<Conditions, Single>
+  fullName: System.Collections.Generic.Dictionary<Environement.Conditions, System.Single>
+  nameWithType.vb: Dictionary(Of Conditions, Single)
+  fullName.vb: System.Collections.Generic.Dictionary(Of Environement.Conditions, System.Single)
+  name.vb: Dictionary(Of Conditions, Single)
+  spec.csharp:
+  - uid: System.Collections.Generic.Dictionary`2
+    name: Dictionary
+    nameWithType: Dictionary
+    fullName: System.Collections.Generic.Dictionary
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Environement.Conditions
+    name: Conditions
+    nameWithType: Conditions
+    fullName: Environement.Conditions
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Single
+    name: Single
+    nameWithType: Single
+    fullName: System.Single
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.Dictionary`2
+    name: Dictionary
+    nameWithType: Dictionary
+    fullName: System.Collections.Generic.Dictionary
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: Environement.Conditions
+    name: Conditions
+    nameWithType: Conditions
+    fullName: Environement.Conditions
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Single
+    name: Single
+    nameWithType: Single
+    fullName: System.Single
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.Generic.Dictionary`2
+  commentId: T:System.Collections.Generic.Dictionary`2
+  isExternal: true
+  name: Dictionary<TKey, TValue>
+  nameWithType: Dictionary<TKey, TValue>
+  fullName: System.Collections.Generic.Dictionary<TKey, TValue>
+  nameWithType.vb: Dictionary(Of TKey, TValue)
+  fullName.vb: System.Collections.Generic.Dictionary(Of TKey, TValue)
+  name.vb: Dictionary(Of TKey, TValue)
+  spec.csharp:
+  - uid: System.Collections.Generic.Dictionary`2
+    name: Dictionary
+    nameWithType: Dictionary
+    fullName: System.Collections.Generic.Dictionary
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: TKey
+    nameWithType: TKey
+    fullName: TKey
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TValue
+    nameWithType: TValue
+    fullName: TValue
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.Dictionary`2
+    name: Dictionary
+    nameWithType: Dictionary
+    fullName: System.Collections.Generic.Dictionary
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: TKey
+    nameWithType: TKey
+    fullName: TKey
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TValue
+    nameWithType: TValue
+    fullName: TValue
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+- uid: Environement.Environment.getEnvState*
+  commentId: Overload:Environement.Environment.getEnvState
+  name: getEnvState
+  nameWithType: Environment.getEnvState
+  fullName: Environement.Environment.getEnvState

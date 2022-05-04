@@ -1,0 +1,56 @@
+### YamlMime:ManagedReference
+items:
+- uid: Model
+  commentId: N:Model
+  id: Model
+  children:
+  - Model.BoatInfo
+  - Model.IObserver
+  - Model.ISubject
+  - Model.Observer
+  - Model.RaceModel
+  langs:
+  - csharp
+  - vb
+  name: Model
+  nameWithType: Model
+  fullName: Model
+  type: Namespace
+  assemblies:
+  - Assembly-CSharp
+references:
+- uid: Model.ISubject
+  commentId: T:Model.ISubject
+  parent: Model
+  name: ISubject
+  nameWithType: ISubject
+  fullName: Model.ISubject
+- uid: Model.RaceModel
+  commentId: T:Model.RaceModel
+  parent: Model
+  name: RaceModel
+  nameWithType: RaceModel
+  fullName: Model.RaceModel
+- uid: Model.Observer
+  commentId: T:Model.Observer
+  parent: Model
+  name: Observer
+  nameWithType: Observer
+  fullName: Model.Observer
+- uid: Model.IObserver
+  commentId: T:Model.IObserver
+  parent: Model
+  name: IObserver
+  nameWithType: IObserver
+  fullName: Model.IObserver
+- uid: Model.BoatInfo
+  commentId: T:Model.BoatInfo
+  parent: Model
+  name: BoatInfo
+  nameWithType: BoatInfo
+  fullName: Model.BoatInfo
+- uid: Model
+  commentId: N:Model
+  name: Model
+  nameWithType: Model
+  fullName: Model

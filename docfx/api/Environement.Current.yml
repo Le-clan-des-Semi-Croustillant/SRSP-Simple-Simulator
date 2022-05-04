@@ -1,0 +1,572 @@
+### YamlMime:ManagedReference
+items:
+- uid: Environement.Current
+  commentId: T:Environement.Current
+  id: Current
+  parent: Environement
+  children:
+  - Environement.Current.#ctor
+  - Environement.Current.GetCurrentDirection
+  - Environement.Current.GetCurrentSpeed
+  - Environement.Current.SetCurrentDirection(System.Single)
+  - Environement.Current.SetCurrentSpeed(System.Single)
+  - Environement.Current.Update(System.Single,System.Single)
+  langs:
+  - csharp
+  - vb
+  name: Current
+  nameWithType: Current
+  fullName: Environement.Current
+  type: Class
+  source:
+    id: Current
+    path: E:\Unity\Project\SRSP-Simple-Simulator\Assets\Controller\script\Model\Environement\Current.cs
+    startLine: 11
+  assemblies:
+  - Assembly-CSharp
+  namespace: Environement
+  summary: "\nThis class manages the environmental values linked to the current\n"
+  example: []
+  syntax:
+    content: public class Current
+    content.vb: Public Class Current
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: Environement.Current.#ctor
+  commentId: M:Environement.Current.#ctor
+  id: '#ctor'
+  parent: Environement.Current
+  langs:
+  - csharp
+  - vb
+  name: Current()
+  nameWithType: Current.Current()
+  fullName: Environement.Current.Current()
+  type: Constructor
+  source:
+    id: .ctor
+    path: E:\Unity\Project\SRSP-Simple-Simulator\Assets\Controller\script\Model\Environement\Current.cs
+    startLine: 16
+  assemblies:
+  - Assembly-CSharp
+  namespace: Environement
+  summary: "\nCreate a Current instance\n"
+  example: []
+  syntax:
+    content: public Current()
+    content.vb: Public Sub New
+  overload: Environement.Current.#ctor*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Environement.Current.Update(System.Single,System.Single)
+  commentId: M:Environement.Current.Update(System.Single,System.Single)
+  id: Update(System.Single,System.Single)
+  parent: Environement.Current
+  langs:
+  - csharp
+  - vb
+  name: Update(Single, Single)
+  nameWithType: Current.Update(Single, Single)
+  fullName: Environement.Current.Update(System.Single, System.Single)
+  type: Method
+  source:
+    id: Update
+    path: E:\Unity\Project\SRSP-Simple-Simulator\Assets\Controller\script\Model\Environement\Current.cs
+    startLine: 28
+  assemblies:
+  - Assembly-CSharp
+  namespace: Environement
+  summary: "\nSet class attribut currentSpeed and currentDirection according to the inputs speed and direction\n"
+  example: []
+  syntax:
+    content: public void Update(float speed, float direction)
+    parameters:
+    - id: speed
+      type: System.Single
+      description: input speed
+    - id: direction
+      type: System.Single
+      description: input direction
+    content.vb: Public Sub Update(speed As Single, direction As Single)
+  overload: Environement.Current.Update*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Environement.Current.SetCurrentSpeed(System.Single)
+  commentId: M:Environement.Current.SetCurrentSpeed(System.Single)
+  id: SetCurrentSpeed(System.Single)
+  parent: Environement.Current
+  langs:
+  - csharp
+  - vb
+  name: SetCurrentSpeed(Single)
+  nameWithType: Current.SetCurrentSpeed(Single)
+  fullName: Environement.Current.SetCurrentSpeed(System.Single)
+  type: Method
+  source:
+    id: SetCurrentSpeed
+    path: E:\Unity\Project\SRSP-Simple-Simulator\Assets\Controller\script\Model\Environement\Current.cs
+    startLine: 38
+  assemblies:
+  - Assembly-CSharp
+  namespace: Environement
+  summary: "\nSet class attribut currentSpeed according to the input currentSpeed\n"
+  example: []
+  syntax:
+    content: public void SetCurrentSpeed(float currentSpeed)
+    parameters:
+    - id: currentSpeed
+      type: System.Single
+      description: input speed
+    content.vb: Public Sub SetCurrentSpeed(currentSpeed As Single)
+  overload: Environement.Current.SetCurrentSpeed*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Environement.Current.SetCurrentDirection(System.Single)
+  commentId: M:Environement.Current.SetCurrentDirection(System.Single)
+  id: SetCurrentDirection(System.Single)
+  parent: Environement.Current
+  langs:
+  - csharp
+  - vb
+  name: SetCurrentDirection(Single)
+  nameWithType: Current.SetCurrentDirection(Single)
+  fullName: Environement.Current.SetCurrentDirection(System.Single)
+  type: Method
+  source:
+    id: SetCurrentDirection
+    path: E:\Unity\Project\SRSP-Simple-Simulator\Assets\Controller\script\Model\Environement\Current.cs
+    startLine: 47
+  assemblies:
+  - Assembly-CSharp
+  namespace: Environement
+  summary: "\nSet class attribut currentDirection according to the input cd\n"
+  example: []
+  syntax:
+    content: public void SetCurrentDirection(float cd)
+    parameters:
+    - id: cd
+      type: System.Single
+      description: input speed
+    content.vb: Public Sub SetCurrentDirection(cd As Single)
+  overload: Environement.Current.SetCurrentDirection*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Environement.Current.GetCurrentSpeed
+  commentId: M:Environement.Current.GetCurrentSpeed
+  id: GetCurrentSpeed
+  parent: Environement.Current
+  langs:
+  - csharp
+  - vb
+  name: GetCurrentSpeed()
+  nameWithType: Current.GetCurrentSpeed()
+  fullName: Environement.Current.GetCurrentSpeed()
+  type: Method
+  source:
+    id: GetCurrentSpeed
+    path: E:\Unity\Project\SRSP-Simple-Simulator\Assets\Controller\script\Model\Environement\Current.cs
+    startLine: 56
+  assemblies:
+  - Assembly-CSharp
+  namespace: Environement
+  summary: "\nreturn currentSpeed attribut\n"
+  example: []
+  syntax:
+    content: public float GetCurrentSpeed()
+    return:
+      type: System.Single
+      description: currentSpeed attribut
+    content.vb: Public Function GetCurrentSpeed As Single
+  overload: Environement.Current.GetCurrentSpeed*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Environement.Current.GetCurrentDirection
+  commentId: M:Environement.Current.GetCurrentDirection
+  id: GetCurrentDirection
+  parent: Environement.Current
+  langs:
+  - csharp
+  - vb
+  name: GetCurrentDirection()
+  nameWithType: Current.GetCurrentDirection()
+  fullName: Environement.Current.GetCurrentDirection()
+  type: Method
+  source:
+    id: GetCurrentDirection
+    path: E:\Unity\Project\SRSP-Simple-Simulator\Assets\Controller\script\Model\Environement\Current.cs
+    startLine: 65
+  assemblies:
+  - Assembly-CSharp
+  namespace: Environement
+  summary: "\nreturn currentDirection attribut\n"
+  example: []
+  syntax:
+    content: public float GetCurrentDirection()
+    return:
+      type: System.Single
+      description: currentDirection attribut
+    content.vb: Public Function GetCurrentDirection As Single
+  overload: Environement.Current.GetCurrentDirection*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+references:
+- uid: Environement
+  commentId: N:Environement
+  name: Environement
+  nameWithType: Environement
+  fullName: Environement
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  nameWithType: Object.ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Environement.Current.#ctor*
+  commentId: Overload:Environement.Current.#ctor
+  name: Current
+  nameWithType: Current.Current
+  fullName: Environement.Current.Current
+- uid: Environement.Current.Update*
+  commentId: Overload:Environement.Current.Update
+  name: Update
+  nameWithType: Current.Update
+  fullName: Environement.Current.Update
+- uid: System.Single
+  commentId: T:System.Single
+  parent: System
+  isExternal: true
+  name: Single
+  nameWithType: Single
+  fullName: System.Single
+- uid: Environement.Current.SetCurrentSpeed*
+  commentId: Overload:Environement.Current.SetCurrentSpeed
+  name: SetCurrentSpeed
+  nameWithType: Current.SetCurrentSpeed
+  fullName: Environement.Current.SetCurrentSpeed
+- uid: Environement.Current.SetCurrentDirection*
+  commentId: Overload:Environement.Current.SetCurrentDirection
+  name: SetCurrentDirection
+  nameWithType: Current.SetCurrentDirection
+  fullName: Environement.Current.SetCurrentDirection
+- uid: Environement.Current.GetCurrentSpeed*
+  commentId: Overload:Environement.Current.GetCurrentSpeed
+  name: GetCurrentSpeed
+  nameWithType: Current.GetCurrentSpeed
+  fullName: Environement.Current.GetCurrentSpeed
+- uid: Environement.Current.GetCurrentDirection*
+  commentId: Overload:Environement.Current.GetCurrentDirection
+  name: GetCurrentDirection
+  nameWithType: Current.GetCurrentDirection
+  fullName: Environement.Current.GetCurrentDirection

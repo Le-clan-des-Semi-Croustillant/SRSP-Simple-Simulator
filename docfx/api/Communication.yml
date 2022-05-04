@@ -1,0 +1,28 @@
+### YamlMime:ManagedReference
+items:
+- uid: Communication
+  commentId: N:Communication
+  id: Communication
+  children:
+  - Communication.AsynchronousClient
+  - Communication.StateObject
+  langs:
+  - csharp
+  - vb
+  name: Communication
+  nameWithType: Communication
+  fullName: Communication
+  type: Namespace
+  assemblies:
+  - Assembly-CSharp
+references:
+- uid: Communication.StateObject
+  commentId: T:Communication.StateObject
+  name: StateObject
+  nameWithType: StateObject
+  fullName: Communication.StateObject
+- uid: Communication.AsynchronousClient
+  commentId: T:Communication.AsynchronousClient
+  name: AsynchronousClient
+  nameWithType: AsynchronousClient
+  fullName: Communication.AsynchronousClient

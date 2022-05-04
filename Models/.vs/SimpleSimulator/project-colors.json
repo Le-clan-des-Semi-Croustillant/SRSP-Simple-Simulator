@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "ProjectMap": {
+    "59ab297a-fd2a-4b66-939f-66811816d0ba": {
+      "ProjectGuid": "59ab297a-fd2a-4b66-939f-66811816d0ba",
+      "DisplayName": "SimpleSimulator",
+      "ColorIndex": 0
+    }
+  },
+  "NextColorIndex": 1
+}

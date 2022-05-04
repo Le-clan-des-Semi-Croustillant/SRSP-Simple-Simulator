@@ -1,0 +1,611 @@
+### YamlMime:ManagedReference
+items:
+- uid: PRace.WayPoint
+  commentId: T:PRace.WayPoint
+  id: WayPoint
+  parent: PRace
+  children:
+  - PRace.WayPoint.#ctor(System.Int32,System.String,PRace.Position)
+  - PRace.WayPoint.#ctor(System.Int32,System.String,System.Single,System.Single)
+  - PRace.WayPoint.GetId
+  - PRace.WayPoint.Getnom
+  - PRace.WayPoint.GetPosition
+  - PRace.WayPoint.SetPosition(PRace.Position)
+  - PRace.WayPoint.SetPosition(System.Single,System.Single)
+  langs:
+  - csharp
+  - vb
+  name: WayPoint
+  nameWithType: WayPoint
+  fullName: PRace.WayPoint
+  type: Class
+  source:
+    id: WayPoint
+    path: E:\Unity\Project\SRSP-Simple-Simulator\Assets\Controller\script\Model\Race\WayPoint.cs
+    startLine: 11
+  assemblies:
+  - Assembly-CSharp
+  namespace: PRace
+  summary: "\nThis class represents a waypoint of the course\n"
+  example: []
+  syntax:
+    content: public class WayPoint
+    content.vb: Public Class WayPoint
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: PRace.WayPoint.#ctor(System.Int32,System.String,PRace.Position)
+  commentId: M:PRace.WayPoint.#ctor(System.Int32,System.String,PRace.Position)
+  id: '#ctor(System.Int32,System.String,PRace.Position)'
+  parent: PRace.WayPoint
+  langs:
+  - csharp
+  - vb
+  name: WayPoint(Int32, String, Position)
+  nameWithType: WayPoint.WayPoint(Int32, String, Position)
+  fullName: PRace.WayPoint.WayPoint(System.Int32, System.String, PRace.Position)
+  type: Constructor
+  source:
+    id: .ctor
+    path: E:\Unity\Project\SRSP-Simple-Simulator\Assets\Controller\script\Model\Race\WayPoint.cs
+    startLine: 13
+  assemblies:
+  - Assembly-CSharp
+  namespace: PRace
+  syntax:
+    content: public WayPoint(int id, string nom, Position position)
+    parameters:
+    - id: id
+      type: System.Int32
+    - id: nom
+      type: System.String
+    - id: position
+      type: PRace.Position
+    content.vb: Public Sub New(id As Integer, nom As String, position As Position)
+  overload: PRace.WayPoint.#ctor*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: PRace.WayPoint.#ctor(System.Int32,System.String,System.Single,System.Single)
+  commentId: M:PRace.WayPoint.#ctor(System.Int32,System.String,System.Single,System.Single)
+  id: '#ctor(System.Int32,System.String,System.Single,System.Single)'
+  parent: PRace.WayPoint
+  langs:
+  - csharp
+  - vb
+  name: WayPoint(Int32, String, Single, Single)
+  nameWithType: WayPoint.WayPoint(Int32, String, Single, Single)
+  fullName: PRace.WayPoint.WayPoint(System.Int32, System.String, System.Single, System.Single)
+  type: Constructor
+  source:
+    id: .ctor
+    path: E:\Unity\Project\SRSP-Simple-Simulator\Assets\Controller\script\Model\Race\WayPoint.cs
+    startLine: 19
+  assemblies:
+  - Assembly-CSharp
+  namespace: PRace
+  syntax:
+    content: public WayPoint(int id, string nom, float longitude, float latitude)
+    parameters:
+    - id: id
+      type: System.Int32
+    - id: nom
+      type: System.String
+    - id: longitude
+      type: System.Single
+    - id: latitude
+      type: System.Single
+    content.vb: Public Sub New(id As Integer, nom As String, longitude As Single, latitude As Single)
+  overload: PRace.WayPoint.#ctor*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: PRace.WayPoint.GetId
+  commentId: M:PRace.WayPoint.GetId
+  id: GetId
+  parent: PRace.WayPoint
+  langs:
+  - csharp
+  - vb
+  name: GetId()
+  nameWithType: WayPoint.GetId()
+  fullName: PRace.WayPoint.GetId()
+  type: Method
+  source:
+    id: GetId
+    path: E:\Unity\Project\SRSP-Simple-Simulator\Assets\Controller\script\Model\Race\WayPoint.cs
+    startLine: 32
+  assemblies:
+  - Assembly-CSharp
+  namespace: PRace
+  syntax:
+    content: public int GetId()
+    return:
+      type: System.Int32
+    content.vb: Public Function GetId As Integer
+  overload: PRace.WayPoint.GetId*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: PRace.WayPoint.Getnom
+  commentId: M:PRace.WayPoint.Getnom
+  id: Getnom
+  parent: PRace.WayPoint
+  langs:
+  - csharp
+  - vb
+  name: Getnom()
+  nameWithType: WayPoint.Getnom()
+  fullName: PRace.WayPoint.Getnom()
+  type: Method
+  source:
+    id: Getnom
+    path: E:\Unity\Project\SRSP-Simple-Simulator\Assets\Controller\script\Model\Race\WayPoint.cs
+    startLine: 37
+  assemblies:
+  - Assembly-CSharp
+  namespace: PRace
+  syntax:
+    content: public string Getnom()
+    return:
+      type: System.String
+    content.vb: Public Function Getnom As String
+  overload: PRace.WayPoint.Getnom*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: PRace.WayPoint.GetPosition
+  commentId: M:PRace.WayPoint.GetPosition
+  id: GetPosition
+  parent: PRace.WayPoint
+  langs:
+  - csharp
+  - vb
+  name: GetPosition()
+  nameWithType: WayPoint.GetPosition()
+  fullName: PRace.WayPoint.GetPosition()
+  type: Method
+  source:
+    id: GetPosition
+    path: E:\Unity\Project\SRSP-Simple-Simulator\Assets\Controller\script\Model\Race\WayPoint.cs
+    startLine: 42
+  assemblies:
+  - Assembly-CSharp
+  namespace: PRace
+  syntax:
+    content: public Position GetPosition()
+    return:
+      type: PRace.Position
+    content.vb: Public Function GetPosition As Position
+  overload: PRace.WayPoint.GetPosition*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: PRace.WayPoint.SetPosition(PRace.Position)
+  commentId: M:PRace.WayPoint.SetPosition(PRace.Position)
+  id: SetPosition(PRace.Position)
+  parent: PRace.WayPoint
+  langs:
+  - csharp
+  - vb
+  name: SetPosition(Position)
+  nameWithType: WayPoint.SetPosition(Position)
+  fullName: PRace.WayPoint.SetPosition(PRace.Position)
+  type: Method
+  source:
+    id: SetPosition
+    path: E:\Unity\Project\SRSP-Simple-Simulator\Assets\Controller\script\Model\Race\WayPoint.cs
+    startLine: 47
+  assemblies:
+  - Assembly-CSharp
+  namespace: PRace
+  syntax:
+    content: public void SetPosition(Position pos)
+    parameters:
+    - id: pos
+      type: PRace.Position
+    content.vb: Public Sub SetPosition(pos As Position)
+  overload: PRace.WayPoint.SetPosition*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: PRace.WayPoint.SetPosition(System.Single,System.Single)
+  commentId: M:PRace.WayPoint.SetPosition(System.Single,System.Single)
+  id: SetPosition(System.Single,System.Single)
+  parent: PRace.WayPoint
+  langs:
+  - csharp
+  - vb
+  name: SetPosition(Single, Single)
+  nameWithType: WayPoint.SetPosition(Single, Single)
+  fullName: PRace.WayPoint.SetPosition(System.Single, System.Single)
+  type: Method
+  source:
+    id: SetPosition
+    path: E:\Unity\Project\SRSP-Simple-Simulator\Assets\Controller\script\Model\Race\WayPoint.cs
+    startLine: 52
+  assemblies:
+  - Assembly-CSharp
+  namespace: PRace
+  syntax:
+    content: public void SetPosition(float latitude, float longitude)
+    parameters:
+    - id: latitude
+      type: System.Single
+    - id: longitude
+      type: System.Single
+    content.vb: Public Sub SetPosition(latitude As Single, longitude As Single)
+  overload: PRace.WayPoint.SetPosition*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+references:
+- uid: PRace
+  commentId: N:PRace
+  name: PRace
+  nameWithType: PRace
+  fullName: PRace
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  nameWithType: Object.ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: PRace.WayPoint.#ctor*
+  commentId: Overload:PRace.WayPoint.#ctor
+  name: WayPoint
+  nameWithType: WayPoint.WayPoint
+  fullName: PRace.WayPoint.WayPoint
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  name: Int32
+  nameWithType: Int32
+  fullName: System.Int32
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: PRace.Position
+  commentId: T:PRace.Position
+  parent: PRace
+  name: Position
+  nameWithType: Position
+  fullName: PRace.Position
+- uid: System.Single
+  commentId: T:System.Single
+  parent: System
+  isExternal: true
+  name: Single
+  nameWithType: Single
+  fullName: System.Single
+- uid: PRace.WayPoint.GetId*
+  commentId: Overload:PRace.WayPoint.GetId
+  name: GetId
+  nameWithType: WayPoint.GetId
+  fullName: PRace.WayPoint.GetId
+- uid: PRace.WayPoint.Getnom*
+  commentId: Overload:PRace.WayPoint.Getnom
+  name: Getnom
+  nameWithType: WayPoint.Getnom
+  fullName: PRace.WayPoint.Getnom
+- uid: PRace.WayPoint.GetPosition*
+  commentId: Overload:PRace.WayPoint.GetPosition
+  name: GetPosition
+  nameWithType: WayPoint.GetPosition
+  fullName: PRace.WayPoint.GetPosition
+- uid: PRace.WayPoint.SetPosition*
+  commentId: Overload:PRace.WayPoint.SetPosition
+  name: SetPosition
+  nameWithType: WayPoint.SetPosition
+  fullName: PRace.WayPoint.SetPosition

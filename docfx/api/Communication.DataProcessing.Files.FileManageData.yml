@@ -1,0 +1,1006 @@
+### YamlMime:ManagedReference
+items:
+- uid: Communication.DataProcessing.Files.FileManageData
+  commentId: T:Communication.DataProcessing.Files.FileManageData
+  id: FileManageData
+  parent: Communication.DataProcessing.Files
+  children:
+  - Communication.DataProcessing.Files.FileManageData.CheckDirectory(System.String)
+  - Communication.DataProcessing.Files.FileManageData.CheckFilesFolderData
+  - Communication.DataProcessing.Files.FileManageData.CreateBoatJson(Communication.DataProcessing.Json.BoatType)
+  - Communication.DataProcessing.Files.FileManageData.CreateDirectory(System.String)
+  - Communication.DataProcessing.Files.FileManageData.CreateFilePolaire(System.String,System.Int64,System.String)
+  - Communication.DataProcessing.Files.FileManageData.currentDirectory
+  - Communication.DataProcessing.Files.FileManageData.DeleteFile(System.String)
+  - Communication.DataProcessing.Files.FileManageData.pathData
+  - Communication.DataProcessing.Files.FileManageData.pathDataBoat
+  - Communication.DataProcessing.Files.FileManageData.pathDataPol
+  - Communication.DataProcessing.Files.FileManageData.pathDataRace
+  - Communication.DataProcessing.Files.FileManageData.pathJsonData
+  - Communication.DataProcessing.Files.FileManageData.ReadFilePath(System.String)
+  - Communication.DataProcessing.Files.FileManageData.ResetAllFiles
+  - Communication.DataProcessing.Files.FileManageData.ResetBoatList
+  - Communication.DataProcessing.Files.FileManageData.SaveData(System.String)
+  - Communication.DataProcessing.Files.FileManageData.UpdateAllBoatTypesList
+  - Communication.DataProcessing.Files.FileManageData.UpdateBoatTypesList(System.String)
+  langs:
+  - csharp
+  - vb
+  name: FileManageData
+  nameWithType: FileManageData
+  fullName: Communication.DataProcessing.Files.FileManageData
+  type: Class
+  source:
+    id: FileManageData
+    path: E:\Unity\Project\SRSP-Simple-Simulator\Assets\Controller\script\Model\AquitisionCommunication\Communication\DataProcessing\Files\FileManageBoat.cs
+    startLine: 10
+  assemblies:
+  - Assembly-CSharp
+  namespace: Communication.DataProcessing.Files
+  summary: "\nManagement of files and folders of the race manager to save information locally\n"
+  example: []
+  syntax:
+    content: public class FileManageData
+    content.vb: Public Class FileManageData
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: Communication.DataProcessing.Files.FileManageData.CreateFilePolaire(System.String,System.Int64,System.String)
+  commentId: M:Communication.DataProcessing.Files.FileManageData.CreateFilePolaire(System.String,System.Int64,System.String)
+  id: CreateFilePolaire(System.String,System.Int64,System.String)
+  parent: Communication.DataProcessing.Files.FileManageData
+  langs:
+  - csharp
+  - vb
+  name: CreateFilePolaire(String, Int64, String)
+  nameWithType: FileManageData.CreateFilePolaire(String, Int64, String)
+  fullName: Communication.DataProcessing.Files.FileManageData.CreateFilePolaire(System.String, System.Int64, System.String)
+  type: Method
+  source:
+    id: CreateFilePolaire
+    path: E:\Unity\Project\SRSP-Simple-Simulator\Assets\Controller\script\Model\AquitisionCommunication\Communication\DataProcessing\Files\FileManagePolaire.cs
+    startLine: 8
+  assemblies:
+  - Assembly-CSharp
+  namespace: Communication.DataProcessing.Files
+  syntax:
+    content: public static void CreateFilePolaire(string Name, long ID, string DataPol)
+    parameters:
+    - id: Name
+      type: System.String
+    - id: ID
+      type: System.Int64
+    - id: DataPol
+      type: System.String
+    content.vb: Public Shared Sub CreateFilePolaire(Name As String, ID As Long, DataPol As String)
+  overload: Communication.DataProcessing.Files.FileManageData.CreateFilePolaire*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Communication.DataProcessing.Files.FileManageData.SaveData(System.String)
+  commentId: M:Communication.DataProcessing.Files.FileManageData.SaveData(System.String)
+  id: SaveData(System.String)
+  parent: Communication.DataProcessing.Files.FileManageData
+  langs:
+  - csharp
+  - vb
+  name: SaveData(String)
+  nameWithType: FileManageData.SaveData(String)
+  fullName: Communication.DataProcessing.Files.FileManageData.SaveData(System.String)
+  type: Method
+  source:
+    id: SaveData
+    path: E:\Unity\Project\SRSP-Simple-Simulator\Assets\Controller\script\Model\AquitisionCommunication\Communication\DataProcessing\Files\FileManageData.cs
+    startLine: 9
+  assemblies:
+  - Assembly-CSharp
+  namespace: Communication.DataProcessing.Files
+  syntax:
+    content: public static void SaveData(string response)
+    parameters:
+    - id: response
+      type: System.String
+    content.vb: Public Shared Sub SaveData(response As String)
+  overload: Communication.DataProcessing.Files.FileManageData.SaveData*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Communication.DataProcessing.Files.FileManageData.currentDirectory
+  commentId: F:Communication.DataProcessing.Files.FileManageData.currentDirectory
+  id: currentDirectory
+  parent: Communication.DataProcessing.Files.FileManageData
+  langs:
+  - csharp
+  - vb
+  name: currentDirectory
+  nameWithType: FileManageData.currentDirectory
+  fullName: Communication.DataProcessing.Files.FileManageData.currentDirectory
+  type: Field
+  source:
+    id: currentDirectory
+    path: E:\Unity\Project\SRSP-Simple-Simulator\Assets\Controller\script\Model\AquitisionCommunication\Communication\DataProcessing\Files\FileManageLocal.cs
+    startLine: 12
+  assemblies:
+  - Assembly-CSharp
+  namespace: Communication.DataProcessing.Files
+  syntax:
+    content: public static string currentDirectory
+    return:
+      type: System.String
+    content.vb: Public Shared currentDirectory As String
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Communication.DataProcessing.Files.FileManageData.pathData
+  commentId: F:Communication.DataProcessing.Files.FileManageData.pathData
+  id: pathData
+  parent: Communication.DataProcessing.Files.FileManageData
+  langs:
+  - csharp
+  - vb
+  name: pathData
+  nameWithType: FileManageData.pathData
+  fullName: Communication.DataProcessing.Files.FileManageData.pathData
+  type: Field
+  source:
+    id: pathData
+    path: E:\Unity\Project\SRSP-Simple-Simulator\Assets\Controller\script\Model\AquitisionCommunication\Communication\DataProcessing\Files\FileManageLocal.cs
+    startLine: 13
+  assemblies:
+  - Assembly-CSharp
+  namespace: Communication.DataProcessing.Files
+  syntax:
+    content: public static string pathData
+    return:
+      type: System.String
+    content.vb: Public Shared pathData As String
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Communication.DataProcessing.Files.FileManageData.pathDataBoat
+  commentId: F:Communication.DataProcessing.Files.FileManageData.pathDataBoat
+  id: pathDataBoat
+  parent: Communication.DataProcessing.Files.FileManageData
+  langs:
+  - csharp
+  - vb
+  name: pathDataBoat
+  nameWithType: FileManageData.pathDataBoat
+  fullName: Communication.DataProcessing.Files.FileManageData.pathDataBoat
+  type: Field
+  source:
+    id: pathDataBoat
+    path: E:\Unity\Project\SRSP-Simple-Simulator\Assets\Controller\script\Model\AquitisionCommunication\Communication\DataProcessing\Files\FileManageLocal.cs
+    startLine: 14
+  assemblies:
+  - Assembly-CSharp
+  namespace: Communication.DataProcessing.Files
+  syntax:
+    content: public static string pathDataBoat
+    return:
+      type: System.String
+    content.vb: Public Shared pathDataBoat As String
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Communication.DataProcessing.Files.FileManageData.pathDataPol
+  commentId: F:Communication.DataProcessing.Files.FileManageData.pathDataPol
+  id: pathDataPol
+  parent: Communication.DataProcessing.Files.FileManageData
+  langs:
+  - csharp
+  - vb
+  name: pathDataPol
+  nameWithType: FileManageData.pathDataPol
+  fullName: Communication.DataProcessing.Files.FileManageData.pathDataPol
+  type: Field
+  source:
+    id: pathDataPol
+    path: E:\Unity\Project\SRSP-Simple-Simulator\Assets\Controller\script\Model\AquitisionCommunication\Communication\DataProcessing\Files\FileManageLocal.cs
+    startLine: 15
+  assemblies:
+  - Assembly-CSharp
+  namespace: Communication.DataProcessing.Files
+  syntax:
+    content: public static string pathDataPol
+    return:
+      type: System.String
+    content.vb: Public Shared pathDataPol As String
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Communication.DataProcessing.Files.FileManageData.pathDataRace
+  commentId: F:Communication.DataProcessing.Files.FileManageData.pathDataRace
+  id: pathDataRace
+  parent: Communication.DataProcessing.Files.FileManageData
+  langs:
+  - csharp
+  - vb
+  name: pathDataRace
+  nameWithType: FileManageData.pathDataRace
+  fullName: Communication.DataProcessing.Files.FileManageData.pathDataRace
+  type: Field
+  source:
+    id: pathDataRace
+    path: E:\Unity\Project\SRSP-Simple-Simulator\Assets\Controller\script\Model\AquitisionCommunication\Communication\DataProcessing\Files\FileManageLocal.cs
+    startLine: 16
+  assemblies:
+  - Assembly-CSharp
+  namespace: Communication.DataProcessing.Files
+  syntax:
+    content: public static string pathDataRace
+    return:
+      type: System.String
+    content.vb: Public Shared pathDataRace As String
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Communication.DataProcessing.Files.FileManageData.pathJsonData
+  commentId: F:Communication.DataProcessing.Files.FileManageData.pathJsonData
+  id: pathJsonData
+  parent: Communication.DataProcessing.Files.FileManageData
+  langs:
+  - csharp
+  - vb
+  name: pathJsonData
+  nameWithType: FileManageData.pathJsonData
+  fullName: Communication.DataProcessing.Files.FileManageData.pathJsonData
+  type: Field
+  source:
+    id: pathJsonData
+    path: E:\Unity\Project\SRSP-Simple-Simulator\Assets\Controller\script\Model\AquitisionCommunication\Communication\DataProcessing\Files\FileManageLocal.cs
+    startLine: 17
+  assemblies:
+  - Assembly-CSharp
+  namespace: Communication.DataProcessing.Files
+  syntax:
+    content: public static string pathJsonData
+    return:
+      type: System.String
+    content.vb: Public Shared pathJsonData As String
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Communication.DataProcessing.Files.FileManageData.CheckFilesFolderData
+  commentId: M:Communication.DataProcessing.Files.FileManageData.CheckFilesFolderData
+  id: CheckFilesFolderData
+  parent: Communication.DataProcessing.Files.FileManageData
+  langs:
+  - csharp
+  - vb
+  name: CheckFilesFolderData()
+  nameWithType: FileManageData.CheckFilesFolderData()
+  fullName: Communication.DataProcessing.Files.FileManageData.CheckFilesFolderData()
+  type: Method
+  source:
+    id: CheckFilesFolderData
+    path: E:\Unity\Project\SRSP-Simple-Simulator\Assets\Controller\script\Model\AquitisionCommunication\Communication\DataProcessing\Files\FileManageLocal.cs
+    startLine: 22
+  assemblies:
+  - Assembly-CSharp
+  namespace: Communication.DataProcessing.Files
+  summary: "\nCheck if directory used by Race Manager exist and create him if don&apos;t exist\n"
+  example: []
+  syntax:
+    content: public static void CheckFilesFolderData()
+    content.vb: Public Shared Sub CheckFilesFolderData
+  overload: Communication.DataProcessing.Files.FileManageData.CheckFilesFolderData*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Communication.DataProcessing.Files.FileManageData.DeleteFile(System.String)
+  commentId: M:Communication.DataProcessing.Files.FileManageData.DeleteFile(System.String)
+  id: DeleteFile(System.String)
+  parent: Communication.DataProcessing.Files.FileManageData
+  langs:
+  - csharp
+  - vb
+  name: DeleteFile(String)
+  nameWithType: FileManageData.DeleteFile(String)
+  fullName: Communication.DataProcessing.Files.FileManageData.DeleteFile(System.String)
+  type: Method
+  source:
+    id: DeleteFile
+    path: E:\Unity\Project\SRSP-Simple-Simulator\Assets\Controller\script\Model\AquitisionCommunication\Communication\DataProcessing\Files\FileManageLocal.cs
+    startLine: 39
+  assemblies:
+  - Assembly-CSharp
+  namespace: Communication.DataProcessing.Files
+  summary: "\nDelete local file with specific path file and update data.json, he is a index of all pol and boat files\n"
+  example: []
+  syntax:
+    content: public static void DeleteFile(string path)
+    parameters:
+    - id: path
+      type: System.String
+      description: complete path of file you want to delete
+    content.vb: Public Shared Sub DeleteFile(path As String)
+  overload: Communication.DataProcessing.Files.FileManageData.DeleteFile*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Communication.DataProcessing.Files.FileManageData.ReadFilePath(System.String)
+  commentId: M:Communication.DataProcessing.Files.FileManageData.ReadFilePath(System.String)
+  id: ReadFilePath(System.String)
+  parent: Communication.DataProcessing.Files.FileManageData
+  langs:
+  - csharp
+  - vb
+  name: ReadFilePath(String)
+  nameWithType: FileManageData.ReadFilePath(String)
+  fullName: Communication.DataProcessing.Files.FileManageData.ReadFilePath(System.String)
+  type: Method
+  source:
+    id: ReadFilePath
+    path: E:\Unity\Project\SRSP-Simple-Simulator\Assets\Controller\script\Model\AquitisionCommunication\Communication\DataProcessing\Files\FileManageLocal.cs
+    startLine: 74
+  assemblies:
+  - Assembly-CSharp
+  namespace: Communication.DataProcessing.Files
+  syntax:
+    content: public static string ReadFilePath(string path)
+    parameters:
+    - id: path
+      type: System.String
+    return:
+      type: System.String
+    content.vb: Public Shared Function ReadFilePath(path As String) As String
+  overload: Communication.DataProcessing.Files.FileManageData.ReadFilePath*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Communication.DataProcessing.Files.FileManageData.CheckDirectory(System.String)
+  commentId: M:Communication.DataProcessing.Files.FileManageData.CheckDirectory(System.String)
+  id: CheckDirectory(System.String)
+  parent: Communication.DataProcessing.Files.FileManageData
+  langs:
+  - csharp
+  - vb
+  name: CheckDirectory(String)
+  nameWithType: FileManageData.CheckDirectory(String)
+  fullName: Communication.DataProcessing.Files.FileManageData.CheckDirectory(System.String)
+  type: Method
+  source:
+    id: CheckDirectory
+    path: E:\Unity\Project\SRSP-Simple-Simulator\Assets\Controller\script\Model\AquitisionCommunication\Communication\DataProcessing\Files\FileManageLocal.cs
+    startLine: 97
+  assemblies:
+  - Assembly-CSharp
+  namespace: Communication.DataProcessing.Files
+  summary: "\nCheck if specific directory exist\n"
+  example: []
+  syntax:
+    content: public static void CheckDirectory(string path)
+    parameters:
+    - id: path
+      type: System.String
+      description: 'complete path of directory '
+    content.vb: Public Shared Sub CheckDirectory(path As String)
+  overload: Communication.DataProcessing.Files.FileManageData.CheckDirectory*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Communication.DataProcessing.Files.FileManageData.CreateDirectory(System.String)
+  commentId: M:Communication.DataProcessing.Files.FileManageData.CreateDirectory(System.String)
+  id: CreateDirectory(System.String)
+  parent: Communication.DataProcessing.Files.FileManageData
+  langs:
+  - csharp
+  - vb
+  name: CreateDirectory(String)
+  nameWithType: FileManageData.CreateDirectory(String)
+  fullName: Communication.DataProcessing.Files.FileManageData.CreateDirectory(System.String)
+  type: Method
+  source:
+    id: CreateDirectory
+    path: E:\Unity\Project\SRSP-Simple-Simulator\Assets\Controller\script\Model\AquitisionCommunication\Communication\DataProcessing\Files\FileManageLocal.cs
+    startLine: 109
+  assemblies:
+  - Assembly-CSharp
+  namespace: Communication.DataProcessing.Files
+  summary: "\nCreation of directory\n"
+  example: []
+  syntax:
+    content: public static void CreateDirectory(string path)
+    parameters:
+    - id: path
+      type: System.String
+      description: 'complete path of directory '
+    content.vb: Public Shared Sub CreateDirectory(path As String)
+  overload: Communication.DataProcessing.Files.FileManageData.CreateDirectory*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Communication.DataProcessing.Files.FileManageData.CreateBoatJson(Communication.DataProcessing.Json.BoatType)
+  commentId: M:Communication.DataProcessing.Files.FileManageData.CreateBoatJson(Communication.DataProcessing.Json.BoatType)
+  id: CreateBoatJson(Communication.DataProcessing.Json.BoatType)
+  parent: Communication.DataProcessing.Files.FileManageData
+  langs:
+  - csharp
+  - vb
+  name: CreateBoatJson(BoatType)
+  nameWithType: FileManageData.CreateBoatJson(BoatType)
+  fullName: Communication.DataProcessing.Files.FileManageData.CreateBoatJson(Communication.DataProcessing.Json.BoatType)
+  type: Method
+  source:
+    id: CreateBoatJson
+    path: E:\Unity\Project\SRSP-Simple-Simulator\Assets\Controller\script\Model\AquitisionCommunication\Communication\DataProcessing\Files\FileManageBoat.cs
+    startLine: 16
+  assemblies:
+  - Assembly-CSharp
+  namespace: Communication.DataProcessing.Files
+  summary: "\nSave boat of a <xref href=\"Communication.DataProcessing.Json.BoatType\" data-throw-if-not-resolved=\"false\"></xref> on spécific json file\n"
+  example: []
+  syntax:
+    content: public static void CreateBoatJson(BoatType DataBoat)
+    parameters:
+    - id: DataBoat
+      type: Communication.DataProcessing.Json.BoatType
+      description: all information of boat
+    content.vb: Public Shared Sub CreateBoatJson(DataBoat As BoatType)
+  overload: Communication.DataProcessing.Files.FileManageData.CreateBoatJson*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Communication.DataProcessing.Files.FileManageData.UpdateAllBoatTypesList
+  commentId: M:Communication.DataProcessing.Files.FileManageData.UpdateAllBoatTypesList
+  id: UpdateAllBoatTypesList
+  parent: Communication.DataProcessing.Files.FileManageData
+  langs:
+  - csharp
+  - vb
+  name: UpdateAllBoatTypesList()
+  nameWithType: FileManageData.UpdateAllBoatTypesList()
+  fullName: Communication.DataProcessing.Files.FileManageData.UpdateAllBoatTypesList()
+  type: Method
+  source:
+    id: UpdateAllBoatTypesList
+    path: E:\Unity\Project\SRSP-Simple-Simulator\Assets\Controller\script\Model\AquitisionCommunication\Communication\DataProcessing\Files\FileManageBoat.cs
+    startLine: 27
+  assemblies:
+  - Assembly-CSharp
+  namespace: Communication.DataProcessing.Files
+  summary: "\nAdd to BoatTypesList all boat already exist on local file\n"
+  example: []
+  syntax:
+    content: public static void UpdateAllBoatTypesList()
+    content.vb: Public Shared Sub UpdateAllBoatTypesList
+  overload: Communication.DataProcessing.Files.FileManageData.UpdateAllBoatTypesList*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Communication.DataProcessing.Files.FileManageData.UpdateBoatTypesList(System.String)
+  commentId: M:Communication.DataProcessing.Files.FileManageData.UpdateBoatTypesList(System.String)
+  id: UpdateBoatTypesList(System.String)
+  parent: Communication.DataProcessing.Files.FileManageData
+  langs:
+  - csharp
+  - vb
+  name: UpdateBoatTypesList(String)
+  nameWithType: FileManageData.UpdateBoatTypesList(String)
+  fullName: Communication.DataProcessing.Files.FileManageData.UpdateBoatTypesList(System.String)
+  type: Method
+  source:
+    id: UpdateBoatTypesList
+    path: E:\Unity\Project\SRSP-Simple-Simulator\Assets\Controller\script\Model\AquitisionCommunication\Communication\DataProcessing\Files\FileManageBoat.cs
+    startLine: 41
+  assemblies:
+  - Assembly-CSharp
+  namespace: Communication.DataProcessing.Files
+  summary: "\nAdd to BoatTypesList boat already exist on local file\n"
+  example: []
+  syntax:
+    content: public static void UpdateBoatTypesList(string path)
+    parameters:
+    - id: path
+      type: System.String
+      description: complete path of file you want to read
+    content.vb: Public Shared Sub UpdateBoatTypesList(path As String)
+  overload: Communication.DataProcessing.Files.FileManageData.UpdateBoatTypesList*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Communication.DataProcessing.Files.FileManageData.ResetAllFiles
+  commentId: M:Communication.DataProcessing.Files.FileManageData.ResetAllFiles
+  id: ResetAllFiles
+  parent: Communication.DataProcessing.Files.FileManageData
+  langs:
+  - csharp
+  - vb
+  name: ResetAllFiles()
+  nameWithType: FileManageData.ResetAllFiles()
+  fullName: Communication.DataProcessing.Files.FileManageData.ResetAllFiles()
+  type: Method
+  source:
+    id: ResetAllFiles
+    path: E:\Unity\Project\SRSP-Simple-Simulator\Assets\Controller\script\Model\AquitisionCommunication\Communication\DataProcessing\Files\FileManageBoat.cs
+    startLine: 55
+  assemblies:
+  - Assembly-CSharp
+  namespace: Communication.DataProcessing.Files
+  summary: "\nDelete dyrectori of all files and recreate him\n"
+  example: []
+  syntax:
+    content: public static void ResetAllFiles()
+    content.vb: Public Shared Sub ResetAllFiles
+  overload: Communication.DataProcessing.Files.FileManageData.ResetAllFiles*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Communication.DataProcessing.Files.FileManageData.ResetBoatList
+  commentId: M:Communication.DataProcessing.Files.FileManageData.ResetBoatList
+  id: ResetBoatList
+  parent: Communication.DataProcessing.Files.FileManageData
+  langs:
+  - csharp
+  - vb
+  name: ResetBoatList()
+  nameWithType: FileManageData.ResetBoatList()
+  fullName: Communication.DataProcessing.Files.FileManageData.ResetBoatList()
+  type: Method
+  source:
+    id: ResetBoatList
+    path: E:\Unity\Project\SRSP-Simple-Simulator\Assets\Controller\script\Model\AquitisionCommunication\Communication\DataProcessing\Files\FileManageBoat.cs
+    startLine: 69
+  assemblies:
+  - Assembly-CSharp
+  namespace: Communication.DataProcessing.Files
+  summary: "\nDelete boat of a <xref href=\"Communication.DataProcessing.Json.BoatType\" data-throw-if-not-resolved=\"false\"></xref>\n"
+  example: []
+  syntax:
+    content: public static void ResetBoatList()
+    content.vb: Public Shared Sub ResetBoatList
+  overload: Communication.DataProcessing.Files.FileManageData.ResetBoatList*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+references:
+- uid: Communication.DataProcessing.Json.BoatType
+  commentId: T:Communication.DataProcessing.Json.BoatType
+  parent: Communication.DataProcessing.Json
+  name: BoatType
+  nameWithType: BoatType
+  fullName: Communication.DataProcessing.Json.BoatType
+- uid: Communication.DataProcessing.Files
+  commentId: N:Communication.DataProcessing.Files
+  name: Communication.DataProcessing.Files
+  nameWithType: Communication.DataProcessing.Files
+  fullName: Communication.DataProcessing.Files
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  nameWithType: Object.ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Communication.DataProcessing.Json
+  commentId: N:Communication.DataProcessing.Json
+  name: Communication.DataProcessing.Json
+  nameWithType: Communication.DataProcessing.Json
+  fullName: Communication.DataProcessing.Json
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Communication.DataProcessing.Files.FileManageData.CreateFilePolaire*
+  commentId: Overload:Communication.DataProcessing.Files.FileManageData.CreateFilePolaire
+  name: CreateFilePolaire
+  nameWithType: FileManageData.CreateFilePolaire
+  fullName: Communication.DataProcessing.Files.FileManageData.CreateFilePolaire
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: System.Int64
+  commentId: T:System.Int64
+  parent: System
+  isExternal: true
+  name: Int64
+  nameWithType: Int64
+  fullName: System.Int64
+- uid: Communication.DataProcessing.Files.FileManageData.SaveData*
+  commentId: Overload:Communication.DataProcessing.Files.FileManageData.SaveData
+  name: SaveData
+  nameWithType: FileManageData.SaveData
+  fullName: Communication.DataProcessing.Files.FileManageData.SaveData
+- uid: Communication.DataProcessing.Files.FileManageData.CheckFilesFolderData*
+  commentId: Overload:Communication.DataProcessing.Files.FileManageData.CheckFilesFolderData
+  name: CheckFilesFolderData
+  nameWithType: FileManageData.CheckFilesFolderData
+  fullName: Communication.DataProcessing.Files.FileManageData.CheckFilesFolderData
+- uid: Communication.DataProcessing.Files.FileManageData.DeleteFile*
+  commentId: Overload:Communication.DataProcessing.Files.FileManageData.DeleteFile
+  name: DeleteFile
+  nameWithType: FileManageData.DeleteFile
+  fullName: Communication.DataProcessing.Files.FileManageData.DeleteFile
+- uid: Communication.DataProcessing.Files.FileManageData.ReadFilePath*
+  commentId: Overload:Communication.DataProcessing.Files.FileManageData.ReadFilePath
+  name: ReadFilePath
+  nameWithType: FileManageData.ReadFilePath
+  fullName: Communication.DataProcessing.Files.FileManageData.ReadFilePath
+- uid: Communication.DataProcessing.Files.FileManageData.CheckDirectory*
+  commentId: Overload:Communication.DataProcessing.Files.FileManageData.CheckDirectory
+  name: CheckDirectory
+  nameWithType: FileManageData.CheckDirectory
+  fullName: Communication.DataProcessing.Files.FileManageData.CheckDirectory
+- uid: Communication.DataProcessing.Files.FileManageData.CreateDirectory*
+  commentId: Overload:Communication.DataProcessing.Files.FileManageData.CreateDirectory
+  name: CreateDirectory
+  nameWithType: FileManageData.CreateDirectory
+  fullName: Communication.DataProcessing.Files.FileManageData.CreateDirectory
+- uid: Communication.DataProcessing.Files.FileManageData.CreateBoatJson*
+  commentId: Overload:Communication.DataProcessing.Files.FileManageData.CreateBoatJson
+  name: CreateBoatJson
+  nameWithType: FileManageData.CreateBoatJson
+  fullName: Communication.DataProcessing.Files.FileManageData.CreateBoatJson
+- uid: Communication.DataProcessing.Files.FileManageData.UpdateAllBoatTypesList*
+  commentId: Overload:Communication.DataProcessing.Files.FileManageData.UpdateAllBoatTypesList
+  name: UpdateAllBoatTypesList
+  nameWithType: FileManageData.UpdateAllBoatTypesList
+  fullName: Communication.DataProcessing.Files.FileManageData.UpdateAllBoatTypesList
+- uid: Communication.DataProcessing.Files.FileManageData.UpdateBoatTypesList*
+  commentId: Overload:Communication.DataProcessing.Files.FileManageData.UpdateBoatTypesList
+  name: UpdateBoatTypesList
+  nameWithType: FileManageData.UpdateBoatTypesList
+  fullName: Communication.DataProcessing.Files.FileManageData.UpdateBoatTypesList
+- uid: Communication.DataProcessing.Files.FileManageData.ResetAllFiles*
+  commentId: Overload:Communication.DataProcessing.Files.FileManageData.ResetAllFiles
+  name: ResetAllFiles
+  nameWithType: FileManageData.ResetAllFiles
+  fullName: Communication.DataProcessing.Files.FileManageData.ResetAllFiles
+- uid: Communication.DataProcessing.Files.FileManageData.ResetBoatList*
+  commentId: Overload:Communication.DataProcessing.Files.FileManageData.ResetBoatList
+  name: ResetBoatList
+  nameWithType: FileManageData.ResetBoatList
+  fullName: Communication.DataProcessing.Files.FileManageData.ResetBoatList

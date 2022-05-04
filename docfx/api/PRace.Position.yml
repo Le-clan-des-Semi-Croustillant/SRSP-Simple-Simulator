@@ -1,0 +1,746 @@
+### YamlMime:ManagedReference
+items:
+- uid: PRace.Position
+  commentId: T:PRace.Position
+  id: Position
+  parent: PRace
+  children:
+  - PRace.Position.#ctor(System.Double,System.Double)
+  - PRace.Position.Equals(System.Object)
+  - PRace.Position.GetCoordLat
+  - PRace.Position.GetCoordLong
+  - PRace.Position.GetLatitude
+  - PRace.Position.GetLatitudeAngle
+  - PRace.Position.GetLongitude
+  - PRace.Position.GetLongitudeAngle
+  - PRace.Position.ToString
+  - PRace.Position.Update(System.Double,System.Double)
+  langs:
+  - csharp
+  - vb
+  name: Position
+  nameWithType: Position
+  fullName: PRace.Position
+  type: Class
+  source:
+    id: Position
+    path: E:\Unity\Project\SRSP-Simple-Simulator\Assets\Controller\script\Model\Race\Position.cs
+    startLine: 12
+  assemblies:
+  - Assembly-CSharp
+  namespace: PRace
+  summary: "\nThis class represent a position on the globe using latitude and longitude\n"
+  example: []
+  syntax:
+    content: public class Position
+    content.vb: Public Class Position
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: PRace.Position.#ctor(System.Double,System.Double)
+  commentId: M:PRace.Position.#ctor(System.Double,System.Double)
+  id: '#ctor(System.Double,System.Double)'
+  parent: PRace.Position
+  langs:
+  - csharp
+  - vb
+  name: Position(Double, Double)
+  nameWithType: Position.Position(Double, Double)
+  fullName: PRace.Position.Position(System.Double, System.Double)
+  type: Constructor
+  source:
+    id: .ctor
+    path: E:\Unity\Project\SRSP-Simple-Simulator\Assets\Controller\script\Model\Race\Position.cs
+    startLine: 19
+  assemblies:
+  - Assembly-CSharp
+  namespace: PRace
+  summary: "\ncreate an instance of Position\n"
+  example: []
+  syntax:
+    content: public Position(double longitude, double latitude)
+    parameters:
+    - id: longitude
+      type: System.Double
+      description: the longitude in radiant
+    - id: latitude
+      type: System.Double
+      description: the latitude in radiant
+    content.vb: Public Sub New(longitude As Double, latitude As Double)
+  overload: PRace.Position.#ctor*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: PRace.Position.Update(System.Double,System.Double)
+  commentId: M:PRace.Position.Update(System.Double,System.Double)
+  id: Update(System.Double,System.Double)
+  parent: PRace.Position
+  langs:
+  - csharp
+  - vb
+  name: Update(Double, Double)
+  nameWithType: Position.Update(Double, Double)
+  fullName: PRace.Position.Update(System.Double, System.Double)
+  type: Method
+  source:
+    id: Update
+    path: E:\Unity\Project\SRSP-Simple-Simulator\Assets\Controller\script\Model\Race\Position.cs
+    startLine: 55
+  assemblies:
+  - Assembly-CSharp
+  namespace: PRace
+  summary: "\nUpdate the &apos;longitude&apos; and &apos;latitude&apos; attributs\n"
+  example: []
+  syntax:
+    content: public void Update(double longitude, double latitude)
+    parameters:
+    - id: longitude
+      type: System.Double
+      description: the longitude in radiant
+    - id: latitude
+      type: System.Double
+      description: the latitude in radiant
+    content.vb: Public Sub Update(longitude As Double, latitude As Double)
+  overload: PRace.Position.Update*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: PRace.Position.GetCoordLat
+  commentId: M:PRace.Position.GetCoordLat
+  id: GetCoordLat
+  parent: PRace.Position
+  langs:
+  - csharp
+  - vb
+  name: GetCoordLat()
+  nameWithType: Position.GetCoordLat()
+  fullName: PRace.Position.GetCoordLat()
+  type: Method
+  source:
+    id: GetCoordLat
+    path: E:\Unity\Project\SRSP-Simple-Simulator\Assets\Controller\script\Model\Race\Position.cs
+    startLine: 64
+  assemblies:
+  - Assembly-CSharp
+  namespace: PRace
+  summary: "\nCreate a <xref href=\"PRace.Position.Coords\" data-throw-if-not-resolved=\"false\"></xref> corresponding to the latitude attribut\n"
+  example: []
+  syntax:
+    content: public Position.Coords GetCoordLat()
+    return:
+      type: PRace.Position.Coords
+      description: return a <xref href="PRace.Position.Coords" data-throw-if-not-resolved="false"></xref> corresponding to the latitude attribut
+    content.vb: Public Function GetCoordLat As Position.Coords
+  overload: PRace.Position.GetCoordLat*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: PRace.Position.GetCoordLong
+  commentId: M:PRace.Position.GetCoordLong
+  id: GetCoordLong
+  parent: PRace.Position
+  langs:
+  - csharp
+  - vb
+  name: GetCoordLong()
+  nameWithType: Position.GetCoordLong()
+  fullName: PRace.Position.GetCoordLong()
+  type: Method
+  source:
+    id: GetCoordLong
+    path: E:\Unity\Project\SRSP-Simple-Simulator\Assets\Controller\script\Model\Race\Position.cs
+    startLine: 93
+  assemblies:
+  - Assembly-CSharp
+  namespace: PRace
+  summary: "\nCreate a <xref href=\"PRace.Position.Coords\" data-throw-if-not-resolved=\"false\"></xref> corresponding to the longitude attribut\n"
+  example: []
+  syntax:
+    content: public Position.Coords GetCoordLong()
+    return:
+      type: PRace.Position.Coords
+      description: return a <xref href="PRace.Position.Coords" data-throw-if-not-resolved="false"></xref> corresponding to the longitude attribut
+    content.vb: Public Function GetCoordLong As Position.Coords
+  overload: PRace.Position.GetCoordLong*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: PRace.Position.GetLongitude
+  commentId: M:PRace.Position.GetLongitude
+  id: GetLongitude
+  parent: PRace.Position
+  langs:
+  - csharp
+  - vb
+  name: GetLongitude()
+  nameWithType: Position.GetLongitude()
+  fullName: PRace.Position.GetLongitude()
+  type: Method
+  source:
+    id: GetLongitude
+    path: E:\Unity\Project\SRSP-Simple-Simulator\Assets\Controller\script\Model\Race\Position.cs
+    startLine: 123
+  assemblies:
+  - Assembly-CSharp
+  namespace: PRace
+  summary: "\nreturn the value of the longitude in radiant\n"
+  example: []
+  syntax:
+    content: public double GetLongitude()
+    return:
+      type: System.Double
+      description: return the value of the longitude in radiant
+    content.vb: Public Function GetLongitude As Double
+  overload: PRace.Position.GetLongitude*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: PRace.Position.GetLatitude
+  commentId: M:PRace.Position.GetLatitude
+  id: GetLatitude
+  parent: PRace.Position
+  langs:
+  - csharp
+  - vb
+  name: GetLatitude()
+  nameWithType: Position.GetLatitude()
+  fullName: PRace.Position.GetLatitude()
+  type: Method
+  source:
+    id: GetLatitude
+    path: E:\Unity\Project\SRSP-Simple-Simulator\Assets\Controller\script\Model\Race\Position.cs
+    startLine: 132
+  assemblies:
+  - Assembly-CSharp
+  namespace: PRace
+  summary: "\nreturn the value of the latitude in radiant\n"
+  example: []
+  syntax:
+    content: public double GetLatitude()
+    return:
+      type: System.Double
+      description: return the value of the latitude in radiant
+    content.vb: Public Function GetLatitude As Double
+  overload: PRace.Position.GetLatitude*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: PRace.Position.GetLatitudeAngle
+  commentId: M:PRace.Position.GetLatitudeAngle
+  id: GetLatitudeAngle
+  parent: PRace.Position
+  langs:
+  - csharp
+  - vb
+  name: GetLatitudeAngle()
+  nameWithType: Position.GetLatitudeAngle()
+  fullName: PRace.Position.GetLatitudeAngle()
+  type: Method
+  source:
+    id: GetLatitudeAngle
+    path: E:\Unity\Project\SRSP-Simple-Simulator\Assets\Controller\script\Model\Race\Position.cs
+    startLine: 141
+  assemblies:
+  - Assembly-CSharp
+  namespace: PRace
+  summary: "\nreturn the value of the longitude in degre\n"
+  example: []
+  syntax:
+    content: public double GetLatitudeAngle()
+    return:
+      type: System.Double
+      description: return the value of the longitude in degre
+    content.vb: Public Function GetLatitudeAngle As Double
+  overload: PRace.Position.GetLatitudeAngle*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: PRace.Position.GetLongitudeAngle
+  commentId: M:PRace.Position.GetLongitudeAngle
+  id: GetLongitudeAngle
+  parent: PRace.Position
+  langs:
+  - csharp
+  - vb
+  name: GetLongitudeAngle()
+  nameWithType: Position.GetLongitudeAngle()
+  fullName: PRace.Position.GetLongitudeAngle()
+  type: Method
+  source:
+    id: GetLongitudeAngle
+    path: E:\Unity\Project\SRSP-Simple-Simulator\Assets\Controller\script\Model\Race\Position.cs
+    startLine: 150
+  assemblies:
+  - Assembly-CSharp
+  namespace: PRace
+  summary: "\nreturn the value of the latitude in degre\n"
+  example: []
+  syntax:
+    content: public double GetLongitudeAngle()
+    return:
+      type: System.Double
+      description: return the value of the latitude in degre
+    content.vb: Public Function GetLongitudeAngle As Double
+  overload: PRace.Position.GetLongitudeAngle*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: PRace.Position.ToString
+  commentId: M:PRace.Position.ToString
+  id: ToString
+  parent: PRace.Position
+  langs:
+  - csharp
+  - vb
+  name: ToString()
+  nameWithType: Position.ToString()
+  fullName: PRace.Position.ToString()
+  type: Method
+  source:
+    id: ToString
+    path: E:\Unity\Project\SRSP-Simple-Simulator\Assets\Controller\script\Model\Race\Position.cs
+    startLine: 155
+  assemblies:
+  - Assembly-CSharp
+  namespace: PRace
+  syntax:
+    content: public override string ToString()
+    return:
+      type: System.String
+    content.vb: Public Overrides Function ToString As String
+  overridden: System.Object.ToString
+  overload: PRace.Position.ToString*
+  modifiers.csharp:
+  - public
+  - override
+  modifiers.vb:
+  - Public
+  - Overrides
+- uid: PRace.Position.Equals(System.Object)
+  commentId: M:PRace.Position.Equals(System.Object)
+  id: Equals(System.Object)
+  parent: PRace.Position
+  langs:
+  - csharp
+  - vb
+  name: Equals(Object)
+  nameWithType: Position.Equals(Object)
+  fullName: PRace.Position.Equals(System.Object)
+  type: Method
+  source:
+    id: Equals
+    path: E:\Unity\Project\SRSP-Simple-Simulator\Assets\Controller\script\Model\Race\Position.cs
+    startLine: 161
+  assemblies:
+  - Assembly-CSharp
+  namespace: PRace
+  syntax:
+    content: public override bool Equals(object o)
+    parameters:
+    - id: o
+      type: System.Object
+    return:
+      type: System.Boolean
+    content.vb: Public Overrides Function Equals(o As Object) As Boolean
+  overridden: System.Object.Equals(System.Object)
+  overload: PRace.Position.Equals*
+  modifiers.csharp:
+  - public
+  - override
+  modifiers.vb:
+  - Public
+  - Overrides
+references:
+- uid: PRace
+  commentId: N:PRace
+  name: PRace
+  nameWithType: PRace
+  fullName: PRace
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: PRace.Position.#ctor*
+  commentId: Overload:PRace.Position.#ctor
+  name: Position
+  nameWithType: Position.Position
+  fullName: PRace.Position.Position
+- uid: System.Double
+  commentId: T:System.Double
+  parent: System
+  isExternal: true
+  name: Double
+  nameWithType: Double
+  fullName: System.Double
+- uid: PRace.Position.Update*
+  commentId: Overload:PRace.Position.Update
+  name: Update
+  nameWithType: Position.Update
+  fullName: PRace.Position.Update
+- uid: PRace.Position.Coords
+  commentId: T:PRace.Position.Coords
+  parent: PRace
+  name: Position.Coords
+  nameWithType: Position.Coords
+  fullName: PRace.Position.Coords
+- uid: PRace.Position.GetCoordLat*
+  commentId: Overload:PRace.Position.GetCoordLat
+  name: GetCoordLat
+  nameWithType: Position.GetCoordLat
+  fullName: PRace.Position.GetCoordLat
+- uid: PRace.Position.GetCoordLong*
+  commentId: Overload:PRace.Position.GetCoordLong
+  name: GetCoordLong
+  nameWithType: Position.GetCoordLong
+  fullName: PRace.Position.GetCoordLong
+- uid: PRace.Position.GetLongitude*
+  commentId: Overload:PRace.Position.GetLongitude
+  name: GetLongitude
+  nameWithType: Position.GetLongitude
+  fullName: PRace.Position.GetLongitude
+- uid: PRace.Position.GetLatitude*
+  commentId: Overload:PRace.Position.GetLatitude
+  name: GetLatitude
+  nameWithType: Position.GetLatitude
+  fullName: PRace.Position.GetLatitude
+- uid: PRace.Position.GetLatitudeAngle*
+  commentId: Overload:PRace.Position.GetLatitudeAngle
+  name: GetLatitudeAngle
+  nameWithType: Position.GetLatitudeAngle
+  fullName: PRace.Position.GetLatitudeAngle
+- uid: PRace.Position.GetLongitudeAngle*
+  commentId: Overload:PRace.Position.GetLongitudeAngle
+  name: GetLongitudeAngle
+  nameWithType: Position.GetLongitudeAngle
+  fullName: PRace.Position.GetLongitudeAngle
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  nameWithType: Object.ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: PRace.Position.ToString*
+  commentId: Overload:PRace.Position.ToString
+  name: ToString
+  nameWithType: Position.ToString
+  fullName: PRace.Position.ToString
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: PRace.Position.Equals*
+  commentId: Overload:PRace.Position.Equals
+  name: Equals
+  nameWithType: Position.Equals
+  fullName: PRace.Position.Equals
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  name: Boolean
+  nameWithType: Boolean
+  fullName: System.Boolean

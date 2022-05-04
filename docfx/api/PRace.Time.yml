@@ -1,0 +1,492 @@
+### YamlMime:ManagedReference
+items:
+- uid: PRace.Time
+  commentId: T:PRace.Time
+  id: Time
+  parent: PRace
+  children:
+  - PRace.Time.GetAccFactorValue
+  - PRace.Time.GetTickValue
+  - PRace.Time.SetAccFactor(System.Single)
+  - PRace.Time.SetTick(System.Int32)
+  langs:
+  - csharp
+  - vb
+  name: Time
+  nameWithType: Time
+  fullName: PRace.Time
+  type: Class
+  source:
+    id: Time
+    path: E:\Unity\Project\SRSP-Simple-Simulator\Assets\Controller\script\Model\Race\Time.cs
+    startLine: 11
+  assemblies:
+  - Assembly-CSharp
+  namespace: PRace
+  summary: "\nThis class contains the compression factor and the tick duration of the simulation\n"
+  example: []
+  syntax:
+    content: public class Time
+    content.vb: Public Class Time
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: PRace.Time.GetAccFactorValue
+  commentId: M:PRace.Time.GetAccFactorValue
+  id: GetAccFactorValue
+  parent: PRace.Time
+  langs:
+  - csharp
+  - vb
+  name: GetAccFactorValue()
+  nameWithType: Time.GetAccFactorValue()
+  fullName: PRace.Time.GetAccFactorValue()
+  type: Method
+  source:
+    id: GetAccFactorValue
+    path: E:\Unity\Project\SRSP-Simple-Simulator\Assets\Controller\script\Model\Race\Time.cs
+    startLine: 17
+  assemblies:
+  - Assembly-CSharp
+  namespace: PRace
+  syntax:
+    content: public float GetAccFactorValue()
+    return:
+      type: System.Single
+    content.vb: Public Function GetAccFactorValue As Single
+  overload: PRace.Time.GetAccFactorValue*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: PRace.Time.SetAccFactor(System.Single)
+  commentId: M:PRace.Time.SetAccFactor(System.Single)
+  id: SetAccFactor(System.Single)
+  parent: PRace.Time
+  langs:
+  - csharp
+  - vb
+  name: SetAccFactor(Single)
+  nameWithType: Time.SetAccFactor(Single)
+  fullName: PRace.Time.SetAccFactor(System.Single)
+  type: Method
+  source:
+    id: SetAccFactor
+    path: E:\Unity\Project\SRSP-Simple-Simulator\Assets\Controller\script\Model\Race\Time.cs
+    startLine: 22
+  assemblies:
+  - Assembly-CSharp
+  namespace: PRace
+  syntax:
+    content: public void SetAccFactor(float factor)
+    parameters:
+    - id: factor
+      type: System.Single
+    content.vb: Public Sub SetAccFactor(factor As Single)
+  overload: PRace.Time.SetAccFactor*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: PRace.Time.GetTickValue
+  commentId: M:PRace.Time.GetTickValue
+  id: GetTickValue
+  parent: PRace.Time
+  langs:
+  - csharp
+  - vb
+  name: GetTickValue()
+  nameWithType: Time.GetTickValue()
+  fullName: PRace.Time.GetTickValue()
+  type: Method
+  source:
+    id: GetTickValue
+    path: E:\Unity\Project\SRSP-Simple-Simulator\Assets\Controller\script\Model\Race\Time.cs
+    startLine: 27
+  assemblies:
+  - Assembly-CSharp
+  namespace: PRace
+  syntax:
+    content: public float GetTickValue()
+    return:
+      type: System.Single
+    content.vb: Public Function GetTickValue As Single
+  overload: PRace.Time.GetTickValue*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: PRace.Time.SetTick(System.Int32)
+  commentId: M:PRace.Time.SetTick(System.Int32)
+  id: SetTick(System.Int32)
+  parent: PRace.Time
+  langs:
+  - csharp
+  - vb
+  name: SetTick(Int32)
+  nameWithType: Time.SetTick(Int32)
+  fullName: PRace.Time.SetTick(System.Int32)
+  type: Method
+  source:
+    id: SetTick
+    path: E:\Unity\Project\SRSP-Simple-Simulator\Assets\Controller\script\Model\Race\Time.cs
+    startLine: 32
+  assemblies:
+  - Assembly-CSharp
+  namespace: PRace
+  syntax:
+    content: public void SetTick(int factor)
+    parameters:
+    - id: factor
+      type: System.Int32
+    content.vb: Public Sub SetTick(factor As Integer)
+  overload: PRace.Time.SetTick*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+references:
+- uid: PRace
+  commentId: N:PRace
+  name: PRace
+  nameWithType: PRace
+  fullName: PRace
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  nameWithType: Object.ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: PRace.Time.GetAccFactorValue*
+  commentId: Overload:PRace.Time.GetAccFactorValue
+  name: GetAccFactorValue
+  nameWithType: Time.GetAccFactorValue
+  fullName: PRace.Time.GetAccFactorValue
+- uid: System.Single
+  commentId: T:System.Single
+  parent: System
+  isExternal: true
+  name: Single
+  nameWithType: Single
+  fullName: System.Single
+- uid: PRace.Time.SetAccFactor*
+  commentId: Overload:PRace.Time.SetAccFactor
+  name: SetAccFactor
+  nameWithType: Time.SetAccFactor
+  fullName: PRace.Time.SetAccFactor
+- uid: PRace.Time.GetTickValue*
+  commentId: Overload:PRace.Time.GetTickValue
+  name: GetTickValue
+  nameWithType: Time.GetTickValue
+  fullName: PRace.Time.GetTickValue
+- uid: PRace.Time.SetTick*
+  commentId: Overload:PRace.Time.SetTick
+  name: SetTick
+  nameWithType: Time.SetTick
+  fullName: PRace.Time.SetTick
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  name: Int32
+  nameWithType: Int32
+  fullName: System.Int32

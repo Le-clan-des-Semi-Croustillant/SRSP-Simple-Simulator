@@ -1,0 +1,22 @@
+### YamlMime:ManagedReference
+items:
+- uid: physicSimulator
+  commentId: N:physicSimulator
+  id: physicSimulator
+  children:
+  - physicSimulator.physics_simulator
+  langs:
+  - csharp
+  - vb
+  name: physicSimulator
+  nameWithType: physicSimulator
+  fullName: physicSimulator
+  type: Namespace
+  assemblies:
+  - Assembly-CSharp
+references:
+- uid: physicSimulator.physics_simulator
+  commentId: T:physicSimulator.physics_simulator
+  name: physics_simulator
+  nameWithType: physics_simulator
+  fullName: physicSimulator.physics_simulator

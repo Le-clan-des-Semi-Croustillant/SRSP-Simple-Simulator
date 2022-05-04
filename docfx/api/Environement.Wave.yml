@@ -1,0 +1,650 @@
+### YamlMime:ManagedReference
+items:
+- uid: Environement.Wave
+  commentId: T:Environement.Wave
+  id: Wave
+  parent: Environement
+  children:
+  - Environement.Wave.#ctor
+  - Environement.Wave.GetAmplitude
+  - Environement.Wave.GetDirection
+  - Environement.Wave.GetWaveLength
+  - Environement.Wave.SetWaveAmplitude(System.Single)
+  - Environement.Wave.SetWaveDirection(System.Single)
+  - Environement.Wave.SetWaveLength(System.Single)
+  - Environement.Wave.Update(System.Single,System.Single,System.Single)
+  langs:
+  - csharp
+  - vb
+  name: Wave
+  nameWithType: Wave
+  fullName: Environement.Wave
+  type: Class
+  source:
+    id: Wave
+    path: E:\Unity\Project\SRSP-Simple-Simulator\Assets\Controller\script\Model\Environement\Wave.cs
+    startLine: 11
+  assemblies:
+  - Assembly-CSharp
+  namespace: Environement
+  summary: "\nThis class manages the environmental values linked to the waves\n"
+  example: []
+  syntax:
+    content: public class Wave
+    content.vb: Public Class Wave
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: Environement.Wave.#ctor
+  commentId: M:Environement.Wave.#ctor
+  id: '#ctor'
+  parent: Environement.Wave
+  langs:
+  - csharp
+  - vb
+  name: Wave()
+  nameWithType: Wave.Wave()
+  fullName: Environement.Wave.Wave()
+  type: Constructor
+  source:
+    id: .ctor
+    path: E:\Unity\Project\SRSP-Simple-Simulator\Assets\Controller\script\Model\Environement\Wave.cs
+    startLine: 16
+  assemblies:
+  - Assembly-CSharp
+  namespace: Environement
+  summary: "\nCreate a Wave instance\n"
+  example: []
+  syntax:
+    content: public Wave()
+    content.vb: Public Sub New
+  overload: Environement.Wave.#ctor*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Environement.Wave.Update(System.Single,System.Single,System.Single)
+  commentId: M:Environement.Wave.Update(System.Single,System.Single,System.Single)
+  id: Update(System.Single,System.Single,System.Single)
+  parent: Environement.Wave
+  langs:
+  - csharp
+  - vb
+  name: Update(Single, Single, Single)
+  nameWithType: Wave.Update(Single, Single, Single)
+  fullName: Environement.Wave.Update(System.Single, System.Single, System.Single)
+  type: Method
+  source:
+    id: Update
+    path: E:\Unity\Project\SRSP-Simple-Simulator\Assets\Controller\script\Model\Environement\Wave.cs
+    startLine: 35
+  assemblies:
+  - Assembly-CSharp
+  namespace: Environement
+  summary: "\nSet class attribut direction, amplitude and waveLength according to the inputs parameters\n"
+  example: []
+  syntax:
+    content: public void Update(float direction, float amplitude, float waveLength)
+    parameters:
+    - id: direction
+      type: System.Single
+      description: input direction
+    - id: amplitude
+      type: System.Single
+      description: input amplitude
+    - id: waveLength
+      type: System.Single
+      description: input waveLength
+    content.vb: Public Sub Update(direction As Single, amplitude As Single, waveLength As Single)
+  overload: Environement.Wave.Update*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Environement.Wave.SetWaveDirection(System.Single)
+  commentId: M:Environement.Wave.SetWaveDirection(System.Single)
+  id: SetWaveDirection(System.Single)
+  parent: Environement.Wave
+  langs:
+  - csharp
+  - vb
+  name: SetWaveDirection(Single)
+  nameWithType: Wave.SetWaveDirection(Single)
+  fullName: Environement.Wave.SetWaveDirection(System.Single)
+  type: Method
+  source:
+    id: SetWaveDirection
+    path: E:\Unity\Project\SRSP-Simple-Simulator\Assets\Controller\script\Model\Environement\Wave.cs
+    startLine: 45
+  assemblies:
+  - Assembly-CSharp
+  namespace: Environement
+  summary: "\nSet class attribut direction according to the input parameter\n"
+  example: []
+  syntax:
+    content: public void SetWaveDirection(float wd)
+    parameters:
+    - id: wd
+      type: System.Single
+      description: input direction
+    content.vb: Public Sub SetWaveDirection(wd As Single)
+  overload: Environement.Wave.SetWaveDirection*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Environement.Wave.SetWaveAmplitude(System.Single)
+  commentId: M:Environement.Wave.SetWaveAmplitude(System.Single)
+  id: SetWaveAmplitude(System.Single)
+  parent: Environement.Wave
+  langs:
+  - csharp
+  - vb
+  name: SetWaveAmplitude(Single)
+  nameWithType: Wave.SetWaveAmplitude(Single)
+  fullName: Environement.Wave.SetWaveAmplitude(System.Single)
+  type: Method
+  source:
+    id: SetWaveAmplitude
+    path: E:\Unity\Project\SRSP-Simple-Simulator\Assets\Controller\script\Model\Environement\Wave.cs
+    startLine: 54
+  assemblies:
+  - Assembly-CSharp
+  namespace: Environement
+  summary: "\nSet class attribut amplitude according to the input parameter\n"
+  example: []
+  syntax:
+    content: public void SetWaveAmplitude(float amplitude)
+    parameters:
+    - id: amplitude
+      type: System.Single
+      description: input amplitude
+    content.vb: Public Sub SetWaveAmplitude(amplitude As Single)
+  overload: Environement.Wave.SetWaveAmplitude*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Environement.Wave.SetWaveLength(System.Single)
+  commentId: M:Environement.Wave.SetWaveLength(System.Single)
+  id: SetWaveLength(System.Single)
+  parent: Environement.Wave
+  langs:
+  - csharp
+  - vb
+  name: SetWaveLength(Single)
+  nameWithType: Wave.SetWaveLength(Single)
+  fullName: Environement.Wave.SetWaveLength(System.Single)
+  type: Method
+  source:
+    id: SetWaveLength
+    path: E:\Unity\Project\SRSP-Simple-Simulator\Assets\Controller\script\Model\Environement\Wave.cs
+    startLine: 63
+  assemblies:
+  - Assembly-CSharp
+  namespace: Environement
+  summary: "\nSet class attribut waveLength according to the input parameter\n"
+  example: []
+  syntax:
+    content: public void SetWaveLength(float length)
+    parameters:
+    - id: length
+      type: System.Single
+      description: input waveLength
+    content.vb: Public Sub SetWaveLength(length As Single)
+  overload: Environement.Wave.SetWaveLength*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Environement.Wave.GetDirection
+  commentId: M:Environement.Wave.GetDirection
+  id: GetDirection
+  parent: Environement.Wave
+  langs:
+  - csharp
+  - vb
+  name: GetDirection()
+  nameWithType: Wave.GetDirection()
+  fullName: Environement.Wave.GetDirection()
+  type: Method
+  source:
+    id: GetDirection
+    path: E:\Unity\Project\SRSP-Simple-Simulator\Assets\Controller\script\Model\Environement\Wave.cs
+    startLine: 72
+  assemblies:
+  - Assembly-CSharp
+  namespace: Environement
+  summary: "\nreturn direction attribut\n"
+  example: []
+  syntax:
+    content: public float GetDirection()
+    return:
+      type: System.Single
+      description: direction attribut value
+    content.vb: Public Function GetDirection As Single
+  overload: Environement.Wave.GetDirection*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Environement.Wave.GetAmplitude
+  commentId: M:Environement.Wave.GetAmplitude
+  id: GetAmplitude
+  parent: Environement.Wave
+  langs:
+  - csharp
+  - vb
+  name: GetAmplitude()
+  nameWithType: Wave.GetAmplitude()
+  fullName: Environement.Wave.GetAmplitude()
+  type: Method
+  source:
+    id: GetAmplitude
+    path: E:\Unity\Project\SRSP-Simple-Simulator\Assets\Controller\script\Model\Environement\Wave.cs
+    startLine: 80
+  assemblies:
+  - Assembly-CSharp
+  namespace: Environement
+  summary: "\nreturn amplitude attribut\n"
+  example: []
+  syntax:
+    content: public float GetAmplitude()
+    return:
+      type: System.Single
+      description: amplitude attribut value
+    content.vb: Public Function GetAmplitude As Single
+  overload: Environement.Wave.GetAmplitude*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Environement.Wave.GetWaveLength
+  commentId: M:Environement.Wave.GetWaveLength
+  id: GetWaveLength
+  parent: Environement.Wave
+  langs:
+  - csharp
+  - vb
+  name: GetWaveLength()
+  nameWithType: Wave.GetWaveLength()
+  fullName: Environement.Wave.GetWaveLength()
+  type: Method
+  source:
+    id: GetWaveLength
+    path: E:\Unity\Project\SRSP-Simple-Simulator\Assets\Controller\script\Model\Environement\Wave.cs
+    startLine: 89
+  assemblies:
+  - Assembly-CSharp
+  namespace: Environement
+  summary: "\nreturn waveLength attribut\n"
+  example: []
+  syntax:
+    content: public float GetWaveLength()
+    return:
+      type: System.Single
+      description: waveLength attribut value
+    content.vb: Public Function GetWaveLength As Single
+  overload: Environement.Wave.GetWaveLength*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+references:
+- uid: Environement
+  commentId: N:Environement
+  name: Environement
+  nameWithType: Environement
+  fullName: Environement
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  nameWithType: Object.ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Environement.Wave.#ctor*
+  commentId: Overload:Environement.Wave.#ctor
+  name: Wave
+  nameWithType: Wave.Wave
+  fullName: Environement.Wave.Wave
+- uid: Environement.Wave.Update*
+  commentId: Overload:Environement.Wave.Update
+  name: Update
+  nameWithType: Wave.Update
+  fullName: Environement.Wave.Update
+- uid: System.Single
+  commentId: T:System.Single
+  parent: System
+  isExternal: true
+  name: Single
+  nameWithType: Single
+  fullName: System.Single
+- uid: Environement.Wave.SetWaveDirection*
+  commentId: Overload:Environement.Wave.SetWaveDirection
+  name: SetWaveDirection
+  nameWithType: Wave.SetWaveDirection
+  fullName: Environement.Wave.SetWaveDirection
+- uid: Environement.Wave.SetWaveAmplitude*
+  commentId: Overload:Environement.Wave.SetWaveAmplitude
+  name: SetWaveAmplitude
+  nameWithType: Wave.SetWaveAmplitude
+  fullName: Environement.Wave.SetWaveAmplitude
+- uid: Environement.Wave.SetWaveLength*
+  commentId: Overload:Environement.Wave.SetWaveLength
+  name: SetWaveLength
+  nameWithType: Wave.SetWaveLength
+  fullName: Environement.Wave.SetWaveLength
+- uid: Environement.Wave.GetDirection*
+  commentId: Overload:Environement.Wave.GetDirection
+  name: GetDirection
+  nameWithType: Wave.GetDirection
+  fullName: Environement.Wave.GetDirection
+- uid: Environement.Wave.GetAmplitude*
+  commentId: Overload:Environement.Wave.GetAmplitude
+  name: GetAmplitude
+  nameWithType: Wave.GetAmplitude
+  fullName: Environement.Wave.GetAmplitude
+- uid: Environement.Wave.GetWaveLength*
+  commentId: Overload:Environement.Wave.GetWaveLength
+  name: GetWaveLength
+  nameWithType: Wave.GetWaveLength
+  fullName: Environement.Wave.GetWaveLength

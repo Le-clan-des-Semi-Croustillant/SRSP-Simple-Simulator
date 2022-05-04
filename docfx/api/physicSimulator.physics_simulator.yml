@@ -1,0 +1,801 @@
+### YamlMime:ManagedReference
+items:
+- uid: physicSimulator.physics_simulator
+  commentId: T:physicSimulator.physics_simulator
+  id: physics_simulator
+  parent: physicSimulator
+  children:
+  - physicSimulator.physics_simulator.#ctor(Environement.Environment,PRace.Boat,PRace.Time)
+  - physicSimulator.physics_simulator.GetAWADegre
+  - physicSimulator.physics_simulator.GetAWS
+  - physicSimulator.physics_simulator.GetCOG
+  - physicSimulator.physics_simulator.GetCOGDegre
+  - physicSimulator.physics_simulator.GetSOG
+  - physicSimulator.physics_simulator.GetSTW
+  - physicSimulator.physics_simulator.GetSTWdirDegre
+  - physicSimulator.physics_simulator.MathMod(System.Double,System.Double)
+  - physicSimulator.physics_simulator.Move
+  - physicSimulator.physics_simulator.SetBoat(PRace.Boat)
+  langs:
+  - csharp
+  - vb
+  name: physics_simulator
+  nameWithType: physics_simulator
+  fullName: physicSimulator.physics_simulator
+  type: Class
+  source:
+    id: physics_simulator
+    path: E:\Unity\Project\SRSP-Simple-Simulator\Assets\Controller\script\Model\physic_simulator\physics_simulator.cs
+    startLine: 10
+  assemblies:
+  - Assembly-CSharp
+  namespace: physicSimulator
+  summary: "\nThis class manages the calculation of the boat motions at each time interval\n"
+  example: []
+  syntax:
+    content: public class physics_simulator
+    content.vb: Public Class physics_simulator
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: physicSimulator.physics_simulator.#ctor(Environement.Environment,PRace.Boat,PRace.Time)
+  commentId: M:physicSimulator.physics_simulator.#ctor(Environement.Environment,PRace.Boat,PRace.Time)
+  id: '#ctor(Environement.Environment,PRace.Boat,PRace.Time)'
+  parent: physicSimulator.physics_simulator
+  langs:
+  - csharp
+  - vb
+  name: physics_simulator(Environment, Boat, Time)
+  nameWithType: physics_simulator.physics_simulator(Environment, Boat, Time)
+  fullName: physicSimulator.physics_simulator.physics_simulator(Environement.Environment, PRace.Boat, PRace.Time)
+  type: Constructor
+  source:
+    id: .ctor
+    path: E:\Unity\Project\SRSP-Simple-Simulator\Assets\Controller\script\Model\physic_simulator\physics_simulator.cs
+    startLine: 18
+  assemblies:
+  - Assembly-CSharp
+  namespace: physicSimulator
+  summary: "\nCreate an physics_simulator instance\n"
+  example: []
+  syntax:
+    content: public physics_simulator(Environment env, Boat boat, Time time)
+    parameters:
+    - id: env
+      type: Environement.Environment
+      description: Environment which will be used to calcul the new position
+    - id: boat
+      type: PRace.Boat
+      description: Boat to move
+    - id: time
+      type: PRace.Time
+      description: object containg time compression and tick value
+    content.vb: Public Sub New(env As Environment, boat As Boat, time As Time)
+  overload: physicSimulator.physics_simulator.#ctor*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: physicSimulator.physics_simulator.SetBoat(PRace.Boat)
+  commentId: M:physicSimulator.physics_simulator.SetBoat(PRace.Boat)
+  id: SetBoat(PRace.Boat)
+  parent: physicSimulator.physics_simulator
+  langs:
+  - csharp
+  - vb
+  name: SetBoat(Boat)
+  nameWithType: physics_simulator.SetBoat(Boat)
+  fullName: physicSimulator.physics_simulator.SetBoat(PRace.Boat)
+  type: Method
+  source:
+    id: SetBoat
+    path: E:\Unity\Project\SRSP-Simple-Simulator\Assets\Controller\script\Model\physic_simulator\physics_simulator.cs
+    startLine: 52
+  assemblies:
+  - Assembly-CSharp
+  namespace: physicSimulator
+  summary: "\nSet the boat to move\n"
+  example: []
+  syntax:
+    content: public void SetBoat(Boat boat)
+    parameters:
+    - id: boat
+      type: PRace.Boat
+      description: ''
+    content.vb: Public Sub SetBoat(boat As Boat)
+  overload: physicSimulator.physics_simulator.SetBoat*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: physicSimulator.physics_simulator.MathMod(System.Double,System.Double)
+  commentId: M:physicSimulator.physics_simulator.MathMod(System.Double,System.Double)
+  id: MathMod(System.Double,System.Double)
+  parent: physicSimulator.physics_simulator
+  langs:
+  - csharp
+  - vb
+  name: MathMod(Double, Double)
+  nameWithType: physics_simulator.MathMod(Double, Double)
+  fullName: physicSimulator.physics_simulator.MathMod(System.Double, System.Double)
+  type: Method
+  source:
+    id: MathMod
+    path: E:\Unity\Project\SRSP-Simple-Simulator\Assets\Controller\script\Model\physic_simulator\physics_simulator.cs
+    startLine: 63
+  assemblies:
+  - Assembly-CSharp
+  namespace: physicSimulator
+  summary: "\nCalculate the mathematical modulus of a by b\n"
+  example: []
+  syntax:
+    content: public double MathMod(double a, double b)
+    parameters:
+    - id: a
+      type: System.Double
+      description: value whose the modulo will be calculated
+    - id: b
+      type: System.Double
+      description: divider
+    return:
+      type: System.Double
+      description: double containing the modulo of a by b
+    content.vb: Public Function MathMod(a As Double, b As Double) As Double
+  overload: physicSimulator.physics_simulator.MathMod*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: physicSimulator.physics_simulator.Move
+  commentId: M:physicSimulator.physics_simulator.Move
+  id: Move
+  parent: physicSimulator.physics_simulator
+  langs:
+  - csharp
+  - vb
+  name: Move()
+  nameWithType: physics_simulator.Move()
+  fullName: physicSimulator.physics_simulator.Move()
+  type: Method
+  source:
+    id: Move
+    path: E:\Unity\Project\SRSP-Simple-Simulator\Assets\Controller\script\Model\physic_simulator\physics_simulator.cs
+    startLine: 81
+  assemblies:
+  - Assembly-CSharp
+  namespace: physicSimulator
+  summary: "\nCalculate a iteration of the physic simulation.\nFirst calculate the motion of the boat in the tangent plane,\nthen project this motion on a sphere of the Earth radius divided by the time compression value.\nAlso calcute the new COG and SOG\nand change the boat position to its next position\n"
+  example: []
+  syntax:
+    content: public void Move()
+    content.vb: Public Sub Move
+  overload: physicSimulator.physics_simulator.Move*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: physicSimulator.physics_simulator.GetCOG
+  commentId: M:physicSimulator.physics_simulator.GetCOG
+  id: GetCOG
+  parent: physicSimulator.physics_simulator
+  langs:
+  - csharp
+  - vb
+  name: GetCOG()
+  nameWithType: physics_simulator.GetCOG()
+  fullName: physicSimulator.physics_simulator.GetCOG()
+  type: Method
+  source:
+    id: GetCOG
+    path: E:\Unity\Project\SRSP-Simple-Simulator\Assets\Controller\script\Model\physic_simulator\physics_simulator.cs
+    startLine: 325
+  assemblies:
+  - Assembly-CSharp
+  namespace: physicSimulator
+  summary: "\n\n"
+  example: []
+  syntax:
+    content: public float GetCOG()
+    return:
+      type: System.Single
+      description: ''
+    content.vb: Public Function GetCOG As Single
+  overload: physicSimulator.physics_simulator.GetCOG*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: physicSimulator.physics_simulator.GetCOGDegre
+  commentId: M:physicSimulator.physics_simulator.GetCOGDegre
+  id: GetCOGDegre
+  parent: physicSimulator.physics_simulator
+  langs:
+  - csharp
+  - vb
+  name: GetCOGDegre()
+  nameWithType: physics_simulator.GetCOGDegre()
+  fullName: physicSimulator.physics_simulator.GetCOGDegre()
+  type: Method
+  source:
+    id: GetCOGDegre
+    path: E:\Unity\Project\SRSP-Simple-Simulator\Assets\Controller\script\Model\physic_simulator\physics_simulator.cs
+    startLine: 334
+  assemblies:
+  - Assembly-CSharp
+  namespace: physicSimulator
+  summary: "\n\n"
+  example: []
+  syntax:
+    content: public float GetCOGDegre()
+    return:
+      type: System.Single
+      description: ''
+    content.vb: Public Function GetCOGDegre As Single
+  overload: physicSimulator.physics_simulator.GetCOGDegre*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: physicSimulator.physics_simulator.GetSOG
+  commentId: M:physicSimulator.physics_simulator.GetSOG
+  id: GetSOG
+  parent: physicSimulator.physics_simulator
+  langs:
+  - csharp
+  - vb
+  name: GetSOG()
+  nameWithType: physics_simulator.GetSOG()
+  fullName: physicSimulator.physics_simulator.GetSOG()
+  type: Method
+  source:
+    id: GetSOG
+    path: E:\Unity\Project\SRSP-Simple-Simulator\Assets\Controller\script\Model\physic_simulator\physics_simulator.cs
+    startLine: 343
+  assemblies:
+  - Assembly-CSharp
+  namespace: physicSimulator
+  summary: "\n\n"
+  example: []
+  syntax:
+    content: public float GetSOG()
+    return:
+      type: System.Single
+      description: ''
+    content.vb: Public Function GetSOG As Single
+  overload: physicSimulator.physics_simulator.GetSOG*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: physicSimulator.physics_simulator.GetSTW
+  commentId: M:physicSimulator.physics_simulator.GetSTW
+  id: GetSTW
+  parent: physicSimulator.physics_simulator
+  langs:
+  - csharp
+  - vb
+  name: GetSTW()
+  nameWithType: physics_simulator.GetSTW()
+  fullName: physicSimulator.physics_simulator.GetSTW()
+  type: Method
+  source:
+    id: GetSTW
+    path: E:\Unity\Project\SRSP-Simple-Simulator\Assets\Controller\script\Model\physic_simulator\physics_simulator.cs
+    startLine: 352
+  assemblies:
+  - Assembly-CSharp
+  namespace: physicSimulator
+  summary: "\n\n"
+  example: []
+  syntax:
+    content: public float GetSTW()
+    return:
+      type: System.Single
+      description: ''
+    content.vb: Public Function GetSTW As Single
+  overload: physicSimulator.physics_simulator.GetSTW*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: physicSimulator.physics_simulator.GetSTWdirDegre
+  commentId: M:physicSimulator.physics_simulator.GetSTWdirDegre
+  id: GetSTWdirDegre
+  parent: physicSimulator.physics_simulator
+  langs:
+  - csharp
+  - vb
+  name: GetSTWdirDegre()
+  nameWithType: physics_simulator.GetSTWdirDegre()
+  fullName: physicSimulator.physics_simulator.GetSTWdirDegre()
+  type: Method
+  source:
+    id: GetSTWdirDegre
+    path: E:\Unity\Project\SRSP-Simple-Simulator\Assets\Controller\script\Model\physic_simulator\physics_simulator.cs
+    startLine: 361
+  assemblies:
+  - Assembly-CSharp
+  namespace: physicSimulator
+  summary: "\n\n"
+  example: []
+  syntax:
+    content: public float GetSTWdirDegre()
+    return:
+      type: System.Single
+      description: ''
+    content.vb: Public Function GetSTWdirDegre As Single
+  overload: physicSimulator.physics_simulator.GetSTWdirDegre*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: physicSimulator.physics_simulator.GetAWS
+  commentId: M:physicSimulator.physics_simulator.GetAWS
+  id: GetAWS
+  parent: physicSimulator.physics_simulator
+  langs:
+  - csharp
+  - vb
+  name: GetAWS()
+  nameWithType: physics_simulator.GetAWS()
+  fullName: physicSimulator.physics_simulator.GetAWS()
+  type: Method
+  source:
+    id: GetAWS
+    path: E:\Unity\Project\SRSP-Simple-Simulator\Assets\Controller\script\Model\physic_simulator\physics_simulator.cs
+    startLine: 370
+  assemblies:
+  - Assembly-CSharp
+  namespace: physicSimulator
+  summary: "\n\n"
+  example: []
+  syntax:
+    content: public float GetAWS()
+    return:
+      type: System.Single
+      description: ''
+    content.vb: Public Function GetAWS As Single
+  overload: physicSimulator.physics_simulator.GetAWS*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: physicSimulator.physics_simulator.GetAWADegre
+  commentId: M:physicSimulator.physics_simulator.GetAWADegre
+  id: GetAWADegre
+  parent: physicSimulator.physics_simulator
+  langs:
+  - csharp
+  - vb
+  name: GetAWADegre()
+  nameWithType: physics_simulator.GetAWADegre()
+  fullName: physicSimulator.physics_simulator.GetAWADegre()
+  type: Method
+  source:
+    id: GetAWADegre
+    path: E:\Unity\Project\SRSP-Simple-Simulator\Assets\Controller\script\Model\physic_simulator\physics_simulator.cs
+    startLine: 379
+  assemblies:
+  - Assembly-CSharp
+  namespace: physicSimulator
+  summary: "\n\n"
+  example: []
+  syntax:
+    content: public float GetAWADegre()
+    return:
+      type: System.Single
+      description: ''
+    content.vb: Public Function GetAWADegre As Single
+  overload: physicSimulator.physics_simulator.GetAWADegre*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+references:
+- uid: physicSimulator
+  commentId: N:physicSimulator
+  name: physicSimulator
+  nameWithType: physicSimulator
+  fullName: physicSimulator
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  nameWithType: Object.ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: physicSimulator.physics_simulator.#ctor*
+  commentId: Overload:physicSimulator.physics_simulator.#ctor
+  name: physics_simulator
+  nameWithType: physics_simulator.physics_simulator
+  fullName: physicSimulator.physics_simulator.physics_simulator
+- uid: Environement.Environment
+  commentId: T:Environement.Environment
+  parent: Environement
+  name: Environment
+  nameWithType: Environment
+  fullName: Environement.Environment
+- uid: PRace.Boat
+  commentId: T:PRace.Boat
+  parent: PRace
+  name: Boat
+  nameWithType: Boat
+  fullName: PRace.Boat
+- uid: PRace.Time
+  commentId: T:PRace.Time
+  parent: PRace
+  name: Time
+  nameWithType: Time
+  fullName: PRace.Time
+- uid: Environement
+  commentId: N:Environement
+  name: Environement
+  nameWithType: Environement
+  fullName: Environement
+- uid: PRace
+  commentId: N:PRace
+  name: PRace
+  nameWithType: PRace
+  fullName: PRace
+- uid: physicSimulator.physics_simulator.SetBoat*
+  commentId: Overload:physicSimulator.physics_simulator.SetBoat
+  name: SetBoat
+  nameWithType: physics_simulator.SetBoat
+  fullName: physicSimulator.physics_simulator.SetBoat
+- uid: physicSimulator.physics_simulator.MathMod*
+  commentId: Overload:physicSimulator.physics_simulator.MathMod
+  name: MathMod
+  nameWithType: physics_simulator.MathMod
+  fullName: physicSimulator.physics_simulator.MathMod
+- uid: System.Double
+  commentId: T:System.Double
+  parent: System
+  isExternal: true
+  name: Double
+  nameWithType: Double
+  fullName: System.Double
+- uid: physicSimulator.physics_simulator.Move*
+  commentId: Overload:physicSimulator.physics_simulator.Move
+  name: Move
+  nameWithType: physics_simulator.Move
+  fullName: physicSimulator.physics_simulator.Move
+- uid: physicSimulator.physics_simulator.GetCOG*
+  commentId: Overload:physicSimulator.physics_simulator.GetCOG
+  name: GetCOG
+  nameWithType: physics_simulator.GetCOG
+  fullName: physicSimulator.physics_simulator.GetCOG
+- uid: System.Single
+  commentId: T:System.Single
+  parent: System
+  isExternal: true
+  name: Single
+  nameWithType: Single
+  fullName: System.Single
+- uid: physicSimulator.physics_simulator.GetCOGDegre*
+  commentId: Overload:physicSimulator.physics_simulator.GetCOGDegre
+  name: GetCOGDegre
+  nameWithType: physics_simulator.GetCOGDegre
+  fullName: physicSimulator.physics_simulator.GetCOGDegre
+- uid: physicSimulator.physics_simulator.GetSOG*
+  commentId: Overload:physicSimulator.physics_simulator.GetSOG
+  name: GetSOG
+  nameWithType: physics_simulator.GetSOG
+  fullName: physicSimulator.physics_simulator.GetSOG
+- uid: physicSimulator.physics_simulator.GetSTW*
+  commentId: Overload:physicSimulator.physics_simulator.GetSTW
+  name: GetSTW
+  nameWithType: physics_simulator.GetSTW
+  fullName: physicSimulator.physics_simulator.GetSTW
+- uid: physicSimulator.physics_simulator.GetSTWdirDegre*
+  commentId: Overload:physicSimulator.physics_simulator.GetSTWdirDegre
+  name: GetSTWdirDegre
+  nameWithType: physics_simulator.GetSTWdirDegre
+  fullName: physicSimulator.physics_simulator.GetSTWdirDegre
+- uid: physicSimulator.physics_simulator.GetAWS*
+  commentId: Overload:physicSimulator.physics_simulator.GetAWS
+  name: GetAWS
+  nameWithType: physics_simulator.GetAWS
+  fullName: physicSimulator.physics_simulator.GetAWS
+- uid: physicSimulator.physics_simulator.GetAWADegre*
+  commentId: Overload:physicSimulator.physics_simulator.GetAWADegre
+  name: GetAWADegre
+  nameWithType: physics_simulator.GetAWADegre
+  fullName: physicSimulator.physics_simulator.GetAWADegre

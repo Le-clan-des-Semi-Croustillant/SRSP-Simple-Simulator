@@ -1,0 +1,35 @@
+### YamlMime:ManagedReference
+items:
+- uid: Communication.DataProcessing
+  commentId: N:Communication.DataProcessing
+  id: Communication.DataProcessing
+  children:
+  - Communication.DataProcessing.IMessageType
+  - Communication.DataProcessing.OMessageType
+  langs:
+  - csharp
+  - vb
+  name: Communication.DataProcessing
+  nameWithType: Communication.DataProcessing
+  fullName: Communication.DataProcessing
+  type: Namespace
+  assemblies:
+  - Assembly-CSharp
+references:
+- uid: Communication.DataProcessing.IMessageType
+  commentId: T:Communication.DataProcessing.IMessageType
+  parent: Communication.DataProcessing
+  name: IMessageType
+  nameWithType: IMessageType
+  fullName: Communication.DataProcessing.IMessageType
+- uid: Communication.DataProcessing.OMessageType
+  commentId: T:Communication.DataProcessing.OMessageType
+  parent: Communication.DataProcessing
+  name: OMessageType
+  nameWithType: OMessageType
+  fullName: Communication.DataProcessing.OMessageType
+- uid: Communication.DataProcessing
+  commentId: N:Communication.DataProcessing
+  name: Communication.DataProcessing
+  nameWithType: Communication.DataProcessing
+  fullName: Communication.DataProcessing

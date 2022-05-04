@@ -1,0 +1,811 @@
+### YamlMime:ManagedReference
+items:
+- uid: PRace.Polaire
+  commentId: T:PRace.Polaire
+  id: Polaire
+  parent: PRace
+  children:
+  - PRace.Polaire.#ctor(System.String,System.Collections.Generic.Dictionary{System.Single,System.Collections.Generic.Dictionary{System.Single,System.Single}},System.String)
+  - PRace.Polaire.getName
+  - PRace.Polaire.GetNearest(System.Single[],System.Single)
+  - PRace.Polaire.getPath
+  - PRace.Polaire.getSpeed(System.Single,System.Single)
+  - PRace.Polaire.setName(System.String)
+  - PRace.Polaire.setPath(System.String)
+  langs:
+  - csharp
+  - vb
+  name: Polaire
+  nameWithType: Polaire
+  fullName: PRace.Polaire
+  type: Class
+  source:
+    id: Polaire
+    path: E:\Unity\Project\SRSP-Simple-Simulator\Assets\Controller\script\Model\Race\Polaire.cs
+    startLine: 11
+  assemblies:
+  - Assembly-CSharp
+  namespace: PRace
+  summary: "\nThis class repesent a polar\n"
+  example: []
+  syntax:
+    content: public class Polaire
+    content.vb: Public Class Polaire
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: PRace.Polaire.#ctor(System.String,System.Collections.Generic.Dictionary{System.Single,System.Collections.Generic.Dictionary{System.Single,System.Single}},System.String)
+  commentId: M:PRace.Polaire.#ctor(System.String,System.Collections.Generic.Dictionary{System.Single,System.Collections.Generic.Dictionary{System.Single,System.Single}},System.String)
+  id: '#ctor(System.String,System.Collections.Generic.Dictionary{System.Single,System.Collections.Generic.Dictionary{System.Single,System.Single}},System.String)'
+  parent: PRace.Polaire
+  langs:
+  - csharp
+  - vb
+  name: Polaire(String, Dictionary<Single, Dictionary<Single, Single>>, String)
+  nameWithType: Polaire.Polaire(String, Dictionary<Single, Dictionary<Single, Single>>, String)
+  fullName: PRace.Polaire.Polaire(System.String, System.Collections.Generic.Dictionary<System.Single, System.Collections.Generic.Dictionary<System.Single, System.Single>>, System.String)
+  type: Constructor
+  source:
+    id: .ctor
+    path: E:\Unity\Project\SRSP-Simple-Simulator\Assets\Controller\script\Model\Race\Polaire.cs
+    startLine: 19
+  assemblies:
+  - Assembly-CSharp
+  namespace: PRace
+  summary: "\nCreate an Polaire instance\n"
+  example: []
+  syntax:
+    content: public Polaire(string name, Dictionary<float, Dictionary<float, float>> pol, string path)
+    parameters:
+    - id: name
+      type: System.String
+      description: used to set the attribut &apos;name&apos;
+    - id: pol
+      type: System.Collections.Generic.Dictionary{System.Single,System.Collections.Generic.Dictionary{System.Single,System.Single}}
+      description: 'used to set the attribut &apos;pol&apos; '
+    - id: path
+      type: System.String
+      description: useed to set the attribut &apos;path&apos;
+    content.vb: Public Sub New(name As String, pol As Dictionary(Of Single, Dictionary(Of Single, Single)), path As String)
+  overload: PRace.Polaire.#ctor*
+  nameWithType.vb: Polaire.Polaire(String, Dictionary(Of Single, Dictionary(Of Single, Single)), String)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: PRace.Polaire.Polaire(System.String, System.Collections.Generic.Dictionary(Of System.Single, System.Collections.Generic.Dictionary(Of System.Single, System.Single)), System.String)
+  name.vb: Polaire(String, Dictionary(Of Single, Dictionary(Of Single, Single)), String)
+- uid: PRace.Polaire.GetNearest(System.Single[],System.Single)
+  commentId: M:PRace.Polaire.GetNearest(System.Single[],System.Single)
+  id: GetNearest(System.Single[],System.Single)
+  parent: PRace.Polaire
+  langs:
+  - csharp
+  - vb
+  name: GetNearest(Single[], Single)
+  nameWithType: Polaire.GetNearest(Single[], Single)
+  fullName: PRace.Polaire.GetNearest(System.Single[], System.Single)
+  type: Method
+  source:
+    id: GetNearest
+    path: E:\Unity\Project\SRSP-Simple-Simulator\Assets\Controller\script\Model\Race\Polaire.cs
+    startLine: 39
+  assemblies:
+  - Assembly-CSharp
+  namespace: PRace
+  summary: "\nSearch the value closest to val in the table\n"
+  example: []
+  syntax:
+    content: public float GetNearest(float[] tab, float val)
+    parameters:
+    - id: tab
+      type: System.Single[]
+      description: table to search in
+    - id: val
+      type: System.Single
+      description: value to approach
+    return:
+      type: System.Single
+      description: return the value closest to val in the table
+    content.vb: Public Function GetNearest(tab As Single(), val As Single) As Single
+  overload: PRace.Polaire.GetNearest*
+  nameWithType.vb: Polaire.GetNearest(Single(), Single)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: PRace.Polaire.GetNearest(System.Single(), System.Single)
+  name.vb: GetNearest(Single(), Single)
+- uid: PRace.Polaire.getSpeed(System.Single,System.Single)
+  commentId: M:PRace.Polaire.getSpeed(System.Single,System.Single)
+  id: getSpeed(System.Single,System.Single)
+  parent: PRace.Polaire
+  langs:
+  - csharp
+  - vb
+  name: getSpeed(Single, Single)
+  nameWithType: Polaire.getSpeed(Single, Single)
+  fullName: PRace.Polaire.getSpeed(System.Single, System.Single)
+  type: Method
+  source:
+    id: getSpeed
+    path: E:\Unity\Project\SRSP-Simple-Simulator\Assets\Controller\script\Model\Race\Polaire.cs
+    startLine: 72
+  assemblies:
+  - Assembly-CSharp
+  namespace: PRace
+  summary: "\nSearch the speed induced by an wind speed and angle. Search the closest value to angle and then WindSpeed in the attribut &apos;polar&apos; (Dictionary(float, Dictionary(float,float))).\n"
+  example: []
+  syntax:
+    content: public float getSpeed(float angle, float WindSpeed)
+    parameters:
+    - id: angle
+      type: System.Single
+      description: ''
+    - id: WindSpeed
+      type: System.Single
+      description: ''
+    return:
+      type: System.Single
+      description: return the speed induce by an wind speed and angle
+    content.vb: Public Function getSpeed(angle As Single, WindSpeed As Single) As Single
+  overload: PRace.Polaire.getSpeed*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: PRace.Polaire.setName(System.String)
+  commentId: M:PRace.Polaire.setName(System.String)
+  id: setName(System.String)
+  parent: PRace.Polaire
+  langs:
+  - csharp
+  - vb
+  name: setName(String)
+  nameWithType: Polaire.setName(String)
+  fullName: PRace.Polaire.setName(System.String)
+  type: Method
+  source:
+    id: setName
+    path: E:\Unity\Project\SRSP-Simple-Simulator\Assets\Controller\script\Model\Race\Polaire.cs
+    startLine: 103
+  assemblies:
+  - Assembly-CSharp
+  namespace: PRace
+  syntax:
+    content: public void setName(string name)
+    parameters:
+    - id: name
+      type: System.String
+    content.vb: Public Sub setName(name As String)
+  overload: PRace.Polaire.setName*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: PRace.Polaire.getName
+  commentId: M:PRace.Polaire.getName
+  id: getName
+  parent: PRace.Polaire
+  langs:
+  - csharp
+  - vb
+  name: getName()
+  nameWithType: Polaire.getName()
+  fullName: PRace.Polaire.getName()
+  type: Method
+  source:
+    id: getName
+    path: E:\Unity\Project\SRSP-Simple-Simulator\Assets\Controller\script\Model\Race\Polaire.cs
+    startLine: 108
+  assemblies:
+  - Assembly-CSharp
+  namespace: PRace
+  syntax:
+    content: public string getName()
+    return:
+      type: System.String
+    content.vb: Public Function getName As String
+  overload: PRace.Polaire.getName*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: PRace.Polaire.setPath(System.String)
+  commentId: M:PRace.Polaire.setPath(System.String)
+  id: setPath(System.String)
+  parent: PRace.Polaire
+  langs:
+  - csharp
+  - vb
+  name: setPath(String)
+  nameWithType: Polaire.setPath(String)
+  fullName: PRace.Polaire.setPath(System.String)
+  type: Method
+  source:
+    id: setPath
+    path: E:\Unity\Project\SRSP-Simple-Simulator\Assets\Controller\script\Model\Race\Polaire.cs
+    startLine: 113
+  assemblies:
+  - Assembly-CSharp
+  namespace: PRace
+  syntax:
+    content: public void setPath(string path)
+    parameters:
+    - id: path
+      type: System.String
+    content.vb: Public Sub setPath(path As String)
+  overload: PRace.Polaire.setPath*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: PRace.Polaire.getPath
+  commentId: M:PRace.Polaire.getPath
+  id: getPath
+  parent: PRace.Polaire
+  langs:
+  - csharp
+  - vb
+  name: getPath()
+  nameWithType: Polaire.getPath()
+  fullName: PRace.Polaire.getPath()
+  type: Method
+  source:
+    id: getPath
+    path: E:\Unity\Project\SRSP-Simple-Simulator\Assets\Controller\script\Model\Race\Polaire.cs
+    startLine: 118
+  assemblies:
+  - Assembly-CSharp
+  namespace: PRace
+  syntax:
+    content: public string getPath()
+    return:
+      type: System.String
+    content.vb: Public Function getPath As String
+  overload: PRace.Polaire.getPath*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+references:
+- uid: PRace
+  commentId: N:PRace
+  name: PRace
+  nameWithType: PRace
+  fullName: PRace
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  nameWithType: Object.ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: PRace.Polaire.#ctor*
+  commentId: Overload:PRace.Polaire.#ctor
+  name: Polaire
+  nameWithType: Polaire.Polaire
+  fullName: PRace.Polaire.Polaire
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: System.Collections.Generic.Dictionary{System.Single,System.Collections.Generic.Dictionary{System.Single,System.Single}}
+  commentId: T:System.Collections.Generic.Dictionary{System.Single,System.Collections.Generic.Dictionary{System.Single,System.Single}}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.Dictionary`2
+  name: Dictionary<Single, Dictionary<Single, Single>>
+  nameWithType: Dictionary<Single, Dictionary<Single, Single>>
+  fullName: System.Collections.Generic.Dictionary<System.Single, System.Collections.Generic.Dictionary<System.Single, System.Single>>
+  nameWithType.vb: Dictionary(Of Single, Dictionary(Of Single, Single))
+  fullName.vb: System.Collections.Generic.Dictionary(Of System.Single, System.Collections.Generic.Dictionary(Of System.Single, System.Single))
+  name.vb: Dictionary(Of Single, Dictionary(Of Single, Single))
+  spec.csharp:
+  - uid: System.Collections.Generic.Dictionary`2
+    name: Dictionary
+    nameWithType: Dictionary
+    fullName: System.Collections.Generic.Dictionary
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.Single
+    name: Single
+    nameWithType: Single
+    fullName: System.Single
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Collections.Generic.Dictionary`2
+    name: Dictionary
+    nameWithType: Dictionary
+    fullName: System.Collections.Generic.Dictionary
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.Single
+    name: Single
+    nameWithType: Single
+    fullName: System.Single
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Single
+    name: Single
+    nameWithType: Single
+    fullName: System.Single
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.Dictionary`2
+    name: Dictionary
+    nameWithType: Dictionary
+    fullName: System.Collections.Generic.Dictionary
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: System.Single
+    name: Single
+    nameWithType: Single
+    fullName: System.Single
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Collections.Generic.Dictionary`2
+    name: Dictionary
+    nameWithType: Dictionary
+    fullName: System.Collections.Generic.Dictionary
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: System.Single
+    name: Single
+    nameWithType: Single
+    fullName: System.Single
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Single
+    name: Single
+    nameWithType: Single
+    fullName: System.Single
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.Generic.Dictionary`2
+  commentId: T:System.Collections.Generic.Dictionary`2
+  isExternal: true
+  name: Dictionary<TKey, TValue>
+  nameWithType: Dictionary<TKey, TValue>
+  fullName: System.Collections.Generic.Dictionary<TKey, TValue>
+  nameWithType.vb: Dictionary(Of TKey, TValue)
+  fullName.vb: System.Collections.Generic.Dictionary(Of TKey, TValue)
+  name.vb: Dictionary(Of TKey, TValue)
+  spec.csharp:
+  - uid: System.Collections.Generic.Dictionary`2
+    name: Dictionary
+    nameWithType: Dictionary
+    fullName: System.Collections.Generic.Dictionary
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: TKey
+    nameWithType: TKey
+    fullName: TKey
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TValue
+    nameWithType: TValue
+    fullName: TValue
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.Dictionary`2
+    name: Dictionary
+    nameWithType: Dictionary
+    fullName: System.Collections.Generic.Dictionary
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: TKey
+    nameWithType: TKey
+    fullName: TKey
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TValue
+    nameWithType: TValue
+    fullName: TValue
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+- uid: PRace.Polaire.GetNearest*
+  commentId: Overload:PRace.Polaire.GetNearest
+  name: GetNearest
+  nameWithType: Polaire.GetNearest
+  fullName: PRace.Polaire.GetNearest
+- uid: System.Single[]
+  isExternal: true
+  name: Single[]
+  nameWithType: Single[]
+  fullName: System.Single[]
+  nameWithType.vb: Single()
+  fullName.vb: System.Single()
+  name.vb: Single()
+  spec.csharp:
+  - uid: System.Single
+    name: Single
+    nameWithType: Single
+    fullName: System.Single
+    isExternal: true
+  - name: '[]'
+    nameWithType: '[]'
+    fullName: '[]'
+  spec.vb:
+  - uid: System.Single
+    name: Single
+    nameWithType: Single
+    fullName: System.Single
+    isExternal: true
+  - name: ()
+    nameWithType: ()
+    fullName: ()
+- uid: System.Single
+  commentId: T:System.Single
+  parent: System
+  isExternal: true
+  name: Single
+  nameWithType: Single
+  fullName: System.Single
+- uid: PRace.Polaire.getSpeed*
+  commentId: Overload:PRace.Polaire.getSpeed
+  name: getSpeed
+  nameWithType: Polaire.getSpeed
+  fullName: PRace.Polaire.getSpeed
+- uid: PRace.Polaire.setName*
+  commentId: Overload:PRace.Polaire.setName
+  name: setName
+  nameWithType: Polaire.setName
+  fullName: PRace.Polaire.setName
+- uid: PRace.Polaire.getName*
+  commentId: Overload:PRace.Polaire.getName
+  name: getName
+  nameWithType: Polaire.getName
+  fullName: PRace.Polaire.getName
+- uid: PRace.Polaire.setPath*
+  commentId: Overload:PRace.Polaire.setPath
+  name: setPath
+  nameWithType: Polaire.setPath
+  fullName: PRace.Polaire.setPath
+- uid: PRace.Polaire.getPath*
+  commentId: Overload:PRace.Polaire.getPath
+  name: getPath
+  nameWithType: Polaire.getPath
+  fullName: PRace.Polaire.getPath

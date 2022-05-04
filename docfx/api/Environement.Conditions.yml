@@ -1,0 +1,247 @@
+### YamlMime:ManagedReference
+items:
+- uid: Environement.Conditions
+  commentId: T:Environement.Conditions
+  id: Conditions
+  parent: Environement
+  children:
+  - Environement.Conditions.CurrentDirection
+  - Environement.Conditions.CurrentSpeed
+  - Environement.Conditions.WaveAmplitude
+  - Environement.Conditions.WaveDirection
+  - Environement.Conditions.WaveLength
+  - Environement.Conditions.WindDirection
+  - Environement.Conditions.WindSpeed
+  langs:
+  - csharp
+  - vb
+  name: Conditions
+  nameWithType: Conditions
+  fullName: Environement.Conditions
+  type: Enum
+  source:
+    id: Conditions
+    path: E:\Unity\Project\SRSP-Simple-Simulator\Assets\Controller\script\Model\Environement\Conditions.cs
+    startLine: 6
+  assemblies:
+  - Assembly-CSharp
+  namespace: Environement
+  summary: "\nEnumeration of the environmental condition available\n"
+  example: []
+  syntax:
+    content: public enum Conditions
+    content.vb: Public Enum Conditions
+  modifiers.csharp:
+  - public
+  - enum
+  modifiers.vb:
+  - Public
+  - Enum
+- uid: Environement.Conditions.WindDirection
+  commentId: F:Environement.Conditions.WindDirection
+  id: WindDirection
+  parent: Environement.Conditions
+  langs:
+  - csharp
+  - vb
+  name: WindDirection
+  nameWithType: Conditions.WindDirection
+  fullName: Environement.Conditions.WindDirection
+  type: Field
+  source:
+    id: WindDirection
+    path: E:\Unity\Project\SRSP-Simple-Simulator\Assets\Controller\script\Model\Environement\Conditions.cs
+    startLine: 8
+  assemblies:
+  - Assembly-CSharp
+  namespace: Environement
+  syntax:
+    content: WindDirection = 0
+    return:
+      type: Environement.Conditions
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: Environement.Conditions.WindSpeed
+  commentId: F:Environement.Conditions.WindSpeed
+  id: WindSpeed
+  parent: Environement.Conditions
+  langs:
+  - csharp
+  - vb
+  name: WindSpeed
+  nameWithType: Conditions.WindSpeed
+  fullName: Environement.Conditions.WindSpeed
+  type: Field
+  source:
+    id: WindSpeed
+    path: E:\Unity\Project\SRSP-Simple-Simulator\Assets\Controller\script\Model\Environement\Conditions.cs
+    startLine: 9
+  assemblies:
+  - Assembly-CSharp
+  namespace: Environement
+  syntax:
+    content: WindSpeed = 1
+    return:
+      type: Environement.Conditions
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: Environement.Conditions.CurrentDirection
+  commentId: F:Environement.Conditions.CurrentDirection
+  id: CurrentDirection
+  parent: Environement.Conditions
+  langs:
+  - csharp
+  - vb
+  name: CurrentDirection
+  nameWithType: Conditions.CurrentDirection
+  fullName: Environement.Conditions.CurrentDirection
+  type: Field
+  source:
+    id: CurrentDirection
+    path: E:\Unity\Project\SRSP-Simple-Simulator\Assets\Controller\script\Model\Environement\Conditions.cs
+    startLine: 10
+  assemblies:
+  - Assembly-CSharp
+  namespace: Environement
+  syntax:
+    content: CurrentDirection = 2
+    return:
+      type: Environement.Conditions
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: Environement.Conditions.CurrentSpeed
+  commentId: F:Environement.Conditions.CurrentSpeed
+  id: CurrentSpeed
+  parent: Environement.Conditions
+  langs:
+  - csharp
+  - vb
+  name: CurrentSpeed
+  nameWithType: Conditions.CurrentSpeed
+  fullName: Environement.Conditions.CurrentSpeed
+  type: Field
+  source:
+    id: CurrentSpeed
+    path: E:\Unity\Project\SRSP-Simple-Simulator\Assets\Controller\script\Model\Environement\Conditions.cs
+    startLine: 11
+  assemblies:
+  - Assembly-CSharp
+  namespace: Environement
+  syntax:
+    content: CurrentSpeed = 3
+    return:
+      type: Environement.Conditions
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: Environement.Conditions.WaveDirection
+  commentId: F:Environement.Conditions.WaveDirection
+  id: WaveDirection
+  parent: Environement.Conditions
+  langs:
+  - csharp
+  - vb
+  name: WaveDirection
+  nameWithType: Conditions.WaveDirection
+  fullName: Environement.Conditions.WaveDirection
+  type: Field
+  source:
+    id: WaveDirection
+    path: E:\Unity\Project\SRSP-Simple-Simulator\Assets\Controller\script\Model\Environement\Conditions.cs
+    startLine: 12
+  assemblies:
+  - Assembly-CSharp
+  namespace: Environement
+  syntax:
+    content: WaveDirection = 4
+    return:
+      type: Environement.Conditions
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: Environement.Conditions.WaveAmplitude
+  commentId: F:Environement.Conditions.WaveAmplitude
+  id: WaveAmplitude
+  parent: Environement.Conditions
+  langs:
+  - csharp
+  - vb
+  name: WaveAmplitude
+  nameWithType: Conditions.WaveAmplitude
+  fullName: Environement.Conditions.WaveAmplitude
+  type: Field
+  source:
+    id: WaveAmplitude
+    path: E:\Unity\Project\SRSP-Simple-Simulator\Assets\Controller\script\Model\Environement\Conditions.cs
+    startLine: 13
+  assemblies:
+  - Assembly-CSharp
+  namespace: Environement
+  syntax:
+    content: WaveAmplitude = 5
+    return:
+      type: Environement.Conditions
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: Environement.Conditions.WaveLength
+  commentId: F:Environement.Conditions.WaveLength
+  id: WaveLength
+  parent: Environement.Conditions
+  langs:
+  - csharp
+  - vb
+  name: WaveLength
+  nameWithType: Conditions.WaveLength
+  fullName: Environement.Conditions.WaveLength
+  type: Field
+  source:
+    id: WaveLength
+    path: E:\Unity\Project\SRSP-Simple-Simulator\Assets\Controller\script\Model\Environement\Conditions.cs
+    startLine: 14
+  assemblies:
+  - Assembly-CSharp
+  namespace: Environement
+  syntax:
+    content: WaveLength = 6
+    return:
+      type: Environement.Conditions
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+references:
+- uid: Environement
+  commentId: N:Environement
+  name: Environement
+  nameWithType: Environement
+  fullName: Environement
+- uid: Environement.Conditions
+  commentId: T:Environement.Conditions
+  parent: Environement
+  name: Conditions
+  nameWithType: Conditions
+  fullName: Environement.Conditions

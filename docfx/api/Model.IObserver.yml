@@ -1,0 +1,75 @@
+### YamlMime:ManagedReference
+items:
+- uid: Model.IObserver
+  commentId: T:Model.IObserver
+  id: IObserver
+  parent: Model
+  children:
+  - Model.IObserver.Update(Model.ISubject)
+  langs:
+  - csharp
+  - vb
+  name: IObserver
+  nameWithType: IObserver
+  fullName: Model.IObserver
+  type: Interface
+  source:
+    id: IObserver
+    path: E:\Unity\Project\SRSP-Simple-Simulator\Assets\Controller\script\Model\IObserver.cs
+    startLine: 10
+  assemblies:
+  - Assembly-CSharp
+  namespace: Model
+  summary: "\nInterface of an observer pattern\n"
+  example: []
+  syntax:
+    content: public interface IObserver
+    content.vb: Public Interface IObserver
+  modifiers.csharp:
+  - public
+  - interface
+  modifiers.vb:
+  - Public
+  - Interface
+- uid: Model.IObserver.Update(Model.ISubject)
+  commentId: M:Model.IObserver.Update(Model.ISubject)
+  id: Update(Model.ISubject)
+  parent: Model.IObserver
+  langs:
+  - csharp
+  - vb
+  name: Update(ISubject)
+  nameWithType: IObserver.Update(ISubject)
+  fullName: Model.IObserver.Update(Model.ISubject)
+  type: Method
+  source:
+    id: Update
+    path: E:\Unity\Project\SRSP-Simple-Simulator\Assets\Controller\script\Model\IObserver.cs
+    startLine: 12
+  assemblies:
+  - Assembly-CSharp
+  namespace: Model
+  syntax:
+    content: void Update(ISubject subject)
+    parameters:
+    - id: subject
+      type: Model.ISubject
+    content.vb: Sub Update(subject As ISubject)
+  overload: Model.IObserver.Update*
+references:
+- uid: Model
+  commentId: N:Model
+  name: Model
+  nameWithType: Model
+  fullName: Model
+- uid: Model.IObserver.Update*
+  commentId: Overload:Model.IObserver.Update
+  name: Update
+  nameWithType: IObserver.Update
+  fullName: Model.IObserver.Update
+- uid: Model.ISubject
+  commentId: T:Model.ISubject
+  parent: Model
+  name: ISubject
+  nameWithType: ISubject
+  fullName: Model.ISubject

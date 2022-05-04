@@ -1,0 +1,22 @@
+### YamlMime:ManagedReference
+items:
+- uid: Controller
+  commentId: N:Controller
+  id: Controller
+  children:
+  - Controller.Follow
+  langs:
+  - csharp
+  - vb
+  name: Controller
+  nameWithType: Controller
+  fullName: Controller
+  type: Namespace
+  assemblies:
+  - Assembly-CSharp
+references:
+- uid: Controller.Follow
+  commentId: T:Controller.Follow
+  name: Follow
+  nameWithType: Follow
+  fullName: Controller.Follow

@@ -1,0 +1,247 @@
+### YamlMime:ManagedReference
+items:
+- uid: Communication.DataProcessing.IMessageType
+  commentId: T:Communication.DataProcessing.IMessageType
+  id: IMessageType
+  parent: Communication.DataProcessing
+  children:
+  - Communication.DataProcessing.IMessageType.BOATLISTREQUEST
+  - Communication.DataProcessing.IMessageType.BOATSELECT
+  - Communication.DataProcessing.IMessageType.CONNECTION
+  - Communication.DataProcessing.IMessageType.DISCONNECTION
+  - Communication.DataProcessing.IMessageType.ENDRACE
+  - Communication.DataProcessing.IMessageType.PLAYERINFO
+  - Communication.DataProcessing.IMessageType.RACELISTUPDATE
+  langs:
+  - csharp
+  - vb
+  name: IMessageType
+  nameWithType: IMessageType
+  fullName: Communication.DataProcessing.IMessageType
+  type: Enum
+  source:
+    id: IMessageType
+    path: E:\Unity\Project\SRSP-Simple-Simulator\Assets\Controller\script\Model\AquitisionCommunication\Communication\DataProcessing\MessageType.cs
+    startLine: 5
+  assemblies:
+  - Assembly-CSharp
+  namespace: Communication.DataProcessing
+  summary: "\nType of message send and recive.\n"
+  example: []
+  syntax:
+    content: public enum IMessageType
+    content.vb: Public Enum IMessageType
+  modifiers.csharp:
+  - public
+  - enum
+  modifiers.vb:
+  - Public
+  - Enum
+- uid: Communication.DataProcessing.IMessageType.CONNECTION
+  commentId: F:Communication.DataProcessing.IMessageType.CONNECTION
+  id: CONNECTION
+  parent: Communication.DataProcessing.IMessageType
+  langs:
+  - csharp
+  - vb
+  name: CONNECTION
+  nameWithType: IMessageType.CONNECTION
+  fullName: Communication.DataProcessing.IMessageType.CONNECTION
+  type: Field
+  source:
+    id: CONNECTION
+    path: E:\Unity\Project\SRSP-Simple-Simulator\Assets\Controller\script\Model\AquitisionCommunication\Communication\DataProcessing\MessageType.cs
+    startLine: 7
+  assemblies:
+  - Assembly-CSharp
+  namespace: Communication.DataProcessing
+  syntax:
+    content: CONNECTION = 0
+    return:
+      type: Communication.DataProcessing.IMessageType
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: Communication.DataProcessing.IMessageType.DISCONNECTION
+  commentId: F:Communication.DataProcessing.IMessageType.DISCONNECTION
+  id: DISCONNECTION
+  parent: Communication.DataProcessing.IMessageType
+  langs:
+  - csharp
+  - vb
+  name: DISCONNECTION
+  nameWithType: IMessageType.DISCONNECTION
+  fullName: Communication.DataProcessing.IMessageType.DISCONNECTION
+  type: Field
+  source:
+    id: DISCONNECTION
+    path: E:\Unity\Project\SRSP-Simple-Simulator\Assets\Controller\script\Model\AquitisionCommunication\Communication\DataProcessing\MessageType.cs
+    startLine: 8
+  assemblies:
+  - Assembly-CSharp
+  namespace: Communication.DataProcessing
+  syntax:
+    content: DISCONNECTION = 1
+    return:
+      type: Communication.DataProcessing.IMessageType
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: Communication.DataProcessing.IMessageType.PLAYERINFO
+  commentId: F:Communication.DataProcessing.IMessageType.PLAYERINFO
+  id: PLAYERINFO
+  parent: Communication.DataProcessing.IMessageType
+  langs:
+  - csharp
+  - vb
+  name: PLAYERINFO
+  nameWithType: IMessageType.PLAYERINFO
+  fullName: Communication.DataProcessing.IMessageType.PLAYERINFO
+  type: Field
+  source:
+    id: PLAYERINFO
+    path: E:\Unity\Project\SRSP-Simple-Simulator\Assets\Controller\script\Model\AquitisionCommunication\Communication\DataProcessing\MessageType.cs
+    startLine: 9
+  assemblies:
+  - Assembly-CSharp
+  namespace: Communication.DataProcessing
+  syntax:
+    content: PLAYERINFO = 2
+    return:
+      type: Communication.DataProcessing.IMessageType
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: Communication.DataProcessing.IMessageType.BOATSELECT
+  commentId: F:Communication.DataProcessing.IMessageType.BOATSELECT
+  id: BOATSELECT
+  parent: Communication.DataProcessing.IMessageType
+  langs:
+  - csharp
+  - vb
+  name: BOATSELECT
+  nameWithType: IMessageType.BOATSELECT
+  fullName: Communication.DataProcessing.IMessageType.BOATSELECT
+  type: Field
+  source:
+    id: BOATSELECT
+    path: E:\Unity\Project\SRSP-Simple-Simulator\Assets\Controller\script\Model\AquitisionCommunication\Communication\DataProcessing\MessageType.cs
+    startLine: 10
+  assemblies:
+  - Assembly-CSharp
+  namespace: Communication.DataProcessing
+  syntax:
+    content: BOATSELECT = 3
+    return:
+      type: Communication.DataProcessing.IMessageType
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: Communication.DataProcessing.IMessageType.BOATLISTREQUEST
+  commentId: F:Communication.DataProcessing.IMessageType.BOATLISTREQUEST
+  id: BOATLISTREQUEST
+  parent: Communication.DataProcessing.IMessageType
+  langs:
+  - csharp
+  - vb
+  name: BOATLISTREQUEST
+  nameWithType: IMessageType.BOATLISTREQUEST
+  fullName: Communication.DataProcessing.IMessageType.BOATLISTREQUEST
+  type: Field
+  source:
+    id: BOATLISTREQUEST
+    path: E:\Unity\Project\SRSP-Simple-Simulator\Assets\Controller\script\Model\AquitisionCommunication\Communication\DataProcessing\MessageType.cs
+    startLine: 11
+  assemblies:
+  - Assembly-CSharp
+  namespace: Communication.DataProcessing
+  syntax:
+    content: BOATLISTREQUEST = 4
+    return:
+      type: Communication.DataProcessing.IMessageType
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: Communication.DataProcessing.IMessageType.ENDRACE
+  commentId: F:Communication.DataProcessing.IMessageType.ENDRACE
+  id: ENDRACE
+  parent: Communication.DataProcessing.IMessageType
+  langs:
+  - csharp
+  - vb
+  name: ENDRACE
+  nameWithType: IMessageType.ENDRACE
+  fullName: Communication.DataProcessing.IMessageType.ENDRACE
+  type: Field
+  source:
+    id: ENDRACE
+    path: E:\Unity\Project\SRSP-Simple-Simulator\Assets\Controller\script\Model\AquitisionCommunication\Communication\DataProcessing\MessageType.cs
+    startLine: 12
+  assemblies:
+  - Assembly-CSharp
+  namespace: Communication.DataProcessing
+  syntax:
+    content: ENDRACE = 5
+    return:
+      type: Communication.DataProcessing.IMessageType
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: Communication.DataProcessing.IMessageType.RACELISTUPDATE
+  commentId: F:Communication.DataProcessing.IMessageType.RACELISTUPDATE
+  id: RACELISTUPDATE
+  parent: Communication.DataProcessing.IMessageType
+  langs:
+  - csharp
+  - vb
+  name: RACELISTUPDATE
+  nameWithType: IMessageType.RACELISTUPDATE
+  fullName: Communication.DataProcessing.IMessageType.RACELISTUPDATE
+  type: Field
+  source:
+    id: RACELISTUPDATE
+    path: E:\Unity\Project\SRSP-Simple-Simulator\Assets\Controller\script\Model\AquitisionCommunication\Communication\DataProcessing\MessageType.cs
+    startLine: 13
+  assemblies:
+  - Assembly-CSharp
+  namespace: Communication.DataProcessing
+  syntax:
+    content: RACELISTUPDATE = 6
+    return:
+      type: Communication.DataProcessing.IMessageType
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+references:
+- uid: Communication.DataProcessing
+  commentId: N:Communication.DataProcessing
+  name: Communication.DataProcessing
+  nameWithType: Communication.DataProcessing
+  fullName: Communication.DataProcessing
+- uid: Communication.DataProcessing.IMessageType
+  commentId: T:Communication.DataProcessing.IMessageType
+  parent: Communication.DataProcessing
+  name: IMessageType
+  nameWithType: IMessageType
+  fullName: Communication.DataProcessing.IMessageType

@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "8zYYSvy+PHeGkahdPHyu4Kz3n8zTehSsyLLXuyr9nUHnnUL9/xa2LoNHxxeevyL28RlUmGAG+jJkWPPt2cWNlQ==",
+  "success": true,
+  "projectFilePath": "G:\\Documents\\GitHub\\SRSP-Simple-Simulator\\SimpleSimulator\\SimpleSimulator\\SimpleSimulator.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\green\\.nuget\\packages\\newtonsoft.json\\13.0.1\\newtonsoft.json.13.0.1.nupkg.sha512"
+  ],
+  "logs": []
+}

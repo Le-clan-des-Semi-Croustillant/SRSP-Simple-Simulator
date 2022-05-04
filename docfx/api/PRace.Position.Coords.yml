@@ -1,0 +1,563 @@
+### YamlMime:ManagedReference
+items:
+- uid: PRace.Position.Coords
+  commentId: T:PRace.Position.Coords
+  id: Position.Coords
+  parent: PRace
+  children:
+  - PRace.Position.Coords.#ctor(System.Char,System.Int32,System.Int32,System.Int32)
+  - PRace.Position.Coords.degre
+  - PRace.Position.Coords.min
+  - PRace.Position.Coords.pos
+  - PRace.Position.Coords.sec
+  - PRace.Position.Coords.ToString
+  langs:
+  - csharp
+  - vb
+  name: Position.Coords
+  nameWithType: Position.Coords
+  fullName: PRace.Position.Coords
+  type: Struct
+  source:
+    id: Coords
+    path: E:\Unity\Project\SRSP-Simple-Simulator\Assets\Controller\script\Model\Race\Position.cs
+    startLine: 31
+  assemblies:
+  - Assembly-CSharp
+  namespace: PRace
+  summary: "\nstruct representing a latitude or a longitude in degre, minute, second\n"
+  example: []
+  syntax:
+    content: public struct Coords
+    content.vb: Public Structure Coords
+  inheritedMembers:
+  - System.ValueType.Equals(System.Object)
+  - System.ValueType.GetHashCode
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetType
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  modifiers.csharp:
+  - public
+  - struct
+  modifiers.vb:
+  - Public
+  - Structure
+- uid: PRace.Position.Coords.#ctor(System.Char,System.Int32,System.Int32,System.Int32)
+  commentId: M:PRace.Position.Coords.#ctor(System.Char,System.Int32,System.Int32,System.Int32)
+  id: '#ctor(System.Char,System.Int32,System.Int32,System.Int32)'
+  parent: PRace.Position.Coords
+  langs:
+  - csharp
+  - vb
+  name: Coords(Char, Int32, Int32, Int32)
+  nameWithType: Position.Coords.Coords(Char, Int32, Int32, Int32)
+  fullName: PRace.Position.Coords.Coords(System.Char, System.Int32, System.Int32, System.Int32)
+  type: Constructor
+  source:
+    id: .ctor
+    path: E:\Unity\Project\SRSP-Simple-Simulator\Assets\Controller\script\Model\Race\Position.cs
+    startLine: 33
+  assemblies:
+  - Assembly-CSharp
+  namespace: PRace
+  syntax:
+    content: public Coords(char pos, int degre, int min, int sec)
+    parameters:
+    - id: pos
+      type: System.Char
+    - id: degre
+      type: System.Int32
+    - id: min
+      type: System.Int32
+    - id: sec
+      type: System.Int32
+    content.vb: Public Sub New(pos As Char, degre As Integer, min As Integer, sec As Integer)
+  overload: PRace.Position.Coords.#ctor*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: PRace.Position.Coords.pos
+  commentId: P:PRace.Position.Coords.pos
+  id: pos
+  parent: PRace.Position.Coords
+  langs:
+  - csharp
+  - vb
+  name: pos
+  nameWithType: Position.Coords.pos
+  fullName: PRace.Position.Coords.pos
+  type: Property
+  source:
+    id: pos
+    path: E:\Unity\Project\SRSP-Simple-Simulator\Assets\Controller\script\Model\Race\Position.cs
+    startLine: 41
+  assemblies:
+  - Assembly-CSharp
+  namespace: PRace
+  syntax:
+    content: public readonly char pos { get; }
+    parameters: []
+    return:
+      type: System.Char
+    content.vb: Public ReadOnly Property pos As Char
+  overload: PRace.Position.Coords.pos*
+  modifiers.csharp:
+  - public
+  - readonly
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: PRace.Position.Coords.degre
+  commentId: P:PRace.Position.Coords.degre
+  id: degre
+  parent: PRace.Position.Coords
+  langs:
+  - csharp
+  - vb
+  name: degre
+  nameWithType: Position.Coords.degre
+  fullName: PRace.Position.Coords.degre
+  type: Property
+  source:
+    id: degre
+    path: E:\Unity\Project\SRSP-Simple-Simulator\Assets\Controller\script\Model\Race\Position.cs
+    startLine: 42
+  assemblies:
+  - Assembly-CSharp
+  namespace: PRace
+  syntax:
+    content: public readonly int degre { get; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: Public ReadOnly Property degre As Integer
+  overload: PRace.Position.Coords.degre*
+  modifiers.csharp:
+  - public
+  - readonly
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: PRace.Position.Coords.min
+  commentId: P:PRace.Position.Coords.min
+  id: min
+  parent: PRace.Position.Coords
+  langs:
+  - csharp
+  - vb
+  name: min
+  nameWithType: Position.Coords.min
+  fullName: PRace.Position.Coords.min
+  type: Property
+  source:
+    id: min
+    path: E:\Unity\Project\SRSP-Simple-Simulator\Assets\Controller\script\Model\Race\Position.cs
+    startLine: 43
+  assemblies:
+  - Assembly-CSharp
+  namespace: PRace
+  syntax:
+    content: public readonly int min { get; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: Public ReadOnly Property min As Integer
+  overload: PRace.Position.Coords.min*
+  modifiers.csharp:
+  - public
+  - readonly
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: PRace.Position.Coords.sec
+  commentId: P:PRace.Position.Coords.sec
+  id: sec
+  parent: PRace.Position.Coords
+  langs:
+  - csharp
+  - vb
+  name: sec
+  nameWithType: Position.Coords.sec
+  fullName: PRace.Position.Coords.sec
+  type: Property
+  source:
+    id: sec
+    path: E:\Unity\Project\SRSP-Simple-Simulator\Assets\Controller\script\Model\Race\Position.cs
+    startLine: 44
+  assemblies:
+  - Assembly-CSharp
+  namespace: PRace
+  syntax:
+    content: public readonly int sec { get; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: Public ReadOnly Property sec As Integer
+  overload: PRace.Position.Coords.sec*
+  modifiers.csharp:
+  - public
+  - readonly
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: PRace.Position.Coords.ToString
+  commentId: M:PRace.Position.Coords.ToString
+  id: ToString
+  parent: PRace.Position.Coords
+  langs:
+  - csharp
+  - vb
+  name: ToString()
+  nameWithType: Position.Coords.ToString()
+  fullName: PRace.Position.Coords.ToString()
+  type: Method
+  source:
+    id: ToString
+    path: E:\Unity\Project\SRSP-Simple-Simulator\Assets\Controller\script\Model\Race\Position.cs
+    startLine: 46
+  assemblies:
+  - Assembly-CSharp
+  namespace: PRace
+  syntax:
+    content: public override string ToString()
+    return:
+      type: System.String
+    content.vb: Public Overrides Function ToString As String
+  overridden: System.ValueType.ToString
+  overload: PRace.Position.Coords.ToString*
+  modifiers.csharp:
+  - public
+  - override
+  modifiers.vb:
+  - Public
+  - Overrides
+references:
+- uid: PRace
+  commentId: N:PRace
+  name: PRace
+  nameWithType: PRace
+  fullName: PRace
+- uid: System.ValueType.Equals(System.Object)
+  commentId: M:System.ValueType.Equals(System.Object)
+  parent: System.ValueType
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: ValueType.Equals(Object)
+  fullName: System.ValueType.Equals(System.Object)
+  spec.csharp:
+  - uid: System.ValueType.Equals(System.Object)
+    name: Equals
+    nameWithType: ValueType.Equals
+    fullName: System.ValueType.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.ValueType.Equals(System.Object)
+    name: Equals
+    nameWithType: ValueType.Equals
+    fullName: System.ValueType.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.ValueType.GetHashCode
+  commentId: M:System.ValueType.GetHashCode
+  parent: System.ValueType
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: ValueType.GetHashCode()
+  fullName: System.ValueType.GetHashCode()
+  spec.csharp:
+  - uid: System.ValueType.GetHashCode
+    name: GetHashCode
+    nameWithType: ValueType.GetHashCode
+    fullName: System.ValueType.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.ValueType.GetHashCode
+    name: GetHashCode
+    nameWithType: ValueType.GetHashCode
+    fullName: System.ValueType.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.ValueType
+  commentId: T:System.ValueType
+  parent: System
+  isExternal: true
+  name: ValueType
+  nameWithType: ValueType
+  fullName: System.ValueType
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: PRace.Position.Coords.#ctor*
+  commentId: Overload:PRace.Position.Coords.#ctor
+  name: Coords
+  nameWithType: Position.Coords.Coords
+  fullName: PRace.Position.Coords.Coords
+- uid: System.Char
+  commentId: T:System.Char
+  parent: System
+  isExternal: true
+  name: Char
+  nameWithType: Char
+  fullName: System.Char
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  name: Int32
+  nameWithType: Int32
+  fullName: System.Int32
+- uid: PRace.Position.Coords.pos*
+  commentId: Overload:PRace.Position.Coords.pos
+  name: pos
+  nameWithType: Position.Coords.pos
+  fullName: PRace.Position.Coords.pos
+- uid: PRace.Position.Coords.degre*
+  commentId: Overload:PRace.Position.Coords.degre
+  name: degre
+  nameWithType: Position.Coords.degre
+  fullName: PRace.Position.Coords.degre
+- uid: PRace.Position.Coords.min*
+  commentId: Overload:PRace.Position.Coords.min
+  name: min
+  nameWithType: Position.Coords.min
+  fullName: PRace.Position.Coords.min
+- uid: PRace.Position.Coords.sec*
+  commentId: Overload:PRace.Position.Coords.sec
+  name: sec
+  nameWithType: Position.Coords.sec
+  fullName: PRace.Position.Coords.sec
+- uid: System.ValueType.ToString
+  commentId: M:System.ValueType.ToString
+  parent: System.ValueType
+  isExternal: true
+  name: ToString()
+  nameWithType: ValueType.ToString()
+  fullName: System.ValueType.ToString()
+  spec.csharp:
+  - uid: System.ValueType.ToString
+    name: ToString
+    nameWithType: ValueType.ToString
+    fullName: System.ValueType.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.ValueType.ToString
+    name: ToString
+    nameWithType: ValueType.ToString
+    fullName: System.ValueType.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: PRace.Position.Coords.ToString*
+  commentId: Overload:PRace.Position.Coords.ToString
+  name: ToString
+  nameWithType: Position.Coords.ToString
+  fullName: PRace.Position.Coords.ToString
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String

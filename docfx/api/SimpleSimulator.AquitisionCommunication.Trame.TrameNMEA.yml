@@ -1,0 +1,488 @@
+### YamlMime:ManagedReference
+items:
+- uid: SimpleSimulator.AquitisionCommunication.Trame.TrameNMEA
+  commentId: T:SimpleSimulator.AquitisionCommunication.Trame.TrameNMEA
+  id: TrameNMEA
+  parent: SimpleSimulator.AquitisionCommunication.Trame
+  children:
+  - SimpleSimulator.AquitisionCommunication.Trame.TrameNMEA.mwv
+  - SimpleSimulator.AquitisionCommunication.Trame.TrameNMEA.rmc
+  - SimpleSimulator.AquitisionCommunication.Trame.TrameNMEA.ToString
+  - SimpleSimulator.AquitisionCommunication.Trame.TrameNMEA.vhw
+  langs:
+  - csharp
+  - vb
+  name: TrameNMEA
+  nameWithType: TrameNMEA
+  fullName: SimpleSimulator.AquitisionCommunication.Trame.TrameNMEA
+  type: Class
+  source:
+    id: TrameNMEA
+    path: E:\Unity\Project\SRSP-Simple-Simulator\Assets\Controller\script\Model\AquitisionCommunication\Trame\TrameNMEA.cs
+    startLine: 11
+  assemblies:
+  - Assembly-CSharp
+  namespace: SimpleSimulator.AquitisionCommunication.Trame
+  summary: "\nCompute the resulting full NMEA trame with a TrameRMC/ TrameMWV / trame VHW\n"
+  example: []
+  syntax:
+    content: public class TrameNMEA
+    content.vb: Public Class TrameNMEA
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: SimpleSimulator.AquitisionCommunication.Trame.TrameNMEA.rmc
+  commentId: F:SimpleSimulator.AquitisionCommunication.Trame.TrameNMEA.rmc
+  id: rmc
+  parent: SimpleSimulator.AquitisionCommunication.Trame.TrameNMEA
+  langs:
+  - csharp
+  - vb
+  name: rmc
+  nameWithType: TrameNMEA.rmc
+  fullName: SimpleSimulator.AquitisionCommunication.Trame.TrameNMEA.rmc
+  type: Field
+  source:
+    id: rmc
+    path: E:\Unity\Project\SRSP-Simple-Simulator\Assets\Controller\script\Model\AquitisionCommunication\Trame\TrameNMEA.cs
+    startLine: 14
+  assemblies:
+  - Assembly-CSharp
+  namespace: SimpleSimulator.AquitisionCommunication.Trame
+  syntax:
+    content: public TrameRMC rmc
+    return:
+      type: SimpleSimulator.AquitisionCommunication.Trame.TrameRMC
+    content.vb: Public rmc As TrameRMC
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: SimpleSimulator.AquitisionCommunication.Trame.TrameNMEA.mwv
+  commentId: F:SimpleSimulator.AquitisionCommunication.Trame.TrameNMEA.mwv
+  id: mwv
+  parent: SimpleSimulator.AquitisionCommunication.Trame.TrameNMEA
+  langs:
+  - csharp
+  - vb
+  name: mwv
+  nameWithType: TrameNMEA.mwv
+  fullName: SimpleSimulator.AquitisionCommunication.Trame.TrameNMEA.mwv
+  type: Field
+  source:
+    id: mwv
+    path: E:\Unity\Project\SRSP-Simple-Simulator\Assets\Controller\script\Model\AquitisionCommunication\Trame\TrameNMEA.cs
+    startLine: 15
+  assemblies:
+  - Assembly-CSharp
+  namespace: SimpleSimulator.AquitisionCommunication.Trame
+  syntax:
+    content: public TrameMWV mwv
+    return:
+      type: SimpleSimulator.AquitisionCommunication.Trame.TrameMWV
+    content.vb: Public mwv As TrameMWV
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: SimpleSimulator.AquitisionCommunication.Trame.TrameNMEA.vhw
+  commentId: F:SimpleSimulator.AquitisionCommunication.Trame.TrameNMEA.vhw
+  id: vhw
+  parent: SimpleSimulator.AquitisionCommunication.Trame.TrameNMEA
+  langs:
+  - csharp
+  - vb
+  name: vhw
+  nameWithType: TrameNMEA.vhw
+  fullName: SimpleSimulator.AquitisionCommunication.Trame.TrameNMEA.vhw
+  type: Field
+  source:
+    id: vhw
+    path: E:\Unity\Project\SRSP-Simple-Simulator\Assets\Controller\script\Model\AquitisionCommunication\Trame\TrameNMEA.cs
+    startLine: 16
+  assemblies:
+  - Assembly-CSharp
+  namespace: SimpleSimulator.AquitisionCommunication.Trame
+  syntax:
+    content: public TrameVHW vhw
+    return:
+      type: SimpleSimulator.AquitisionCommunication.Trame.TrameVHW
+    content.vb: Public vhw As TrameVHW
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: SimpleSimulator.AquitisionCommunication.Trame.TrameNMEA.ToString
+  commentId: M:SimpleSimulator.AquitisionCommunication.Trame.TrameNMEA.ToString
+  id: ToString
+  parent: SimpleSimulator.AquitisionCommunication.Trame.TrameNMEA
+  langs:
+  - csharp
+  - vb
+  name: ToString()
+  nameWithType: TrameNMEA.ToString()
+  fullName: SimpleSimulator.AquitisionCommunication.Trame.TrameNMEA.ToString()
+  type: Method
+  source:
+    id: ToString
+    path: E:\Unity\Project\SRSP-Simple-Simulator\Assets\Controller\script\Model\AquitisionCommunication\Trame\TrameNMEA.cs
+    startLine: 33
+  assemblies:
+  - Assembly-CSharp
+  namespace: SimpleSimulator.AquitisionCommunication.Trame
+  summary: "\nCompute the resulting full trame NMEA string\n"
+  example: []
+  syntax:
+    content: public override string ToString()
+    return:
+      type: System.String
+      description: ''
+    content.vb: Public Overrides Function ToString As String
+  overridden: System.Object.ToString
+  overload: SimpleSimulator.AquitisionCommunication.Trame.TrameNMEA.ToString*
+  modifiers.csharp:
+  - public
+  - override
+  modifiers.vb:
+  - Public
+  - Overrides
+references:
+- uid: SimpleSimulator.AquitisionCommunication.Trame
+  commentId: N:SimpleSimulator.AquitisionCommunication.Trame
+  name: SimpleSimulator.AquitisionCommunication.Trame
+  nameWithType: SimpleSimulator.AquitisionCommunication.Trame
+  fullName: SimpleSimulator.AquitisionCommunication.Trame
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: SimpleSimulator.AquitisionCommunication.Trame.TrameRMC
+  commentId: T:SimpleSimulator.AquitisionCommunication.Trame.TrameRMC
+  parent: SimpleSimulator.AquitisionCommunication.Trame
+  name: TrameRMC
+  nameWithType: TrameRMC
+  fullName: SimpleSimulator.AquitisionCommunication.Trame.TrameRMC
+- uid: SimpleSimulator.AquitisionCommunication.Trame.TrameMWV
+  commentId: T:SimpleSimulator.AquitisionCommunication.Trame.TrameMWV
+  parent: SimpleSimulator.AquitisionCommunication.Trame
+  name: TrameMWV
+  nameWithType: TrameMWV
+  fullName: SimpleSimulator.AquitisionCommunication.Trame.TrameMWV
+- uid: SimpleSimulator.AquitisionCommunication.Trame.TrameVHW
+  commentId: T:SimpleSimulator.AquitisionCommunication.Trame.TrameVHW
+  parent: SimpleSimulator.AquitisionCommunication.Trame
+  name: TrameVHW
+  nameWithType: TrameVHW
+  fullName: SimpleSimulator.AquitisionCommunication.Trame.TrameVHW
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  nameWithType: Object.ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: SimpleSimulator.AquitisionCommunication.Trame.TrameNMEA.ToString*
+  commentId: Overload:SimpleSimulator.AquitisionCommunication.Trame.TrameNMEA.ToString
+  name: ToString
+  nameWithType: TrameNMEA.ToString
+  fullName: SimpleSimulator.AquitisionCommunication.Trame.TrameNMEA.ToString
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String

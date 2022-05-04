@@ -1,0 +1,616 @@
+### YamlMime:ManagedReference
+items:
+- uid: SimpleSimulator.AquitisionCommunication.Trame.TrameXDR
+  commentId: T:SimpleSimulator.AquitisionCommunication.Trame.TrameXDR
+  id: TrameXDR
+  parent: SimpleSimulator.AquitisionCommunication.Trame
+  children:
+  - SimpleSimulator.AquitisionCommunication.Trame.TrameXDR.Checksum(System.String)
+  - SimpleSimulator.AquitisionCommunication.Trame.TrameXDR.Controle
+  - SimpleSimulator.AquitisionCommunication.Trame.TrameXDR.ToString
+  - SimpleSimulator.AquitisionCommunication.Trame.TrameXDR.TrameType
+  - SimpleSimulator.AquitisionCommunication.Trame.TrameXDR.XDRSubs
+  langs:
+  - csharp
+  - vb
+  name: TrameXDR
+  nameWithType: TrameXDR
+  fullName: SimpleSimulator.AquitisionCommunication.Trame.TrameXDR
+  type: Class
+  source:
+    id: TrameXDR
+    path: E:\Unity\Project\SRSP-Simple-Simulator\Assets\Controller\script\Model\AquitisionCommunication\Trame\TrameXDR.cs
+    startLine: 22
+  assemblies:
+  - Assembly-CSharp
+  namespace: SimpleSimulator.AquitisionCommunication.Trame
+  syntax:
+    content: public class TrameXDR
+    content.vb: Public Class TrameXDR
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: SimpleSimulator.AquitisionCommunication.Trame.TrameXDR.TrameType
+  commentId: P:SimpleSimulator.AquitisionCommunication.Trame.TrameXDR.TrameType
+  id: TrameType
+  parent: SimpleSimulator.AquitisionCommunication.Trame.TrameXDR
+  langs:
+  - csharp
+  - vb
+  name: TrameType
+  nameWithType: TrameXDR.TrameType
+  fullName: SimpleSimulator.AquitisionCommunication.Trame.TrameXDR.TrameType
+  type: Property
+  source:
+    id: TrameType
+    path: E:\Unity\Project\SRSP-Simple-Simulator\Assets\Controller\script\Model\AquitisionCommunication\Trame\TrameXDR.cs
+    startLine: 24
+  assemblies:
+  - Assembly-CSharp
+  namespace: SimpleSimulator.AquitisionCommunication.Trame
+  syntax:
+    content: public string TrameType { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property TrameType As String
+  overload: SimpleSimulator.AquitisionCommunication.Trame.TrameXDR.TrameType*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: SimpleSimulator.AquitisionCommunication.Trame.TrameXDR.XDRSubs
+  commentId: P:SimpleSimulator.AquitisionCommunication.Trame.TrameXDR.XDRSubs
+  id: XDRSubs
+  parent: SimpleSimulator.AquitisionCommunication.Trame.TrameXDR
+  langs:
+  - csharp
+  - vb
+  name: XDRSubs
+  nameWithType: TrameXDR.XDRSubs
+  fullName: SimpleSimulator.AquitisionCommunication.Trame.TrameXDR.XDRSubs
+  type: Property
+  source:
+    id: XDRSubs
+    path: E:\Unity\Project\SRSP-Simple-Simulator\Assets\Controller\script\Model\AquitisionCommunication\Trame\TrameXDR.cs
+    startLine: 25
+  assemblies:
+  - Assembly-CSharp
+  namespace: SimpleSimulator.AquitisionCommunication.Trame
+  syntax:
+    content: public List<XDRSub> XDRSubs { get; set; }
+    parameters: []
+    return:
+      type: System.Collections.Generic.List{SimpleSimulator.AquitisionCommunication.Trame.XDRSub}
+    content.vb: Public Property XDRSubs As List(Of XDRSub)
+  overload: SimpleSimulator.AquitisionCommunication.Trame.TrameXDR.XDRSubs*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: SimpleSimulator.AquitisionCommunication.Trame.TrameXDR.Controle
+  commentId: P:SimpleSimulator.AquitisionCommunication.Trame.TrameXDR.Controle
+  id: Controle
+  parent: SimpleSimulator.AquitisionCommunication.Trame.TrameXDR
+  langs:
+  - csharp
+  - vb
+  name: Controle
+  nameWithType: TrameXDR.Controle
+  fullName: SimpleSimulator.AquitisionCommunication.Trame.TrameXDR.Controle
+  type: Property
+  source:
+    id: Controle
+    path: E:\Unity\Project\SRSP-Simple-Simulator\Assets\Controller\script\Model\AquitisionCommunication\Trame\TrameXDR.cs
+    startLine: 26
+  assemblies:
+  - Assembly-CSharp
+  namespace: SimpleSimulator.AquitisionCommunication.Trame
+  syntax:
+    content: public string Controle { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property Controle As String
+  overload: SimpleSimulator.AquitisionCommunication.Trame.TrameXDR.Controle*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: SimpleSimulator.AquitisionCommunication.Trame.TrameXDR.Checksum(System.String)
+  commentId: M:SimpleSimulator.AquitisionCommunication.Trame.TrameXDR.Checksum(System.String)
+  id: Checksum(System.String)
+  parent: SimpleSimulator.AquitisionCommunication.Trame.TrameXDR
+  langs:
+  - csharp
+  - vb
+  name: Checksum(String)
+  nameWithType: TrameXDR.Checksum(String)
+  fullName: SimpleSimulator.AquitisionCommunication.Trame.TrameXDR.Checksum(System.String)
+  type: Method
+  source:
+    id: Checksum
+    path: E:\Unity\Project\SRSP-Simple-Simulator\Assets\Controller\script\Model\AquitisionCommunication\Trame\TrameXDR.cs
+    startLine: 28
+  assemblies:
+  - Assembly-CSharp
+  namespace: SimpleSimulator.AquitisionCommunication.Trame
+  syntax:
+    content: public string Checksum(string trame)
+    parameters:
+    - id: trame
+      type: System.String
+    return:
+      type: System.String
+    content.vb: Public Function Checksum(trame As String) As String
+  overload: SimpleSimulator.AquitisionCommunication.Trame.TrameXDR.Checksum*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: SimpleSimulator.AquitisionCommunication.Trame.TrameXDR.ToString
+  commentId: M:SimpleSimulator.AquitisionCommunication.Trame.TrameXDR.ToString
+  id: ToString
+  parent: SimpleSimulator.AquitisionCommunication.Trame.TrameXDR
+  langs:
+  - csharp
+  - vb
+  name: ToString()
+  nameWithType: TrameXDR.ToString()
+  fullName: SimpleSimulator.AquitisionCommunication.Trame.TrameXDR.ToString()
+  type: Method
+  source:
+    id: ToString
+    path: E:\Unity\Project\SRSP-Simple-Simulator\Assets\Controller\script\Model\AquitisionCommunication\Trame\TrameXDR.cs
+    startLine: 38
+  assemblies:
+  - Assembly-CSharp
+  namespace: SimpleSimulator.AquitisionCommunication.Trame
+  syntax:
+    content: public override string ToString()
+    return:
+      type: System.String
+    content.vb: Public Overrides Function ToString As String
+  overridden: System.Object.ToString
+  overload: SimpleSimulator.AquitisionCommunication.Trame.TrameXDR.ToString*
+  modifiers.csharp:
+  - public
+  - override
+  modifiers.vb:
+  - Public
+  - Overrides
+references:
+- uid: SimpleSimulator.AquitisionCommunication.Trame
+  commentId: N:SimpleSimulator.AquitisionCommunication.Trame
+  name: SimpleSimulator.AquitisionCommunication.Trame
+  nameWithType: SimpleSimulator.AquitisionCommunication.Trame
+  fullName: SimpleSimulator.AquitisionCommunication.Trame
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: SimpleSimulator.AquitisionCommunication.Trame.TrameXDR.TrameType*
+  commentId: Overload:SimpleSimulator.AquitisionCommunication.Trame.TrameXDR.TrameType
+  name: TrameType
+  nameWithType: TrameXDR.TrameType
+  fullName: SimpleSimulator.AquitisionCommunication.Trame.TrameXDR.TrameType
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: SimpleSimulator.AquitisionCommunication.Trame.TrameXDR.XDRSubs*
+  commentId: Overload:SimpleSimulator.AquitisionCommunication.Trame.TrameXDR.XDRSubs
+  name: XDRSubs
+  nameWithType: TrameXDR.XDRSubs
+  fullName: SimpleSimulator.AquitisionCommunication.Trame.TrameXDR.XDRSubs
+- uid: System.Collections.Generic.List{SimpleSimulator.AquitisionCommunication.Trame.XDRSub}
+  commentId: T:System.Collections.Generic.List{SimpleSimulator.AquitisionCommunication.Trame.XDRSub}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.List`1
+  name: List<XDRSub>
+  nameWithType: List<XDRSub>
+  fullName: System.Collections.Generic.List<SimpleSimulator.AquitisionCommunication.Trame.XDRSub>
+  nameWithType.vb: List(Of XDRSub)
+  fullName.vb: System.Collections.Generic.List(Of SimpleSimulator.AquitisionCommunication.Trame.XDRSub)
+  name.vb: List(Of XDRSub)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: SimpleSimulator.AquitisionCommunication.Trame.XDRSub
+    name: XDRSub
+    nameWithType: XDRSub
+    fullName: SimpleSimulator.AquitisionCommunication.Trame.XDRSub
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: SimpleSimulator.AquitisionCommunication.Trame.XDRSub
+    name: XDRSub
+    nameWithType: XDRSub
+    fullName: SimpleSimulator.AquitisionCommunication.Trame.XDRSub
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.Generic.List`1
+  commentId: T:System.Collections.Generic.List`1
+  isExternal: true
+  name: List<T>
+  nameWithType: List<T>
+  fullName: System.Collections.Generic.List<T>
+  nameWithType.vb: List(Of T)
+  fullName.vb: System.Collections.Generic.List(Of T)
+  name.vb: List(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+- uid: SimpleSimulator.AquitisionCommunication.Trame.TrameXDR.Controle*
+  commentId: Overload:SimpleSimulator.AquitisionCommunication.Trame.TrameXDR.Controle
+  name: Controle
+  nameWithType: TrameXDR.Controle
+  fullName: SimpleSimulator.AquitisionCommunication.Trame.TrameXDR.Controle
+- uid: SimpleSimulator.AquitisionCommunication.Trame.TrameXDR.Checksum*
+  commentId: Overload:SimpleSimulator.AquitisionCommunication.Trame.TrameXDR.Checksum
+  name: Checksum
+  nameWithType: TrameXDR.Checksum
+  fullName: SimpleSimulator.AquitisionCommunication.Trame.TrameXDR.Checksum
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  nameWithType: Object.ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: SimpleSimulator.AquitisionCommunication.Trame.TrameXDR.ToString*
+  commentId: Overload:SimpleSimulator.AquitisionCommunication.Trame.TrameXDR.ToString
+  name: ToString
+  nameWithType: TrameXDR.ToString
+  fullName: SimpleSimulator.AquitisionCommunication.Trame.TrameXDR.ToString

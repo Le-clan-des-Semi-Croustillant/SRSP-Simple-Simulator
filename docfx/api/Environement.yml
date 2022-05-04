@@ -1,0 +1,53 @@
+### YamlMime:ManagedReference
+items:
+- uid: Environement
+  commentId: N:Environement
+  id: Environement
+  children:
+  - Environement.Conditions
+  - Environement.Current
+  - Environement.Environment
+  - Environement.Wave
+  - Environement.Wind
+  langs:
+  - csharp
+  - vb
+  name: Environement
+  nameWithType: Environement
+  fullName: Environement
+  type: Namespace
+  assemblies:
+  - Assembly-CSharp
+references:
+- uid: Environement.Conditions
+  commentId: T:Environement.Conditions
+  parent: Environement
+  name: Conditions
+  nameWithType: Conditions
+  fullName: Environement.Conditions
+- uid: Environement.Wave
+  commentId: T:Environement.Wave
+  name: Wave
+  nameWithType: Wave
+  fullName: Environement.Wave
+- uid: Environement.Environment
+  commentId: T:Environement.Environment
+  parent: Environement
+  name: Environment
+  nameWithType: Environment
+  fullName: Environement.Environment
+- uid: Environement.Current
+  commentId: T:Environement.Current
+  name: Current
+  nameWithType: Current
+  fullName: Environement.Current
+- uid: Environement.Wind
+  commentId: T:Environement.Wind
+  name: Wind
+  nameWithType: Wind
+  fullName: Environement.Wind
+- uid: Environement
+  commentId: N:Environement
+  name: Environement
+  nameWithType: Environement
+  fullName: Environement

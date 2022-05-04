@@ -1,0 +1,276 @@
+### YamlMime:ManagedReference
+items:
+- uid: Model.BoatInfo
+  commentId: T:Model.BoatInfo
+  id: BoatInfo
+  parent: Model
+  children:
+  - Model.BoatInfo.AWA
+  - Model.BoatInfo.AWS
+  - Model.BoatInfo.Cap
+  - Model.BoatInfo.COG
+  - Model.BoatInfo.Latitude
+  - Model.BoatInfo.Longitude
+  - Model.BoatInfo.SOG
+  - Model.BoatInfo.STW
+  langs:
+  - csharp
+  - vb
+  name: BoatInfo
+  nameWithType: BoatInfo
+  fullName: Model.BoatInfo
+  type: Enum
+  source:
+    id: BoatInfo
+    path: E:\Unity\Project\SRSP-Simple-Simulator\Assets\Controller\script\Model\BoatInfo.cs
+    startLine: 11
+  assemblies:
+  - Assembly-CSharp
+  namespace: Model
+  summary: "\nEnumerate all information about the boat that should be transmitted ton the interface\n"
+  example: []
+  syntax:
+    content: public enum BoatInfo
+    content.vb: Public Enum BoatInfo
+  modifiers.csharp:
+  - public
+  - enum
+  modifiers.vb:
+  - Public
+  - Enum
+- uid: Model.BoatInfo.Longitude
+  commentId: F:Model.BoatInfo.Longitude
+  id: Longitude
+  parent: Model.BoatInfo
+  langs:
+  - csharp
+  - vb
+  name: Longitude
+  nameWithType: BoatInfo.Longitude
+  fullName: Model.BoatInfo.Longitude
+  type: Field
+  source:
+    id: Longitude
+    path: E:\Unity\Project\SRSP-Simple-Simulator\Assets\Controller\script\Model\BoatInfo.cs
+    startLine: 13
+  assemblies:
+  - Assembly-CSharp
+  namespace: Model
+  syntax:
+    content: Longitude = 0
+    return:
+      type: Model.BoatInfo
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: Model.BoatInfo.Latitude
+  commentId: F:Model.BoatInfo.Latitude
+  id: Latitude
+  parent: Model.BoatInfo
+  langs:
+  - csharp
+  - vb
+  name: Latitude
+  nameWithType: BoatInfo.Latitude
+  fullName: Model.BoatInfo.Latitude
+  type: Field
+  source:
+    id: Latitude
+    path: E:\Unity\Project\SRSP-Simple-Simulator\Assets\Controller\script\Model\BoatInfo.cs
+    startLine: 14
+  assemblies:
+  - Assembly-CSharp
+  namespace: Model
+  syntax:
+    content: Latitude = 1
+    return:
+      type: Model.BoatInfo
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: Model.BoatInfo.Cap
+  commentId: F:Model.BoatInfo.Cap
+  id: Cap
+  parent: Model.BoatInfo
+  langs:
+  - csharp
+  - vb
+  name: Cap
+  nameWithType: BoatInfo.Cap
+  fullName: Model.BoatInfo.Cap
+  type: Field
+  source:
+    id: Cap
+    path: E:\Unity\Project\SRSP-Simple-Simulator\Assets\Controller\script\Model\BoatInfo.cs
+    startLine: 15
+  assemblies:
+  - Assembly-CSharp
+  namespace: Model
+  syntax:
+    content: Cap = 2
+    return:
+      type: Model.BoatInfo
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: Model.BoatInfo.COG
+  commentId: F:Model.BoatInfo.COG
+  id: COG
+  parent: Model.BoatInfo
+  langs:
+  - csharp
+  - vb
+  name: COG
+  nameWithType: BoatInfo.COG
+  fullName: Model.BoatInfo.COG
+  type: Field
+  source:
+    id: COG
+    path: E:\Unity\Project\SRSP-Simple-Simulator\Assets\Controller\script\Model\BoatInfo.cs
+    startLine: 16
+  assemblies:
+  - Assembly-CSharp
+  namespace: Model
+  syntax:
+    content: COG = 3
+    return:
+      type: Model.BoatInfo
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: Model.BoatInfo.SOG
+  commentId: F:Model.BoatInfo.SOG
+  id: SOG
+  parent: Model.BoatInfo
+  langs:
+  - csharp
+  - vb
+  name: SOG
+  nameWithType: BoatInfo.SOG
+  fullName: Model.BoatInfo.SOG
+  type: Field
+  source:
+    id: SOG
+    path: E:\Unity\Project\SRSP-Simple-Simulator\Assets\Controller\script\Model\BoatInfo.cs
+    startLine: 17
+  assemblies:
+  - Assembly-CSharp
+  namespace: Model
+  syntax:
+    content: SOG = 4
+    return:
+      type: Model.BoatInfo
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: Model.BoatInfo.STW
+  commentId: F:Model.BoatInfo.STW
+  id: STW
+  parent: Model.BoatInfo
+  langs:
+  - csharp
+  - vb
+  name: STW
+  nameWithType: BoatInfo.STW
+  fullName: Model.BoatInfo.STW
+  type: Field
+  source:
+    id: STW
+    path: E:\Unity\Project\SRSP-Simple-Simulator\Assets\Controller\script\Model\BoatInfo.cs
+    startLine: 18
+  assemblies:
+  - Assembly-CSharp
+  namespace: Model
+  syntax:
+    content: STW = 5
+    return:
+      type: Model.BoatInfo
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: Model.BoatInfo.AWS
+  commentId: F:Model.BoatInfo.AWS
+  id: AWS
+  parent: Model.BoatInfo
+  langs:
+  - csharp
+  - vb
+  name: AWS
+  nameWithType: BoatInfo.AWS
+  fullName: Model.BoatInfo.AWS
+  type: Field
+  source:
+    id: AWS
+    path: E:\Unity\Project\SRSP-Simple-Simulator\Assets\Controller\script\Model\BoatInfo.cs
+    startLine: 19
+  assemblies:
+  - Assembly-CSharp
+  namespace: Model
+  syntax:
+    content: AWS = 6
+    return:
+      type: Model.BoatInfo
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: Model.BoatInfo.AWA
+  commentId: F:Model.BoatInfo.AWA
+  id: AWA
+  parent: Model.BoatInfo
+  langs:
+  - csharp
+  - vb
+  name: AWA
+  nameWithType: BoatInfo.AWA
+  fullName: Model.BoatInfo.AWA
+  type: Field
+  source:
+    id: AWA
+    path: E:\Unity\Project\SRSP-Simple-Simulator\Assets\Controller\script\Model\BoatInfo.cs
+    startLine: 20
+  assemblies:
+  - Assembly-CSharp
+  namespace: Model
+  syntax:
+    content: AWA = 7
+    return:
+      type: Model.BoatInfo
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+references:
+- uid: Model
+  commentId: N:Model
+  name: Model
+  nameWithType: Model
+  fullName: Model
+- uid: Model.BoatInfo
+  commentId: T:Model.BoatInfo
+  parent: Model
+  name: BoatInfo
+  nameWithType: BoatInfo
+  fullName: Model.BoatInfo

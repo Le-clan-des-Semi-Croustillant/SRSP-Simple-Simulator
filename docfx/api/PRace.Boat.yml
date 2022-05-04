@@ -1,0 +1,1297 @@
+### YamlMime:ManagedReference
+items:
+- uid: PRace.Boat
+  commentId: T:PRace.Boat
+  id: Boat
+  parent: PRace
+  children:
+  - PRace.Boat.#ctor
+  - PRace.Boat.#ctor(Communication.DataProcessing.Json.BoatType)
+  - PRace.Boat.GetAllureCap
+  - PRace.Boat.getAvailablePolaire
+  - PRace.Boat.getCap
+  - PRace.Boat.getCapRad
+  - PRace.Boat.GetCapRegulateurAmure
+  - PRace.Boat.GetCurrentPolaire
+  - PRace.Boat.GetId
+  - PRace.Boat.GetModeCommande
+  - PRace.Boat.GetPosition
+  - PRace.Boat.IncrementCap(PRace.ModeCommande,PRace.DegreeIncrement)
+  - PRace.Boat.init(System.Int32,System.Collections.Generic.List{PRace.Polaire},PRace.Position,PRace.Race)
+  - PRace.Boat.SetAvailablePolaire(System.Collections.Generic.List{PRace.Polaire})
+  - PRace.Boat.setCap(System.Single)
+  - PRace.Boat.setCapRad(System.Single)
+  - PRace.Boat.SetCurrentPolaire(System.String)
+  - PRace.Boat.SetModeCommande(PRace.ModeCommande)
+  - PRace.Boat.setNullCurrentPolar
+  - PRace.Boat.setPosition(PRace.Position)
+  - PRace.Boat.switchCommande
+  - PRace.Boat.UpdateCap(Environement.Environment)
+  langs:
+  - csharp
+  - vb
+  name: Boat
+  nameWithType: Boat
+  fullName: PRace.Boat
+  type: Class
+  source:
+    id: Boat
+    path: E:\Unity\Project\SRSP-Simple-Simulator\Assets\Controller\script\Model\Race\Boat.cs
+    startLine: 13
+  assemblies:
+  - Assembly-CSharp
+  namespace: PRace
+  summary: "\nThis represent a boat\n"
+  example: []
+  syntax:
+    content: public class Boat
+    content.vb: Public Class Boat
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: PRace.Boat.#ctor
+  commentId: M:PRace.Boat.#ctor
+  id: '#ctor'
+  parent: PRace.Boat
+  langs:
+  - csharp
+  - vb
+  name: Boat()
+  nameWithType: Boat.Boat()
+  fullName: PRace.Boat.Boat()
+  type: Constructor
+  source:
+    id: .ctor
+    path: E:\Unity\Project\SRSP-Simple-Simulator\Assets\Controller\script\Model\Race\Boat.cs
+    startLine: 18
+  assemblies:
+  - Assembly-CSharp
+  namespace: PRace
+  summary: "\ncreate au boat instance\n"
+  example: []
+  syntax:
+    content: public Boat()
+    content.vb: Public Sub New
+  overload: PRace.Boat.#ctor*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: PRace.Boat.#ctor(Communication.DataProcessing.Json.BoatType)
+  commentId: M:PRace.Boat.#ctor(Communication.DataProcessing.Json.BoatType)
+  id: '#ctor(Communication.DataProcessing.Json.BoatType)'
+  parent: PRace.Boat
+  langs:
+  - csharp
+  - vb
+  name: Boat(BoatType)
+  nameWithType: Boat.Boat(BoatType)
+  fullName: PRace.Boat.Boat(Communication.DataProcessing.Json.BoatType)
+  type: Constructor
+  source:
+    id: .ctor
+    path: E:\Unity\Project\SRSP-Simple-Simulator\Assets\Controller\script\Model\Race\Boat.cs
+    startLine: 28
+  assemblies:
+  - Assembly-CSharp
+  namespace: PRace
+  summary: "\ncreate au boat instance based on the the input boat type\n"
+  example: []
+  syntax:
+    content: public Boat(BoatType selectedBoatType)
+    parameters:
+    - id: selectedBoatType
+      type: Communication.DataProcessing.Json.BoatType
+      description: ''
+    content.vb: Public Sub New(selectedBoatType As BoatType)
+  overload: PRace.Boat.#ctor*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: PRace.Boat.init(System.Int32,System.Collections.Generic.List{PRace.Polaire},PRace.Position,PRace.Race)
+  commentId: M:PRace.Boat.init(System.Int32,System.Collections.Generic.List{PRace.Polaire},PRace.Position,PRace.Race)
+  id: init(System.Int32,System.Collections.Generic.List{PRace.Polaire},PRace.Position,PRace.Race)
+  parent: PRace.Boat
+  langs:
+  - csharp
+  - vb
+  name: init(Int32, List<Polaire>, Position, Race)
+  nameWithType: Boat.init(Int32, List<Polaire>, Position, Race)
+  fullName: PRace.Boat.init(System.Int32, System.Collections.Generic.List<PRace.Polaire>, PRace.Position, PRace.Race)
+  type: Method
+  source:
+    id: init
+    path: E:\Unity\Project\SRSP-Simple-Simulator\Assets\Controller\script\Model\Race\Boat.cs
+    startLine: 55
+  assemblies:
+  - Assembly-CSharp
+  namespace: PRace
+  summary: "\nInitialise the &apos;allPolaire&apos;, id and pos attribut\n"
+  example: []
+  syntax:
+    content: public void init(int id, List<Polaire> polaires, Position pos, Race race)
+    parameters:
+    - id: id
+      type: System.Int32
+      description: ''
+    - id: polaires
+      type: System.Collections.Generic.List{PRace.Polaire}
+      description: ''
+    - id: pos
+      type: PRace.Position
+      description: ''
+    - id: race
+      type: PRace.Race
+    content.vb: Public Sub init(id As Integer, polaires As List(Of Polaire), pos As Position, race As Race)
+  overload: PRace.Boat.init*
+  nameWithType.vb: Boat.init(Int32, List(Of Polaire), Position, Race)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: PRace.Boat.init(System.Int32, System.Collections.Generic.List(Of PRace.Polaire), PRace.Position, PRace.Race)
+  name.vb: init(Int32, List(Of Polaire), Position, Race)
+- uid: PRace.Boat.GetId
+  commentId: M:PRace.Boat.GetId
+  id: GetId
+  parent: PRace.Boat
+  langs:
+  - csharp
+  - vb
+  name: GetId()
+  nameWithType: Boat.GetId()
+  fullName: PRace.Boat.GetId()
+  type: Method
+  source:
+    id: GetId
+    path: E:\Unity\Project\SRSP-Simple-Simulator\Assets\Controller\script\Model\Race\Boat.cs
+    startLine: 64
+  assemblies:
+  - Assembly-CSharp
+  namespace: PRace
+  syntax:
+    content: public int GetId()
+    return:
+      type: System.Int32
+    content.vb: Public Function GetId As Integer
+  overload: PRace.Boat.GetId*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: PRace.Boat.getCap
+  commentId: M:PRace.Boat.getCap
+  id: getCap
+  parent: PRace.Boat
+  langs:
+  - csharp
+  - vb
+  name: getCap()
+  nameWithType: Boat.getCap()
+  fullName: PRace.Boat.getCap()
+  type: Method
+  source:
+    id: getCap
+    path: E:\Unity\Project\SRSP-Simple-Simulator\Assets\Controller\script\Model\Race\Boat.cs
+    startLine: 71
+  assemblies:
+  - Assembly-CSharp
+  namespace: PRace
+  syntax:
+    content: public float getCap()
+    return:
+      type: System.Single
+    content.vb: Public Function getCap As Single
+  overload: PRace.Boat.getCap*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: PRace.Boat.setCap(System.Single)
+  commentId: M:PRace.Boat.setCap(System.Single)
+  id: setCap(System.Single)
+  parent: PRace.Boat
+  langs:
+  - csharp
+  - vb
+  name: setCap(Single)
+  nameWithType: Boat.setCap(Single)
+  fullName: PRace.Boat.setCap(System.Single)
+  type: Method
+  source:
+    id: setCap
+    path: E:\Unity\Project\SRSP-Simple-Simulator\Assets\Controller\script\Model\Race\Boat.cs
+    startLine: 80
+  assemblies:
+  - Assembly-CSharp
+  namespace: PRace
+  summary: "\nset the boat heading\n"
+  example: []
+  syntax:
+    content: public void setCap(float cap)
+    parameters:
+    - id: cap
+      type: System.Single
+      description: this value as to be in radient
+    content.vb: Public Sub setCap(cap As Single)
+  overload: PRace.Boat.setCap*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: PRace.Boat.getCapRad
+  commentId: M:PRace.Boat.getCapRad
+  id: getCapRad
+  parent: PRace.Boat
+  langs:
+  - csharp
+  - vb
+  name: getCapRad()
+  nameWithType: Boat.getCapRad()
+  fullName: PRace.Boat.getCapRad()
+  type: Method
+  source:
+    id: getCapRad
+    path: E:\Unity\Project\SRSP-Simple-Simulator\Assets\Controller\script\Model\Race\Boat.cs
+    startLine: 85
+  assemblies:
+  - Assembly-CSharp
+  namespace: PRace
+  syntax:
+    content: public float getCapRad()
+    return:
+      type: System.Single
+    content.vb: Public Function getCapRad As Single
+  overload: PRace.Boat.getCapRad*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: PRace.Boat.setCapRad(System.Single)
+  commentId: M:PRace.Boat.setCapRad(System.Single)
+  id: setCapRad(System.Single)
+  parent: PRace.Boat
+  langs:
+  - csharp
+  - vb
+  name: setCapRad(Single)
+  nameWithType: Boat.setCapRad(Single)
+  fullName: PRace.Boat.setCapRad(System.Single)
+  type: Method
+  source:
+    id: setCapRad
+    path: E:\Unity\Project\SRSP-Simple-Simulator\Assets\Controller\script\Model\Race\Boat.cs
+    startLine: 90
+  assemblies:
+  - Assembly-CSharp
+  namespace: PRace
+  syntax:
+    content: public void setCapRad(float cap)
+    parameters:
+    - id: cap
+      type: System.Single
+    content.vb: Public Sub setCapRad(cap As Single)
+  overload: PRace.Boat.setCapRad*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: PRace.Boat.GetCapRegulateurAmure
+  commentId: M:PRace.Boat.GetCapRegulateurAmure
+  id: GetCapRegulateurAmure
+  parent: PRace.Boat
+  langs:
+  - csharp
+  - vb
+  name: GetCapRegulateurAmure()
+  nameWithType: Boat.GetCapRegulateurAmure()
+  fullName: PRace.Boat.GetCapRegulateurAmure()
+  type: Method
+  source:
+    id: GetCapRegulateurAmure
+    path: E:\Unity\Project\SRSP-Simple-Simulator\Assets\Controller\script\Model\Race\Boat.cs
+    startLine: 100
+  assemblies:
+  - Assembly-CSharp
+  namespace: PRace
+  summary: "\nreturn the value of the cap of the attribut &apos;regulateurAmure&apos;\n"
+  example: []
+  syntax:
+    content: public float GetCapRegulateurAmure()
+    return:
+      type: System.Single
+      description: the angle is in randiant
+    content.vb: Public Function GetCapRegulateurAmure As Single
+  overload: PRace.Boat.GetCapRegulateurAmure*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: PRace.Boat.GetPosition
+  commentId: M:PRace.Boat.GetPosition
+  id: GetPosition
+  parent: PRace.Boat
+  langs:
+  - csharp
+  - vb
+  name: GetPosition()
+  nameWithType: Boat.GetPosition()
+  fullName: PRace.Boat.GetPosition()
+  type: Method
+  source:
+    id: GetPosition
+    path: E:\Unity\Project\SRSP-Simple-Simulator\Assets\Controller\script\Model\Race\Boat.cs
+    startLine: 105
+  assemblies:
+  - Assembly-CSharp
+  namespace: PRace
+  syntax:
+    content: public Position GetPosition()
+    return:
+      type: PRace.Position
+    content.vb: Public Function GetPosition As Position
+  overload: PRace.Boat.GetPosition*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: PRace.Boat.SetModeCommande(PRace.ModeCommande)
+  commentId: M:PRace.Boat.SetModeCommande(PRace.ModeCommande)
+  id: SetModeCommande(PRace.ModeCommande)
+  parent: PRace.Boat
+  langs:
+  - csharp
+  - vb
+  name: SetModeCommande(ModeCommande)
+  nameWithType: Boat.SetModeCommande(ModeCommande)
+  fullName: PRace.Boat.SetModeCommande(PRace.ModeCommande)
+  type: Method
+  source:
+    id: SetModeCommande
+    path: E:\Unity\Project\SRSP-Simple-Simulator\Assets\Controller\script\Model\Race\Boat.cs
+    startLine: 111
+  assemblies:
+  - Assembly-CSharp
+  namespace: PRace
+  syntax:
+    content: public void SetModeCommande(ModeCommande commande)
+    parameters:
+    - id: commande
+      type: PRace.ModeCommande
+    content.vb: Public Sub SetModeCommande(commande As ModeCommande)
+  overload: PRace.Boat.SetModeCommande*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: PRace.Boat.switchCommande
+  commentId: M:PRace.Boat.switchCommande
+  id: switchCommande
+  parent: PRace.Boat
+  langs:
+  - csharp
+  - vb
+  name: switchCommande()
+  nameWithType: Boat.switchCommande()
+  fullName: PRace.Boat.switchCommande()
+  type: Method
+  source:
+    id: switchCommande
+    path: E:\Unity\Project\SRSP-Simple-Simulator\Assets\Controller\script\Model\Race\Boat.cs
+    startLine: 127
+  assemblies:
+  - Assembly-CSharp
+  namespace: PRace
+  summary: "\nIf the attrubit commande is &apos;cap&apos; switch to &apos;RegulateurAmure&apos;.\nIf the attrubit commande is &apos;RegulateurAmure&apos; switch to &apos;cap&apos;.\n"
+  example: []
+  syntax:
+    content: public void switchCommande()
+    content.vb: Public Sub switchCommande
+  overload: PRace.Boat.switchCommande*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: PRace.Boat.GetModeCommande
+  commentId: M:PRace.Boat.GetModeCommande
+  id: GetModeCommande
+  parent: PRace.Boat
+  langs:
+  - csharp
+  - vb
+  name: GetModeCommande()
+  nameWithType: Boat.GetModeCommande()
+  fullName: PRace.Boat.GetModeCommande()
+  type: Method
+  source:
+    id: GetModeCommande
+    path: E:\Unity\Project\SRSP-Simple-Simulator\Assets\Controller\script\Model\Race\Boat.cs
+    startLine: 146
+  assemblies:
+  - Assembly-CSharp
+  namespace: PRace
+  syntax:
+    content: public ModeCommande GetModeCommande()
+    return:
+      type: PRace.ModeCommande
+    content.vb: Public Function GetModeCommande As ModeCommande
+  overload: PRace.Boat.GetModeCommande*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: PRace.Boat.UpdateCap(Environement.Environment)
+  commentId: M:PRace.Boat.UpdateCap(Environement.Environment)
+  id: UpdateCap(Environement.Environment)
+  parent: PRace.Boat
+  langs:
+  - csharp
+  - vb
+  name: UpdateCap(Environment)
+  nameWithType: Boat.UpdateCap(Environment)
+  fullName: PRace.Boat.UpdateCap(Environement.Environment)
+  type: Method
+  source:
+    id: UpdateCap
+    path: E:\Unity\Project\SRSP-Simple-Simulator\Assets\Controller\script\Model\Race\Boat.cs
+    startLine: 156
+  assemblies:
+  - Assembly-CSharp
+  namespace: PRace
+  summary: "\nIf the attrubit commande is &apos;RegulateurAmure&apos; change the heading of the boat (attribut cap)\nto keep the windward course set in regulateurAmure\n"
+  example: []
+  syntax:
+    content: public void UpdateCap(Environment env)
+    parameters:
+    - id: env
+      type: Environement.Environment
+      description: ''
+    content.vb: Public Sub UpdateCap(env As Environment)
+  overload: PRace.Boat.UpdateCap*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: PRace.Boat.setPosition(PRace.Position)
+  commentId: M:PRace.Boat.setPosition(PRace.Position)
+  id: setPosition(PRace.Position)
+  parent: PRace.Boat
+  langs:
+  - csharp
+  - vb
+  name: setPosition(Position)
+  nameWithType: Boat.setPosition(Position)
+  fullName: PRace.Boat.setPosition(PRace.Position)
+  type: Method
+  source:
+    id: setPosition
+    path: E:\Unity\Project\SRSP-Simple-Simulator\Assets\Controller\script\Model\Race\Boat.cs
+    startLine: 170
+  assemblies:
+  - Assembly-CSharp
+  namespace: PRace
+  syntax:
+    content: public void setPosition(Position pos)
+    parameters:
+    - id: pos
+      type: PRace.Position
+    content.vb: Public Sub setPosition(pos As Position)
+  overload: PRace.Boat.setPosition*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: PRace.Boat.SetAvailablePolaire(System.Collections.Generic.List{PRace.Polaire})
+  commentId: M:PRace.Boat.SetAvailablePolaire(System.Collections.Generic.List{PRace.Polaire})
+  id: SetAvailablePolaire(System.Collections.Generic.List{PRace.Polaire})
+  parent: PRace.Boat
+  langs:
+  - csharp
+  - vb
+  name: SetAvailablePolaire(List<Polaire>)
+  nameWithType: Boat.SetAvailablePolaire(List<Polaire>)
+  fullName: PRace.Boat.SetAvailablePolaire(System.Collections.Generic.List<PRace.Polaire>)
+  type: Method
+  source:
+    id: SetAvailablePolaire
+    path: E:\Unity\Project\SRSP-Simple-Simulator\Assets\Controller\script\Model\Race\Boat.cs
+    startLine: 180
+  assemblies:
+  - Assembly-CSharp
+  namespace: PRace
+  summary: "\nset &apos;allPolaire&apos; attribut\n"
+  example: []
+  syntax:
+    content: public void SetAvailablePolaire(List<Polaire> listPolaire)
+    parameters:
+    - id: listPolaire
+      type: System.Collections.Generic.List{PRace.Polaire}
+      description: ''
+    content.vb: Public Sub SetAvailablePolaire(listPolaire As List(Of Polaire))
+  overload: PRace.Boat.SetAvailablePolaire*
+  nameWithType.vb: Boat.SetAvailablePolaire(List(Of Polaire))
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: PRace.Boat.SetAvailablePolaire(System.Collections.Generic.List(Of PRace.Polaire))
+  name.vb: SetAvailablePolaire(List(Of Polaire))
+- uid: PRace.Boat.getAvailablePolaire
+  commentId: M:PRace.Boat.getAvailablePolaire
+  id: getAvailablePolaire
+  parent: PRace.Boat
+  langs:
+  - csharp
+  - vb
+  name: getAvailablePolaire()
+  nameWithType: Boat.getAvailablePolaire()
+  fullName: PRace.Boat.getAvailablePolaire()
+  type: Method
+  source:
+    id: getAvailablePolaire
+    path: E:\Unity\Project\SRSP-Simple-Simulator\Assets\Controller\script\Model\Race\Boat.cs
+    startLine: 189
+  assemblies:
+  - Assembly-CSharp
+  namespace: PRace
+  summary: "\ngetter for &apos;allPolaire&apos; attribut\n"
+  example: []
+  syntax:
+    content: public List<Polaire> getAvailablePolaire()
+    return:
+      type: System.Collections.Generic.List{PRace.Polaire}
+      description: ''
+    content.vb: Public Function getAvailablePolaire As List(Of Polaire)
+  overload: PRace.Boat.getAvailablePolaire*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: PRace.Boat.IncrementCap(PRace.ModeCommande,PRace.DegreeIncrement)
+  commentId: M:PRace.Boat.IncrementCap(PRace.ModeCommande,PRace.DegreeIncrement)
+  id: IncrementCap(PRace.ModeCommande,PRace.DegreeIncrement)
+  parent: PRace.Boat
+  langs:
+  - csharp
+  - vb
+  name: IncrementCap(ModeCommande, DegreeIncrement)
+  nameWithType: Boat.IncrementCap(ModeCommande, DegreeIncrement)
+  fullName: PRace.Boat.IncrementCap(PRace.ModeCommande, PRace.DegreeIncrement)
+  type: Method
+  source:
+    id: IncrementCap
+    path: E:\Unity\Project\SRSP-Simple-Simulator\Assets\Controller\script\Model\Race\Boat.cs
+    startLine: 199
+  assemblies:
+  - Assembly-CSharp
+  namespace: PRace
+  summary: "\nIncrement the cap of the active mode (&apos;commande&apos; attribut)\n"
+  example: []
+  syntax:
+    content: public void IncrementCap(ModeCommande commande, DegreeIncrement degre)
+    parameters:
+    - id: commande
+      type: PRace.ModeCommande
+      description: ''
+    - id: degre
+      type: PRace.DegreeIncrement
+      description: ''
+    content.vb: Public Sub IncrementCap(commande As ModeCommande, degre As DegreeIncrement)
+  overload: PRace.Boat.IncrementCap*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: PRace.Boat.SetCurrentPolaire(System.String)
+  commentId: M:PRace.Boat.SetCurrentPolaire(System.String)
+  id: SetCurrentPolaire(System.String)
+  parent: PRace.Boat
+  langs:
+  - csharp
+  - vb
+  name: SetCurrentPolaire(String)
+  nameWithType: Boat.SetCurrentPolaire(String)
+  fullName: PRace.Boat.SetCurrentPolaire(System.String)
+  type: Method
+  source:
+    id: SetCurrentPolaire
+    path: E:\Unity\Project\SRSP-Simple-Simulator\Assets\Controller\script\Model\Race\Boat.cs
+    startLine: 219
+  assemblies:
+  - Assembly-CSharp
+  namespace: PRace
+  summary: "\nIf a polar with the attribut name corresponding to the input name exist in the attribut &apos;allPolaire&apos;,\nset it as the current polar (&apos;currentPolaire&apos; attribut)\n"
+  example: []
+  syntax:
+    content: public void SetCurrentPolaire(string name)
+    parameters:
+    - id: name
+      type: System.String
+      description: ''
+    content.vb: Public Sub SetCurrentPolaire(name As String)
+  overload: PRace.Boat.SetCurrentPolaire*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: PRace.Boat.GetCurrentPolaire
+  commentId: M:PRace.Boat.GetCurrentPolaire
+  id: GetCurrentPolaire
+  parent: PRace.Boat
+  langs:
+  - csharp
+  - vb
+  name: GetCurrentPolaire()
+  nameWithType: Boat.GetCurrentPolaire()
+  fullName: PRace.Boat.GetCurrentPolaire()
+  type: Method
+  source:
+    id: GetCurrentPolaire
+    path: E:\Unity\Project\SRSP-Simple-Simulator\Assets\Controller\script\Model\Race\Boat.cs
+    startLine: 231
+  assemblies:
+  - Assembly-CSharp
+  namespace: PRace
+  syntax:
+    content: public Polaire GetCurrentPolaire()
+    return:
+      type: PRace.Polaire
+    content.vb: Public Function GetCurrentPolaire As Polaire
+  overload: PRace.Boat.GetCurrentPolaire*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: PRace.Boat.GetAllureCap
+  commentId: M:PRace.Boat.GetAllureCap
+  id: GetAllureCap
+  parent: PRace.Boat
+  langs:
+  - csharp
+  - vb
+  name: GetAllureCap()
+  nameWithType: Boat.GetAllureCap()
+  fullName: PRace.Boat.GetAllureCap()
+  type: Method
+  source:
+    id: GetAllureCap
+    path: E:\Unity\Project\SRSP-Simple-Simulator\Assets\Controller\script\Model\Race\Boat.cs
+    startLine: 236
+  assemblies:
+  - Assembly-CSharp
+  namespace: PRace
+  syntax:
+    content: public float GetAllureCap()
+    return:
+      type: System.Single
+    content.vb: Public Function GetAllureCap As Single
+  overload: PRace.Boat.GetAllureCap*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: PRace.Boat.setNullCurrentPolar
+  commentId: M:PRace.Boat.setNullCurrentPolar
+  id: setNullCurrentPolar
+  parent: PRace.Boat
+  langs:
+  - csharp
+  - vb
+  name: setNullCurrentPolar()
+  nameWithType: Boat.setNullCurrentPolar()
+  fullName: PRace.Boat.setNullCurrentPolar()
+  type: Method
+  source:
+    id: setNullCurrentPolar
+    path: E:\Unity\Project\SRSP-Simple-Simulator\Assets\Controller\script\Model\Race\Boat.cs
+    startLine: 244
+  assemblies:
+  - Assembly-CSharp
+  namespace: PRace
+  summary: "\nSet the attribut &apos;currentPolaire&apos; to null\n"
+  example: []
+  syntax:
+    content: public void setNullCurrentPolar()
+    content.vb: Public Sub setNullCurrentPolar
+  overload: PRace.Boat.setNullCurrentPolar*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+references:
+- uid: PRace
+  commentId: N:PRace
+  name: PRace
+  nameWithType: PRace
+  fullName: PRace
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  nameWithType: Object.ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: PRace.Boat.#ctor*
+  commentId: Overload:PRace.Boat.#ctor
+  name: Boat
+  nameWithType: Boat.Boat
+  fullName: PRace.Boat.Boat
+- uid: Communication.DataProcessing.Json.BoatType
+  commentId: T:Communication.DataProcessing.Json.BoatType
+  parent: Communication.DataProcessing.Json
+  name: BoatType
+  nameWithType: BoatType
+  fullName: Communication.DataProcessing.Json.BoatType
+- uid: Communication.DataProcessing.Json
+  commentId: N:Communication.DataProcessing.Json
+  name: Communication.DataProcessing.Json
+  nameWithType: Communication.DataProcessing.Json
+  fullName: Communication.DataProcessing.Json
+- uid: PRace.Boat.init*
+  commentId: Overload:PRace.Boat.init
+  name: init
+  nameWithType: Boat.init
+  fullName: PRace.Boat.init
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  name: Int32
+  nameWithType: Int32
+  fullName: System.Int32
+- uid: System.Collections.Generic.List{PRace.Polaire}
+  commentId: T:System.Collections.Generic.List{PRace.Polaire}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.List`1
+  name: List<Polaire>
+  nameWithType: List<Polaire>
+  fullName: System.Collections.Generic.List<PRace.Polaire>
+  nameWithType.vb: List(Of Polaire)
+  fullName.vb: System.Collections.Generic.List(Of PRace.Polaire)
+  name.vb: List(Of Polaire)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: PRace.Polaire
+    name: Polaire
+    nameWithType: Polaire
+    fullName: PRace.Polaire
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: PRace.Polaire
+    name: Polaire
+    nameWithType: Polaire
+    fullName: PRace.Polaire
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: PRace.Position
+  commentId: T:PRace.Position
+  parent: PRace
+  name: Position
+  nameWithType: Position
+  fullName: PRace.Position
+- uid: PRace.Race
+  commentId: T:PRace.Race
+  parent: PRace
+  name: Race
+  nameWithType: Race
+  fullName: PRace.Race
+- uid: System.Collections.Generic.List`1
+  commentId: T:System.Collections.Generic.List`1
+  isExternal: true
+  name: List<T>
+  nameWithType: List<T>
+  fullName: System.Collections.Generic.List<T>
+  nameWithType.vb: List(Of T)
+  fullName.vb: System.Collections.Generic.List(Of T)
+  name.vb: List(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+- uid: PRace.Boat.GetId*
+  commentId: Overload:PRace.Boat.GetId
+  name: GetId
+  nameWithType: Boat.GetId
+  fullName: PRace.Boat.GetId
+- uid: PRace.Boat.getCap*
+  commentId: Overload:PRace.Boat.getCap
+  name: getCap
+  nameWithType: Boat.getCap
+  fullName: PRace.Boat.getCap
+- uid: System.Single
+  commentId: T:System.Single
+  parent: System
+  isExternal: true
+  name: Single
+  nameWithType: Single
+  fullName: System.Single
+- uid: PRace.Boat.setCap*
+  commentId: Overload:PRace.Boat.setCap
+  name: setCap
+  nameWithType: Boat.setCap
+  fullName: PRace.Boat.setCap
+- uid: PRace.Boat.getCapRad*
+  commentId: Overload:PRace.Boat.getCapRad
+  name: getCapRad
+  nameWithType: Boat.getCapRad
+  fullName: PRace.Boat.getCapRad
+- uid: PRace.Boat.setCapRad*
+  commentId: Overload:PRace.Boat.setCapRad
+  name: setCapRad
+  nameWithType: Boat.setCapRad
+  fullName: PRace.Boat.setCapRad
+- uid: PRace.Boat.GetCapRegulateurAmure*
+  commentId: Overload:PRace.Boat.GetCapRegulateurAmure
+  name: GetCapRegulateurAmure
+  nameWithType: Boat.GetCapRegulateurAmure
+  fullName: PRace.Boat.GetCapRegulateurAmure
+- uid: PRace.Boat.GetPosition*
+  commentId: Overload:PRace.Boat.GetPosition
+  name: GetPosition
+  nameWithType: Boat.GetPosition
+  fullName: PRace.Boat.GetPosition
+- uid: PRace.Boat.SetModeCommande*
+  commentId: Overload:PRace.Boat.SetModeCommande
+  name: SetModeCommande
+  nameWithType: Boat.SetModeCommande
+  fullName: PRace.Boat.SetModeCommande
+- uid: PRace.ModeCommande
+  commentId: T:PRace.ModeCommande
+  parent: PRace
+  name: ModeCommande
+  nameWithType: ModeCommande
+  fullName: PRace.ModeCommande
+- uid: PRace.Boat.switchCommande*
+  commentId: Overload:PRace.Boat.switchCommande
+  name: switchCommande
+  nameWithType: Boat.switchCommande
+  fullName: PRace.Boat.switchCommande
+- uid: PRace.Boat.GetModeCommande*
+  commentId: Overload:PRace.Boat.GetModeCommande
+  name: GetModeCommande
+  nameWithType: Boat.GetModeCommande
+  fullName: PRace.Boat.GetModeCommande
+- uid: PRace.Boat.UpdateCap*
+  commentId: Overload:PRace.Boat.UpdateCap
+  name: UpdateCap
+  nameWithType: Boat.UpdateCap
+  fullName: PRace.Boat.UpdateCap
+- uid: Environement.Environment
+  commentId: T:Environement.Environment
+  parent: Environement
+  name: Environment
+  nameWithType: Environment
+  fullName: Environement.Environment
+- uid: Environement
+  commentId: N:Environement
+  name: Environement
+  nameWithType: Environement
+  fullName: Environement
+- uid: PRace.Boat.setPosition*
+  commentId: Overload:PRace.Boat.setPosition
+  name: setPosition
+  nameWithType: Boat.setPosition
+  fullName: PRace.Boat.setPosition
+- uid: PRace.Boat.SetAvailablePolaire*
+  commentId: Overload:PRace.Boat.SetAvailablePolaire
+  name: SetAvailablePolaire
+  nameWithType: Boat.SetAvailablePolaire
+  fullName: PRace.Boat.SetAvailablePolaire
+- uid: PRace.Boat.getAvailablePolaire*
+  commentId: Overload:PRace.Boat.getAvailablePolaire
+  name: getAvailablePolaire
+  nameWithType: Boat.getAvailablePolaire
+  fullName: PRace.Boat.getAvailablePolaire
+- uid: PRace.Boat.IncrementCap*
+  commentId: Overload:PRace.Boat.IncrementCap
+  name: IncrementCap
+  nameWithType: Boat.IncrementCap
+  fullName: PRace.Boat.IncrementCap
+- uid: PRace.DegreeIncrement
+  commentId: T:PRace.DegreeIncrement
+  parent: PRace
+  name: DegreeIncrement
+  nameWithType: DegreeIncrement
+  fullName: PRace.DegreeIncrement
+- uid: PRace.Boat.SetCurrentPolaire*
+  commentId: Overload:PRace.Boat.SetCurrentPolaire
+  name: SetCurrentPolaire
+  nameWithType: Boat.SetCurrentPolaire
+  fullName: PRace.Boat.SetCurrentPolaire
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: PRace.Boat.GetCurrentPolaire*
+  commentId: Overload:PRace.Boat.GetCurrentPolaire
+  name: GetCurrentPolaire
+  nameWithType: Boat.GetCurrentPolaire
+  fullName: PRace.Boat.GetCurrentPolaire
+- uid: PRace.Polaire
+  commentId: T:PRace.Polaire
+  parent: PRace
+  name: Polaire
+  nameWithType: Polaire
+  fullName: PRace.Polaire
+- uid: PRace.Boat.GetAllureCap*
+  commentId: Overload:PRace.Boat.GetAllureCap
+  name: GetAllureCap
+  nameWithType: Boat.GetAllureCap
+  fullName: PRace.Boat.GetAllureCap
+- uid: PRace.Boat.setNullCurrentPolar*
+  commentId: Overload:PRace.Boat.setNullCurrentPolar
+  name: setNullCurrentPolar
+  nameWithType: Boat.setNullCurrentPolar
+  fullName: PRace.Boat.setNullCurrentPolar

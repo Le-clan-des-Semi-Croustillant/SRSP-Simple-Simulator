@@ -1,0 +1,102 @@
+### YamlMime:ManagedReference
+items:
+- uid: PRace.ModeCommande
+  commentId: T:PRace.ModeCommande
+  id: ModeCommande
+  parent: PRace
+  children:
+  - PRace.ModeCommande.cap
+  - PRace.ModeCommande.RegulateurAmure
+  langs:
+  - csharp
+  - vb
+  name: ModeCommande
+  nameWithType: ModeCommande
+  fullName: PRace.ModeCommande
+  type: Enum
+  source:
+    id: ModeCommande
+    path: E:\Unity\Project\SRSP-Simple-Simulator\Assets\Controller\script\Model\Race\ModeCommande.cs
+    startLine: 5
+  assemblies:
+  - Assembly-CSharp
+  namespace: PRace
+  summary: "\nEnunerate commande mode available\n"
+  example: []
+  syntax:
+    content: public enum ModeCommande
+    content.vb: Public Enum ModeCommande
+  modifiers.csharp:
+  - public
+  - enum
+  modifiers.vb:
+  - Public
+  - Enum
+- uid: PRace.ModeCommande.cap
+  commentId: F:PRace.ModeCommande.cap
+  id: cap
+  parent: PRace.ModeCommande
+  langs:
+  - csharp
+  - vb
+  name: cap
+  nameWithType: ModeCommande.cap
+  fullName: PRace.ModeCommande.cap
+  type: Field
+  source:
+    id: cap
+    path: E:\Unity\Project\SRSP-Simple-Simulator\Assets\Controller\script\Model\Race\ModeCommande.cs
+    startLine: 6
+  assemblies:
+  - Assembly-CSharp
+  namespace: PRace
+  syntax:
+    content: cap = 0
+    return:
+      type: PRace.ModeCommande
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: PRace.ModeCommande.RegulateurAmure
+  commentId: F:PRace.ModeCommande.RegulateurAmure
+  id: RegulateurAmure
+  parent: PRace.ModeCommande
+  langs:
+  - csharp
+  - vb
+  name: RegulateurAmure
+  nameWithType: ModeCommande.RegulateurAmure
+  fullName: PRace.ModeCommande.RegulateurAmure
+  type: Field
+  source:
+    id: RegulateurAmure
+    path: E:\Unity\Project\SRSP-Simple-Simulator\Assets\Controller\script\Model\Race\ModeCommande.cs
+    startLine: 7
+  assemblies:
+  - Assembly-CSharp
+  namespace: PRace
+  syntax:
+    content: RegulateurAmure = 1
+    return:
+      type: PRace.ModeCommande
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+references:
+- uid: PRace
+  commentId: N:PRace
+  name: PRace
+  nameWithType: PRace
+  fullName: PRace
+- uid: PRace.ModeCommande
+  commentId: T:PRace.ModeCommande
+  parent: PRace
+  name: ModeCommande
+  nameWithType: ModeCommande
+  fullName: PRace.ModeCommande

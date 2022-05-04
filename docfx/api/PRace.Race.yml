@@ -1,0 +1,2069 @@
+### YamlMime:ManagedReference
+items:
+- uid: PRace.Race
+  commentId: T:PRace.Race
+  id: Race
+  parent: PRace
+  children:
+  - PRace.Race.#ctor(Model.RaceModel,AquitisionCommunication.RaceSave.JsonRace,System.Int32,System.String,System.Int32,System.String)
+  - PRace.Race.#ctor(Model.RaceModel,Communication.DataProcessing.Json.BoatType,PRace.Mode,System.Int32,System.String,System.Int32,System.String)
+  - PRace.Race.change_Env(System.Collections.Generic.Dictionary{Environement.Conditions,System.Single})
+  - PRace.Race.GetAccFactor
+  - PRace.Race.GetAllPolaire
+  - PRace.Race.GetAquisition
+  - PRace.Race.GetBoat
+  - PRace.Race.GetBoatCap
+  - PRace.Race.GetBoatId
+  - PRace.Race.GetBoatStatus
+  - PRace.Race.GetCompetitors
+  - PRace.Race.GetCurrentInstant
+  - PRace.Race.getCurrentMoment
+  - PRace.Race.GetCurrentPolaire
+  - PRace.Race.GetEnvironment
+  - PRace.Race.GetId
+  - PRace.Race.GetisPause
+  - PRace.Race.getMode
+  - PRace.Race.GetPosition
+  - PRace.Race.GetWayPoint
+  - PRace.Race.nextIteration
+  - PRace.Race.Pause
+  - PRace.Race.Run
+  - PRace.Race.sendPosition
+  - PRace.Race.setacceleratorFactor(System.Int32)
+  - PRace.Race.SetAccFactor(System.Single)
+  - PRace.Race.SetBoatCap(System.Single)
+  - PRace.Race.SetCompetitors(System.Collections.Generic.List{System.Int32},System.Collections.Generic.List{System.Single},System.Collections.Generic.List{System.Single})
+  - PRace.Race.SetWayPoint(System.Collections.Generic.List{PRace.WayPoint})
+  langs:
+  - csharp
+  - vb
+  name: Race
+  nameWithType: Race
+  fullName: PRace.Race
+  type: Class
+  source:
+    id: Race
+    path: E:\Unity\Project\SRSP-Simple-Simulator\Assets\Controller\script\Model\Race\Race.cs
+    startLine: 14
+  assemblies:
+  - Assembly-CSharp
+  namespace: PRace
+  summary: "\nThis class represent a race\n"
+  example: []
+  syntax:
+    content: public class Race
+    content.vb: Public Class Race
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: PRace.Race.#ctor(Model.RaceModel,AquitisionCommunication.RaceSave.JsonRace,System.Int32,System.String,System.Int32,System.String)
+  commentId: M:PRace.Race.#ctor(Model.RaceModel,AquitisionCommunication.RaceSave.JsonRace,System.Int32,System.String,System.Int32,System.String)
+  id: '#ctor(Model.RaceModel,AquitisionCommunication.RaceSave.JsonRace,System.Int32,System.String,System.Int32,System.String)'
+  parent: PRace.Race
+  langs:
+  - csharp
+  - vb
+  name: Race(RaceModel, RaceSave.JsonRace, Int32, String, Int32, String)
+  nameWithType: Race.Race(RaceModel, RaceSave.JsonRace, Int32, String, Int32, String)
+  fullName: PRace.Race.Race(Model.RaceModel, AquitisionCommunication.RaceSave.JsonRace, System.Int32, System.String, System.Int32, System.String)
+  type: Constructor
+  source:
+    id: .ctor
+    path: E:\Unity\Project\SRSP-Simple-Simulator\Assets\Controller\script\Model\Race\Race.cs
+    startLine: 25
+  assemblies:
+  - Assembly-CSharp
+  namespace: PRace
+  summary: "\nCreate an instance of a race\n"
+  example: []
+  syntax:
+    content: public Race(RaceModel model, RaceSave.JsonRace jrace, int portQTVLM, string ipQTVLM, int portRM, string ipRM)
+    parameters:
+    - id: model
+      type: Model.RaceModel
+      description: The <xref href="Model.RaceModel" data-throw-if-not-resolved="false"></xref> of the simultator
+    - id: jrace
+      type: AquitisionCommunication.RaceSave.JsonRace
+      description: The <xref href="AquitisionCommunication.RaceSave.JsonRace" data-throw-if-not-resolved="false"></xref> to use as a save to load the race
+    - id: portQTVLM
+      type: System.Int32
+      description: port to us to connecte to QTVLM
+    - id: ipQTVLM
+      type: System.String
+      description: IP to us to connecte to QTVLM
+    - id: portRM
+      type: System.Int32
+      description: port to us to connecte to the Race Manager
+    - id: ipRM
+      type: System.String
+      description: IP to us to connecte to The Race Manager
+    content.vb: Public Sub New(model As RaceModel, jrace As RaceSave.JsonRace, portQTVLM As Integer, ipQTVLM As String, portRM As Integer, ipRM As String)
+  overload: PRace.Race.#ctor*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: PRace.Race.#ctor(Model.RaceModel,Communication.DataProcessing.Json.BoatType,PRace.Mode,System.Int32,System.String,System.Int32,System.String)
+  commentId: M:PRace.Race.#ctor(Model.RaceModel,Communication.DataProcessing.Json.BoatType,PRace.Mode,System.Int32,System.String,System.Int32,System.String)
+  id: '#ctor(Model.RaceModel,Communication.DataProcessing.Json.BoatType,PRace.Mode,System.Int32,System.String,System.Int32,System.String)'
+  parent: PRace.Race
+  langs:
+  - csharp
+  - vb
+  name: Race(RaceModel, BoatType, Mode, Int32, String, Int32, String)
+  nameWithType: Race.Race(RaceModel, BoatType, Mode, Int32, String, Int32, String)
+  fullName: PRace.Race.Race(Model.RaceModel, Communication.DataProcessing.Json.BoatType, PRace.Mode, System.Int32, System.String, System.Int32, System.String)
+  type: Constructor
+  source:
+    id: .ctor
+    path: E:\Unity\Project\SRSP-Simple-Simulator\Assets\Controller\script\Model\Race\Race.cs
+    startLine: 56
+  assemblies:
+  - Assembly-CSharp
+  namespace: PRace
+  summary: "\nCreate an instance of a race\n"
+  example: []
+  syntax:
+    content: public Race(RaceModel model, BoatType selectedBoatType, Mode mode, int portQTVLM, string ipQTVLM, int portRM, string ipRM)
+    parameters:
+    - id: model
+      type: Model.RaceModel
+      description: The <xref href="Model.RaceModel" data-throw-if-not-resolved="false"></xref> of the simultator
+    - id: selectedBoatType
+      type: Communication.DataProcessing.Json.BoatType
+      description: The <xref href="Communication.DataProcessing.Json.BoatType" data-throw-if-not-resolved="false"></xref> to use as model to create the &apos;boat&apos; attribut
+    - id: mode
+      type: PRace.Mode
+      description: The <xref href="PRace.Mode" data-throw-if-not-resolved="false"></xref> of the race
+    - id: portQTVLM
+      type: System.Int32
+      description: port to us to connecte to QTVLM
+    - id: ipQTVLM
+      type: System.String
+      description: IP to us to connecte to QTVLM
+    - id: portRM
+      type: System.Int32
+      description: port to us to connecte to the Race Manager
+    - id: ipRM
+      type: System.String
+      description: IP to us to connecte to The Race Manager
+    content.vb: Public Sub New(model As RaceModel, selectedBoatType As BoatType, mode As Mode, portQTVLM As Integer, ipQTVLM As String, portRM As Integer, ipRM As String)
+  overload: PRace.Race.#ctor*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: PRace.Race.GetId
+  commentId: M:PRace.Race.GetId
+  id: GetId
+  parent: PRace.Race
+  langs:
+  - csharp
+  - vb
+  name: GetId()
+  nameWithType: Race.GetId()
+  fullName: PRace.Race.GetId()
+  type: Method
+  source:
+    id: GetId
+    path: E:\Unity\Project\SRSP-Simple-Simulator\Assets\Controller\script\Model\Race\Race.cs
+    startLine: 172
+  assemblies:
+  - Assembly-CSharp
+  namespace: PRace
+  syntax:
+    content: public int GetId()
+    return:
+      type: System.Int32
+    content.vb: Public Function GetId As Integer
+  overload: PRace.Race.GetId*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: PRace.Race.GetCurrentInstant
+  commentId: M:PRace.Race.GetCurrentInstant
+  id: GetCurrentInstant
+  parent: PRace.Race
+  langs:
+  - csharp
+  - vb
+  name: GetCurrentInstant()
+  nameWithType: Race.GetCurrentInstant()
+  fullName: PRace.Race.GetCurrentInstant()
+  type: Method
+  source:
+    id: GetCurrentInstant
+    path: E:\Unity\Project\SRSP-Simple-Simulator\Assets\Controller\script\Model\Race\Race.cs
+    startLine: 181
+  assemblies:
+  - Assembly-CSharp
+  namespace: PRace
+  summary: "\nReturn the time of the inner time of the simulation\n"
+  example: []
+  syntax:
+    content: public DateTime GetCurrentInstant()
+    return:
+      type: System.DateTime
+      description: Return the time of the inner time of the simulation
+    content.vb: Public Function GetCurrentInstant As Date
+  overload: PRace.Race.GetCurrentInstant*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: PRace.Race.GetWayPoint
+  commentId: M:PRace.Race.GetWayPoint
+  id: GetWayPoint
+  parent: PRace.Race
+  langs:
+  - csharp
+  - vb
+  name: GetWayPoint()
+  nameWithType: Race.GetWayPoint()
+  fullName: PRace.Race.GetWayPoint()
+  type: Method
+  source:
+    id: GetWayPoint
+    path: E:\Unity\Project\SRSP-Simple-Simulator\Assets\Controller\script\Model\Race\Race.cs
+    startLine: 186
+  assemblies:
+  - Assembly-CSharp
+  namespace: PRace
+  syntax:
+    content: public List<WayPoint> GetWayPoint()
+    return:
+      type: System.Collections.Generic.List{PRace.WayPoint}
+    content.vb: Public Function GetWayPoint As List(Of WayPoint)
+  overload: PRace.Race.GetWayPoint*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: PRace.Race.SetBoatCap(System.Single)
+  commentId: M:PRace.Race.SetBoatCap(System.Single)
+  id: SetBoatCap(System.Single)
+  parent: PRace.Race
+  langs:
+  - csharp
+  - vb
+  name: SetBoatCap(Single)
+  nameWithType: Race.SetBoatCap(Single)
+  fullName: PRace.Race.SetBoatCap(System.Single)
+  type: Method
+  source:
+    id: SetBoatCap
+    path: E:\Unity\Project\SRSP-Simple-Simulator\Assets\Controller\script\Model\Race\Race.cs
+    startLine: 195
+  assemblies:
+  - Assembly-CSharp
+  namespace: PRace
+  summary: "\nSet the cap of the attribut &apos;boat&apos; modulo 360\n"
+  example: []
+  syntax:
+    content: public void SetBoatCap(float cap)
+    parameters:
+    - id: cap
+      type: System.Single
+      description: cap in degre
+    content.vb: Public Sub SetBoatCap(cap As Single)
+  overload: PRace.Race.SetBoatCap*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: PRace.Race.GetEnvironment
+  commentId: M:PRace.Race.GetEnvironment
+  id: GetEnvironment
+  parent: PRace.Race
+  langs:
+  - csharp
+  - vb
+  name: GetEnvironment()
+  nameWithType: Race.GetEnvironment()
+  fullName: PRace.Race.GetEnvironment()
+  type: Method
+  source:
+    id: GetEnvironment
+    path: E:\Unity\Project\SRSP-Simple-Simulator\Assets\Controller\script\Model\Race\Race.cs
+    startLine: 201
+  assemblies:
+  - Assembly-CSharp
+  namespace: PRace
+  syntax:
+    content: public Environment GetEnvironment()
+    return:
+      type: Environement.Environment
+    content.vb: Public Function GetEnvironment As Environment
+  overload: PRace.Race.GetEnvironment*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: PRace.Race.GetCurrentPolaire
+  commentId: M:PRace.Race.GetCurrentPolaire
+  id: GetCurrentPolaire
+  parent: PRace.Race
+  langs:
+  - csharp
+  - vb
+  name: GetCurrentPolaire()
+  nameWithType: Race.GetCurrentPolaire()
+  fullName: PRace.Race.GetCurrentPolaire()
+  type: Method
+  source:
+    id: GetCurrentPolaire
+    path: E:\Unity\Project\SRSP-Simple-Simulator\Assets\Controller\script\Model\Race\Race.cs
+    startLine: 210
+  assemblies:
+  - Assembly-CSharp
+  namespace: PRace
+  summary: "\nCall the fonction <xref href=\"PRace.Boat.GetCurrentPolaire\" data-throw-if-not-resolved=\"false\"></xref> and return its value\n"
+  example: []
+  syntax:
+    content: public Polaire GetCurrentPolaire()
+    return:
+      type: PRace.Polaire
+      description: return the polar currently used by the boat
+    content.vb: Public Function GetCurrentPolaire As Polaire
+  overload: PRace.Race.GetCurrentPolaire*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: PRace.Race.GetAllPolaire
+  commentId: M:PRace.Race.GetAllPolaire
+  id: GetAllPolaire
+  parent: PRace.Race
+  langs:
+  - csharp
+  - vb
+  name: GetAllPolaire()
+  nameWithType: Race.GetAllPolaire()
+  fullName: PRace.Race.GetAllPolaire()
+  type: Method
+  source:
+    id: GetAllPolaire
+    path: E:\Unity\Project\SRSP-Simple-Simulator\Assets\Controller\script\Model\Race\Race.cs
+    startLine: 219
+  assemblies:
+  - Assembly-CSharp
+  namespace: PRace
+  summary: "\nCall the fonction <xref href=\"PRace.Boat.getAvailablePolaire\" data-throw-if-not-resolved=\"false\"></xref> and return its value\n"
+  example: []
+  syntax:
+    content: public List<Polaire> GetAllPolaire()
+    return:
+      type: System.Collections.Generic.List{PRace.Polaire}
+      description: return all polars of the boat attribut
+    content.vb: Public Function GetAllPolaire As List(Of Polaire)
+  overload: PRace.Race.GetAllPolaire*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: PRace.Race.GetBoatId
+  commentId: M:PRace.Race.GetBoatId
+  id: GetBoatId
+  parent: PRace.Race
+  langs:
+  - csharp
+  - vb
+  name: GetBoatId()
+  nameWithType: Race.GetBoatId()
+  fullName: PRace.Race.GetBoatId()
+  type: Method
+  source:
+    id: GetBoatId
+    path: E:\Unity\Project\SRSP-Simple-Simulator\Assets\Controller\script\Model\Race\Race.cs
+    startLine: 228
+  assemblies:
+  - Assembly-CSharp
+  namespace: PRace
+  summary: "\nCall the fonction <xref href=\"PRace.Boat.GetId\" data-throw-if-not-resolved=\"false\"></xref> and return its value\n"
+  example: []
+  syntax:
+    content: public int GetBoatId()
+    return:
+      type: System.Int32
+      description: return the boat id
+    content.vb: Public Function GetBoatId As Integer
+  overload: PRace.Race.GetBoatId*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: PRace.Race.GetBoatCap
+  commentId: M:PRace.Race.GetBoatCap
+  id: GetBoatCap
+  parent: PRace.Race
+  langs:
+  - csharp
+  - vb
+  name: GetBoatCap()
+  nameWithType: Race.GetBoatCap()
+  fullName: PRace.Race.GetBoatCap()
+  type: Method
+  source:
+    id: GetBoatCap
+    path: E:\Unity\Project\SRSP-Simple-Simulator\Assets\Controller\script\Model\Race\Race.cs
+    startLine: 237
+  assemblies:
+  - Assembly-CSharp
+  namespace: PRace
+  summary: "\nCall the fonction <xref href=\"PRace.Boat.getCap\" data-throw-if-not-resolved=\"false\"></xref> and return its value\n"
+  example: []
+  syntax:
+    content: public float GetBoatCap()
+    return:
+      type: System.Single
+      description: return the boat cap
+    content.vb: Public Function GetBoatCap As Single
+  overload: PRace.Race.GetBoatCap*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: PRace.Race.GetCompetitors
+  commentId: M:PRace.Race.GetCompetitors
+  id: GetCompetitors
+  parent: PRace.Race
+  langs:
+  - csharp
+  - vb
+  name: GetCompetitors()
+  nameWithType: Race.GetCompetitors()
+  fullName: PRace.Race.GetCompetitors()
+  type: Method
+  source:
+    id: GetCompetitors
+    path: E:\Unity\Project\SRSP-Simple-Simulator\Assets\Controller\script\Model\Race\Race.cs
+    startLine: 242
+  assemblies:
+  - Assembly-CSharp
+  namespace: PRace
+  syntax:
+    content: public List<Competitor> GetCompetitors()
+    return:
+      type: System.Collections.Generic.List{PRace.Competitor}
+    content.vb: Public Function GetCompetitors As List(Of Competitor)
+  overload: PRace.Race.GetCompetitors*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: PRace.Race.SetAccFactor(System.Single)
+  commentId: M:PRace.Race.SetAccFactor(System.Single)
+  id: SetAccFactor(System.Single)
+  parent: PRace.Race
+  langs:
+  - csharp
+  - vb
+  name: SetAccFactor(Single)
+  nameWithType: Race.SetAccFactor(Single)
+  fullName: PRace.Race.SetAccFactor(System.Single)
+  type: Method
+  source:
+    id: SetAccFactor
+    path: E:\Unity\Project\SRSP-Simple-Simulator\Assets\Controller\script\Model\Race\Race.cs
+    startLine: 251
+  assemblies:
+  - Assembly-CSharp
+  namespace: PRace
+  summary: "\nset the acceleration factor of the simulator\n"
+  example: []
+  syntax:
+    content: public void SetAccFactor(float acc)
+    parameters:
+    - id: acc
+      type: System.Single
+      description: ''
+    content.vb: Public Sub SetAccFactor(acc As Single)
+  overload: PRace.Race.SetAccFactor*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: PRace.Race.GetAccFactor
+  commentId: M:PRace.Race.GetAccFactor
+  id: GetAccFactor
+  parent: PRace.Race
+  langs:
+  - csharp
+  - vb
+  name: GetAccFactor()
+  nameWithType: Race.GetAccFactor()
+  fullName: PRace.Race.GetAccFactor()
+  type: Method
+  source:
+    id: GetAccFactor
+    path: E:\Unity\Project\SRSP-Simple-Simulator\Assets\Controller\script\Model\Race\Race.cs
+    startLine: 260
+  assemblies:
+  - Assembly-CSharp
+  namespace: PRace
+  summary: "\nget the acceleration factor of the simulation\n"
+  example: []
+  syntax:
+    content: public float GetAccFactor()
+    return:
+      type: System.Single
+      description: ''
+    content.vb: Public Function GetAccFactor As Single
+  overload: PRace.Race.GetAccFactor*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: PRace.Race.SetCompetitors(System.Collections.Generic.List{System.Int32},System.Collections.Generic.List{System.Single},System.Collections.Generic.List{System.Single})
+  commentId: M:PRace.Race.SetCompetitors(System.Collections.Generic.List{System.Int32},System.Collections.Generic.List{System.Single},System.Collections.Generic.List{System.Single})
+  id: SetCompetitors(System.Collections.Generic.List{System.Int32},System.Collections.Generic.List{System.Single},System.Collections.Generic.List{System.Single})
+  parent: PRace.Race
+  langs:
+  - csharp
+  - vb
+  name: SetCompetitors(List<Int32>, List<Single>, List<Single>)
+  nameWithType: Race.SetCompetitors(List<Int32>, List<Single>, List<Single>)
+  fullName: PRace.Race.SetCompetitors(System.Collections.Generic.List<System.Int32>, System.Collections.Generic.List<System.Single>, System.Collections.Generic.List<System.Single>)
+  type: Method
+  source:
+    id: SetCompetitors
+    path: E:\Unity\Project\SRSP-Simple-Simulator\Assets\Controller\script\Model\Race\Race.cs
+    startLine: 265
+  assemblies:
+  - Assembly-CSharp
+  namespace: PRace
+  syntax:
+    content: public void SetCompetitors(List<int> id, List<float> latitude, List<float> longitude)
+    parameters:
+    - id: id
+      type: System.Collections.Generic.List{System.Int32}
+    - id: latitude
+      type: System.Collections.Generic.List{System.Single}
+    - id: longitude
+      type: System.Collections.Generic.List{System.Single}
+    content.vb: Public Sub SetCompetitors(id As List(Of Integer), latitude As List(Of Single), longitude As List(Of Single))
+  overload: PRace.Race.SetCompetitors*
+  nameWithType.vb: Race.SetCompetitors(List(Of Int32), List(Of Single), List(Of Single))
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: PRace.Race.SetCompetitors(System.Collections.Generic.List(Of System.Int32), System.Collections.Generic.List(Of System.Single), System.Collections.Generic.List(Of System.Single))
+  name.vb: SetCompetitors(List(Of Int32), List(Of Single), List(Of Single))
+- uid: PRace.Race.GetBoat
+  commentId: M:PRace.Race.GetBoat
+  id: GetBoat
+  parent: PRace.Race
+  langs:
+  - csharp
+  - vb
+  name: GetBoat()
+  nameWithType: Race.GetBoat()
+  fullName: PRace.Race.GetBoat()
+  type: Method
+  source:
+    id: GetBoat
+    path: E:\Unity\Project\SRSP-Simple-Simulator\Assets\Controller\script\Model\Race\Race.cs
+    startLine: 277
+  assemblies:
+  - Assembly-CSharp
+  namespace: PRace
+  syntax:
+    content: public Boat GetBoat()
+    return:
+      type: PRace.Boat
+    content.vb: Public Function GetBoat As Boat
+  overload: PRace.Race.GetBoat*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: PRace.Race.GetPosition
+  commentId: M:PRace.Race.GetPosition
+  id: GetPosition
+  parent: PRace.Race
+  langs:
+  - csharp
+  - vb
+  name: GetPosition()
+  nameWithType: Race.GetPosition()
+  fullName: PRace.Race.GetPosition()
+  type: Method
+  source:
+    id: GetPosition
+    path: E:\Unity\Project\SRSP-Simple-Simulator\Assets\Controller\script\Model\Race\Race.cs
+    startLine: 286
+  assemblies:
+  - Assembly-CSharp
+  namespace: PRace
+  summary: "\nreturn the Boat position\n"
+  example: []
+  syntax:
+    content: public (double longitude, double latitude) GetPosition()
+    return:
+      type: System.ValueTuple{System.Double,System.Double}
+      description: return a double (flaot, float) containing the longitude and the latiude of the boat in radiant
+    content.vb: Public Function GetPosition As(longitude As Double, latitude As Double)(Of Double , Double)
+  overload: PRace.Race.GetPosition*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: PRace.Race.SetWayPoint(System.Collections.Generic.List{PRace.WayPoint})
+  commentId: M:PRace.Race.SetWayPoint(System.Collections.Generic.List{PRace.WayPoint})
+  id: SetWayPoint(System.Collections.Generic.List{PRace.WayPoint})
+  parent: PRace.Race
+  langs:
+  - csharp
+  - vb
+  name: SetWayPoint(List<WayPoint>)
+  nameWithType: Race.SetWayPoint(List<WayPoint>)
+  fullName: PRace.Race.SetWayPoint(System.Collections.Generic.List<PRace.WayPoint>)
+  type: Method
+  source:
+    id: SetWayPoint
+    path: E:\Unity\Project\SRSP-Simple-Simulator\Assets\Controller\script\Model\Race\Race.cs
+    startLine: 293
+  assemblies:
+  - Assembly-CSharp
+  namespace: PRace
+  syntax:
+    content: public void SetWayPoint(List<WayPoint> wayPoints)
+    parameters:
+    - id: wayPoints
+      type: System.Collections.Generic.List{PRace.WayPoint}
+    content.vb: Public Sub SetWayPoint(wayPoints As List(Of WayPoint))
+  overload: PRace.Race.SetWayPoint*
+  nameWithType.vb: Race.SetWayPoint(List(Of WayPoint))
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: PRace.Race.SetWayPoint(System.Collections.Generic.List(Of PRace.WayPoint))
+  name.vb: SetWayPoint(List(Of WayPoint))
+- uid: PRace.Race.change_Env(System.Collections.Generic.Dictionary{Environement.Conditions,System.Single})
+  commentId: M:PRace.Race.change_Env(System.Collections.Generic.Dictionary{Environement.Conditions,System.Single})
+  id: change_Env(System.Collections.Generic.Dictionary{Environement.Conditions,System.Single})
+  parent: PRace.Race
+  langs:
+  - csharp
+  - vb
+  name: change_Env(Dictionary<Conditions, Single>)
+  nameWithType: Race.change_Env(Dictionary<Conditions, Single>)
+  fullName: PRace.Race.change_Env(System.Collections.Generic.Dictionary<Environement.Conditions, System.Single>)
+  type: Method
+  source:
+    id: change_Env
+    path: E:\Unity\Project\SRSP-Simple-Simulator\Assets\Controller\script\Model\Race\Race.cs
+    startLine: 301
+  assemblies:
+  - Assembly-CSharp
+  namespace: PRace
+  summary: "\nCall the fonction <xref href=\"Environement.Environment.setEnvironment(System.Collections.Generic.Dictionary%7bEnvironement.Conditions%2cSystem.Single%7d)\" data-throw-if-not-resolved=\"false\"></xref>\n"
+  example: []
+  syntax:
+    content: public void change_Env(Dictionary<Conditions, float> env)
+    parameters:
+    - id: env
+      type: System.Collections.Generic.Dictionary{Environement.Conditions,System.Single}
+      description: ''
+    content.vb: Public Sub change_Env(env As Dictionary(Of Conditions, Single))
+  overload: PRace.Race.change_Env*
+  nameWithType.vb: Race.change_Env(Dictionary(Of Conditions, Single))
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: PRace.Race.change_Env(System.Collections.Generic.Dictionary(Of Environement.Conditions, System.Single))
+  name.vb: change_Env(Dictionary(Of Conditions, Single))
+- uid: PRace.Race.sendPosition
+  commentId: M:PRace.Race.sendPosition
+  id: sendPosition
+  parent: PRace.Race
+  langs:
+  - csharp
+  - vb
+  name: sendPosition()
+  nameWithType: Race.sendPosition()
+  fullName: PRace.Race.sendPosition()
+  type: Method
+  source:
+    id: sendPosition
+    path: E:\Unity\Project\SRSP-Simple-Simulator\Assets\Controller\script\Model\Race\Race.cs
+    startLine: 308
+  assemblies:
+  - Assembly-CSharp
+  namespace: PRace
+  summary: "\nsend information about the race to QTVLM or OPENCPN\n"
+  example: []
+  syntax:
+    content: public void sendPosition()
+    content.vb: Public Sub sendPosition
+  overload: PRace.Race.sendPosition*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: PRace.Race.getMode
+  commentId: M:PRace.Race.getMode
+  id: getMode
+  parent: PRace.Race
+  langs:
+  - csharp
+  - vb
+  name: getMode()
+  nameWithType: Race.getMode()
+  fullName: PRace.Race.getMode()
+  type: Method
+  source:
+    id: getMode
+    path: E:\Unity\Project\SRSP-Simple-Simulator\Assets\Controller\script\Model\Race\Race.cs
+    startLine: 313
+  assemblies:
+  - Assembly-CSharp
+  namespace: PRace
+  syntax:
+    content: public Mode getMode()
+    return:
+      type: PRace.Mode
+    content.vb: Public Function getMode As Mode
+  overload: PRace.Race.getMode*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: PRace.Race.setacceleratorFactor(System.Int32)
+  commentId: M:PRace.Race.setacceleratorFactor(System.Int32)
+  id: setacceleratorFactor(System.Int32)
+  parent: PRace.Race
+  langs:
+  - csharp
+  - vb
+  name: setacceleratorFactor(Int32)
+  nameWithType: Race.setacceleratorFactor(Int32)
+  fullName: PRace.Race.setacceleratorFactor(System.Int32)
+  type: Method
+  source:
+    id: setacceleratorFactor
+    path: E:\Unity\Project\SRSP-Simple-Simulator\Assets\Controller\script\Model\Race\Race.cs
+    startLine: 321
+  assemblies:
+  - Assembly-CSharp
+  namespace: PRace
+  summary: "\nSet the acceleration factor of the race\n"
+  example: []
+  syntax:
+    content: public void setacceleratorFactor(int AccFac)
+    parameters:
+    - id: AccFac
+      type: System.Int32
+      description: ''
+    content.vb: Public Sub setacceleratorFactor(AccFac As Integer)
+  overload: PRace.Race.setacceleratorFactor*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: PRace.Race.Pause
+  commentId: M:PRace.Race.Pause
+  id: Pause
+  parent: PRace.Race
+  langs:
+  - csharp
+  - vb
+  name: Pause()
+  nameWithType: Race.Pause()
+  fullName: PRace.Race.Pause()
+  type: Method
+  source:
+    id: Pause
+    path: E:\Unity\Project\SRSP-Simple-Simulator\Assets\Controller\script\Model\Race\Race.cs
+    startLine: 329
+  assemblies:
+  - Assembly-CSharp
+  namespace: PRace
+  summary: "\nPause the inner clock of the race\n"
+  remarks: Call <xref href="PRace.Clock.pause" data-throw-if-not-resolved="false"></xref>
+  example: []
+  syntax:
+    content: public void Pause()
+    content.vb: Public Sub Pause
+  overload: PRace.Race.Pause*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: PRace.Race.Run
+  commentId: M:PRace.Race.Run
+  id: Run
+  parent: PRace.Race
+  langs:
+  - csharp
+  - vb
+  name: Run()
+  nameWithType: Race.Run()
+  fullName: PRace.Race.Run()
+  type: Method
+  source:
+    id: Run
+    path: E:\Unity\Project\SRSP-Simple-Simulator\Assets\Controller\script\Model\Race\Race.cs
+    startLine: 338
+  assemblies:
+  - Assembly-CSharp
+  namespace: PRace
+  summary: "\nRun the inner clock of the race\n"
+  remarks: Call <xref href="PRace.Clock.Run" data-throw-if-not-resolved="false"></xref>
+  example: []
+  syntax:
+    content: public void Run()
+    content.vb: Public Sub Run
+  overload: PRace.Race.Run*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: PRace.Race.nextIteration
+  commentId: M:PRace.Race.nextIteration
+  id: nextIteration
+  parent: PRace.Race
+  langs:
+  - csharp
+  - vb
+  name: nextIteration()
+  nameWithType: Race.nextIteration()
+  fullName: PRace.Race.nextIteration()
+  type: Method
+  source:
+    id: nextIteration
+    path: E:\Unity\Project\SRSP-Simple-Simulator\Assets\Controller\script\Model\Race\Race.cs
+    startLine: 349
+  assemblies:
+  - Assembly-CSharp
+  namespace: PRace
+  summary: "\nDo the next iteration of the race.\nCalculate and apply the physic motion of the boat.\nUptate the heading of the boat for the wind mode.\nSend information about the race to QTVLM\n"
+  example: []
+  syntax:
+    content: public void nextIteration()
+    content.vb: Public Sub nextIteration
+  overload: PRace.Race.nextIteration*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: PRace.Race.GetisPause
+  commentId: M:PRace.Race.GetisPause
+  id: GetisPause
+  parent: PRace.Race
+  langs:
+  - csharp
+  - vb
+  name: GetisPause()
+  nameWithType: Race.GetisPause()
+  fullName: PRace.Race.GetisPause()
+  type: Method
+  source:
+    id: GetisPause
+    path: E:\Unity\Project\SRSP-Simple-Simulator\Assets\Controller\script\Model\Race\Race.cs
+    startLine: 368
+  assemblies:
+  - Assembly-CSharp
+  namespace: PRace
+  summary: "\nReturn if the race is paused or not\n"
+  example: []
+  syntax:
+    content: public bool GetisPause()
+    return:
+      type: System.Boolean
+      description: return true if the race is paused else return false
+    content.vb: Public Function GetisPause As Boolean
+  overload: PRace.Race.GetisPause*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: PRace.Race.GetBoatStatus
+  commentId: M:PRace.Race.GetBoatStatus
+  id: GetBoatStatus
+  parent: PRace.Race
+  langs:
+  - csharp
+  - vb
+  name: GetBoatStatus()
+  nameWithType: Race.GetBoatStatus()
+  fullName: PRace.Race.GetBoatStatus()
+  type: Method
+  source:
+    id: GetBoatStatus
+    path: E:\Unity\Project\SRSP-Simple-Simulator\Assets\Controller\script\Model\Race\Race.cs
+    startLine: 377
+  assemblies:
+  - Assembly-CSharp
+  namespace: PRace
+  summary: "\nReturn a list of double summarizing the status of the boat (longitude, latitude, cap, cog, sog, stw, aws, awa)\n"
+  example: []
+  syntax:
+    content: public List<double> GetBoatStatus()
+    return:
+      type: System.Collections.Generic.List{System.Double}
+      description: Return a list of double summarizing the status of the boat (longitude, latitude, cap, cog, sog, stw, aws, awa)
+    content.vb: Public Function GetBoatStatus As List(Of Double)
+  overload: PRace.Race.GetBoatStatus*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: PRace.Race.GetAquisition
+  commentId: M:PRace.Race.GetAquisition
+  id: GetAquisition
+  parent: PRace.Race
+  langs:
+  - csharp
+  - vb
+  name: GetAquisition()
+  nameWithType: Race.GetAquisition()
+  fullName: PRace.Race.GetAquisition()
+  type: Method
+  source:
+    id: GetAquisition
+    path: E:\Unity\Project\SRSP-Simple-Simulator\Assets\Controller\script\Model\Race\Race.cs
+    startLine: 392
+  assemblies:
+  - Assembly-CSharp
+  namespace: PRace
+  syntax:
+    content: public Aquisition GetAquisition()
+    return:
+      type: AquitisionCommunication.Aquisition
+    content.vb: Public Function GetAquisition As Aquisition
+  overload: PRace.Race.GetAquisition*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: PRace.Race.getCurrentMoment
+  commentId: M:PRace.Race.getCurrentMoment
+  id: getCurrentMoment
+  parent: PRace.Race
+  langs:
+  - csharp
+  - vb
+  name: getCurrentMoment()
+  nameWithType: Race.getCurrentMoment()
+  fullName: PRace.Race.getCurrentMoment()
+  type: Method
+  source:
+    id: getCurrentMoment
+    path: E:\Unity\Project\SRSP-Simple-Simulator\Assets\Controller\script\Model\Race\Race.cs
+    startLine: 397
+  assemblies:
+  - Assembly-CSharp
+  namespace: PRace
+  syntax:
+    content: public DateTime getCurrentMoment()
+    return:
+      type: System.DateTime
+    content.vb: Public Function getCurrentMoment As Date
+  overload: PRace.Race.getCurrentMoment*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+references:
+- uid: PRace
+  commentId: N:PRace
+  name: PRace
+  nameWithType: PRace
+  fullName: PRace
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  nameWithType: Object.ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Model.RaceModel
+  commentId: T:Model.RaceModel
+  parent: Model
+  name: RaceModel
+  nameWithType: RaceModel
+  fullName: Model.RaceModel
+- uid: AquitisionCommunication.RaceSave.JsonRace
+  commentId: T:AquitisionCommunication.RaceSave.JsonRace
+  parent: AquitisionCommunication
+  name: RaceSave.JsonRace
+  nameWithType: RaceSave.JsonRace
+  fullName: AquitisionCommunication.RaceSave.JsonRace
+- uid: PRace.Race.#ctor*
+  commentId: Overload:PRace.Race.#ctor
+  name: Race
+  nameWithType: Race.Race
+  fullName: PRace.Race.Race
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  name: Int32
+  nameWithType: Int32
+  fullName: System.Int32
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: Model
+  commentId: N:Model
+  name: Model
+  nameWithType: Model
+  fullName: Model
+- uid: AquitisionCommunication
+  commentId: N:AquitisionCommunication
+  name: AquitisionCommunication
+  nameWithType: AquitisionCommunication
+  fullName: AquitisionCommunication
+- uid: Communication.DataProcessing.Json.BoatType
+  commentId: T:Communication.DataProcessing.Json.BoatType
+  parent: Communication.DataProcessing.Json
+  name: BoatType
+  nameWithType: BoatType
+  fullName: Communication.DataProcessing.Json.BoatType
+- uid: PRace.Mode
+  commentId: T:PRace.Mode
+  parent: PRace
+  name: Mode
+  nameWithType: Mode
+  fullName: PRace.Mode
+- uid: Communication.DataProcessing.Json
+  commentId: N:Communication.DataProcessing.Json
+  name: Communication.DataProcessing.Json
+  nameWithType: Communication.DataProcessing.Json
+  fullName: Communication.DataProcessing.Json
+- uid: PRace.Race.GetId*
+  commentId: Overload:PRace.Race.GetId
+  name: GetId
+  nameWithType: Race.GetId
+  fullName: PRace.Race.GetId
+- uid: PRace.Race.GetCurrentInstant*
+  commentId: Overload:PRace.Race.GetCurrentInstant
+  name: GetCurrentInstant
+  nameWithType: Race.GetCurrentInstant
+  fullName: PRace.Race.GetCurrentInstant
+- uid: System.DateTime
+  commentId: T:System.DateTime
+  parent: System
+  isExternal: true
+  name: DateTime
+  nameWithType: DateTime
+  fullName: System.DateTime
+- uid: PRace.Race.GetWayPoint*
+  commentId: Overload:PRace.Race.GetWayPoint
+  name: GetWayPoint
+  nameWithType: Race.GetWayPoint
+  fullName: PRace.Race.GetWayPoint
+- uid: System.Collections.Generic.List{PRace.WayPoint}
+  commentId: T:System.Collections.Generic.List{PRace.WayPoint}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.List`1
+  name: List<WayPoint>
+  nameWithType: List<WayPoint>
+  fullName: System.Collections.Generic.List<PRace.WayPoint>
+  nameWithType.vb: List(Of WayPoint)
+  fullName.vb: System.Collections.Generic.List(Of PRace.WayPoint)
+  name.vb: List(Of WayPoint)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: PRace.WayPoint
+    name: WayPoint
+    nameWithType: WayPoint
+    fullName: PRace.WayPoint
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: PRace.WayPoint
+    name: WayPoint
+    nameWithType: WayPoint
+    fullName: PRace.WayPoint
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.Generic.List`1
+  commentId: T:System.Collections.Generic.List`1
+  isExternal: true
+  name: List<T>
+  nameWithType: List<T>
+  fullName: System.Collections.Generic.List<T>
+  nameWithType.vb: List(Of T)
+  fullName.vb: System.Collections.Generic.List(Of T)
+  name.vb: List(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+- uid: PRace.Race.SetBoatCap*
+  commentId: Overload:PRace.Race.SetBoatCap
+  name: SetBoatCap
+  nameWithType: Race.SetBoatCap
+  fullName: PRace.Race.SetBoatCap
+- uid: System.Single
+  commentId: T:System.Single
+  parent: System
+  isExternal: true
+  name: Single
+  nameWithType: Single
+  fullName: System.Single
+- uid: PRace.Race.GetEnvironment*
+  commentId: Overload:PRace.Race.GetEnvironment
+  name: GetEnvironment
+  nameWithType: Race.GetEnvironment
+  fullName: PRace.Race.GetEnvironment
+- uid: Environement.Environment
+  commentId: T:Environement.Environment
+  parent: Environement
+  name: Environment
+  nameWithType: Environment
+  fullName: Environement.Environment
+- uid: Environement
+  commentId: N:Environement
+  name: Environement
+  nameWithType: Environement
+  fullName: Environement
+- uid: PRace.Boat.GetCurrentPolaire
+  commentId: M:PRace.Boat.GetCurrentPolaire
+  isExternal: true
+- uid: PRace.Race.GetCurrentPolaire*
+  commentId: Overload:PRace.Race.GetCurrentPolaire
+  name: GetCurrentPolaire
+  nameWithType: Race.GetCurrentPolaire
+  fullName: PRace.Race.GetCurrentPolaire
+- uid: PRace.Polaire
+  commentId: T:PRace.Polaire
+  parent: PRace
+  name: Polaire
+  nameWithType: Polaire
+  fullName: PRace.Polaire
+- uid: PRace.Boat.getAvailablePolaire
+  commentId: M:PRace.Boat.getAvailablePolaire
+  isExternal: true
+- uid: PRace.Race.GetAllPolaire*
+  commentId: Overload:PRace.Race.GetAllPolaire
+  name: GetAllPolaire
+  nameWithType: Race.GetAllPolaire
+  fullName: PRace.Race.GetAllPolaire
+- uid: System.Collections.Generic.List{PRace.Polaire}
+  commentId: T:System.Collections.Generic.List{PRace.Polaire}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.List`1
+  name: List<Polaire>
+  nameWithType: List<Polaire>
+  fullName: System.Collections.Generic.List<PRace.Polaire>
+  nameWithType.vb: List(Of Polaire)
+  fullName.vb: System.Collections.Generic.List(Of PRace.Polaire)
+  name.vb: List(Of Polaire)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: PRace.Polaire
+    name: Polaire
+    nameWithType: Polaire
+    fullName: PRace.Polaire
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: PRace.Polaire
+    name: Polaire
+    nameWithType: Polaire
+    fullName: PRace.Polaire
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: PRace.Boat.GetId
+  commentId: M:PRace.Boat.GetId
+  isExternal: true
+- uid: PRace.Race.GetBoatId*
+  commentId: Overload:PRace.Race.GetBoatId
+  name: GetBoatId
+  nameWithType: Race.GetBoatId
+  fullName: PRace.Race.GetBoatId
+- uid: PRace.Boat.getCap
+  commentId: M:PRace.Boat.getCap
+  isExternal: true
+- uid: PRace.Race.GetBoatCap*
+  commentId: Overload:PRace.Race.GetBoatCap
+  name: GetBoatCap
+  nameWithType: Race.GetBoatCap
+  fullName: PRace.Race.GetBoatCap
+- uid: PRace.Race.GetCompetitors*
+  commentId: Overload:PRace.Race.GetCompetitors
+  name: GetCompetitors
+  nameWithType: Race.GetCompetitors
+  fullName: PRace.Race.GetCompetitors
+- uid: System.Collections.Generic.List{PRace.Competitor}
+  commentId: T:System.Collections.Generic.List{PRace.Competitor}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.List`1
+  name: List<Competitor>
+  nameWithType: List<Competitor>
+  fullName: System.Collections.Generic.List<PRace.Competitor>
+  nameWithType.vb: List(Of Competitor)
+  fullName.vb: System.Collections.Generic.List(Of PRace.Competitor)
+  name.vb: List(Of Competitor)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: PRace.Competitor
+    name: Competitor
+    nameWithType: Competitor
+    fullName: PRace.Competitor
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: PRace.Competitor
+    name: Competitor
+    nameWithType: Competitor
+    fullName: PRace.Competitor
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: PRace.Race.SetAccFactor*
+  commentId: Overload:PRace.Race.SetAccFactor
+  name: SetAccFactor
+  nameWithType: Race.SetAccFactor
+  fullName: PRace.Race.SetAccFactor
+- uid: PRace.Race.GetAccFactor*
+  commentId: Overload:PRace.Race.GetAccFactor
+  name: GetAccFactor
+  nameWithType: Race.GetAccFactor
+  fullName: PRace.Race.GetAccFactor
+- uid: PRace.Race.SetCompetitors*
+  commentId: Overload:PRace.Race.SetCompetitors
+  name: SetCompetitors
+  nameWithType: Race.SetCompetitors
+  fullName: PRace.Race.SetCompetitors
+- uid: System.Collections.Generic.List{System.Int32}
+  commentId: T:System.Collections.Generic.List{System.Int32}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.List`1
+  name: List<Int32>
+  nameWithType: List<Int32>
+  fullName: System.Collections.Generic.List<System.Int32>
+  nameWithType.vb: List(Of Int32)
+  fullName.vb: System.Collections.Generic.List(Of System.Int32)
+  name.vb: List(Of Int32)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.Generic.List{System.Single}
+  commentId: T:System.Collections.Generic.List{System.Single}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.List`1
+  name: List<Single>
+  nameWithType: List<Single>
+  fullName: System.Collections.Generic.List<System.Single>
+  nameWithType.vb: List(Of Single)
+  fullName.vb: System.Collections.Generic.List(Of System.Single)
+  name.vb: List(Of Single)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.Single
+    name: Single
+    nameWithType: Single
+    fullName: System.Single
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: System.Single
+    name: Single
+    nameWithType: Single
+    fullName: System.Single
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: PRace.Race.GetBoat*
+  commentId: Overload:PRace.Race.GetBoat
+  name: GetBoat
+  nameWithType: Race.GetBoat
+  fullName: PRace.Race.GetBoat
+- uid: PRace.Boat
+  commentId: T:PRace.Boat
+  parent: PRace
+  name: Boat
+  nameWithType: Boat
+  fullName: PRace.Boat
+- uid: PRace.Race.GetPosition*
+  commentId: Overload:PRace.Race.GetPosition
+  name: GetPosition
+  nameWithType: Race.GetPosition
+  fullName: PRace.Race.GetPosition
+- uid: System.ValueTuple{System.Double,System.Double}
+  commentId: T:System.ValueTuple{System.Double,System.Double}
+  parent: System
+  definition: System.ValueTuple`2
+  name: (T1, T2)<Double, Double>
+  nameWithType: (T1, T2)<Double, Double>
+  fullName: System.ValueTuple<System.Double, System.Double>
+  nameWithType.vb: (T1, T2)(Of Double, Double)
+  fullName.vb: System.ValueTuple(Of System.Double, System.Double)
+  name.vb: (T1, T2)(Of Double, Double)
+  spec.csharp:
+  - uid: System.ValueTuple`2
+    name: (T1, T2)
+    nameWithType: (T1, T2)
+    fullName: System.ValueTuple
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.Double
+    name: Double
+    nameWithType: Double
+    fullName: System.Double
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Double
+    name: Double
+    nameWithType: Double
+    fullName: System.Double
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.ValueTuple`2
+    name: (T1, T2)
+    nameWithType: (T1, T2)
+    fullName: System.ValueTuple
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: System.Double
+    name: Double
+    nameWithType: Double
+    fullName: System.Double
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Double
+    name: Double
+    nameWithType: Double
+    fullName: System.Double
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.ValueTuple`2
+  commentId: T:System.ValueTuple`2
+  isExternal: true
+  name: (T1, T2)<T1, T2>
+  nameWithType: (T1, T2)<T1, T2>
+  fullName: System.ValueTuple<T1, T2>
+  nameWithType.vb: (T1, T2)(Of T1, T2)
+  fullName.vb: System.ValueTuple(Of T1, T2)
+  name.vb: (T1, T2)(Of T1, T2)
+  spec.csharp:
+  - uid: System.ValueTuple`2
+    name: (T1, T2)
+    nameWithType: (T1, T2)
+    fullName: System.ValueTuple
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T1
+    nameWithType: T1
+    fullName: T1
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: T2
+    nameWithType: T2
+    fullName: T2
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.ValueTuple`2
+    name: (T1, T2)
+    nameWithType: (T1, T2)
+    fullName: System.ValueTuple
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T1
+    nameWithType: T1
+    fullName: T1
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: T2
+    nameWithType: T2
+    fullName: T2
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: PRace.Race.SetWayPoint*
+  commentId: Overload:PRace.Race.SetWayPoint
+  name: SetWayPoint
+  nameWithType: Race.SetWayPoint
+  fullName: PRace.Race.SetWayPoint
+- uid: Environement.Environment.setEnvironment(System.Collections.Generic.Dictionary{Environement.Conditions,System.Single})
+  commentId: M:Environement.Environment.setEnvironment(System.Collections.Generic.Dictionary{Environement.Conditions,System.Single})
+  isExternal: true
+- uid: PRace.Race.change_Env*
+  commentId: Overload:PRace.Race.change_Env
+  name: change_Env
+  nameWithType: Race.change_Env
+  fullName: PRace.Race.change_Env
+- uid: System.Collections.Generic.Dictionary{Environement.Conditions,System.Single}
+  commentId: T:System.Collections.Generic.Dictionary{Environement.Conditions,System.Single}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.Dictionary`2
+  name: Dictionary<Conditions, Single>
+  nameWithType: Dictionary<Conditions, Single>
+  fullName: System.Collections.Generic.Dictionary<Environement.Conditions, System.Single>
+  nameWithType.vb: Dictionary(Of Conditions, Single)
+  fullName.vb: System.Collections.Generic.Dictionary(Of Environement.Conditions, System.Single)
+  name.vb: Dictionary(Of Conditions, Single)
+  spec.csharp:
+  - uid: System.Collections.Generic.Dictionary`2
+    name: Dictionary
+    nameWithType: Dictionary
+    fullName: System.Collections.Generic.Dictionary
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Environement.Conditions
+    name: Conditions
+    nameWithType: Conditions
+    fullName: Environement.Conditions
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Single
+    name: Single
+    nameWithType: Single
+    fullName: System.Single
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.Dictionary`2
+    name: Dictionary
+    nameWithType: Dictionary
+    fullName: System.Collections.Generic.Dictionary
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: Environement.Conditions
+    name: Conditions
+    nameWithType: Conditions
+    fullName: Environement.Conditions
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Single
+    name: Single
+    nameWithType: Single
+    fullName: System.Single
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.Generic.Dictionary`2
+  commentId: T:System.Collections.Generic.Dictionary`2
+  isExternal: true
+  name: Dictionary<TKey, TValue>
+  nameWithType: Dictionary<TKey, TValue>
+  fullName: System.Collections.Generic.Dictionary<TKey, TValue>
+  nameWithType.vb: Dictionary(Of TKey, TValue)
+  fullName.vb: System.Collections.Generic.Dictionary(Of TKey, TValue)
+  name.vb: Dictionary(Of TKey, TValue)
+  spec.csharp:
+  - uid: System.Collections.Generic.Dictionary`2
+    name: Dictionary
+    nameWithType: Dictionary
+    fullName: System.Collections.Generic.Dictionary
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: TKey
+    nameWithType: TKey
+    fullName: TKey
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TValue
+    nameWithType: TValue
+    fullName: TValue
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.Dictionary`2
+    name: Dictionary
+    nameWithType: Dictionary
+    fullName: System.Collections.Generic.Dictionary
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: TKey
+    nameWithType: TKey
+    fullName: TKey
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TValue
+    nameWithType: TValue
+    fullName: TValue
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: PRace.Race.sendPosition*
+  commentId: Overload:PRace.Race.sendPosition
+  name: sendPosition
+  nameWithType: Race.sendPosition
+  fullName: PRace.Race.sendPosition
+- uid: PRace.Race.getMode*
+  commentId: Overload:PRace.Race.getMode
+  name: getMode
+  nameWithType: Race.getMode
+  fullName: PRace.Race.getMode
+- uid: PRace.Race.setacceleratorFactor*
+  commentId: Overload:PRace.Race.setacceleratorFactor
+  name: setacceleratorFactor
+  nameWithType: Race.setacceleratorFactor
+  fullName: PRace.Race.setacceleratorFactor
+- uid: PRace.Clock.pause
+  commentId: M:PRace.Clock.pause
+  isExternal: true
+- uid: PRace.Race.Pause*
+  commentId: Overload:PRace.Race.Pause
+  name: Pause
+  nameWithType: Race.Pause
+  fullName: PRace.Race.Pause
+- uid: PRace.Clock.Run
+  commentId: M:PRace.Clock.Run
+  isExternal: true
+- uid: PRace.Race.Run*
+  commentId: Overload:PRace.Race.Run
+  name: Run
+  nameWithType: Race.Run
+  fullName: PRace.Race.Run
+- uid: PRace.Race.nextIteration*
+  commentId: Overload:PRace.Race.nextIteration
+  name: nextIteration
+  nameWithType: Race.nextIteration
+  fullName: PRace.Race.nextIteration
+- uid: PRace.Race.GetisPause*
+  commentId: Overload:PRace.Race.GetisPause
+  name: GetisPause
+  nameWithType: Race.GetisPause
+  fullName: PRace.Race.GetisPause
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  name: Boolean
+  nameWithType: Boolean
+  fullName: System.Boolean
+- uid: PRace.Race.GetBoatStatus*
+  commentId: Overload:PRace.Race.GetBoatStatus
+  name: GetBoatStatus
+  nameWithType: Race.GetBoatStatus
+  fullName: PRace.Race.GetBoatStatus
+- uid: System.Collections.Generic.List{System.Double}
+  commentId: T:System.Collections.Generic.List{System.Double}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.List`1
+  name: List<Double>
+  nameWithType: List<Double>
+  fullName: System.Collections.Generic.List<System.Double>
+  nameWithType.vb: List(Of Double)
+  fullName.vb: System.Collections.Generic.List(Of System.Double)
+  name.vb: List(Of Double)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.Double
+    name: Double
+    nameWithType: Double
+    fullName: System.Double
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: System.Double
+    name: Double
+    nameWithType: Double
+    fullName: System.Double
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: PRace.Race.GetAquisition*
+  commentId: Overload:PRace.Race.GetAquisition
+  name: GetAquisition
+  nameWithType: Race.GetAquisition
+  fullName: PRace.Race.GetAquisition
+- uid: AquitisionCommunication.Aquisition
+  commentId: T:AquitisionCommunication.Aquisition
+  parent: AquitisionCommunication
+  name: Aquisition
+  nameWithType: Aquisition
+  fullName: AquitisionCommunication.Aquisition
+- uid: PRace.Race.getCurrentMoment*
+  commentId: Overload:PRace.Race.getCurrentMoment
+  name: getCurrentMoment
+  nameWithType: Race.getCurrentMoment
+  fullName: PRace.Race.getCurrentMoment

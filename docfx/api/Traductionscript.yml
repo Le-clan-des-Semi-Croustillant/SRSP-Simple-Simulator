@@ -1,0 +1,64 @@
+### YamlMime:ManagedReference
+items:
+- uid: Traductionscript
+  commentId: N:Traductionscript
+  id: Traductionscript
+  children:
+  - Traductionscript.BoatSelectTrad
+  - Traductionscript.ConfigTrad
+  - Traductionscript.InitialisationTrad
+  - Traductionscript.MenuTrad
+  - Traductionscript.ModeTrad
+  - Traductionscript.SavesSelectionTrad
+  - Traductionscript.WaypointSelectionTrad
+  - Traductionscript.xmlReader
+  langs:
+  - csharp
+  - vb
+  name: Traductionscript
+  nameWithType: Traductionscript
+  fullName: Traductionscript
+  type: Namespace
+  assemblies:
+  - Assembly-CSharp
+references:
+- uid: Traductionscript.WaypointSelectionTrad
+  commentId: T:Traductionscript.WaypointSelectionTrad
+  name: WaypointSelectionTrad
+  nameWithType: WaypointSelectionTrad
+  fullName: Traductionscript.WaypointSelectionTrad
+- uid: Traductionscript.xmlReader
+  commentId: T:Traductionscript.xmlReader
+  name: xmlReader
+  nameWithType: xmlReader
+  fullName: Traductionscript.xmlReader
+- uid: Traductionscript.MenuTrad
+  commentId: T:Traductionscript.MenuTrad
+  name: MenuTrad
+  nameWithType: MenuTrad
+  fullName: Traductionscript.MenuTrad
+- uid: Traductionscript.InitialisationTrad
+  commentId: T:Traductionscript.InitialisationTrad
+  name: InitialisationTrad
+  nameWithType: InitialisationTrad
+  fullName: Traductionscript.InitialisationTrad
+- uid: Traductionscript.ConfigTrad
+  commentId: T:Traductionscript.ConfigTrad
+  name: ConfigTrad
+  nameWithType: ConfigTrad
+  fullName: Traductionscript.ConfigTrad
+- uid: Traductionscript.ModeTrad
+  commentId: T:Traductionscript.ModeTrad
+  name: ModeTrad
+  nameWithType: ModeTrad
+  fullName: Traductionscript.ModeTrad
+- uid: Traductionscript.SavesSelectionTrad
+  commentId: T:Traductionscript.SavesSelectionTrad
+  name: SavesSelectionTrad
+  nameWithType: SavesSelectionTrad
+  fullName: Traductionscript.SavesSelectionTrad
+- uid: Traductionscript.BoatSelectTrad
+  commentId: T:Traductionscript.BoatSelectTrad
+  name: BoatSelectTrad
+  nameWithType: BoatSelectTrad
+  fullName: Traductionscript.BoatSelectTrad

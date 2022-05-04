@@ -1,0 +1,700 @@
+### YamlMime:ManagedReference
+items:
+- uid: SimpleSimulator.AquitisionCommunication.Trame.TrameMWV
+  commentId: T:SimpleSimulator.AquitisionCommunication.Trame.TrameMWV
+  id: TrameMWV
+  parent: SimpleSimulator.AquitisionCommunication.Trame
+  children:
+  - SimpleSimulator.AquitisionCommunication.Trame.TrameMWV.AngleVent
+  - SimpleSimulator.AquitisionCommunication.Trame.TrameMWV.Checksum(System.String)
+  - SimpleSimulator.AquitisionCommunication.Trame.TrameMWV.Controle
+  - SimpleSimulator.AquitisionCommunication.Trame.TrameMWV.Etat
+  - SimpleSimulator.AquitisionCommunication.Trame.TrameMWV.Reference
+  - SimpleSimulator.AquitisionCommunication.Trame.TrameMWV.ToString
+  - SimpleSimulator.AquitisionCommunication.Trame.TrameMWV.TrameType
+  - SimpleSimulator.AquitisionCommunication.Trame.TrameMWV.Unite
+  - SimpleSimulator.AquitisionCommunication.Trame.TrameMWV.VitesseVent
+  langs:
+  - csharp
+  - vb
+  name: TrameMWV
+  nameWithType: TrameMWV
+  fullName: SimpleSimulator.AquitisionCommunication.Trame.TrameMWV
+  type: Class
+  source:
+    id: TrameMWV
+    path: E:\Unity\Project\SRSP-Simple-Simulator\Assets\Controller\script\Model\AquitisionCommunication\Trame\TrameMWV.cs
+    startLine: 24
+  assemblies:
+  - Assembly-CSharp
+  namespace: SimpleSimulator.AquitisionCommunication.Trame
+  summary: "\nTrame MWV\nImportant parameters : AngleVent wich refer to Wind angle and VitesseVent wich refer to Wind speed  \nthe string Controle get the checksum value of the trame MWV\n"
+  example: []
+  syntax:
+    content: public class TrameMWV
+    content.vb: Public Class TrameMWV
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: SimpleSimulator.AquitisionCommunication.Trame.TrameMWV.TrameType
+  commentId: P:SimpleSimulator.AquitisionCommunication.Trame.TrameMWV.TrameType
+  id: TrameType
+  parent: SimpleSimulator.AquitisionCommunication.Trame.TrameMWV
+  langs:
+  - csharp
+  - vb
+  name: TrameType
+  nameWithType: TrameMWV.TrameType
+  fullName: SimpleSimulator.AquitisionCommunication.Trame.TrameMWV.TrameType
+  type: Property
+  source:
+    id: TrameType
+    path: E:\Unity\Project\SRSP-Simple-Simulator\Assets\Controller\script\Model\AquitisionCommunication\Trame\TrameMWV.cs
+    startLine: 26
+  assemblies:
+  - Assembly-CSharp
+  namespace: SimpleSimulator.AquitisionCommunication.Trame
+  syntax:
+    content: public string TrameType { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property TrameType As String
+  overload: SimpleSimulator.AquitisionCommunication.Trame.TrameMWV.TrameType*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: SimpleSimulator.AquitisionCommunication.Trame.TrameMWV.AngleVent
+  commentId: P:SimpleSimulator.AquitisionCommunication.Trame.TrameMWV.AngleVent
+  id: AngleVent
+  parent: SimpleSimulator.AquitisionCommunication.Trame.TrameMWV
+  langs:
+  - csharp
+  - vb
+  name: AngleVent
+  nameWithType: TrameMWV.AngleVent
+  fullName: SimpleSimulator.AquitisionCommunication.Trame.TrameMWV.AngleVent
+  type: Property
+  source:
+    id: AngleVent
+    path: E:\Unity\Project\SRSP-Simple-Simulator\Assets\Controller\script\Model\AquitisionCommunication\Trame\TrameMWV.cs
+    startLine: 27
+  assemblies:
+  - Assembly-CSharp
+  namespace: SimpleSimulator.AquitisionCommunication.Trame
+  syntax:
+    content: public float AngleVent { get; set; }
+    parameters: []
+    return:
+      type: System.Single
+    content.vb: Public Property AngleVent As Single
+  overload: SimpleSimulator.AquitisionCommunication.Trame.TrameMWV.AngleVent*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: SimpleSimulator.AquitisionCommunication.Trame.TrameMWV.Reference
+  commentId: P:SimpleSimulator.AquitisionCommunication.Trame.TrameMWV.Reference
+  id: Reference
+  parent: SimpleSimulator.AquitisionCommunication.Trame.TrameMWV
+  langs:
+  - csharp
+  - vb
+  name: Reference
+  nameWithType: TrameMWV.Reference
+  fullName: SimpleSimulator.AquitisionCommunication.Trame.TrameMWV.Reference
+  type: Property
+  source:
+    id: Reference
+    path: E:\Unity\Project\SRSP-Simple-Simulator\Assets\Controller\script\Model\AquitisionCommunication\Trame\TrameMWV.cs
+    startLine: 28
+  assemblies:
+  - Assembly-CSharp
+  namespace: SimpleSimulator.AquitisionCommunication.Trame
+  syntax:
+    content: public char Reference { get; set; }
+    parameters: []
+    return:
+      type: System.Char
+    content.vb: Public Property Reference As Char
+  overload: SimpleSimulator.AquitisionCommunication.Trame.TrameMWV.Reference*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: SimpleSimulator.AquitisionCommunication.Trame.TrameMWV.VitesseVent
+  commentId: P:SimpleSimulator.AquitisionCommunication.Trame.TrameMWV.VitesseVent
+  id: VitesseVent
+  parent: SimpleSimulator.AquitisionCommunication.Trame.TrameMWV
+  langs:
+  - csharp
+  - vb
+  name: VitesseVent
+  nameWithType: TrameMWV.VitesseVent
+  fullName: SimpleSimulator.AquitisionCommunication.Trame.TrameMWV.VitesseVent
+  type: Property
+  source:
+    id: VitesseVent
+    path: E:\Unity\Project\SRSP-Simple-Simulator\Assets\Controller\script\Model\AquitisionCommunication\Trame\TrameMWV.cs
+    startLine: 29
+  assemblies:
+  - Assembly-CSharp
+  namespace: SimpleSimulator.AquitisionCommunication.Trame
+  syntax:
+    content: public float VitesseVent { get; set; }
+    parameters: []
+    return:
+      type: System.Single
+    content.vb: Public Property VitesseVent As Single
+  overload: SimpleSimulator.AquitisionCommunication.Trame.TrameMWV.VitesseVent*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: SimpleSimulator.AquitisionCommunication.Trame.TrameMWV.Unite
+  commentId: P:SimpleSimulator.AquitisionCommunication.Trame.TrameMWV.Unite
+  id: Unite
+  parent: SimpleSimulator.AquitisionCommunication.Trame.TrameMWV
+  langs:
+  - csharp
+  - vb
+  name: Unite
+  nameWithType: TrameMWV.Unite
+  fullName: SimpleSimulator.AquitisionCommunication.Trame.TrameMWV.Unite
+  type: Property
+  source:
+    id: Unite
+    path: E:\Unity\Project\SRSP-Simple-Simulator\Assets\Controller\script\Model\AquitisionCommunication\Trame\TrameMWV.cs
+    startLine: 30
+  assemblies:
+  - Assembly-CSharp
+  namespace: SimpleSimulator.AquitisionCommunication.Trame
+  syntax:
+    content: public char Unite { get; set; }
+    parameters: []
+    return:
+      type: System.Char
+    content.vb: Public Property Unite As Char
+  overload: SimpleSimulator.AquitisionCommunication.Trame.TrameMWV.Unite*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: SimpleSimulator.AquitisionCommunication.Trame.TrameMWV.Etat
+  commentId: P:SimpleSimulator.AquitisionCommunication.Trame.TrameMWV.Etat
+  id: Etat
+  parent: SimpleSimulator.AquitisionCommunication.Trame.TrameMWV
+  langs:
+  - csharp
+  - vb
+  name: Etat
+  nameWithType: TrameMWV.Etat
+  fullName: SimpleSimulator.AquitisionCommunication.Trame.TrameMWV.Etat
+  type: Property
+  source:
+    id: Etat
+    path: E:\Unity\Project\SRSP-Simple-Simulator\Assets\Controller\script\Model\AquitisionCommunication\Trame\TrameMWV.cs
+    startLine: 31
+  assemblies:
+  - Assembly-CSharp
+  namespace: SimpleSimulator.AquitisionCommunication.Trame
+  syntax:
+    content: public string Etat { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property Etat As String
+  overload: SimpleSimulator.AquitisionCommunication.Trame.TrameMWV.Etat*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: SimpleSimulator.AquitisionCommunication.Trame.TrameMWV.Controle
+  commentId: P:SimpleSimulator.AquitisionCommunication.Trame.TrameMWV.Controle
+  id: Controle
+  parent: SimpleSimulator.AquitisionCommunication.Trame.TrameMWV
+  langs:
+  - csharp
+  - vb
+  name: Controle
+  nameWithType: TrameMWV.Controle
+  fullName: SimpleSimulator.AquitisionCommunication.Trame.TrameMWV.Controle
+  type: Property
+  source:
+    id: Controle
+    path: E:\Unity\Project\SRSP-Simple-Simulator\Assets\Controller\script\Model\AquitisionCommunication\Trame\TrameMWV.cs
+    startLine: 32
+  assemblies:
+  - Assembly-CSharp
+  namespace: SimpleSimulator.AquitisionCommunication.Trame
+  syntax:
+    content: public string Controle { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property Controle As String
+  overload: SimpleSimulator.AquitisionCommunication.Trame.TrameMWV.Controle*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: SimpleSimulator.AquitisionCommunication.Trame.TrameMWV.Checksum(System.String)
+  commentId: M:SimpleSimulator.AquitisionCommunication.Trame.TrameMWV.Checksum(System.String)
+  id: Checksum(System.String)
+  parent: SimpleSimulator.AquitisionCommunication.Trame.TrameMWV
+  langs:
+  - csharp
+  - vb
+  name: Checksum(String)
+  nameWithType: TrameMWV.Checksum(String)
+  fullName: SimpleSimulator.AquitisionCommunication.Trame.TrameMWV.Checksum(System.String)
+  type: Method
+  source:
+    id: Checksum
+    path: E:\Unity\Project\SRSP-Simple-Simulator\Assets\Controller\script\Model\AquitisionCommunication\Trame\TrameMWV.cs
+    startLine: 40
+  assemblies:
+  - Assembly-CSharp
+  namespace: SimpleSimulator.AquitisionCommunication.Trame
+  summary: "\nCompute the checksum of a string, we use the current trame in our case\nIt&apos;s computed with xor operation in between each caracters of the string trame\n"
+  example: []
+  syntax:
+    content: public string Checksum(string trame)
+    parameters:
+    - id: trame
+      type: System.String
+      description: string trame to get checksum with
+    return:
+      type: System.String
+      description: ''
+    content.vb: Public Function Checksum(trame As String) As String
+  overload: SimpleSimulator.AquitisionCommunication.Trame.TrameMWV.Checksum*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: SimpleSimulator.AquitisionCommunication.Trame.TrameMWV.ToString
+  commentId: M:SimpleSimulator.AquitisionCommunication.Trame.TrameMWV.ToString
+  id: ToString
+  parent: SimpleSimulator.AquitisionCommunication.Trame.TrameMWV
+  langs:
+  - csharp
+  - vb
+  name: ToString()
+  nameWithType: TrameMWV.ToString()
+  fullName: SimpleSimulator.AquitisionCommunication.Trame.TrameMWV.ToString()
+  type: Method
+  source:
+    id: ToString
+    path: E:\Unity\Project\SRSP-Simple-Simulator\Assets\Controller\script\Model\AquitisionCommunication\Trame\TrameMWV.cs
+    startLine: 54
+  assemblies:
+  - Assembly-CSharp
+  namespace: SimpleSimulator.AquitisionCommunication.Trame
+  summary: "\nMethode to compute the resulting MWV trame\n"
+  example: []
+  syntax:
+    content: public override string ToString()
+    return:
+      type: System.String
+      description: ''
+    content.vb: Public Overrides Function ToString As String
+  overridden: System.Object.ToString
+  overload: SimpleSimulator.AquitisionCommunication.Trame.TrameMWV.ToString*
+  modifiers.csharp:
+  - public
+  - override
+  modifiers.vb:
+  - Public
+  - Overrides
+references:
+- uid: SimpleSimulator.AquitisionCommunication.Trame
+  commentId: N:SimpleSimulator.AquitisionCommunication.Trame
+  name: SimpleSimulator.AquitisionCommunication.Trame
+  nameWithType: SimpleSimulator.AquitisionCommunication.Trame
+  fullName: SimpleSimulator.AquitisionCommunication.Trame
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: SimpleSimulator.AquitisionCommunication.Trame.TrameMWV.TrameType*
+  commentId: Overload:SimpleSimulator.AquitisionCommunication.Trame.TrameMWV.TrameType
+  name: TrameType
+  nameWithType: TrameMWV.TrameType
+  fullName: SimpleSimulator.AquitisionCommunication.Trame.TrameMWV.TrameType
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: SimpleSimulator.AquitisionCommunication.Trame.TrameMWV.AngleVent*
+  commentId: Overload:SimpleSimulator.AquitisionCommunication.Trame.TrameMWV.AngleVent
+  name: AngleVent
+  nameWithType: TrameMWV.AngleVent
+  fullName: SimpleSimulator.AquitisionCommunication.Trame.TrameMWV.AngleVent
+- uid: System.Single
+  commentId: T:System.Single
+  parent: System
+  isExternal: true
+  name: Single
+  nameWithType: Single
+  fullName: System.Single
+- uid: SimpleSimulator.AquitisionCommunication.Trame.TrameMWV.Reference*
+  commentId: Overload:SimpleSimulator.AquitisionCommunication.Trame.TrameMWV.Reference
+  name: Reference
+  nameWithType: TrameMWV.Reference
+  fullName: SimpleSimulator.AquitisionCommunication.Trame.TrameMWV.Reference
+- uid: System.Char
+  commentId: T:System.Char
+  parent: System
+  isExternal: true
+  name: Char
+  nameWithType: Char
+  fullName: System.Char
+- uid: SimpleSimulator.AquitisionCommunication.Trame.TrameMWV.VitesseVent*
+  commentId: Overload:SimpleSimulator.AquitisionCommunication.Trame.TrameMWV.VitesseVent
+  name: VitesseVent
+  nameWithType: TrameMWV.VitesseVent
+  fullName: SimpleSimulator.AquitisionCommunication.Trame.TrameMWV.VitesseVent
+- uid: SimpleSimulator.AquitisionCommunication.Trame.TrameMWV.Unite*
+  commentId: Overload:SimpleSimulator.AquitisionCommunication.Trame.TrameMWV.Unite
+  name: Unite
+  nameWithType: TrameMWV.Unite
+  fullName: SimpleSimulator.AquitisionCommunication.Trame.TrameMWV.Unite
+- uid: SimpleSimulator.AquitisionCommunication.Trame.TrameMWV.Etat*
+  commentId: Overload:SimpleSimulator.AquitisionCommunication.Trame.TrameMWV.Etat
+  name: Etat
+  nameWithType: TrameMWV.Etat
+  fullName: SimpleSimulator.AquitisionCommunication.Trame.TrameMWV.Etat
+- uid: SimpleSimulator.AquitisionCommunication.Trame.TrameMWV.Controle*
+  commentId: Overload:SimpleSimulator.AquitisionCommunication.Trame.TrameMWV.Controle
+  name: Controle
+  nameWithType: TrameMWV.Controle
+  fullName: SimpleSimulator.AquitisionCommunication.Trame.TrameMWV.Controle
+- uid: SimpleSimulator.AquitisionCommunication.Trame.TrameMWV.Checksum*
+  commentId: Overload:SimpleSimulator.AquitisionCommunication.Trame.TrameMWV.Checksum
+  name: Checksum
+  nameWithType: TrameMWV.Checksum
+  fullName: SimpleSimulator.AquitisionCommunication.Trame.TrameMWV.Checksum
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  nameWithType: Object.ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: SimpleSimulator.AquitisionCommunication.Trame.TrameMWV.ToString*
+  commentId: Overload:SimpleSimulator.AquitisionCommunication.Trame.TrameMWV.ToString
+  name: ToString
+  nameWithType: TrameMWV.ToString
+  fullName: SimpleSimulator.AquitisionCommunication.Trame.TrameMWV.ToString
