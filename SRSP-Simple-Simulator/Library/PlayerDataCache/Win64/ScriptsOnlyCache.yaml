@@ -35,6 +35,7 @@ ScriptsOnlyBuild:
     - UnityEditor.U2D.Animation.BoneGizmo
     Unity.2D.IK.Editor.dll:
     - UnityEditor.U2D.IK.IKEditorManager
+    - UnityEditor.U2D.IK.IKGizmos
     Unity.2D.Tilemap.Editor.dll:
     - UnityEditor.Tilemaps.GridPaintingState
     - UnityEditor.Tilemaps.GridPaletteBrushes
@@ -45,6 +46,7 @@ ScriptsOnlyBuild:
     - UnityEditor.Tilemaps.TilemapPrefabStageHelper
     Unity.CollabProxy.Editor.dll:
     - Unity.Cloud.Collaborate.UserInterface.CollaborateWindow
+    - Unity.Cloud.Collaborate.UserInterface.WindowCache
     Unity.PlasticSCM.Editor.dll:
     - Unity.PlasticSCM.Editor.PlasticWindow
     Unity.Rider.Editor.dll:
@@ -1447,4 +1449,4 @@ ScriptsOnlyBuild:
   - Assets/Scenes/SelectionBoatType.unity
   - Assets/Scenes/Backups.unity
   - Assets/Scenes/Waypoint.unity
-  playerPath: "D:/T\xE9l\xE9chargement/Simutaleur2/Voile.exe"
+  playerPath: C:/Users/danyn/Downloads/BuildSS/SimpleSimulator.exe

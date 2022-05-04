@@ -64,8 +64,6 @@ namespace PRace
 
         private Mode mode;
 
-        private ModeCommande commande = ModeCommande.cap;
-
         private AquitisionCommunication.Aquisition myAquisition;
 
         private physicSimulator.physics_simulator physics;
@@ -121,27 +119,7 @@ namespace PRace
             this.boat.setCap((cap + 360)%360);
         }
 
-        public void SetModeCommande(ModeCommande commande)
-        {
-            this.commande = commande;
-        }
-
-        public void switchCommande()
-        {
-            if (this.commande == ModeCommande.cap)
-            {
-                this.commande = ModeCommande.RegulateurAmure;
-            }
-            else
-            {
-                this.commande = ModeCommande.cap;
-            }
-        }
-
-        public ModeCommande GetModeCommande()
-        {
-            return this.commande;
-        }
+        
         public Environement.Environment GetEnvironment()
         {
             return env;
@@ -220,7 +198,7 @@ namespace PRace
 
         public void sendPosition() {
             Position pos = this.boat.GetPosition();
-            this.myAquisition.sentPosition(this.env.getEnvState(),this.physics.GetSOG(),this.physics.GetCOG(), this.boat.getCap(), pos.GetCoordLat(), pos.GetCoordLong(), clock.GetCurrentMoment());
+            this.myAquisition.sentPosition(this.env.getEnvState(),this.physics.GetSOG(),this.physics.GetCOG(), this.boat.getCap(), pos.GetCoordLat(), pos.GetCoordLong(), clock.GetCurrentMoment(), this.physics.GetSTW(), this.physics.GetAWS(), this.physics.GetAWA());
         }
 
         public Mode getMode() {
@@ -247,6 +225,7 @@ namespace PRace
 
         public void nextIteration() {
             this.physics.Move();
+            //this.boat.UpdateCap(this.physics);
             sendPosition();
             Console.WriteLine(clock.GetCurrentMoment());
             Console.WriteLine(boat.GetPosition().ToString());
@@ -267,6 +246,11 @@ namespace PRace
             status.Add(GetBoatCap());
             status.Add(physics.GetCOG());
             status.Add(physics.GetSOG());
+            //ajouter by Dany
+            status.Add(physics.GetSTW());
+            status.Add(physics.GetAWS());
+            status.Add(physics.GetAWA());
+            //
             return status;
         }
 
