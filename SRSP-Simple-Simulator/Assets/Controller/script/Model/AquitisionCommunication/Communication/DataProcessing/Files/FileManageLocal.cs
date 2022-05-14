@@ -77,12 +77,13 @@ namespace Communication.DataProcessing.Files
             string data = "";
             try
             {
-                using (StreamReader sr = File.OpenText(path))
-                {
-                    data = sr.ReadToEnd();
-                    sr.Close();
-                    sr.Dispose();
-                }
+                //using (StreamWriter sw = File.AppendText(path))
+                //{
+                //    sw.WriteLine(message);
+                //    sw.Close();
+                //    sw.Dispose();
+                //}
+                File.WriteAllText(path, message);
             }
             catch (Exception e)
             {
